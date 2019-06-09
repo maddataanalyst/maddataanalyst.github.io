@@ -48,22 +48,40 @@
   </url>
   
   <url>
+    <loc>/tags/decision-support/</loc>
+    <lastmod>2018-06-08T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/forecasting/</loc>
+    <lastmod>2018-06-08T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>/talk/scientific_achievments_2018/</loc>
-    <lastmod>2018-04-14T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/talk/code_forward_2016/</loc>
-    <lastmod>2015-11-05T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/talk/code_dive_2015/</loc>
-    <lastmod>2015-11-05T00:00:00+00:00</lastmod>
+    <lastmod>2018-04-14T00:00:00+02:00</lastmod>
   </url>
   
   <url>
     <loc>/talk/code_forward_2017/</loc>
+    <lastmod>2017-04-07T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/big-data/</loc>
+    <lastmod>2017-04-07T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/talk/code_forward_2016/</loc>
+    <lastmod>2016-04-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/talk/code_dive_2015/</loc>
     <lastmod>2015-11-05T00:00:00+00:00</lastmod>
   </url>
   

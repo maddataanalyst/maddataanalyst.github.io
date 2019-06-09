@@ -32,16 +32,25 @@
     <item>
       <title>Machine learning and artificial intelligence as a decision support systems for human capital management</title>
       <link>/talk/scientific_achievments_2018/</link>
-      <pubDate>Sat, 14 Apr 2018 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 14 Apr 2018 00:00:00 +0200</pubDate>
       
       <guid>/talk/scientific_achievments_2018/</guid>
       <description>Presentation</description>
     </item>
     
     <item>
+      <title>Water powered machine learning: gradient boosting machines in H2O AI</title>
+      <link>/talk/code_forward_2017/</link>
+      <pubDate>Fri, 07 Apr 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/talk/code_forward_2017/</guid>
+      <description>Presentation</description>
+    </item>
+    
+    <item>
       <title>Decision support systems remade: (machine) learning advisers</title>
       <link>/talk/code_forward_2016/</link>
-      <pubDate>Thu, 05 Nov 2015 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 28 Apr 2016 00:00:00 +0000</pubDate>
       
       <guid>/talk/code_forward_2016/</guid>
       <description>Presentation</description>
@@ -54,15 +63,6 @@
       
       <guid>/talk/code_dive_2015/</guid>
       <description></description>
-    </item>
-    
-    <item>
-      <title>Water powered machine learning: gradient boosting machines in H2O AI</title>
-      <link>/talk/code_forward_2017/</link>
-      <pubDate>Thu, 05 Nov 2015 00:00:00 +0000</pubDate>
-      
-      <guid>/talk/code_forward_2017/</guid>
-      <description>Presentation</description>
     </item>
     
   </channel>
