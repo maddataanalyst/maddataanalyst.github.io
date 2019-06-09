@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>admin on Mad Data Analyst</title>
+    <link>/authors/admin/</link>
+    <description>Recent content in admin on Mad Data Analyst</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="/authors/admin/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title></title>
+      <link>/author/filip/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/author/filip/</guid>
+      <description>Hello!
+My name is Filip Wójcik and I’m a data scientist and a programmer with specialization in artificial intelligence and machine learning. Recently I have also become a Ph.d. student at the Wroclaw University of Economics, IT in Economics Institute, faculty of Business Intelligence in Management. I’ve also graduated as a lawyer but… well… everybody makes mistakes, so let’s skip this part 🙂
+Machine learning and matters related with data science are my hobby, professional activity and the most important research area.</description>
+    </item>
+    
+  </channel>
+</rss>
