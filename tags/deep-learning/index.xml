@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>deep learning on Mad Data Analyst</title>
+    <link>/tags/deep-learning/</link>
+    <description>Recent content in deep learning on Mad Data Analyst</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 14 Jun 2019 12:00:00 +0200</lastBuildDate>
+    
+	<atom:link href="/tags/deep-learning/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Recommendation engines based on autoencoders</title>
+      <link>/talk/data_science_summit_2019/</link>
+      <pubDate>Fri, 14 Jun 2019 12:00:00 +0200</pubDate>
+      
+      <guid>/talk/data_science_summit_2019/</guid>
+      <description>Using autoencoder neural networks as recommendation engines</description>
+    </item>
+    
+  </channel>
+</rss>
