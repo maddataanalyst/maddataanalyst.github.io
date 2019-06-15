@@ -17,7 +17,14 @@
       <pubDate>Fri, 14 Jun 2019 12:00:00 +0200</pubDate>
       
       <guid>/talk/data_science_summit_2019/</guid>
-      <description></description>
+      <description>&lt;p&gt;&lt;strong&gt;Presentation&lt;/strong&gt; shown during the talk can be found &lt;a href=&#34;/talks/autoencoder_recommenders.pdf&#34;&gt; here &lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Full notebook&lt;/strong&gt; (with my ad-hoc annotations made during a talk) can be found &lt;a href=&#34;/talks/autorec.ipynb&#34;&gt; here. &lt;/a&gt; In order to run it, you should have downloaded data file from &lt;strong&gt;Movielens 20M&lt;/strong&gt; competition. You can find it &lt;a href=&#34;https://www.kaggle.com/grouplens/movielens-20m-dataset&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;. The file you should look for is called &lt;em&gt;ratings.csv&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;In the next couple of days I will upload &lt;strong&gt;english version&lt;/strong&gt; of slides. In the next couple of weeks - expect a longer blogpost summarizing the whole thing :).&lt;/p&gt;
+
+&lt;p&gt;Stay tuned and again - thank you for your attention!&lt;/p&gt;
+</description>
     </item>
     
     <item>
