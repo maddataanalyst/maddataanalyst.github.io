@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>forecasting on Mad Data Analyst</title>
@@ -17,7 +17,16 @@
       <pubDate>Fri, 08 Jun 2018 00:00:00 +0000</pubDate>
       
       <guid>/talk/data_science_summit_2018/</guid>
-      <description>Presentation</description>
+      <description>Presentation </description>
+    </item>
+    
+    <item>
+      <title>Forecasting Daily Turnover Using Xgboost Algorithm – A Case Study</title>
+      <link>/publication/xgboost_turnover/</link>
+      <pubDate>Thu, 01 Mar 2018 21:17:13 +0100</pubDate>
+      
+      <guid>/publication/xgboost_turnover/</guid>
+      <description></description>
     </item>
     
   </channel>

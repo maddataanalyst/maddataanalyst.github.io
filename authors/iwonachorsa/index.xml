@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>iwonachorsa on Mad Data Analyst</title>
+    <link>/authors/iwonachorsa/</link>
+    <description>Recent content in iwonachorsa on Mad Data Analyst</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 01 May 2017 00:00:00 +0200</lastBuildDate>
+    
+	<atom:link href="/authors/iwonachorsa/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Detecting business-relevant attributes in rule-based classification</title>
+      <link>/publication/business_relevant_attributes_2017/</link>
+      <pubDate>Mon, 01 May 2017 00:00:00 +0200</pubDate>
+      
+      <guid>/publication/business_relevant_attributes_2017/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/author/iwonachorsa/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/author/iwonachorsa/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

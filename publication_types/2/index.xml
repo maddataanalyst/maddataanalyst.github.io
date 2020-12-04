@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>2 on Mad Data Analyst</title>
+    <link>/publication_types/2/</link>
+    <description>Recent content in 2 on Mad Data Analyst</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 02 Nov 2020 21:36:41 +0100</lastBuildDate>
+    
+	<atom:link href="/publication_types/2/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Improvement of e-commerce recommendation systems with deep hybrid collaborative filtering with content: A case study</title>
+      <link>/publication/deep_hybrid_recommendation_system/</link>
+      <pubDate>Mon, 02 Nov 2020 21:36:41 +0100</pubDate>
+      
+      <guid>/publication/deep_hybrid_recommendation_system/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Forecasting Daily Turnover Using Xgboost Algorithm – A Case Study</title>
+      <link>/publication/xgboost_turnover/</link>
+      <pubDate>Thu, 01 Mar 2018 21:17:13 +0100</pubDate>
+      
+      <guid>/publication/xgboost_turnover/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Detecting business-relevant attributes in rule-based classification</title>
+      <link>/publication/business_relevant_attributes_2017/</link>
+      <pubDate>Mon, 01 May 2017 00:00:00 +0200</pubDate>
+      
+      <guid>/publication/business_relevant_attributes_2017/</guid>
+      <description>Authors:
+ dr hab. Iwona Chomiak-Orsa, prof. UE Filip Wójcik  </description>
+    </item>
+    
+  </channel>
+</rss>

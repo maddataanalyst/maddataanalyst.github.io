@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Authors on Mad Data Analyst</title>
@@ -6,6 +6,7 @@
     <description>Recent content in Authors on Mad Data Analyst</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
+    <lastBuildDate>Mon, 02 Nov 2020 21:36:41 +0100</lastBuildDate>
     
 	<atom:link href="/authors/index.xml" rel="self" type="application/rss+xml" />
     
@@ -13,9 +14,27 @@
     <item>
       <title>filip</title>
       <link>/authors/filip/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 02 Nov 2020 21:36:41 +0100</pubDate>
       
       <guid>/authors/filip/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Michał Górnik</title>
+      <link>/authors/micha%C5%82-g%C3%B3rnik/</link>
+      <pubDate>Mon, 02 Nov 2020 21:36:41 +0100</pubDate>
+      
+      <guid>/authors/micha%C5%82-g%C3%B3rnik/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>dr hab. Iwona Chomiak-Orsa, prof. UE</title>
+      <link>/authors/dr-hab.-iwona-chomiak-orsa-prof.-ue/</link>
+      <pubDate>Mon, 01 May 2017 00:00:00 +0200</pubDate>
+      
+      <guid>/authors/dr-hab.-iwona-chomiak-orsa-prof.-ue/</guid>
       <description></description>
     </item>
     

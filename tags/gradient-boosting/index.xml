@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>gradient boosting on Mad Data Analyst</title>
+    <link>/tags/gradient-boosting/</link>
+    <description>Recent content in gradient boosting on Mad Data Analyst</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 01 Mar 2018 21:17:13 +0100</lastBuildDate>
+    
+	<atom:link href="/tags/gradient-boosting/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Forecasting Daily Turnover Using Xgboost Algorithm – A Case Study</title>
+      <link>/publication/xgboost_turnover/</link>
+      <pubDate>Thu, 01 Mar 2018 21:17:13 +0100</pubDate>
+      
+      <guid>/publication/xgboost_turnover/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
