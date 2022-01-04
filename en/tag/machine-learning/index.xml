@@ -2,65 +2,65 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>machine learning | NeuraMind</title>
-    <link>https://example.com/en/tag/machine-learning/</link>
-      <atom:link href="https://example.com/en/tag/machine-learning/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://maddataanalyst.github.io/en/tag/machine-learning/</link>
+      <atom:link href="https://maddataanalyst.github.io/en/tag/machine-learning/index.xml" rel="self" type="application/rss+xml" />
     <description>machine learning</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Fri, 08 Jun 2018 12:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://example.com/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
+      <url>https://maddataanalyst.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
       <title>machine learning</title>
-      <link>https://example.com/en/tag/machine-learning/</link>
+      <link>https://maddataanalyst.github.io/en/tag/machine-learning/</link>
     </image>
     
     <item>
       <title>XGBoost as a time-series forecasting tool</title>
-      <link>https://example.com/en/talk/xgboost-as-a-time-series-forecasting-tool/</link>
+      <link>https://maddataanalyst.github.io/en/talk/xgboost-as-a-time-series-forecasting-tool/</link>
       <pubDate>Fri, 08 Jun 2018 12:00:00 +0000</pubDate>
-      <guid>https://example.com/en/talk/xgboost-as-a-time-series-forecasting-tool/</guid>
+      <guid>https://maddataanalyst.github.io/en/talk/xgboost-as-a-time-series-forecasting-tool/</guid>
       <description>&lt;p&gt;The goal of this presentation and associated paper is to present results of investigation related to use of the Extreme Gradient Boosting XGBoost algorithm as a forecasting tool. The data provided by the Rossman Com-pany, with a request to design an innovative prediction method, has been used as a base for this case study. The data contains details about micro- and macro-environment, as well as turnover of 1115 stores. Performance of the algorithm was compared to classical forecasting models SARIMAX and Holt-Winters, using time-series cross validation and tests for statistical importance in prediction quality dif-ferences. Metrics of root mean squared percentage error (RMSPE), Theil’s coeffi-cient and adjusted correlation coefficient were analyzed. Results where then passed to Rossman for verification on a separate validation set, via Kaggle.com platform. Study results confirmed, that XGBoost, after using proper data preparation and training method, achieves better results than classical models.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Machine learning and artificial intelligence as a decision support systems for human capital management</title>
-      <link>https://example.com/en/talk/machine-learning-and-artificial-intelligence-as-a-decision-support-systems-for-human-capital-management/</link>
+      <link>https://maddataanalyst.github.io/en/talk/machine-learning-and-artificial-intelligence-as-a-decision-support-systems-for-human-capital-management/</link>
       <pubDate>Wed, 18 Apr 2018 12:00:00 +0000</pubDate>
-      <guid>https://example.com/en/talk/machine-learning-and-artificial-intelligence-as-a-decision-support-systems-for-human-capital-management/</guid>
+      <guid>https://maddataanalyst.github.io/en/talk/machine-learning-and-artificial-intelligence-as-a-decision-support-systems-for-human-capital-management/</guid>
       <description>&lt;p&gt;Human capital and human resources are key success factors for multiple knowledge-based companies. Managing competences of employees is one of the most important areas for modern management science. This paper presents, an innovative algorithm based on natural language processing (NLP) and association analysis for recognition, assignment and evaluation of competences in a knowledge-rich organizations. An algorithm performs keywords extraction from applicant’s and employees resumes, which are used later on in a supervised phase. Achieved results - 71% of balanced accuracy in a case study suggest, that a system can recognize important correlations between competences and assigned projects.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Detecting business-relevant attributes in rule-based classification</title>
-      <link>https://example.com/en/publication/business_relevant_attributes_2017/</link>
+      <link>https://maddataanalyst.github.io/en/publication/business_relevant_attributes_2017/</link>
       <pubDate>Mon, 01 May 2017 00:00:00 +0000</pubDate>
-      <guid>https://example.com/en/publication/business_relevant_attributes_2017/</guid>
+      <guid>https://maddataanalyst.github.io/en/publication/business_relevant_attributes_2017/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Water powered machine learning: gradient boosting machines in H2O AI</title>
-      <link>https://example.com/en/talk/water-powered-machine-learning-gradient-boosting-machines-in-h2o-ai/</link>
+      <link>https://maddataanalyst.github.io/en/talk/water-powered-machine-learning-gradient-boosting-machines-in-h2o-ai/</link>
       <pubDate>Fri, 07 Apr 2017 12:00:00 +0000</pubDate>
-      <guid>https://example.com/en/talk/water-powered-machine-learning-gradient-boosting-machines-in-h2o-ai/</guid>
+      <guid>https://maddataanalyst.github.io/en/talk/water-powered-machine-learning-gradient-boosting-machines-in-h2o-ai/</guid>
       <description>&lt;p&gt;H2O AI is one of the most interesting out-of-the-box machine learning tools. It has plenty of algorithms implemented, those algorithms are really fast and effective and it integrates well with R and Spark. One of them is especially interesing - Gradient Boosting. Want to know more?&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Decision support systems remade: (machine) learning advisers</title>
-      <link>https://example.com/en/talk/decision-support-systems-remade-machine-learning-advisers/</link>
+      <link>https://maddataanalyst.github.io/en/talk/decision-support-systems-remade-machine-learning-advisers/</link>
       <pubDate>Thu, 28 Apr 2016 12:00:00 +0000</pubDate>
-      <guid>https://example.com/en/talk/decision-support-systems-remade-machine-learning-advisers/</guid>
+      <guid>https://maddataanalyst.github.io/en/talk/decision-support-systems-remade-machine-learning-advisers/</guid>
       <description>&lt;p&gt;Machine learning algorithms are replacement for an old-fashioned advisory systems. How we can utilize them in such a way? How white-box systems are different from black-box?&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Machine learning - when Big Data is not enough</title>
-      <link>https://example.com/en/talk/machine-learning-when-big-data-is-not-enough/</link>
+      <link>https://maddataanalyst.github.io/en/talk/machine-learning-when-big-data-is-not-enough/</link>
       <pubDate>Thu, 05 Nov 2015 12:00:00 +0000</pubDate>
-      <guid>https://example.com/en/talk/machine-learning-when-big-data-is-not-enough/</guid>
+      <guid>https://maddataanalyst.github.io/en/talk/machine-learning-when-big-data-is-not-enough/</guid>
       <description></description>
     </item>
     

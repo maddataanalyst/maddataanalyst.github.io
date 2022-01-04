@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>systemy rekomendacyjne | NeuraMind</title>
-    <link>https://example.com/pl/tag/systemy-rekomendacyjne/</link>
-      <atom:link href="https://example.com/pl/tag/systemy-rekomendacyjne/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://maddataanalyst.github.io/pl/tag/systemy-rekomendacyjne/</link>
+      <atom:link href="https://maddataanalyst.github.io/pl/tag/systemy-rekomendacyjne/index.xml" rel="self" type="application/rss+xml" />
     <description>systemy rekomendacyjne</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>pl</language><lastBuildDate>Mon, 01 Mar 2021 21:36:41 +0100</lastBuildDate>
     <image>
-      <url>https://example.com/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
+      <url>https://maddataanalyst.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
       <title>systemy rekomendacyjne</title>
-      <link>https://example.com/pl/tag/systemy-rekomendacyjne/</link>
+      <link>https://maddataanalyst.github.io/pl/tag/systemy-rekomendacyjne/</link>
     </image>
     
     <item>
       <title>Głębokie sieci neuronowe, jako systemy rekomendacyjne: architektura, zastosowania, możliwości. Studium przypadku.</title>
-      <link>https://example.com/pl/publication/deep_learning_as_recommenders/</link>
+      <link>https://maddataanalyst.github.io/pl/publication/deep_learning_as_recommenders/</link>
       <pubDate>Mon, 01 Mar 2021 21:36:41 +0100</pubDate>
-      <guid>https://example.com/pl/publication/deep_learning_as_recommenders/</guid>
+      <guid>https://maddataanalyst.github.io/pl/publication/deep_learning_as_recommenders/</guid>
       <description>&lt;p&gt;Rozwój rynku internetowych usług cyfrowych pod koniec XX wieku doprowadził do gwałtownego wzrostu znaczenia spersonalizowanych rekomendacji konsumenckich. Liczba produktów oraz baza klientów na platformach takich jaki Allegro czy Amazon, wykracza wielokrotnie poza skalę stosowaną w klasycznym marketingu [Jones, 2013]. Z tego względu, coraz większego znaczenia zaczęły nabierać zautomatyzowane systemy rekomendacyjne, analizujące zachowania i preferencje klientów. Do najnowocześniejszych rozwiązań stosowanych w tym zakresie można zaliczyć głębokie sieci neuronowe typu autoencoder [Sedhain i in., 2015] i im pokrewne. Stanowią one kolejny krok w ewolucji tzw. filtracji kolaboratywnej (ang. collaborative filtering) po raz pierwszy zastosowanej na platformie Netflix [Zhang i in., 2016]. Uzyskiwane przez nie wyniki są statystycznie istotnie lepsze od metod klasycznych.&lt;/p&gt;
 &lt;p&gt;Publikacja preznetuje przykłady architektury, implementacji i możliwości systemów wykorzystujących głębokie sieci neuronowe, w konkretnych przypadkach biznesowych – na bazie danych sprzedaży platformy Amazon z 2018r.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Literatura:&lt;/strong&gt;&lt;/p&gt;
@@ -76,17 +76,17 @@
     
     <item>
       <title>Improvement of e-commerce recommendation systems with deep hybrid collaborative filtering with content: A case study</title>
-      <link>https://example.com/pl/publication/deep_hybrid_recommendation_system/</link>
+      <link>https://maddataanalyst.github.io/pl/publication/deep_hybrid_recommendation_system/</link>
       <pubDate>Tue, 03 Mar 2020 21:36:41 +0100</pubDate>
-      <guid>https://example.com/pl/publication/deep_hybrid_recommendation_system/</guid>
+      <guid>https://maddataanalyst.github.io/pl/publication/deep_hybrid_recommendation_system/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Wykorzystanie algorytmów głębokiego uczenia jako narzędzi rekomendacyjnych</title>
-      <link>https://example.com/pl/project/deep_learning_recommenders/</link>
+      <link>https://maddataanalyst.github.io/pl/project/deep_learning_recommenders/</link>
       <pubDate>Fri, 14 Jun 2019 00:00:00 +0000</pubDate>
-      <guid>https://example.com/pl/project/deep_learning_recommenders/</guid>
+      <guid>https://maddataanalyst.github.io/pl/project/deep_learning_recommenders/</guid>
       <description>&lt;p&gt;Seria prezentacji, publikacji i wdrożonych projektów, skupiających się na algorytmach głębokiego uczenia wykorzystywanych jako systemy rekomendacyjne.&lt;/p&gt;
 </description>
     </item>

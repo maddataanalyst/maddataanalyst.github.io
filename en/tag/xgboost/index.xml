@@ -2,30 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>xgboost | NeuraMind</title>
-    <link>https://example.com/en/tag/xgboost/</link>
-      <atom:link href="https://example.com/en/tag/xgboost/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://maddataanalyst.github.io/en/tag/xgboost/</link>
+      <atom:link href="https://maddataanalyst.github.io/en/tag/xgboost/index.xml" rel="self" type="application/rss+xml" />
     <description>xgboost</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Fri, 08 Jun 2018 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://example.com/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
+      <url>https://maddataanalyst.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
       <title>xgboost</title>
-      <link>https://example.com/en/tag/xgboost/</link>
+      <link>https://maddataanalyst.github.io/en/tag/xgboost/</link>
     </image>
     
     <item>
       <title>Forecasting with XGboost</title>
-      <link>https://example.com/en/project/xgboost_forecast/</link>
+      <link>https://maddataanalyst.github.io/en/project/xgboost_forecast/</link>
       <pubDate>Fri, 08 Jun 2018 00:00:00 +0000</pubDate>
-      <guid>https://example.com/en/project/xgboost_forecast/</guid>
+      <guid>https://maddataanalyst.github.io/en/project/xgboost_forecast/</guid>
       <description>&lt;p&gt;A series of publications, conference talks and other materials, related to the usage of XGBoost as a financial forecasting tool.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Forecasting Daily Turnover Using Xgboost Algorithm – A Case Study</title>
-      <link>https://example.com/en/publication/xgboost_turnover/</link>
+      <link>https://maddataanalyst.github.io/en/publication/xgboost_turnover/</link>
       <pubDate>Thu, 01 Mar 2018 00:00:00 +0000</pubDate>
-      <guid>https://example.com/en/publication/xgboost_turnover/</guid>
+      <guid>https://maddataanalyst.github.io/en/publication/xgboost_turnover/</guid>
       <description></description>
     </item>
     

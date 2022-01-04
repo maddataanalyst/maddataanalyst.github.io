@@ -2,30 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>recommendation systems | NeuraMind</title>
-    <link>https://example.com/pl/tag/recommendation-systems/</link>
-      <atom:link href="https://example.com/pl/tag/recommendation-systems/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://maddataanalyst.github.io/pl/tag/recommendation-systems/</link>
+      <atom:link href="https://maddataanalyst.github.io/pl/tag/recommendation-systems/index.xml" rel="self" type="application/rss+xml" />
     <description>recommendation systems</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>pl</language><lastBuildDate>Thu, 18 Jun 2020 12:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://example.com/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
+      <url>https://maddataanalyst.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
       <title>recommendation systems</title>
-      <link>https://example.com/pl/tag/recommendation-systems/</link>
+      <link>https://maddataanalyst.github.io/pl/tag/recommendation-systems/</link>
     </image>
     
     <item>
       <title>One concept to rule them all - uses of neural embeddings beyond natural language processing.</title>
-      <link>https://example.com/pl/talk/one-concept-to-rule-them-all-uses-of-neural-embeddings-beyond-natural-language-processing./</link>
+      <link>https://maddataanalyst.github.io/pl/talk/one-concept-to-rule-them-all-uses-of-neural-embeddings-beyond-natural-language-processing./</link>
       <pubDate>Thu, 18 Jun 2020 12:00:00 +0000</pubDate>
-      <guid>https://example.com/pl/talk/one-concept-to-rule-them-all-uses-of-neural-embeddings-beyond-natural-language-processing./</guid>
+      <guid>https://maddataanalyst.github.io/pl/talk/one-concept-to-rule-them-all-uses-of-neural-embeddings-beyond-natural-language-processing./</guid>
       <description>&lt;p&gt;The goal of this presentation and associated paper is to present results of investigation related to use of the Extreme Gradient Boosting XGBoost algorithm as a forecasting tool. The data provided by the Rossman Com-pany, with a request to design an innovative prediction method, has been used as a base for this case study. The data contains details about micro- and macro-environment, as well as turnover of 1115 stores. Performance of the algorithm was compared to classical forecasting models SARIMAX and Holt-Winters, using time-series cross validation and tests for statistical importance in prediction quality dif-ferences. Metrics of root mean squared percentage error (RMSPE), Theil’s coeffi-cient and adjusted correlation coefficient were analyzed. Results where then passed to Rossman for verification on a separate validation set, via Kaggle.com platform. Study results confirmed, that XGBoost, after using proper data preparation and training method, achieves better results than classical models.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Recommendation engines based on autoencoders</title>
-      <link>https://example.com/pl/talk/recommendation-engines-based-on-autoencoders/</link>
+      <link>https://maddataanalyst.github.io/pl/talk/recommendation-engines-based-on-autoencoders/</link>
       <pubDate>Fri, 14 Jun 2019 12:00:00 +0000</pubDate>
-      <guid>https://example.com/pl/talk/recommendation-engines-based-on-autoencoders/</guid>
+      <guid>https://maddataanalyst.github.io/pl/talk/recommendation-engines-based-on-autoencoders/</guid>
       <description>&lt;p&gt;Recommendation engines are probably the most important tools for modern e-commerce organizations. As the data volumes grow larger and larger (as well as product/user base), traditional approaches based on collaborative might be not enough. During this talk I will present alternative approaches to recommendations - making use of deep stacked autoencoders.&lt;/p&gt;
 </description>
     </item>

@@ -2,29 +2,29 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>1 | NeuraMind</title>
-    <link>https://example.com/en/publication-type/1/</link>
-      <atom:link href="https://example.com/en/publication-type/1/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://maddataanalyst.github.io/en/publication-type/1/</link>
+      <atom:link href="https://maddataanalyst.github.io/en/publication-type/1/index.xml" rel="self" type="application/rss+xml" />
     <description>1</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Mon, 01 Mar 2021 21:36:41 +0100</lastBuildDate>
     <image>
-      <url>https://example.com/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
+      <url>https://maddataanalyst.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
       <title>1</title>
-      <link>https://example.com/en/publication-type/1/</link>
+      <link>https://maddataanalyst.github.io/en/publication-type/1/</link>
     </image>
     
     <item>
       <title>Beyond the barrier of mistrust – an overview of selected methods for explaining predictions of machine learning models</title>
-      <link>https://example.com/en/publication/beyond_a_barrier_of_mistrust/</link>
+      <link>https://maddataanalyst.github.io/en/publication/beyond_a_barrier_of_mistrust/</link>
       <pubDate>Mon, 01 Mar 2021 21:36:41 +0100</pubDate>
-      <guid>https://example.com/en/publication/beyond_a_barrier_of_mistrust/</guid>
+      <guid>https://maddataanalyst.github.io/en/publication/beyond_a_barrier_of_mistrust/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Usage of deep neural networks as recommendation engines. Review of selected approaches</title>
-      <link>https://example.com/en/publication/deep_learning_as_recommenders/</link>
+      <link>https://maddataanalyst.github.io/en/publication/deep_learning_as_recommenders/</link>
       <pubDate>Mon, 01 Mar 2021 21:36:41 +0100</pubDate>
-      <guid>https://example.com/en/publication/deep_learning_as_recommenders/</guid>
+      <guid>https://maddataanalyst.github.io/en/publication/deep_learning_as_recommenders/</guid>
       <description></description>
     </item>
     

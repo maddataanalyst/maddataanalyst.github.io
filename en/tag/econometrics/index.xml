@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>econometrics | NeuraMind</title>
-    <link>https://example.com/en/tag/econometrics/</link>
-      <atom:link href="https://example.com/en/tag/econometrics/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://maddataanalyst.github.io/en/tag/econometrics/</link>
+      <atom:link href="https://maddataanalyst.github.io/en/tag/econometrics/index.xml" rel="self" type="application/rss+xml" />
     <description>econometrics</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Thu, 01 Mar 2018 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://example.com/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
+      <url>https://maddataanalyst.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
       <title>econometrics</title>
-      <link>https://example.com/en/tag/econometrics/</link>
+      <link>https://maddataanalyst.github.io/en/tag/econometrics/</link>
     </image>
     
     <item>
       <title>Forecasting Daily Turnover Using Xgboost Algorithm – A Case Study</title>
-      <link>https://example.com/en/publication/xgboost_turnover/</link>
+      <link>https://maddataanalyst.github.io/en/publication/xgboost_turnover/</link>
       <pubDate>Thu, 01 Mar 2018 00:00:00 +0000</pubDate>
-      <guid>https://example.com/en/publication/xgboost_turnover/</guid>
+      <guid>https://maddataanalyst.github.io/en/publication/xgboost_turnover/</guid>
       <description></description>
     </item>
     

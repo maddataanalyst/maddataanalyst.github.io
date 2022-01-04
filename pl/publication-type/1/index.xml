@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>1 | NeuraMind</title>
-    <link>https://example.com/pl/publication-type/1/</link>
-      <atom:link href="https://example.com/pl/publication-type/1/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://maddataanalyst.github.io/pl/publication-type/1/</link>
+      <atom:link href="https://maddataanalyst.github.io/pl/publication-type/1/index.xml" rel="self" type="application/rss+xml" />
     <description>1</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>pl</language><lastBuildDate>Mon, 01 Mar 2021 21:36:41 +0100</lastBuildDate>
     <image>
-      <url>https://example.com/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
+      <url>https://maddataanalyst.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
       <title>1</title>
-      <link>https://example.com/pl/publication-type/1/</link>
+      <link>https://maddataanalyst.github.io/pl/publication-type/1/</link>
     </image>
     
     <item>
       <title>Głębokie sieci neuronowe, jako systemy rekomendacyjne: architektura, zastosowania, możliwości. Studium przypadku.</title>
-      <link>https://example.com/pl/publication/deep_learning_as_recommenders/</link>
+      <link>https://maddataanalyst.github.io/pl/publication/deep_learning_as_recommenders/</link>
       <pubDate>Mon, 01 Mar 2021 21:36:41 +0100</pubDate>
-      <guid>https://example.com/pl/publication/deep_learning_as_recommenders/</guid>
+      <guid>https://maddataanalyst.github.io/pl/publication/deep_learning_as_recommenders/</guid>
       <description>&lt;p&gt;Rozwój rynku internetowych usług cyfrowych pod koniec XX wieku doprowadził do gwałtownego wzrostu znaczenia spersonalizowanych rekomendacji konsumenckich. Liczba produktów oraz baza klientów na platformach takich jaki Allegro czy Amazon, wykracza wielokrotnie poza skalę stosowaną w klasycznym marketingu [Jones, 2013]. Z tego względu, coraz większego znaczenia zaczęły nabierać zautomatyzowane systemy rekomendacyjne, analizujące zachowania i preferencje klientów. Do najnowocześniejszych rozwiązań stosowanych w tym zakresie można zaliczyć głębokie sieci neuronowe typu autoencoder [Sedhain i in., 2015] i im pokrewne. Stanowią one kolejny krok w ewolucji tzw. filtracji kolaboratywnej (ang. collaborative filtering) po raz pierwszy zastosowanej na platformie Netflix [Zhang i in., 2016]. Uzyskiwane przez nie wyniki są statystycznie istotnie lepsze od metod klasycznych.&lt;/p&gt;
 &lt;p&gt;Publikacja preznetuje przykłady architektury, implementacji i możliwości systemów wykorzystujących głębokie sieci neuronowe, w konkretnych przypadkach biznesowych – na bazie danych sprzedaży platformy Amazon z 2018r.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Literatura:&lt;/strong&gt;&lt;/p&gt;
@@ -76,9 +76,9 @@
     
     <item>
       <title>Przełamać nieufność – metody zapewniania przejrzystości modeli uczenia maszynowego w zastosowaniach ekonomicznych</title>
-      <link>https://example.com/pl/publication/beyond_a_barrier_of_mistrust/</link>
+      <link>https://maddataanalyst.github.io/pl/publication/beyond_a_barrier_of_mistrust/</link>
       <pubDate>Mon, 01 Mar 2021 21:36:41 +0100</pubDate>
-      <guid>https://example.com/pl/publication/beyond_a_barrier_of_mistrust/</guid>
+      <guid>https://maddataanalyst.github.io/pl/publication/beyond_a_barrier_of_mistrust/</guid>
       <description>&lt;p&gt;Wraz z upowszechnieniem się stosowania uczenia maszynowego, jako zestawu technik i narzędzi do rozwiązywania problemów biznesowych, zaczął narastać problem zapewnienia ich interpretowalności i budowania zaufania do generowanych predykcji [Gunning i in., 2019]. Zjawisko to nasiliło się, po osiągnięciu (w niektórych dziedzinach) przez głębokie sieci neuronowe wyników, przekraczających możliwości człowieka, przy jednoczesnym braku prostych metod ustalenia źródeł podejmowanych przez nie decyzji [Holzinger, 2018]. Wejście w życie przepisów nakładających obowiązek ścisłej ochrony danych osobowych i zapewnienia transparentności procesu ich przetwarzania (RODO) stały się przyczynkiem do dyskusji nad koncepcją XAI – „możliwych do wyjaśnienia metod sztucznej inteligencji” (ang. eXplainable Artificial Intelligence) [Holzinger i in., 2018]. Obszary życia społecznego, o szczególnie istotnym znaczeniu i wrażliwości (jak np. medycyna, wymiar sprawiedliwości czy rynki finansowe), w których wykorzystywane jest uczenie maszynowe, powinny mieć dostęp do technik pogłębionej analizy otrzymywanych wyników. Niektórzy autorzy postulują nawet, by zaprzestać używania algorytmów o wyjątkowo skomplikowanej wewnętrznej strukturze, w przypadku decyzji niosących ze sobą wysokie koszty potencjalnej pomyłki [Rudin, 2019].&lt;/p&gt;
 &lt;p&gt;Podczas wystąpienia zaprezentowane zostaną nowoczesne koncepcje i metody, mające na celu budowanie większego zaufania do inteligentnych systemów komputerowych, poprzez przedstawianie ich interpretacji, czy objaśnień. Przybliżone zostaną m.in. SHAP (ang. shapley additive explanations), LIME (ang. locally interpretable model-agnostic explanations), Anchor i metoda granicy decyzyjnej (ang. decision boundary) [Hase &amp;amp; Bansal, 2020].&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Literatura:&lt;/strong&gt;&lt;/p&gt;

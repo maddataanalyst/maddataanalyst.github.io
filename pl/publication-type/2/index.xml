@@ -2,29 +2,29 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>2 | NeuraMind</title>
-    <link>https://example.com/pl/publication-type/2/</link>
-      <atom:link href="https://example.com/pl/publication-type/2/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://maddataanalyst.github.io/pl/publication-type/2/</link>
+      <atom:link href="https://maddataanalyst.github.io/pl/publication-type/2/index.xml" rel="self" type="application/rss+xml" />
     <description>2</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>pl</language><lastBuildDate>Tue, 03 Mar 2020 21:36:41 +0100</lastBuildDate>
     <image>
-      <url>https://example.com/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
+      <url>https://maddataanalyst.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
       <title>2</title>
-      <link>https://example.com/pl/publication-type/2/</link>
+      <link>https://maddataanalyst.github.io/pl/publication-type/2/</link>
     </image>
     
     <item>
       <title>Improvement of e-commerce recommendation systems with deep hybrid collaborative filtering with content: A case study</title>
-      <link>https://example.com/pl/publication/deep_hybrid_recommendation_system/</link>
+      <link>https://maddataanalyst.github.io/pl/publication/deep_hybrid_recommendation_system/</link>
       <pubDate>Tue, 03 Mar 2020 21:36:41 +0100</pubDate>
-      <guid>https://example.com/pl/publication/deep_hybrid_recommendation_system/</guid>
+      <guid>https://maddataanalyst.github.io/pl/publication/deep_hybrid_recommendation_system/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Prognozowanie dziennych obrotów przedsiębiorstwa za pomocą algorytmu XGBoost - studium przypadku</title>
-      <link>https://example.com/pl/publication/xgboost_turnover/</link>
+      <link>https://maddataanalyst.github.io/pl/publication/xgboost_turnover/</link>
       <pubDate>Thu, 01 Mar 2018 00:00:00 +0000</pubDate>
-      <guid>https://example.com/pl/publication/xgboost_turnover/</guid>
+      <guid>https://maddataanalyst.github.io/pl/publication/xgboost_turnover/</guid>
       <description>&lt;p&gt;Celem niniejszej publikacji jest przedstawienie innowacyjnego zastosowania algorytmu XGBoost (ang. Extreme Gradient Boosting) do prognozowania obrotów przedsiębiorstwa. Pierwotnie procedura ta stworzona została jako klasyfikator i narzędzie regresji, nie zaś system prognozowania szeregów czasowych. Badania oparte na studiach przypadków wykazały jednak, iż dzięki odpowiedniej obróbce wstępnej danych i ich przygotowaniu, możliwe jest użycie omawianego algorytmu w przedstawionym kontekście.&lt;/p&gt;
 &lt;p&gt;W 2016 r. firma Rossmann (zwana dalej Organizacją) upubliczniła na platformie Kaggle.com częściowo zanonimizowane dane operacyjne dotyczące swojej działalności począwszy od roku 2013, wraz z uzyskanymi obrotami (waluta oraz jednostka nieujawnione), zwracając się do globalnej społeczności analityków z prośbą o pomoc w opracowaniu innowacyjnej metody prognozowania obrotów na podstawie danych z mikro i makro otoczenia sklepów. Organizacja chciała otrzymać lepsze wyniki niż dotychczas stosowane modele oparte na metodach takich jak ARIMA/SARIMA/ARIMAX, czy model Holta-Wintersa. Udostępnione informacje zawierały szczegóły 1115 poszczególnych oddziałów, takie jak bliskość konkurenta, od ilu lat operuje on w pobliżu, jak duży asortyment posiada dana placówka, ile było aktywnych promocji, etc. oraz charakterystykę okresu kalendarzowego (święta państwowe, ferie szkolne etc.). Dane były miejscami zniekształcone, nieprawidłowe lub w oczywisty sposób sprzeczne. Mimo to, zdaniem Organizacji, możliwe było zidentyfikowanie, w oparciu o podane atrybuty, istotnych trendów i korelacji, a następnie opisanie ich za pomocą modelu predykcyjnego zdolnego ekstrapolować na przyszłość.&lt;/p&gt;
 &lt;p&gt;Jest to konkretny przypadek pojedynczego podmiotu będący jednak, zdaniem autora, egzemplifikacją szerszego zagadnienia – prognozowania szeregów czasowych w oparciu o duże wolumeny danych o zróżnicowanej jakości i charakterze.&lt;/p&gt;
@@ -38,9 +38,9 @@ R2.&lt;/p&gt;
     
     <item>
       <title>Detecting business-relevant attributes in rule-based classification</title>
-      <link>https://example.com/pl/publication/business_relevant_attributes_2017/</link>
+      <link>https://maddataanalyst.github.io/pl/publication/business_relevant_attributes_2017/</link>
       <pubDate>Mon, 01 May 2017 00:00:00 +0000</pubDate>
-      <guid>https://example.com/pl/publication/business_relevant_attributes_2017/</guid>
+      <guid>https://maddataanalyst.github.io/pl/publication/business_relevant_attributes_2017/</guid>
       <description></description>
     </item>
     

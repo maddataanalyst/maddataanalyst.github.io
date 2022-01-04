@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>uczenie maszynowe | NeuraMind</title>
-    <link>https://example.com/pl/tag/uczenie-maszynowe/</link>
-      <atom:link href="https://example.com/pl/tag/uczenie-maszynowe/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://maddataanalyst.github.io/pl/tag/uczenie-maszynowe/</link>
+      <atom:link href="https://maddataanalyst.github.io/pl/tag/uczenie-maszynowe/index.xml" rel="self" type="application/rss+xml" />
     <description>uczenie maszynowe</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>pl</language><lastBuildDate>Mon, 01 May 2017 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://example.com/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
+      <url>https://maddataanalyst.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
       <title>uczenie maszynowe</title>
-      <link>https://example.com/pl/tag/uczenie-maszynowe/</link>
+      <link>https://maddataanalyst.github.io/pl/tag/uczenie-maszynowe/</link>
     </image>
     
     <item>
       <title>Detecting business-relevant attributes in rule-based classification</title>
-      <link>https://example.com/pl/publication/business_relevant_attributes_2017/</link>
+      <link>https://maddataanalyst.github.io/pl/publication/business_relevant_attributes_2017/</link>
       <pubDate>Mon, 01 May 2017 00:00:00 +0000</pubDate>
-      <guid>https://example.com/pl/publication/business_relevant_attributes_2017/</guid>
+      <guid>https://maddataanalyst.github.io/pl/publication/business_relevant_attributes_2017/</guid>
       <description></description>
     </item>
     
