@@ -101,10 +101,10 @@
     </item>
     
     <item>
-      <title>One concept to rule them all - uses of neural embeddings beyond natural language processing.</title>
-      <link>https://maddataanalyst.github.io/pl/talk/one-concept-to-rule-them-all-uses-of-neural-embeddings-beyond-natural-language-processing./</link>
+      <title>One concept to rule them all - uses of neural embeddings beyond natural language processing</title>
+      <link>https://maddataanalyst.github.io/pl/talk/one-concept-to-rule-them-all-uses-of-neural-embeddings-beyond-natural-language-processing/</link>
       <pubDate>Thu, 18 Jun 2020 12:00:00 +0000</pubDate>
-      <guid>https://maddataanalyst.github.io/pl/talk/one-concept-to-rule-them-all-uses-of-neural-embeddings-beyond-natural-language-processing./</guid>
+      <guid>https://maddataanalyst.github.io/pl/talk/one-concept-to-rule-them-all-uses-of-neural-embeddings-beyond-natural-language-processing/</guid>
       <description>&lt;p&gt;The goal of this presentation and associated paper is to present results of investigation related to use of the Extreme Gradient Boosting XGBoost algorithm as a forecasting tool. The data provided by the Rossman Com-pany, with a request to design an innovative prediction method, has been used as a base for this case study. The data contains details about micro- and macro-environment, as well as turnover of 1115 stores. Performance of the algorithm was compared to classical forecasting models SARIMAX and Holt-Winters, using time-series cross validation and tests for statistical importance in prediction quality dif-ferences. Metrics of root mean squared percentage error (RMSPE), Theil’s coeffi-cient and adjusted correlation coefficient were analyzed. Results where then passed to Rossman for verification on a separate validation set, via Kaggle.com platform. Study results confirmed, that XGBoost, after using proper data preparation and training method, achieves better results than classical models.&lt;/p&gt;
 </description>
     </item>
