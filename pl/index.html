@@ -1,0 +1,4160 @@
+<!DOCTYPE html><html lang="pl" >
+
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  
+  
+    <meta name="generator" content="Wowchemy 5.3.0 for Hugo" />
+  
+
+  
+  
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  
+
+  
+  
+  
+    
+      
+      <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap" media="print" onload="this.media='all'">
+    
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Filip Wójcik" />
+
+  
+  
+  
+    
+  
+  <meta name="description" content="Ph.D., Starszy analityk danych" />
+
+  
+    <link rel="alternate" hreflang="en" href="https://example.com/en/" />
+  
+  <link rel="alternate" hreflang="pl" href="https://example.com/pl/" />
+
+  
+  
+  
+    <meta name="theme-color" content="#1565c0" />
+  
+
+  
+  
+    
+    <script src="/js/mathjax-config.js"></script>
+  
+
+  
+
+  <link rel="stylesheet" href="/css/vendor-bundle.min.f1ecf783c14edc00c9320c205831ad8e.css" media="print" onload="this.media='all'">
+
+  
+  
+  
+    
+    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.1/css/academicons.min.css" integrity="sha512-W0xM4mr6dEP9nREo7Z9z+9X70wytKvMGeDsj7ps2+xg5QPrEBXC8tAW1IFnzjR6eoJ90JmCnFzerQJTLzIEHjA==" crossorigin="anonymous" media="print" onload="this.media='all'">
+    
+
+    
+    
+    
+    
+      
+      
+      
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.2.1/build/styles/github.min.css" crossorigin="anonymous" title="hl-light" media="print" onload="this.media='all'">
+          <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.2.1/build/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" media="print" onload="this.media='all'" disabled>
+        
+      
+    
+
+    
+    
+    
+
+    
+
+    
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" integrity="" crossorigin="anonymous" async></script>
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+  
+
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/wowchemy.63638f5ebe2af2c45dadecbd6a6c3fa9.css" />
+
+  
+
+
+
+  
+
+  
+
+  
+
+
+
+
+  
+  
+  
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+  
+
+  
+    <link rel="alternate" href="/pl/index.xml" type="application/rss+xml" title="NeuraMind" />
+  
+
+  
+    <link rel="manifest" href="/pl/manifest.webmanifest" />
+  
+
+  <link rel="icon" type="image/png" href="/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_32x32_fill_lanczos_center_3.png" />
+  <link rel="apple-touch-icon" type="image/png" href="/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_180x180_fill_lanczos_center_3.png" />
+
+  <link rel="canonical" href="https://example.com/pl/" />
+
+  
+  
+  
+  
+  
+  
+  
+  
+    
+    
+  
+  
+
+  
+  
+    
+    
+  
+  <meta property="twitter:card" content="summary" />
+  
+  <meta property="og:site_name" content="NeuraMind" />
+  <meta property="og:url" content="https://example.com/pl/" />
+  <meta property="og:title" content="NeuraMind" />
+  <meta property="og:description" content="Ph.D., Starszy analityk danych" /><meta property="og:image" content="https://example.com/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png" />
+    <meta property="twitter:image" content="https://example.com/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png" /><meta property="og:locale" content="pl" />
+  
+    
+      <meta property="og:updated_time" content="2021-03-01T21:36:41&#43;01:00" />
+    
+  
+
+  
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://example.com/?q={search_term_string}",
+    "query-input": "required name=search_term_string"
+  },
+  "url": "https://example.com/"
+}
+</script>
+
+
+  
+
+  
+
+  
+
+
+
+
+
+  <title>NeuraMind</title>
+</head>
+
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#navbar-main" class="page-wrapper   "  >
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <script src="/js/wowchemy-init.min.2da3b1fa37e894630bf6de39b1b694b3.js"></script>
+
+  
+
+
+<aside class="search-modal" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Szukaj</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#" aria-label="Close"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Szukaj..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control"
+        aria-label="Szukaj...">
+        
+      </div>
+
+      
+      
+
+      
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+
+  <div class="page-header">
+    
+
+
+
+
+
+
+
+
+
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+  <div class="container-xl">
+
+    
+    <div class="d-none d-lg-inline-flex">
+      <a class="navbar-brand" href="/pl/">NeuraMind</a>
+    </div>
+    
+
+    
+    <button type="button" class="navbar-toggler" data-toggle="collapse"
+            data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Włącz/Wyłącz nawigację">
+    <span><i class="fas fa-bars"></i></span>
+    </button>
+    
+
+    
+    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+      <a class="navbar-brand" href="/pl/">NeuraMind</a>
+    </div>
+    
+
+    
+    
+    <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+
+      
+      <ul class="navbar-nav d-md-inline-flex">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/pl/#about" data-target="#about"><span>Strona główna</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/pl/#projects" data-target="#projects"><span>Projekty</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/pl/#talks" data-target="#talks"><span>Wystąpienia</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/pl/#featured" data-target="#featured"><span>Publikacje</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/pl/#contact" data-target="#contact"><span>Kontakt</span></a>
+        </li>
+
+        
+        
+
+      
+
+        
+      </ul>
+    </div>
+
+    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+
+      
+      
+        
+      
+
+      
+      
+      <li class="nav-item">
+        <a class="nav-link js-search" href="#" aria-label="Szukaj"><i class="fas fa-search" aria-hidden="true"></i></a>
+      </li>
+      
+
+      
+      
+      <li class="nav-item dropdown theme-dropdown">
+        <a href="#" class="nav-link" data-toggle="dropdown" aria-haspopup="true" aria-label="Display preferences">
+          <i class="fas fa-moon" aria-hidden="true"></i>
+        </a>
+        <div class="dropdown-menu">
+          <a href="#" class="dropdown-item js-set-theme-light">
+            <span>Light</span>
+          </a>
+          <a href="#" class="dropdown-item js-set-theme-dark">
+            <span>Dark</span>
+          </a>
+          <a href="#" class="dropdown-item js-set-theme-auto">
+            <span>Automatic</span>
+          </a>
+        </div>
+      </li>
+      
+
+      
+      
+      <li class="nav-item dropdown i18n-dropdown">
+        <a href="#" class="nav-link " data-toggle="dropdown"
+           aria-haspopup="true" aria-label="Languages">
+          <i class="fas fa-globe mr-1" aria-hidden="true"></i></a>
+        <div class="dropdown-menu">
+          <div class="dropdown-item dropdown-item-active">
+            <span>Polski</span>
+          </div>
+          
+          <a class="dropdown-item" href="https://example.com/en/" data-target="/en/">
+            <span>English</span>
+          </a>
+          
+        </div>
+      </li>
+      
+
+    </ul>
+
+  </div>
+</nav>
+
+
+  </div>
+
+  <div class="page-body">
+    
+
+
+
+
+
+
+
+
+
+  
+<span class="js-widget-page d-none"></span>
+
+
+
+
+
+  
+  
+  
+  
+
+
+
+
+  
+  
+  
+  
+
+  
+
+  
+
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+  
+
+  
+  <section id="about" class="home-section wg-about  "  >
+   <div class="home-section-bg " >
+     
+   </div>
+    <div class="container">
+
+    
+
+      
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+<div class="row">
+  <div class="col-12 col-lg-4">
+    <div id="profile">
+
+      
+      
+      <img class="avatar avatar-circle"
+           width="270" height="270"
+           src="/pl/authors/filip/avatar_hua0f6609f6456e31c791940f3ee102759_457434_270x270_fill_q75_lanczos_center.jpg" alt="Filip Wójcik">
+      
+
+      <div class="portrait-title">
+        <h2>Filip Wójcik</h2>
+        <h3>Ph.D., Starszy analityk danych</h3>
+
+        
+        <h3>
+          <a href="https://www.ue.wroc.pl/" target="_blank" rel="noopener">
+          <span>Uniwersytet Ekonomiczny we Wrocławiu</span>
+          </a>
+        </h3>
+        
+      </div>
+
+      <ul class="network-icon" aria-hidden="true">
+        
+        
+        
+        
+          
+        
+        
+        
+        
+        
+          
+        
+        <li>
+          <a href="https://scholar.google.pl/citations?user=fUZwDOQAAAAJ&amp;hl=pl&amp;oi=ao" target="_blank" rel="noopener" aria-label="graduation-cap">
+            <i class="fas fa-graduation-cap big-icon"></i>
+          </a>
+        </li>
+        
+        
+        
+        
+          
+        
+        
+        
+        
+        
+          
+        
+        <li>
+          <a href="https://www.researchgate.net/profile/Filip_Wojcik/" target="_blank" rel="noopener" aria-label="researchgate">
+            <i class="fab fa-researchgate big-icon"></i>
+          </a>
+        </li>
+        
+        
+        
+        
+          
+        
+        
+        
+        
+        
+          
+        
+        <li>
+          <a href="https://github.com/maddataanalyst" target="_blank" rel="noopener" aria-label="github">
+            <i class="fab fa-github big-icon"></i>
+          </a>
+        </li>
+        
+        
+        
+        
+          
+        
+        
+        
+        
+        
+          
+        
+        <li>
+          <a href="https://www.linkedin.com/in/machinelearningspecialist/" target="_blank" rel="noopener" aria-label="linkedin">
+            <i class="fab fa-linkedin big-icon"></i>
+          </a>
+        </li>
+        
+      </ul>
+
+    </div>
+  </div>
+  <div class="col-12 col-lg-8">
+
+    
+    <h1>Bio</h1>
+
+    <div class="article-style">
+      <p>Cześć!
+Nazywam się Filip Wójcik i jestem analitykiem danych oraz programistą specjalizującym się w systemach uczenia maszynowego i (szeroko rozumianej) sztucznej inteligencji. W 2021r. uzyskałem tytuł doktora na Uniwersytecie Ekonomicznym we Wrocławiu, w katedrze Inteligencji Biznesowej w Zarządzaniu. W swoich badaniach naukowych skupiam się na zastosowaniach uczenia maszynowego (zwłaszcza systemów uczenia głębokiego /Deep Learning) we wspomaganiu decyzji. 
+Swoją pasją i zainteresowaniami w tym obszarze staram się dzielić ze studentami, pokazując możliwe kierunki rozwoju i nowe trendy. Nauczanie jest dla mnie jednym z najważniejszych aspektów zaangażowania na Uczelni.
+Poza pracą i nauką – jestem pasjonatem sportów walki (posiadam stopień drugi Dan Aikido, jestem instruktorem samoobrony,  aktywnie trenuję Krav Magę), CrossFit i podróży górskich.</p>
+
+    </div>
+
+    <div class="row">
+
+      
+      <div class="col-md-5">
+        <div class="section-subheading">Zainteresowania</div>
+        <ul class="ul-interests mb-0">
+          
+          <li>Reinforcement learning</li>
+          
+          <li>Deep learning</li>
+          
+          <li>Systemy wspomagania decyzji</li>
+          
+        </ul>
+      </div>
+      
+
+      
+      <div class="col-md-7">
+        <div class="section-subheading">Wykształcenie</div>
+        <ul class="ul-edu fa-ul mb-0">
+          
+          <li>
+            <i class="fa-li fas fa-graduation-cap"></i>
+            <div class="description">
+              <p class="course">Tytuł doktora Nauk o Zarządzaniu i Jakości, 2021</p>
+              <p class="institution">Uniwersytet Ekonomiczny we Wrocławiu</p>
+            </div>
+          </li>
+          
+          <li>
+            <i class="fa-li fas fa-graduation-cap"></i>
+            <div class="description">
+              <p class="course">Magister Informatyki w Zarządzaniu, 2017</p>
+              <p class="institution">Uniwersytet Ekonomiczny we Wrocławiu</p>
+            </div>
+          </li>
+          
+          <li>
+            <i class="fa-li fas fa-graduation-cap"></i>
+            <div class="description">
+              <p class="course">Inżynier informatyki, 2015</p>
+              <p class="institution">WSIZ Copernicus</p>
+            </div>
+          </li>
+          
+          <li>
+            <i class="fa-li fas fa-graduation-cap"></i>
+            <div class="description">
+              <p class="course">Magister prawa, 2012</p>
+              <p class="institution">Uniwersytet Wrocławski</p>
+            </div>
+          </li>
+          
+        </ul>
+      </div>
+      
+
+    </div>
+  </div>
+</div>
+
+
+    
+
+    </div>
+  </section>
+
+  
+  
+  
+  
+
+  
+
+  
+
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+  
+
+  
+  <section id="skills" class="home-section wg-featurette  "  >
+   <div class="home-section-bg " >
+     
+   </div>
+    <div class="container">
+
+    
+
+      
+
+
+<div class="row featurette">
+  
+  <div class="col-md-12 section-heading">
+    <h1>Umiejętności</h1>
+    
+  </div>
+  
+
+  
+
+  
+  
+  
+  
+    
+  
+  <div class="col-12 col-sm-4">
+    
+    <div class="featurette-icon"><i class="fas fa-brain"></i></div>
+    
+    <div class="section-subheading">Narzędzia ML</div>
+    <p>Tensorflow/Keras/XGBoost/NLTK/SpaCy/etc</p>
+  </div>
+  
+  
+  
+  
+    
+  
+  <div class="col-12 col-sm-4">
+    
+    <div class="featurette-icon"><i class="fas fa-chart-bar"></i></div>
+    
+    <div class="section-subheading">Analiza statystyczna</div>
+    <p>forecast/pingouin/statsmodels</p>
+  </div>
+  
+  
+  
+  
+    
+  
+  <div class="col-12 col-sm-4">
+    
+    <div class="featurette-icon"><i class="fas fa-cloud"></i></div>
+    
+    <div class="section-subheading">Cloud/Big data tools</div>
+    <p>MS Azure Machine Learning</p>
+  </div>
+  
+  
+  
+  
+    
+  
+  <div class="col-12 col-sm-4">
+    
+    <div class="featurette-icon"><i class="fab fa-python"></i></div>
+    
+    <div class="section-subheading">Python</div>
+    <p>Very good (6+ years)</p>
+  </div>
+  
+  
+  
+  
+    
+  
+  <div class="col-12 col-sm-4">
+    
+    <div class="featurette-icon"><i class="fab fa-r-project"></i></div>
+    
+    <div class="section-subheading">Rlang</div>
+    <p>Very good (6+ years)</p>
+  </div>
+  
+  
+  
+  
+    
+  
+  <div class="col-12 col-sm-4">
+    
+    <div class="featurette-icon"><i class="fas fa-chart-pie"></i></div>
+    
+    <div class="section-subheading">Narzędzia do raportowania</div>
+    <p>Power BI/Tebleau</p>
+  </div>
+  
+</div>
+
+
+    
+
+    </div>
+  </section>
+
+  
+  
+  
+  
+
+  
+
+  
+
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+  
+
+  
+  <section id="experience" class="home-section wg-experience  "  >
+   <div class="home-section-bg " >
+     
+   </div>
+    <div class="container">
+
+    
+      <div class="row  ">
+      
+        
+          <div class="section-heading col-12 col-lg-4 mb-3 mb-lg-0 d-flex flex-column align-items-center align-items-lg-start">
+            <h1 class="mb-0">Experience</h1>
+            
+          </div>
+        
+      
+    
+
+      
+
+
+
+
+<div class="col-12 col-lg-8">
+  
+
+  
+  
+
+  
+  
+  <div class="row experience">
+    
+    <div class="col-auto text-center flex-column d-none d-sm-flex">
+      <div class="row h-50">
+        <div class="col ">&nbsp;</div>
+        <div class="col">&nbsp;</div>
+      </div>
+      <div class="m-2">
+        <span class="badge badge-pill border exp-fill">&nbsp;</span>
+      </div>
+      <div class="row h-50">
+        <div class="col border-right">&nbsp;</div>
+        <div class="col">&nbsp;</div>
+      </div>
+    </div>
+    
+    <div class="col py-2">
+      <div class="card">
+        <div class="card-body">
+          <div class="d-flex align-content-start">
+            <div class="mr-2 mb-2"><a href="https://www.objectivity.co.uk/" target="_blank" rel="noopener"><img src="/media/icons/brands/objectivity.svg" width="56px" height="56px" alt="Objectivity"></a></div>
+            <div>
+          
+
+              <div class="section-subheading card-title exp-title text-muted my-0">Senior Data Scientist Consultant</div>
+              <div class="section-subheading card-title exp-company text-muted my-0"><a href="https://www.objectivity.co.uk/" target="_blank" rel="noopener">Objectivity</a></div>
+              <div class="text-muted exp-meta">
+                Jan 2022 –
+                
+                  Obecnie
+                
+                
+                  <span class="middot-divider"></span>
+                  <span>Wrocław</span>
+                
+              </div>
+            </div>
+          </div>
+          
+
+          <div class="card-text"><p>Główne zadania:</p>
+<ol>
+<li>Budowanie modeli predyckcyjnych wspomagających rozmaite obszary decyzyjne: zarządzanie łańcuchem dostaw, analiza cen i kosztów,, etc. Wykorzystywanie rozmaitych algorytmów i technik uczenia maszynowego:</li>
+</ol>
+<ul>
+<li>Analiza szeregów czasowych</li>
+<li>Regresja, ANOVA</li>
+<li>Modele deep learning, gradient boosting, modele złożone (ensembles)</li>
+</ul>
+<ol start="2">
+<li>
+<p>Tworzenie narzędzi optymalizacyjnych.</p>
+</li>
+<li>
+<p>Udizał w przygotowaniu publikacji naukowych i warsztatów akademickich.</p>
+</li>
+<li>
+<p>Główne technologie:</p>
+</li>
+</ol>
+<ul>
+<li>Python: scipy, NumPy, scikit-learn, pandas</li>
+<li>Narzędzia optymalizacji: cvxpy with different solvers, Matlab</li>
+<li>Sieci neuronowe: Tensorflow, Tensofboard, GPU computing</li>
+<li>Bazy danych: MSSQL</li>
+<li>Interaktywne wizualizacje: MS PowerBI, Python Streamlit</li>
+</ul>
+</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="row experience">
+    
+    <div class="col-auto text-center flex-column d-none d-sm-flex">
+      <div class="row h-50">
+        <div class="col border-right">&nbsp;</div>
+        <div class="col">&nbsp;</div>
+      </div>
+      <div class="m-2">
+        <span class="badge badge-pill border exp-fill">&nbsp;</span>
+      </div>
+      <div class="row h-50">
+        <div class="col border-right">&nbsp;</div>
+        <div class="col">&nbsp;</div>
+      </div>
+    </div>
+    
+    <div class="col py-2">
+      <div class="card">
+        <div class="card-body">
+          <div class="d-flex align-content-start">
+            <div class="mr-2 mb-2"><a href="https://filip-wojcik.com" target="_blank" rel="noopener"><img src="/media/icons/brands/neurasys_logo.svg" width="56px" height="56px" alt="NeuraSYS Filip Wójcik"></a></div>
+            <div>
+          
+
+              <div class="section-subheading card-title exp-title text-muted my-0">Senior Data Scientist, właściciel</div>
+              <div class="section-subheading card-title exp-company text-muted my-0"><a href="https://filip-wojcik.com" target="_blank" rel="noopener">NeuraSYS Filip Wójcik</a></div>
+              <div class="text-muted exp-meta">
+                Jan 2022 –
+                
+                  Obecnie
+                
+                
+                  <span class="middot-divider"></span>
+                  <span>Wrocław</span>
+                
+              </div>
+            </div>
+          </div>
+          
+
+          <div class="card-text">Własna działalność gospodarcza – szeroko rozumiany consulting z zakresu implementacji i zastosowań uczenia maszynowego w rozmaitych procesach biznesowych. Przeprowadzanie kompleksowych analiz danych, budowanie raportów badawczych, podsumowań i zestawień statystycznych.
+Współpraca z klientami zarówno z sektora prywatnego, jak i z uczelniami i placówkami badawczymi.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="row experience">
+    
+    <div class="col-auto text-center flex-column d-none d-sm-flex">
+      <div class="row h-50">
+        <div class="col border-right">&nbsp;</div>
+        <div class="col">&nbsp;</div>
+      </div>
+      <div class="m-2">
+        <span class="badge badge-pill border ">&nbsp;</span>
+      </div>
+      <div class="row h-50">
+        <div class="col border-right">&nbsp;</div>
+        <div class="col">&nbsp;</div>
+      </div>
+    </div>
+    
+    <div class="col py-2">
+      <div class="card">
+        <div class="card-body">
+          <div class="d-flex align-content-start">
+            <div class="mr-2 mb-2"><a href="https://www.capgemini.com/pl-pl/" target="_blank" rel="noopener"><img src="/media/icons/brands/capgemini.svg" width="56px" height="56px" alt="Capgemini"></a></div>
+            <div>
+          
+
+              <div class="section-subheading card-title exp-title text-muted my-0">Senior Data Scientist</div>
+              <div class="section-subheading card-title exp-company text-muted my-0"><a href="https://www.capgemini.com/pl-pl/" target="_blank" rel="noopener">Capgemini</a></div>
+              <div class="text-muted exp-meta">
+                Nov 2020 –
+                
+                  Dec 2021
+                
+                
+                  <span class="middot-divider"></span>
+                  <span>Wrocław</span>
+                
+              </div>
+            </div>
+          </div>
+          
+
+          <div class="card-text"><p>Jako starszy specjalista ds. danych odpowiadałem za dostarczanie wysokiej jakości modeli analitycznych i uczenia maszynowego dla klientów zewnętrznych. Wewnętrzny konsultant i liderem technicznym w niektórych projektach.</p>
+<p>Główne obszary kompetencji:</p>
+<ul>
+<li><strong>sieci neuronowe</strong>,</li>
+<li><strong>reinforcement learning</strong>,</li>
+<li><strong>prognozowanie szeregów czasowych</strong>,</li>
+<li><strong>wykrywanie anomalii</strong>.</li>
+</ul>
+<p>Narzędzia Pythona (pandas, NumPy, scipy, scikit-learn), biblioteki sieci neuronowych (Tensorflow, Keras, Pytorch), biblioteki do wizualizacji (Streamlit, Dash), R/Rstudio do analizy statystycznej.</p>
+</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="row experience">
+    
+    <div class="col-auto text-center flex-column d-none d-sm-flex">
+      <div class="row h-50">
+        <div class="col border-right">&nbsp;</div>
+        <div class="col">&nbsp;</div>
+      </div>
+      <div class="m-2">
+        <span class="badge badge-pill border ">&nbsp;</span>
+      </div>
+      <div class="row h-50">
+        <div class="col border-right">&nbsp;</div>
+        <div class="col">&nbsp;</div>
+      </div>
+    </div>
+    
+    <div class="col py-2">
+      <div class="card">
+        <div class="card-body">
+          <div class="d-flex align-content-start">
+            <div class="mr-2 mb-2"><a href="https://nokiawroclaw.pl/" target="_blank" rel="noopener"><img src="/media/icons/brands/nokia.svg" width="56px" height="56px" alt="NOKIA"></a></div>
+            <div>
+          
+
+              <div class="section-subheading card-title exp-title text-muted my-0">Data Scientist</div>
+              <div class="section-subheading card-title exp-company text-muted my-0"><a href="https://nokiawroclaw.pl/" target="_blank" rel="noopener">NOKIA</a></div>
+              <div class="text-muted exp-meta">
+                Mar 2020 –
+                
+                  Sep 2020
+                
+                
+                  <span class="middot-divider"></span>
+                  <span>Wrocław</span>
+                
+              </div>
+            </div>
+          </div>
+          
+
+          <div class="card-text"><p>Data Scientist w departamencie Commercial Management and Business Digitalization.
+Główne zadania:</p>
+<ol>
+<li>Tworzenie modeli predykcyjnych wspomagających procesy biznesowe w różnych obszarach - zarządzanie łańcuchem dostaw, analiza cen i kosztów, etc. Wykorzystanie wielu narzędzi uczenia maszynowego:</li>
+</ol>
+<ul>
+<li>Analiza szeregów czasowych</li>
+<li>Metody klasyczne: regresja, ANOVA</li>
+<li>Modele uczenia maszynowego (uczenie głębokie, gradient boosting, modele złożone)</li>
+</ul>
+<ol start="2">
+<li>
+<p>Budowanie narzędzi optymalizacyjnych łańcuchów dostaw</p>
+</li>
+<li>
+<p>Przygotowywanie publikacji naukowych i materiałów edukacyjnych.</p>
+</li>
+<li>
+<p>Technologie:</p>
+</li>
+</ol>
+<ul>
+<li>Python: scipy, NumPy, scikit-learn, pandas</li>
+<li>Narzędzie optymalizacji: cvxpy with different solvers, Matlab</li>
+<li>Narzędzia sieci neuronowych: Tensorflow, Tensofboard, GPU computing</li>
+<li>Bazy danych: MSSQL</li>
+<li>Wizualizacja danych: MS PowerBI, Python Streamlit</li>
+</ul>
+</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="row experience">
+    
+    <div class="col-auto text-center flex-column d-none d-sm-flex">
+      <div class="row h-50">
+        <div class="col border-right">&nbsp;</div>
+        <div class="col">&nbsp;</div>
+      </div>
+      <div class="m-2">
+        <span class="badge badge-pill border ">&nbsp;</span>
+      </div>
+      <div class="row h-50">
+        <div class="col border-right">&nbsp;</div>
+        <div class="col">&nbsp;</div>
+      </div>
+    </div>
+    
+    <div class="col py-2">
+      <div class="card">
+        <div class="card-body">
+          <div class="d-flex align-content-start">
+            <div class="mr-2 mb-2"><a href="https://www.objectivity.co.uk/" target="_blank" rel="noopener"><img src="/media/icons/brands/objectivity.svg" width="56px" height="56px" alt="Objectivity"></a></div>
+            <div>
+          
+
+              <div class="section-subheading card-title exp-title text-muted my-0">Senior Data Scientist</div>
+              <div class="section-subheading card-title exp-company text-muted my-0"><a href="https://www.objectivity.co.uk/" target="_blank" rel="noopener">Objectivity</a></div>
+              <div class="text-muted exp-meta">
+                Mar 2020 –
+                
+                  Sep 2020
+                
+                
+                  <span class="middot-divider"></span>
+                  <span>Wrocław</span>
+                
+              </div>
+            </div>
+          </div>
+          
+
+          <div class="card-text"><p>Główne zadania:</p>
+<ol>
+<li>Budowanie modeli predyckcyjnych wspomagających rozmaite obszary decyzyjne: zarządzanie łańcuchem dostaw, analiza cen i kosztów,, etc. Wykorzystywanie rozmaitych algorytmów i technik uczenia maszynowego:</li>
+</ol>
+<ul>
+<li>Analiza szeregów czasowych</li>
+<li>Regresja, ANOVA</li>
+<li>Modele deep learning, gradient boosting, modele złożone (ensembles)</li>
+</ul>
+<ol start="2">
+<li>
+<p>Tworzenie narzędzi optymalizacyjnych.</p>
+</li>
+<li>
+<p>Udizał w przygotowaniu publikacji naukowych i warsztatów akademickich.</p>
+</li>
+<li>
+<p>Główne technologie:</p>
+</li>
+</ol>
+<ul>
+<li>Python: scipy, NumPy, scikit-learn, pandas</li>
+<li>Narzędzia optymalizacji: cvxpy with different solvers, Matlab</li>
+<li>Sieci neuronowe: Tensorflow, Tensofboard, GPU computing</li>
+<li>Bazy danych: MSSQL</li>
+<li>Interaktywne wizualizacje: MS PowerBI, Python Streamlit</li>
+</ul>
+</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="row experience">
+    
+    <div class="col-auto text-center flex-column d-none d-sm-flex">
+      <div class="row h-50">
+        <div class="col border-right">&nbsp;</div>
+        <div class="col">&nbsp;</div>
+      </div>
+      <div class="m-2">
+        <span class="badge badge-pill border ">&nbsp;</span>
+      </div>
+      <div class="row h-50">
+        <div class="col border-right">&nbsp;</div>
+        <div class="col">&nbsp;</div>
+      </div>
+    </div>
+    
+    <div class="col py-2">
+      <div class="card">
+        <div class="card-body">
+          <div class="d-flex align-content-start">
+            <div class="mr-2 mb-2"><a href="https://www.objectivity.co.uk/" target="_blank" rel="noopener"><img src="/media/icons/brands/credit_suisse.svg" width="56px" height="56px" alt="Credit Suisse"></a></div>
+            <div>
+          
+
+              <div class="section-subheading card-title exp-title text-muted my-0">Assistant Vice President, Data Scientist</div>
+              <div class="section-subheading card-title exp-company text-muted my-0"><a href="https://www.objectivity.co.uk/" target="_blank" rel="noopener">Credit Suisse</a></div>
+              <div class="text-muted exp-meta">
+                Nov 2016 –
+                
+                  Oct 2017
+                
+                
+                  <span class="middot-divider"></span>
+                  <span>Wrocław</span>
+                
+              </div>
+            </div>
+          </div>
+          
+
+          <div class="card-text"><p>Przygotowywanie aplikacji w środowisku big data (Apache Spark) służącej przetwarzaniu i analizie danych dotyczących grup klientów i ich wzorców zachowania rynkowego. Wykorzystanie narzędzi do dekompozycji szeregów czasowych i prognozowania, wzbogaconych analizą języka naturalnego do przewidywania zmian na rynkach.</p>
+<p>Technologie:</p>
+<ul>
+<li>Cloudera (dystrybucja Hadoopa)</li>
+<li>Scala + Spark + Spark Streaming + mllib</li>
+<li>R + caret + mlr + xgboost + H2O</li>
+<li>H2O ai</li>
+<li>Python + scipy + pandas + sklearn</li>
+<li>Pig</li>
+<li>Jupyter notebooks</li>
+</ul>
+<p>Bazy danych:</p>
+<ul>
+<li>Impala</li>
+<li>Hive</li>
+<li>MS SQL Server</li>
+<li>Informatika Power Center</li>
+</ul>
+</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="row experience">
+    
+    <div class="col-auto text-center flex-column d-none d-sm-flex">
+      <div class="row h-50">
+        <div class="col border-right">&nbsp;</div>
+        <div class="col">&nbsp;</div>
+      </div>
+      <div class="m-2">
+        <span class="badge badge-pill border ">&nbsp;</span>
+      </div>
+      <div class="row h-50">
+        <div class="col border-right">&nbsp;</div>
+        <div class="col">&nbsp;</div>
+      </div>
+    </div>
+    
+    <div class="col py-2">
+      <div class="card">
+        <div class="card-body">
+          <div class="d-flex align-content-start">
+            <div class="mr-2 mb-2"><a href="https://www.opera.com/pl" target="_blank" rel="noopener"><img src="/media/icons/brands/opera.svg" width="56px" height="56px" alt="Opera Software"></a></div>
+            <div>
+          
+
+              <div class="section-subheading card-title exp-title text-muted my-0">Business Analyst</div>
+              <div class="section-subheading card-title exp-company text-muted my-0"><a href="https://www.opera.com/pl" target="_blank" rel="noopener">Opera Software</a></div>
+              <div class="text-muted exp-meta">
+                Aug 2016 –
+                
+                  Oct 2016
+                
+                
+                  <span class="middot-divider"></span>
+                  <span>Wrocław</span>
+                
+              </div>
+            </div>
+          </div>
+          
+
+          <div class="card-text"><p>Dostarczanie analiz i charakterystyki użytkowników korzystających z przeglądarki. A/B testy i projektowanie eksperymentów mających na celu poprawę retencji i konwersji. Symulacje Monte Carlo, mające na celu przewidzenie przyszłych zachowań i ew. zainteresowania produktem. Bezpośrednia współpraca z kierownictwem Firmy.</p>
+<p>Technologie:</p>
+<ul>
+<li>Python + scipy + pandas + sklearn</li>
+<li>R + caret + mlr + xgboost + H2O</li>
+<li>H2O ai</li>
+<li>Jupyter notebooks stack</li>
+</ul>
+</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="row experience">
+    
+    <div class="col-auto text-center flex-column d-none d-sm-flex">
+      <div class="row h-50">
+        <div class="col border-right">&nbsp;</div>
+        <div class="col">&nbsp;</div>
+      </div>
+      <div class="m-2">
+        <span class="badge badge-pill border ">&nbsp;</span>
+      </div>
+      <div class="row h-50">
+        <div class="col border-right">&nbsp;</div>
+        <div class="col">&nbsp;</div>
+      </div>
+    </div>
+    
+    <div class="col py-2">
+      <div class="card">
+        <div class="card-body">
+          <div class="d-flex align-content-start">
+            <div class="mr-2 mb-2"><a href="https://www.luxoft.com/" target="_blank" rel="noopener"><img src="/media/icons/brands/luxoft.svg" width="56px" height="56px" alt="Luxoft"></a></div>
+            <div>
+          
+
+              <div class="section-subheading card-title exp-title text-muted my-0">Senior Software Developer</div>
+              <div class="section-subheading card-title exp-company text-muted my-0"><a href="https://www.luxoft.com/" target="_blank" rel="noopener">Luxoft</a></div>
+              <div class="text-muted exp-meta">
+                Sep 2014 –
+                
+                  Jul 2016
+                
+                
+                  <span class="middot-divider"></span>
+                  <span>Wrocław</span>
+                
+              </div>
+            </div>
+          </div>
+          
+
+          <div class="card-text">Budowa i projektowanie aplikacji w środowisku Big Data, służącej do analizy wolumenu sprzedaży i zachowania klientów. Grupowanie klientów pod kątem preferencji i wzorców zachowania. Kompleksowe przetwarzanie danych w procesach ETL na klastrach obliczeniowych.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="row experience">
+    
+    <div class="col-auto text-center flex-column d-none d-sm-flex">
+      <div class="row h-50">
+        <div class="col border-right">&nbsp;</div>
+        <div class="col">&nbsp;</div>
+      </div>
+      <div class="m-2">
+        <span class="badge badge-pill border ">&nbsp;</span>
+      </div>
+      <div class="row h-50">
+        <div class="col ">&nbsp;</div>
+        <div class="col">&nbsp;</div>
+      </div>
+    </div>
+    
+    <div class="col py-2">
+      <div class="card">
+        <div class="card-body">
+          <div class="d-flex align-content-start">
+            <div class="mr-2 mb-2"><a href="https://anixe.pl/" target="_blank" rel="noopener"><img src="/media/icons/brands/anixe.svg" width="56px" height="56px" alt="anixe"></a></div>
+            <div>
+          
+
+              <div class="section-subheading card-title exp-title text-muted my-0">Software Developer</div>
+              <div class="section-subheading card-title exp-company text-muted my-0"><a href="https://anixe.pl/" target="_blank" rel="noopener">anixe</a></div>
+              <div class="text-muted exp-meta">
+                Sep 2012 –
+                
+                  Aug 2014
+                
+                
+                  <span class="middot-divider"></span>
+                  <span>Wrocław</span>
+                
+              </div>
+            </div>
+          </div>
+          
+
+          <div class="card-text">Budowanie systemów rekomendacyjnych pozwalających na planowanie podróży oraz algorytmów analizy języka naturalnego rozpoznających zduplikowane opisy hoteli lub obiektów turystycznych. Kompleksowe procesy ETL służące oczyszczaniu danych i ich przygotowaniom do dalszej analizy.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+</div>
+
+
+    
+      </div>
+    
+
+    </div>
+  </section>
+
+  
+  
+  
+  
+
+  
+
+  
+
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+  
+
+  
+  <section id="projects" class="home-section wg-portfolio  "  >
+   <div class="home-section-bg " >
+     
+   </div>
+    <div class="container">
+
+    
+      <div class="row  ">
+      
+        
+          <div class="section-heading col-12 col-lg-4 mb-3 mb-lg-0 d-flex flex-column align-items-center align-items-lg-start">
+            <h1 class="mb-0">Projekty</h1>
+            
+          </div>
+        
+      
+    
+
+      
+
+
+
+
+
+
+
+<div class="col-12 col-lg-8">
+
+  
+
+  
+
+    
+
+    
+    
+    
+    
+      
+    
+
+    <span class="d-none default-project-filter">*</span>
+
+    
+    
+    <div class="project-toolbar">
+      <div class="project-filters">
+        <div class="btn-toolbar">
+          <div class="btn-group flex-wrap">
+            
+              
+              
+              
+                
+              
+              <a href="#" data-filter="*" class="btn btn-primary btn-lg active">All</a>
+            
+              
+              
+              
+              <a href="#" data-filter=".js-id-Deep-Learning" class="btn btn-primary btn-lg">Deep Learning</a>
+            
+              
+              
+              
+              <a href="#" data-filter=".js-id-prognozowanie" class="btn btn-primary btn-lg">Prognozowanie</a>
+            
+              
+              
+              
+              <a href="#" data-filter=".js-id-systemy-rekomendacyjne" class="btn btn-primary btn-lg">Systemy rekomendacyjne</a>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  
+
+  <div class="isotope projects-container row js-layout-row ">
+
+    
+    
+      
+    
+
+    
+
+      
+      
+      
+
+      
+        
+
+
+<div class="col-12 isotope-item js-id-Deep-Learning js-id-systemy-rekomendacyjne">
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+  
+
+
+<div class="media stream-item">
+  <div class="media-body">
+
+    <div class="section-subheading article-title mb-0 mt-0">
+      <a href="/pl/project/deep_learning_recommenders/" >Wykorzystanie algorytmów głębokiego uczenia jako narzędzi rekomendacyjnych</a>
+    </div>
+
+    
+    <a href="/pl/project/deep_learning_recommenders/"  class="summary-link">
+      <div class="article-style">
+        Seria prezentacji, publikacji i wdrożonych projektów, skupiających się na algorytmach głębokiego uczenia wykorzystywanych jako systemy rekomendacyjne.
+      </div>
+    </a>
+    
+
+    <div class="stream-meta article-metadata">
+
+      
+
+      
+    </div>
+
+    
+
+  </div>
+  <div class="ml-3">
+    
+    
+    
+    <a href="/pl/project/deep_learning_recommenders/" >
+      <img src="/pl/project/deep_learning_recommenders/featured_hu3d03a01dcc18bc5be0e67db3d8d209a6_224363_150x0_resize_q75_lanczos.jpg" alt="Wykorzystanie algorytmów głębokiego uczenia jako narzędzi rekomendacyjnych" loading="lazy">
+    </a>
+    
+  </div>
+</div>
+
+</div>
+
+      
+
+    
+
+      
+      
+      
+
+      
+        
+
+
+<div class="col-12 isotope-item js-id-prognozowanie js-id-xgboost">
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+  
+
+
+<div class="media stream-item">
+  <div class="media-body">
+
+    <div class="section-subheading article-title mb-0 mt-0">
+      <a href="/pl/project/xgboost_forecast/" >Prognozowanie z wykorzystaniem algorytmu XGBoost</a>
+    </div>
+
+    
+    <a href="/pl/project/xgboost_forecast/"  class="summary-link">
+      <div class="article-style">
+        Seria publikacji, prezentacji i wdrożeń, wykorzystujących algortym XGBoost do prognozowania szeregów czasowych.
+      </div>
+    </a>
+    
+
+    <div class="stream-meta article-metadata">
+
+      
+
+      
+    </div>
+
+    
+
+  </div>
+  <div class="ml-3">
+    
+    
+    
+    <a href="/pl/project/xgboost_forecast/" >
+      <img src="/pl/project/xgboost_forecast/featured_hudfe08bf9b0ac80b0353b8304393362e2_69764_150x0_resize_q75_lanczos.jpg" alt="Prognozowanie z wykorzystaniem algorytmu XGBoost" loading="lazy">
+    </a>
+    
+  </div>
+</div>
+
+</div>
+
+      
+
+    
+  </div>
+</div>
+
+
+    
+      </div>
+    
+
+    </div>
+  </section>
+
+  
+  
+  
+  
+
+  
+
+  
+
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+  
+
+  
+  <section id="talks" class="home-section wg-pages  "  >
+   <div class="home-section-bg " >
+     
+   </div>
+    <div class="container">
+
+    
+      <div class="row  ">
+      
+        
+          <div class="section-heading col-12 col-lg-4 mb-3 mb-lg-0 d-flex flex-column align-items-center align-items-lg-start">
+            <h1 class="mb-0">Ostatnie i nadchodzące wystąpienia</h1>
+            
+          </div>
+        
+      
+    
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+<div class="col-12 col-lg-8">
+
+  
+
+  
+    
+      
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+  
+
+
+<div class="media stream-item">
+  <div class="media-body">
+
+    <div class="section-subheading article-title mb-0 mt-0">
+      <a href="/pl/talk/one-concept-to-rule-them-all-uses-of-neural-embeddings-beyond-natural-language-processing./" >One concept to rule them all - uses of neural embeddings beyond natural language processing.</a>
+    </div>
+
+    
+    <a href="/pl/talk/one-concept-to-rule-them-all-uses-of-neural-embeddings-beyond-natural-language-processing./"  class="summary-link">
+      <div class="article-style">
+        Neural embeddings are one of the most popular techniques used in Natural Language Processing to represent word similarities. There are many variations and implementations of this concept - starting from skip-gram, through GloVe or Word2Vec. But embeddings are a much more powerful concept that can be utilized in many different areas, not only NLP. Possible applications of embeddings in recommendation engines, item similarity detection, and market basket analysis through frequent items search will be presented during this speech.
+      </div>
+    </a>
+    
+
+    <div class="stream-meta article-metadata">
+
+      
+      <div>
+        <span>
+          Jun 18, 2020 12:00 PM &mdash; 12:00 PM
+        </span>
+        
+        <span class="middot-divider"></span>
+        <span>Warszawa</span>
+        
+      </div>
+      
+
+      
+      <div>
+        
+
+  <span >
+      Filip Wójcik</span>
+      </div>
+      
+    </div>
+
+    
+    <div class="btn-links">
+      
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+  
+  <a class="btn btn-outline-primary btn-page-header btn-sm" href="/pl/project/deep_learning_recommenders/">
+    Projekt
+  </a>
+  
+
+
+
+
+
+  
+  
+    
+  
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="/uploads/embeddings_other_than_nlp.pdf" target="_blank" rel="noopener">
+  Slajdy
+</a>
+
+
+
+
+
+
+
+    </div>
+    
+
+  </div>
+  <div class="ml-3">
+    
+    
+    
+    <a href="/pl/talk/one-concept-to-rule-them-all-uses-of-neural-embeddings-beyond-natural-language-processing./" >
+      <img src="/pl/talk/one-concept-to-rule-them-all-uses-of-neural-embeddings-beyond-natural-language-processing./featured_huaf6667b661cef3dc6f4def74e87fe2d6_354333_150x0_resize_lanczos_3.png" alt="One concept to rule them all - uses of neural embeddings beyond natural language processing." loading="lazy">
+    </a>
+    
+  </div>
+</div>
+
+    
+  
+    
+      
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+  
+
+
+<div class="media stream-item">
+  <div class="media-body">
+
+    <div class="section-subheading article-title mb-0 mt-0">
+      <a href="/pl/talk/recommendation-engines-based-on-autoencoders/" >Recommendation engines based on autoencoders</a>
+    </div>
+
+    
+    <a href="/pl/talk/recommendation-engines-based-on-autoencoders/"  class="summary-link">
+      <div class="article-style">
+        How autoencoders can be used as recommendation engines, replacing collaborative filtering or other approaches.
+      </div>
+    </a>
+    
+
+    <div class="stream-meta article-metadata">
+
+      
+      <div>
+        <span>
+          Jun 14, 2019 12:00 PM &mdash; 12:00 PM
+        </span>
+        
+        <span class="middot-divider"></span>
+        <span>Warszawa</span>
+        
+      </div>
+      
+
+      
+      <div>
+        
+
+  <span >
+      Filip Wójcik</span>
+      </div>
+      
+    </div>
+
+    
+    <div class="btn-links">
+      
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+  
+  <a class="btn btn-outline-primary btn-page-header btn-sm" href="/pl/project/deep_learning_recommenders/">
+    Projekt
+  </a>
+  
+
+
+
+
+
+  
+  
+    
+  
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="/uploads/autorecommender_en.pdf" target="_blank" rel="noopener">
+  Slajdy
+</a>
+
+
+
+
+
+
+
+    </div>
+    
+
+  </div>
+  <div class="ml-3">
+    
+    
+    
+    <a href="/pl/talk/recommendation-engines-based-on-autoencoders/" >
+      <img src="/pl/talk/recommendation-engines-based-on-autoencoders/featured_hud27c678cdc8ec2ec3037b065b6b8cab4_50759_150x0_resize_lanczos_3.png" alt="Recommendation engines based on autoencoders" loading="lazy">
+    </a>
+    
+  </div>
+</div>
+
+    
+  
+    
+      
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+  
+
+
+<div class="media stream-item">
+  <div class="media-body">
+
+    <div class="section-subheading article-title mb-0 mt-0">
+      <a href="/pl/talk/xgboost-as-a-time-series-forecasting-tool/" >XGBoost as a time-series forecasting tool</a>
+    </div>
+
+    
+    <a href="/pl/talk/xgboost-as-a-time-series-forecasting-tool/"  class="summary-link">
+      <div class="article-style">
+        can we use XGBoost as a time-series forecasting tool?
+      </div>
+    </a>
+    
+
+    <div class="stream-meta article-metadata">
+
+      
+      <div>
+        <span>
+          Jun 8, 2018 12:00 PM &mdash; 12:00 PM
+        </span>
+        
+        <span class="middot-divider"></span>
+        <span>Warszawa</span>
+        
+      </div>
+      
+
+      
+      <div>
+        
+
+  <span >
+      Filip Wójcik</span>
+      </div>
+      
+    </div>
+
+    
+    <div class="btn-links">
+      
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+  
+  <a class="btn btn-outline-primary btn-page-header btn-sm" href="/pl/project/xgboost_forecast/">
+    Projekt
+  </a>
+  
+
+
+
+
+
+  
+  
+    
+  
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="/uploads/xgboost_forecasting_eng.pdf" target="_blank" rel="noopener">
+  Slajdy
+</a>
+
+
+
+
+
+
+
+    </div>
+    
+
+  </div>
+  <div class="ml-3">
+    
+    
+    
+    <a href="/pl/talk/xgboost-as-a-time-series-forecasting-tool/" >
+      <img src="/pl/talk/xgboost-as-a-time-series-forecasting-tool/featured_hu27f7dc34c9db8fd2b063f3fba6be9864_44689_150x0_resize_q75_lanczos.jpg" alt="XGBoost as a time-series forecasting tool" loading="lazy">
+    </a>
+    
+  </div>
+</div>
+
+    
+  
+    
+      
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+  
+
+
+<div class="media stream-item">
+  <div class="media-body">
+
+    <div class="section-subheading article-title mb-0 mt-0">
+      <a href="/pl/talk/machine-learning-and-artificial-intelligence-as-a-decision-support-systems-for-human-capital-management/" >Machine learning and artificial intelligence as a decision support systems for human capital management</a>
+    </div>
+
+    
+    <a href="/pl/talk/machine-learning-and-artificial-intelligence-as-a-decision-support-systems-for-human-capital-management/"  class="summary-link">
+      <div class="article-style">
+        How can machine learning help in managing human resources in organizations?
+      </div>
+    </a>
+    
+
+    <div class="stream-meta article-metadata">
+
+      
+      <div>
+        <span>
+          Apr 18, 2018 12:00 PM &mdash; 12:00 PM
+        </span>
+        
+        <span class="middot-divider"></span>
+        <span>Poznań</span>
+        
+      </div>
+      
+
+      
+      <div>
+        
+
+  <span >
+      Filip Wójcik</span>
+      </div>
+      
+    </div>
+
+    
+
+  </div>
+  <div class="ml-3">
+    
+    
+    
+    <a href="/pl/talk/machine-learning-and-artificial-intelligence-as-a-decision-support-systems-for-human-capital-management/" >
+      <img src="/pl/talk/machine-learning-and-artificial-intelligence-as-a-decision-support-systems-for-human-capital-management/featured_hu95216480032b34d2b5019707ac52fe57_181071_150x0_resize_q75_lanczos.jpg" alt="Machine learning and artificial intelligence as a decision support systems for human capital management" loading="lazy">
+    </a>
+    
+  </div>
+</div>
+
+    
+  
+    
+      
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+  
+
+
+<div class="media stream-item">
+  <div class="media-body">
+
+    <div class="section-subheading article-title mb-0 mt-0">
+      <a href="/pl/talk/water-powered-machine-learning-gradient-boosting-machines-in-h2o-ai/" >Water powered machine learning: gradient boosting machines in H2O AI</a>
+    </div>
+
+    
+    <a href="/pl/talk/water-powered-machine-learning-gradient-boosting-machines-in-h2o-ai/"  class="summary-link">
+      <div class="article-style">
+        H2O AI is one of the most interesting out-of-the-box machine learning tools. It has plenty of algorithms implemented, those algorithms are really fast and effective and it integrates well with R and Spark. One of them is especially interesing - Gradient Boosting. Want to know more?
+      </div>
+    </a>
+    
+
+    <div class="stream-meta article-metadata">
+
+      
+      <div>
+        <span>
+          Apr 7, 2017 12:00 PM &mdash; 12:00 PM
+        </span>
+        
+        <span class="middot-divider"></span>
+        <span>Warszawa</span>
+        
+      </div>
+      
+
+      
+      <div>
+        
+
+  <span >
+      Filip Wójcik</span>
+      </div>
+      
+    </div>
+
+    
+    <div class="btn-links">
+      
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="/uploads/h2o.pdf" target="_blank" rel="noopener">
+  Slajdy
+</a>
+
+
+
+
+
+
+
+    </div>
+    
+
+  </div>
+  <div class="ml-3">
+    
+    
+    
+    <a href="/pl/talk/water-powered-machine-learning-gradient-boosting-machines-in-h2o-ai/" >
+      <img src="/pl/talk/water-powered-machine-learning-gradient-boosting-machines-in-h2o-ai/featured_hu49c03114a9ce8ad2bc0bd62c0ddb3f2a_108264_150x0_resize_q75_lanczos.jpg" alt="Water powered machine learning: gradient boosting machines in H2O AI" loading="lazy">
+    </a>
+    
+  </div>
+</div>
+
+    
+  
+
+  
+  
+  
+
+    
+    
+      
+    
+
+    
+
+    <div class="see-all">
+      <a href="/pl/event/">
+        Więcej wystąpień
+        <i class="fas fa-angle-right"></i>
+      </a>
+    </div>
+  
+
+</div>
+
+
+    
+      </div>
+    
+
+    </div>
+  </section>
+
+  
+  
+  
+  
+
+  
+
+  
+
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+  
+
+  
+  <section id="featured" class="home-section wg-featured  "  >
+   <div class="home-section-bg " >
+     
+   </div>
+    <div class="container">
+
+    
+      <div class="row  ">
+      
+        
+          <div class="section-heading col-12 col-lg-4 mb-3 mb-lg-0 d-flex flex-column align-items-center align-items-lg-start">
+            <h1 class="mb-0">Wyróżnione publikacje</h1>
+            
+          </div>
+        
+      
+    
+
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+<div class="col-12 col-lg-8">
+
+  
+
+  
+    
+      
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+  
+
+
+<div class="media stream-item">
+  <div class="media-body">
+
+    <div class="section-subheading article-title mb-0 mt-0">
+      <a href="/pl/publication/deep_learning_as_recommenders/" >Głębokie sieci neuronowe, jako systemy rekomendacyjne: architektura, zastosowania, możliwości. Studium przypadku.</a>
+    </div>
+
+    
+    <a href="/pl/publication/deep_learning_as_recommenders/"  class="summary-link">
+      <div class="article-style">
+        Publikacja preznetuje przykłady architektury, implementacji i możliwości systemów wykorzystujących głębokie sieci neuronowe, w konkretnych przypadkach biznesowych – na bazie danych sprzedaży platformy Amazon z 2018r.
+      </div>
+    </a>
+    
+
+    <div class="stream-meta article-metadata">
+
+      
+
+      
+      <div>
+        
+
+  <span >
+      Filip Wójcik</span>
+      </div>
+      
+    </div>
+
+    
+    <div class="btn-links">
+      
+
+
+
+
+
+
+
+
+  
+    
+  
+
+
+
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="/uploads/beyond_the_barrier_of_mistrust.pdf" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+<a href="#" class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal"
+        data-filename="/pl/publication/deep_learning_as_recommenders/cite.bib">
+  Cytowanie
+</a>
+
+
+
+
+
+  
+  <a class="btn btn-outline-primary btn-page-header btn-sm" href="/pl/project/deep_learning_recommenders/">
+    Projekt
+  </a>
+  
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://wir.ue.wroc.pl/info/article/UEWR0d993f9827af4eeb84754112f089e608/Publikacja%2B%25E2%2580%2593%2BBeyond%2Bthe%2Bbarrier%2Bof%2Bmistrust%2B%25E2%2580%2593%2Ban%2Boverview%2Bof%2Bselected%2Bmethods%2Bfor%2Bexplaining%2Bpredictions%2Bof%2Bmachine%2Blearning%2Bmodels%2B%25E2%2580%2593%2BUniwersytet%2BEkonomiczny%2Bwe%2BWroc%25C5%2582awiu?r=publication&amp;ps=20&amp;tab=&amp;lang=pl" target="_blank" rel="noopener">
+  Dokument źródłowy
+</a>
+
+
+
+
+    </div>
+    
+
+  </div>
+  <div class="ml-3">
+    
+    
+    
+    <a href="/pl/publication/deep_learning_as_recommenders/" >
+      <img src="/pl/publication/deep_learning_as_recommenders/featured_hub061c04edc79e2e0465a269562d34cdc_159734_150x0_resize_q75_lanczos.jpg" alt="Głębokie sieci neuronowe, jako systemy rekomendacyjne: architektura, zastosowania, możliwości. Studium przypadku." loading="lazy">
+    </a>
+    
+  </div>
+</div>
+
+    
+  
+    
+      
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+  
+
+
+<div class="media stream-item">
+  <div class="media-body">
+
+    <div class="section-subheading article-title mb-0 mt-0">
+      <a href="/pl/publication/deep_hybrid_recommendation_system/" >Improvement of e-commerce recommendation systems with deep hybrid collaborative filtering with content: A case study</a>
+    </div>
+
+    
+    <a href="/pl/publication/deep_hybrid_recommendation_system/"  class="summary-link">
+      <div class="article-style">
+        A presentation of new algorithm for recommendations with hybrid deep learning architecture
+      </div>
+    </a>
+    
+
+    <div class="stream-meta article-metadata">
+
+      
+
+      
+      <div>
+        
+
+  <span >
+      Filip Wójcik</span>, <span >
+      Michał Górnik</span>
+      </div>
+      
+    </div>
+
+    
+    <div class="btn-links">
+      
+
+
+
+
+
+
+
+
+  
+    
+  
+
+
+
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="/uploads/autorecommender_en_paper.pdf" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+<a href="#" class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal"
+        data-filename="/pl/publication/deep_hybrid_recommendation_system/cite.bib">
+  Cytowanie
+</a>
+
+
+
+
+
+  
+  <a class="btn btn-outline-primary btn-page-header btn-sm" href="/pl/project/deep_learning_recommenders/">
+    Projekt
+  </a>
+  
+
+
+
+
+
+  
+  
+    
+  
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="/uploads/autorecommender_en.pdf" target="_blank" rel="noopener">
+  Slajdy
+</a>
+
+
+
+
+  
+  
+    
+  
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://wir.ue.wroc.pl/info/article/WUTad1774aeb6674419b7fa7618ccc76ddb/Publikacja%2B%25E2%2580%2593%2BImprovement%2Bof%2Be-commerce%2Brecommendation%2Bsystems%2Bwith%2Bdeep%2Bhybrid%2Bcollaborative%2Bfiltering%2Bwith%2Bcontent%253A%2BA%2Bcase%2Bstudy%2B%25E2%2580%2593%2BUniwersytet%2BEkonomiczny%2Bwe%2BWroc%25C5%2582awiu?r=publication&amp;ps=20&amp;tab=&amp;lang=pl" target="_blank" rel="noopener">
+  Dokument źródłowy
+</a>
+
+
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://doi.org/10.15611/eada.2020.3.03" target="_blank" rel="noopener">
+  DOI
+</a>
+
+
+
+    </div>
+    
+
+  </div>
+  <div class="ml-3">
+    
+    
+    
+    <a href="/pl/publication/deep_hybrid_recommendation_system/" >
+      <img src="/pl/publication/deep_hybrid_recommendation_system/featured_hucb2659168cb441cbe4f0f211784239bb_143439_150x0_resize_q75_lanczos.jpg" alt="Improvement of e-commerce recommendation systems with deep hybrid collaborative filtering with content: A case study" loading="lazy">
+    </a>
+    
+  </div>
+</div>
+
+    
+  
+    
+      
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+  
+
+
+<div class="media stream-item">
+  <div class="media-body">
+
+    <div class="section-subheading article-title mb-0 mt-0">
+      <a href="/pl/publication/xgboost_turnover/" >Prognozowanie dziennych obrotów przedsiębiorstwa za pomocą algorytmu XGBoost - studium przypadku</a>
+    </div>
+
+    
+    <a href="/pl/publication/xgboost_turnover/"  class="summary-link">
+      <div class="article-style">
+        Analysis of XGBoost applications to financial forecasting and sales management.
+      </div>
+    </a>
+    
+
+    <div class="stream-meta article-metadata">
+
+      
+
+      
+      <div>
+        
+
+  <span >
+      Filip Wójcik</span>
+      </div>
+      
+    </div>
+
+    
+    <div class="btn-links">
+      
+
+
+
+
+
+
+
+
+  
+    
+  
+
+
+
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://www.ue.katowice.pl/fileadmin/user_upload/wydawnictwo/SE_Artyku%C5%82y_361_380/SE_375/08.pdf" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+<a href="#" class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal"
+        data-filename="/pl/publication/xgboost_turnover/cite.bib">
+  Cytowanie
+</a>
+
+
+
+
+
+  
+  <a class="btn btn-outline-primary btn-page-header btn-sm" href="/pl/project/xgboost_forecast/">
+    Projekt
+  </a>
+  
+
+
+
+
+
+  
+  
+    
+  
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="/uploads/xgboost_forecasting_eng.pdf" target="_blank" rel="noopener">
+  Slajdy
+</a>
+
+
+
+
+  
+  
+    
+  
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://www.wir.ue.wroc.pl/info/article/WUT1dc6dfd78c014c28a83dfe98d966ed66/Prognozowanie%2Bdziennych%2Bobrot%25C3%25B3w%2Bprzedsi%25C4%2599biorstwa%2Bza%2Bpomoc%25C4%2585%2Balgorytmu%2BXGBoost%2B%25E2%2580%2593%2Bstudium%2Bprzypadku?affil=&amp;r=publication&amp;tab=&amp;lang=en" target="_blank" rel="noopener">
+  Dokument źródłowy
+</a>
+
+
+
+
+    </div>
+    
+
+  </div>
+  <div class="ml-3">
+    
+    
+    
+    <a href="/pl/publication/xgboost_turnover/" >
+      <img src="/pl/publication/xgboost_turnover/featured_hu11f3fefa914a1465059790e258a7dfb4_89004_150x0_resize_q75_lanczos.jpg" alt="Prognozowanie dziennych obrotów przedsiębiorstwa za pomocą algorytmu XGBoost - studium przypadku" loading="lazy">
+    </a>
+    
+  </div>
+</div>
+
+    
+  
+
+  
+  
+  
+
+</div>
+
+
+    
+      </div>
+    
+
+    </div>
+  </section>
+
+  
+  
+  
+  
+
+  
+
+  
+
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+  
+
+  
+  <section id="publications" class="home-section wg-pages  "  >
+   <div class="home-section-bg " >
+     
+   </div>
+    <div class="container">
+
+    
+      <div class="row  ">
+      
+        
+          <div class="section-heading col-12 col-lg-4 mb-3 mb-lg-0 d-flex flex-column align-items-center align-items-lg-start">
+            <h1 class="mb-0">Najnowsze publikacje</h1>
+            
+          </div>
+        
+      
+    
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+<div class="col-12 col-lg-8">
+
+  <div class="alert alert-note">
+  <div>
+    Szybkie przeszukiwanie listy publikacji: <a href="./publication/">filtering publications</a>.
+  </div>
+</div>
+
+
+  
+    
+      
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+  
+
+
+<div class="media stream-item">
+  <div class="media-body">
+
+    <div class="section-subheading article-title mb-0 mt-0">
+      <a href="/pl/publication/beyond_a_barrier_of_mistrust/" >Przełamać nieufność – metody zapewniania przejrzystości modeli uczenia maszynowego w zastosowaniach ekonomicznych</a>
+    </div>
+
+    
+    <a href="/pl/publication/beyond_a_barrier_of_mistrust/"  class="summary-link">
+      <div class="article-style">
+        Prezentacja nowoczesnych metod wyjaśniania modeli uczenia maszynowego.
+      </div>
+    </a>
+    
+
+    <div class="stream-meta article-metadata">
+
+      
+
+      
+      <div>
+        
+
+  <span >
+      Filip Wójcik</span>
+      </div>
+      
+    </div>
+
+    
+    <div class="btn-links">
+      
+
+
+
+
+
+
+
+
+  
+    
+  
+
+
+
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="/uploads/beyond_the_barrier_of_mistrust.pdf" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+<a href="#" class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal"
+        data-filename="/pl/publication/beyond_a_barrier_of_mistrust/cite.bib">
+  Cytowanie
+</a>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://wir.ue.wroc.pl/info/article/UEWR0d993f9827af4eeb84754112f089e608/Publikacja%2B%25E2%2580%2593%2BBeyond%2Bthe%2Bbarrier%2Bof%2Bmistrust%2B%25E2%2580%2593%2Ban%2Boverview%2Bof%2Bselected%2Bmethods%2Bfor%2Bexplaining%2Bpredictions%2Bof%2Bmachine%2Blearning%2Bmodels%2B%25E2%2580%2593%2BUniwersytet%2BEkonomiczny%2Bwe%2BWroc%25C5%2582awiu?r=publication&amp;ps=20&amp;tab=&amp;lang=pl" target="_blank" rel="noopener">
+  Dokument źródłowy
+</a>
+
+
+
+
+    </div>
+    
+
+  </div>
+  <div class="ml-3">
+    
+    
+    
+    <a href="/pl/publication/beyond_a_barrier_of_mistrust/" >
+      <img src="/pl/publication/beyond_a_barrier_of_mistrust/featured_hud3ed95c3cfafd2a02c1a612128ecc4c4_116776_150x0_resize_q75_lanczos.jpg" alt="Przełamać nieufność – metody zapewniania przejrzystości modeli uczenia maszynowego w zastosowaniach ekonomicznych" loading="lazy">
+    </a>
+    
+  </div>
+</div>
+
+    
+  
+    
+      
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+  
+
+
+<div class="media stream-item">
+  <div class="media-body">
+
+    <div class="section-subheading article-title mb-0 mt-0">
+      <a href="/pl/publication/business_relevant_attributes_2017/" >Detecting business-relevant attributes in rule-based classification</a>
+    </div>
+
+    
+    <a href="/pl/publication/business_relevant_attributes_2017/"  class="summary-link">
+      <div class="article-style">
+        Modern decision support systems make use of machine learning and artificial intelligence to solve complicated problems. One of them is …
+      </div>
+    </a>
+    
+
+    <div class="stream-meta article-metadata">
+
+      
+
+      
+      <div>
+        
+
+  <span >
+      dr hab. Iwona Chomiak-Orsa, prof. UE</span>, <span >
+      Filip Wójcik</span>
+      </div>
+      
+    </div>
+
+    
+    <div class="btn-links">
+      
+
+
+
+
+
+
+
+
+  
+    
+  
+
+
+
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://wir.ue.wroc.pl/docstore/download/UEWR0e5382f9951f440090b28ad9d18b681a/Chomiak-Orsa_Wojcik_Wspomaganie_procesow_decyzyjnych_przez_wykorzystanie_algorytmow.pdf?entityType=article" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+<a href="#" class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal"
+        data-filename="/pl/publication/business_relevant_attributes_2017/cite.bib">
+  Cytowanie
+</a>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://wir.ue.wroc.pl/info/article/WUT90f6e51de656423ea40910ba0fc78531/Publikacja%2B%25E2%2580%2593%2BWspomaganie%2Bproces%25C3%25B3w%2Bdecyzyjnych%2Bprzez%2Bwykorzystanie%2Balgorytm%25C3%25B3w%2Bregu%25C5%2582owych%2Bwyznaczaj%25C4%2585cych%2Bistotno%25C5%259B%25C4%2587%2Batrybut%25C3%25B3w%2B%25E2%2580%2593%2BUniwersytet%2BEkonomiczny%2Bwe%2BWroc%25C5%2582awiu?r=publication&amp;ps=20&amp;tab=&amp;lang=pl" target="_blank" rel="noopener">
+  Dokument źródłowy
+</a>
+
+
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://doi.org/10.15611/ie.2017.4.05" target="_blank" rel="noopener">
+  DOI
+</a>
+
+
+
+    </div>
+    
+
+  </div>
+  <div class="ml-3">
+    
+    
+    
+    <a href="/pl/publication/business_relevant_attributes_2017/" >
+      <img src="/pl/publication/business_relevant_attributes_2017/featured_hua55170bd1c35fe6350194dd7265dc8ce_9507_150x0_resize_lanczos_3.png" alt="Detecting business-relevant attributes in rule-based classification" loading="lazy">
+    </a>
+    
+  </div>
+</div>
+
+    
+  
+
+  
+  
+  
+
+</div>
+
+
+    
+      </div>
+    
+
+    </div>
+  </section>
+
+  
+  
+  
+  
+
+  
+
+  
+
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+  
+
+  
+  <section id="tags" class="home-section wg-tag-cloud  "  >
+   <div class="home-section-bg " >
+     
+   </div>
+    <div class="container">
+
+    
+      <div class="row  ">
+      
+        
+          <div class="section-heading col-12 col-lg-4 mb-3 mb-lg-0 d-flex flex-column align-items-center align-items-lg-start">
+            <h1 class="mb-0">Tematy</h1>
+            
+          </div>
+        
+      
+    
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+<div class="col-12 col-lg-8">
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    <div class="tag-cloud">
+      
+        
+        
+        
+        <a href="/pl/tag/badnaia-operacyjne/" style="font-size:0.7rem">badnaia operacyjne</a>
+      
+        
+        
+        
+        <a href="/pl/tag/deep-learning/" style="font-size:1.8970168875100824rem">deep learning</a>
+      
+        
+        
+        
+        <a href="/pl/tag/ekonometria/" style="font-size:0.7rem">ekonometria</a>
+      
+        
+        
+        
+        <a href="/pl/tag/forecasting/" style="font-size:0.7rem">forecasting</a>
+      
+        
+        
+        
+        <a href="/pl/tag/machine-learning/" style="font-size:1.775213717950991rem">machine learning</a>
+      
+        
+        
+        
+        <a href="/pl/tag/prognozowanie/" style="font-size:1.1630693432404289rem">prognozowanie</a>
+      
+        
+        
+        
+        <a href="/pl/tag/recommendation-systems/" style="font-size:1.1630693432404289rem">recommendation systems</a>
+      
+        
+        
+        
+        <a href="/pl/tag/systemy-rekomendacyjne/" style="font-size:1.4339475442696534rem">systemy rekomendacyjne</a>
+      
+        
+        
+        
+        <a href="/pl/tag/uczenie-maszynowe/" style="font-size:0.7rem">uczenie maszynowe</a>
+      
+        
+        
+        
+        <a href="/pl/tag/xai/" style="font-size:0.7rem">xai</a>
+      
+        
+        
+        
+        <a href="/pl/tag/xgboost/" style="font-size:1.1630693432404289rem">xgboost</a>
+      
+    </div>
+  
+
+</div>
+
+
+    
+      </div>
+    
+
+    </div>
+  </section>
+
+  
+  
+  
+  
+
+  
+
+  
+
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+  
+
+  
+  <section id="contact" class="home-section wg-contact  "  >
+   <div class="home-section-bg " >
+     
+   </div>
+    <div class="container">
+
+    
+      <div class="row  ">
+      
+        
+          <div class="section-heading col-12 col-lg-4 mb-3 mb-lg-0 d-flex flex-column align-items-center align-items-lg-start">
+            <h1 class="mb-0">Kontakt</h1>
+            
+          </div>
+        
+      
+    
+
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="col-12 col-lg-8">
+  
+
+  
+
+    
+    
+      
+    
+
+    <div class="mb-3">
+      <form name="contact" method="POST" netlify netlify-honeypot="_gotcha" data-netlify-recaptcha="true" >
+        <div class="form-group form-inline">
+          <label class="sr-only" for="inputName">Imię i nazwisko</label>
+          <input type="text" name="name" class="form-control w-100" id="inputName" placeholder="Imię i nazwisko" required>
+        </div>
+        <div class="form-group form-inline">
+          <label class="sr-only" for="inputEmail">Adres email</label>
+          <input type="email" name="email" class="form-control w-100" id="inputEmail" placeholder="Adres email" required>
+        </div>
+        <div class="form-group">
+          <label class="sr-only" for="inputMessage">Wiadomość</label>
+          <textarea name="message" class="form-control" id="inputMessage" rows="5" placeholder="Wiadomość" required></textarea>
+        </div>
+        
+        <div class="d-none">
+          <label>Do not fill this field unless you are a bot: <input name="_gotcha"></label>
+        </div>
+         
+          <div class="form-group" data-netlify-recaptcha="true"></div>
+        
+        <button type="submit" class="btn btn-primary px-3 py-2 w-100">Wyślij</button>
+      </form>
+    </div>
+  
+
+  <ul class="fa-ul">
+
+    
+    <li>
+      <i class="fa-li fas fa-envelope fa-2x" aria-hidden="true"></i>
+      <span id="person-email">filip.wojcik@outlook.com</span>
+    </li>
+    
+
+    
+
+    
+    
+
+    
+
+    
+
+    
+
+    
+    
+
+  </ul>
+
+  
+
+</div>
+
+
+    
+      </div>
+    
+
+    </div>
+  </section>
+
+
+
+  </div>
+
+  <div class="page-footer">
+    
+    
+    <div class="container">
+      <footer class="site-footer">
+
+  
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+
+
+
+
+
+  <p class="powered-by">
+    
+    
+    
+      
+      
+      
+      
+      
+      
+      Published with <a href="https://wowchemy.com/?utm_campaign=poweredby" target="_blank" rel="noopener">Wowchemy</a> — the free, <a href="https://github.com/wowchemy/wowchemy-hugo-themes" target="_blank" rel="noopener">open source</a> website builder that empowers creators.
+    
+  </p>
+</footer>
+
+    </div>
+    
+  </div>
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cytowanie</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Kopia
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Pobierz
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+      
+
+    
+    <script src="/js/vendor-bundle.min.b73dfaac3b6499dc997741748a7c3fe2.js"></script>
+
+    
+    
+    
+      
+      
+        <script src="https://cdn.jsdelivr.net/gh/desandro/imagesloaded@v4.1.4/imagesloaded.pkgd.min.js" integrity="sha512-S5PZ9GxJZO16tT9r3WJp/Safn31eu8uWrzglMahDT4dsmgqWonRY9grk3j+3tfuPr9WJNsfooOR7Gi7HL5W2jw==" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/gh/metafizzy/isotope@v3.0.6/dist/isotope.pkgd.min.js" integrity="sha512-Zq2BOxyhvnRFXu0+WE6ojpZLOU2jdnqbrM1hmVdGzyeCa1DgM3X5Q4A/Is9xA1IkbUeDd7755dNNI/PzSf2Pew==" crossorigin="anonymous"></script>
+      
+
+      
+      
+
+      
+
+      
+        
+        <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.2.1/build/highlight.min.js" integrity="sha512-Ypjm0o7jOxAd4hpdoppSEN0TQOC19UtPAqD+4s5AlXmUvbmmS/YMxYqAqarQYyxTnB6/rqip9qcxlNB/3U9Wdg==" crossorigin="anonymous"></script>
+        
+        
+        <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.2.1/build/languages/r.min.js" crossorigin="anonymous"></script>
+        
+      
+
+    
+
+    
+    
+    
+
+    
+    
+
+    
+    
+    
+      
+      <script id="search-hit-fuse-template" type="text/x-template">
+        <div class="search-hit" id="summary-{{key}}">
+          <div class="search-hit-content">
+            <div class="search-hit-name">
+              <a href="{{relpermalink}}">{{title}}</a>
+              <div class="article-metadata search-hit-type">{{type}}</div>
+              <p class="search-hit-description">{{snippet}}</p>
+            </div>
+          </div>
+        </div>
+      </script>
+      
+        <script src="https://cdn.jsdelivr.net/gh/krisk/Fuse@v3.2.1/dist/fuse.min.js" integrity="sha512-o38bmzBGX+hD3JHWUFCDA09btWaqrNmoJ3RXLlrysA7PP01Kgs4UlE4MhelE1v5dJR3+cxlR4qQlotsW7jKsnw==" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/gh/julmot/mark.js@8.11.1/dist/jquery.mark.min.js" integrity="sha512-mhbv5DqBMgrWL+32MmsDOt/OAvqr/cHimk6B8y/bx/xS88MVkYGPiVv2ixKVrkywF2qHplNRUvFsAHUdxZ3Krg==" crossorigin="anonymous"></script>
+      
+    
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+      
+      
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+      
+      
+    
+    
+    <script src="/pl/js/wowchemy.min.319000c762790ad3f1497c4804865a60.js"></script>
+
+    
+
+
+
+
+
+
+</body>
+</html>

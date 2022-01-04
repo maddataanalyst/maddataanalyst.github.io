@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>xai | NeuraMind</title>
+    <link>https://example.com/en/tag/xai/</link>
+      <atom:link href="https://example.com/en/tag/xai/index.xml" rel="self" type="application/rss+xml" />
+    <description>xai</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Mon, 01 Mar 2021 21:36:41 +0100</lastBuildDate>
+    <image>
+      <url>https://example.com/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
+      <title>xai</title>
+      <link>https://example.com/en/tag/xai/</link>
+    </image>
+    
+    <item>
+      <title>Beyond the barrier of mistrust – an overview of selected methods for explaining predictions of machine learning models</title>
+      <link>https://example.com/en/publication/beyond_a_barrier_of_mistrust/</link>
+      <pubDate>Mon, 01 Mar 2021 21:36:41 +0100</pubDate>
+      <guid>https://example.com/en/publication/beyond_a_barrier_of_mistrust/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>deep learning | NeuraMind</title>
+    <link>https://example.com/en/tag/deep-learning/</link>
+      <atom:link href="https://example.com/en/tag/deep-learning/index.xml" rel="self" type="application/rss+xml" />
+    <description>deep learning</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Mon, 01 Mar 2021 21:36:41 +0100</lastBuildDate>
+    <image>
+      <url>https://example.com/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
+      <title>deep learning</title>
+      <link>https://example.com/en/tag/deep-learning/</link>
+    </image>
+    
+    <item>
+      <title>Beyond the barrier of mistrust – an overview of selected methods for explaining predictions of machine learning models</title>
+      <link>https://example.com/en/publication/beyond_a_barrier_of_mistrust/</link>
+      <pubDate>Mon, 01 Mar 2021 21:36:41 +0100</pubDate>
+      <guid>https://example.com/en/publication/beyond_a_barrier_of_mistrust/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Usage of deep neural networks as recommendation engines. Review of selected approaches</title>
+      <link>https://example.com/en/publication/deep_learning_as_recommenders/</link>
+      <pubDate>Mon, 01 Mar 2021 21:36:41 +0100</pubDate>
+      <guid>https://example.com/en/publication/deep_learning_as_recommenders/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>One concept to rule them all - uses of neural embeddings beyond natural language processing.</title>
+      <link>https://example.com/en/talk/one-concept-to-rule-them-all-uses-of-neural-embeddings-beyond-natural-language-processing./</link>
+      <pubDate>Thu, 18 Jun 2020 12:00:00 +0000</pubDate>
+      <guid>https://example.com/en/talk/one-concept-to-rule-them-all-uses-of-neural-embeddings-beyond-natural-language-processing./</guid>
+      <description>&lt;p&gt;The goal of this presentation and associated paper is to present results of investigation related to use of the Extreme Gradient Boosting XGBoost algorithm as a forecasting tool. The data provided by the Rossman Com-pany, with a request to design an innovative prediction method, has been used as a base for this case study. The data contains details about micro- and macro-environment, as well as turnover of 1115 stores. Performance of the algorithm was compared to classical forecasting models SARIMAX and Holt-Winters, using time-series cross validation and tests for statistical importance in prediction quality dif-ferences. Metrics of root mean squared percentage error (RMSPE), Theil’s coeffi-cient and adjusted correlation coefficient were analyzed. Results where then passed to Rossman for verification on a separate validation set, via Kaggle.com platform. Study results confirmed, that XGBoost, after using proper data preparation and training method, achieves better results than classical models.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Improvement of e-commerce recommendation systems with deep hybrid collaborative filtering with content: A case study</title>
+      <link>https://example.com/en/publication/deep_hybrid_recommendation_system/</link>
+      <pubDate>Tue, 03 Mar 2020 21:36:41 +0100</pubDate>
+      <guid>https://example.com/en/publication/deep_hybrid_recommendation_system/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Recommendation engines based on autoencoders</title>
+      <link>https://example.com/en/talk/recommendation-engines-based-on-autoencoders/</link>
+      <pubDate>Fri, 14 Jun 2019 12:00:00 +0000</pubDate>
+      <guid>https://example.com/en/talk/recommendation-engines-based-on-autoencoders/</guid>
+      <description>&lt;p&gt;Recommendation engines are probably the most important tools for modern e-commerce organizations. As the data volumes grow larger and larger (as well as product/user base), traditional approaches based on collaborative might be not enough. During this talk I will present alternative approaches to recommendations - making use of deep stacked autoencoders.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Deep Learning usage as recommendation engine</title>
+      <link>https://example.com/en/project/deep_learning_recommenders/</link>
+      <pubDate>Fri, 14 Jun 2019 00:00:00 +0000</pubDate>
+      <guid>https://example.com/en/project/deep_learning_recommenders/</guid>
+      <description>&lt;p&gt;A series of presentations, publications and implementations of deep learning algorithms as recommendation engines.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

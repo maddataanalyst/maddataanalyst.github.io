@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>xgboost | NeuraMind</title>
+    <link>https://example.com/pl/tag/xgboost/</link>
+      <atom:link href="https://example.com/pl/tag/xgboost/index.xml" rel="self" type="application/rss+xml" />
+    <description>xgboost</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>pl</language><lastBuildDate>Fri, 08 Jun 2018 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://example.com/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
+      <title>xgboost</title>
+      <link>https://example.com/pl/tag/xgboost/</link>
+    </image>
+    
+    <item>
+      <title>Prognozowanie z wykorzystaniem algorytmu XGBoost</title>
+      <link>https://example.com/pl/project/xgboost_forecast/</link>
+      <pubDate>Fri, 08 Jun 2018 00:00:00 +0000</pubDate>
+      <guid>https://example.com/pl/project/xgboost_forecast/</guid>
+      <description>&lt;p&gt;Seria publikacji, prezentacji i wdrożeń, wykorzystujących algortym XGBoost do prognozowania szeregów czasowych.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Prognozowanie dziennych obrotów przedsiębiorstwa za pomocą algorytmu XGBoost - studium przypadku</title>
+      <link>https://example.com/pl/publication/xgboost_turnover/</link>
+      <pubDate>Thu, 01 Mar 2018 00:00:00 +0000</pubDate>
+      <guid>https://example.com/pl/publication/xgboost_turnover/</guid>
+      <description>&lt;p&gt;Celem niniejszej publikacji jest przedstawienie innowacyjnego zastosowania algorytmu XGBoost (ang. Extreme Gradient Boosting) do prognozowania obrotów przedsiębiorstwa. Pierwotnie procedura ta stworzona została jako klasyfikator i narzędzie regresji, nie zaś system prognozowania szeregów czasowych. Badania oparte na studiach przypadków wykazały jednak, iż dzięki odpowiedniej obróbce wstępnej danych i ich przygotowaniu, możliwe jest użycie omawianego algorytmu w przedstawionym kontekście.&lt;/p&gt;
+&lt;p&gt;W 2016 r. firma Rossmann (zwana dalej Organizacją) upubliczniła na platformie Kaggle.com częściowo zanonimizowane dane operacyjne dotyczące swojej działalności począwszy od roku 2013, wraz z uzyskanymi obrotami (waluta oraz jednostka nieujawnione), zwracając się do globalnej społeczności analityków z prośbą o pomoc w opracowaniu innowacyjnej metody prognozowania obrotów na podstawie danych z mikro i makro otoczenia sklepów. Organizacja chciała otrzymać lepsze wyniki niż dotychczas stosowane modele oparte na metodach takich jak ARIMA/SARIMA/ARIMAX, czy model Holta-Wintersa. Udostępnione informacje zawierały szczegóły 1115 poszczególnych oddziałów, takie jak bliskość konkurenta, od ilu lat operuje on w pobliżu, jak duży asortyment posiada dana placówka, ile było aktywnych promocji, etc. oraz charakterystykę okresu kalendarzowego (święta państwowe, ferie szkolne etc.). Dane były miejscami zniekształcone, nieprawidłowe lub w oczywisty sposób sprzeczne. Mimo to, zdaniem Organizacji, możliwe było zidentyfikowanie, w oparciu o podane atrybuty, istotnych trendów i korelacji, a następnie opisanie ich za pomocą modelu predykcyjnego zdolnego ekstrapolować na przyszłość.&lt;/p&gt;
+&lt;p&gt;Jest to konkretny przypadek pojedynczego podmiotu będący jednak, zdaniem autora, egzemplifikacją szerszego zagadnienia – prognozowania szeregów czasowych w oparciu o duże wolumeny danych o zróżnicowanej jakości i charakterze.&lt;/p&gt;
+&lt;p&gt;Po wstępnej obróbce i eksploracji udostępnionego wolumenu, wyselekcjonowano do analizy porównawczej modele (S)ARIMA(X) oraz metodę Holta-Wintersa. Jako kryterium porównawcze wybrano metrykę średniego błędu procentowego w przedziale weryfikacji RMSPE (wskazaną jako preferowana przez Firmę Rossman), współczynnik Theila oraz skorygowany współczynnik determinacji 
+R2.
+R2.&lt;/p&gt;
+&lt;p&gt;Testy prowadzono metodą wielokrotnej walidacji krzyżowej szeregu czasowego. Uzyskane modele przesłano, za pośrednictwem platformy Kaggle.com, do Organizacji, w celu weryfikacji z użyciem zewnętrznego, walidacyjnego, zbioru danych. W każdym z przypadków, wyniki działania algorytmów porównywano testami statystycznymi na istotność różnicy metryk, z korekcją studentyzowanych przedziałów ufności Tukeya (ze względu na obecność porównań wielokrotnych).&lt;/p&gt;
+&lt;p&gt;Analiza wyników przeprowadzonych badań wskazuje, iż algorytm XGBoost za każdym razem uzyskiwał, na przedmiotowym zbiorze danych, statystycznie istotnie lepsze rezultaty w porównaniu do metod klasycznych. Algorytm przeznaczony pierwotnie do pracy z danymi statycznymi został skutecznie wykorzystany w charakterze narzędzia prognozowania, dzięki zastosowaniu procesu uczenia za pomocą indeksów sezonowych oraz statycznych zmiennych niezależnych. Indeksy sezonowe oraz inne składowe trendu, zidentyfikowane przez model jako istotne, pokrywają się z manualną analizą własności szeregów, przeprowadzoną w fazie eksploracji. Jednocześnie – XGBoost zignorował wszystkie pozostałe (redundantne) indeksy i średnie ruchome, których istotności nie potwierdziła manualna analiza. Należy to uznać za zachowanie prawidłowe – algorytm wskazał te same składowe sezonowości, co klasyczne metody analizy.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

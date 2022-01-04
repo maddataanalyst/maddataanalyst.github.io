@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Projects | NeuraMind</title>
+    <link>https://example.com/pl/project/</link>
+      <atom:link href="https://example.com/pl/project/index.xml" rel="self" type="application/rss+xml" />
+    <description>Projects</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>pl</language><lastBuildDate>Fri, 14 Jun 2019 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://example.com/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
+      <title>Projects</title>
+      <link>https://example.com/pl/project/</link>
+    </image>
+    
+    <item>
+      <title>Wykorzystanie algorytmów głębokiego uczenia jako narzędzi rekomendacyjnych</title>
+      <link>https://example.com/pl/project/deep_learning_recommenders/</link>
+      <pubDate>Fri, 14 Jun 2019 00:00:00 +0000</pubDate>
+      <guid>https://example.com/pl/project/deep_learning_recommenders/</guid>
+      <description>&lt;p&gt;Seria prezentacji, publikacji i wdrożonych projektów, skupiających się na algorytmach głębokiego uczenia wykorzystywanych jako systemy rekomendacyjne.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Prognozowanie z wykorzystaniem algorytmu XGBoost</title>
+      <link>https://example.com/pl/project/xgboost_forecast/</link>
+      <pubDate>Fri, 08 Jun 2018 00:00:00 +0000</pubDate>
+      <guid>https://example.com/pl/project/xgboost_forecast/</guid>
+      <description>&lt;p&gt;Seria publikacji, prezentacji i wdrożeń, wykorzystujących algortym XGBoost do prognozowania szeregów czasowych.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
