@@ -1015,7 +1015,7 @@ Technologies used in this post are:</li>
     x[x...] --> lstm
     xT --> lstmT
 </div>
-<p>You can read more (and see some interesting visualizations) on the Stanford University CS230 Recurrent Neural Networks Course website [[Stanford CS 230 - Recurrent Neural Networks ])(#cs230)].</p>
+<p>You can read more (and see some interesting visualizations) on the Stanford University CS230 Recurrent Neural Networks Course website [<a href="#cs230">Stanford CS 230 - Recurrent Neural Networks </a>].</p>
 <h2 id="notation">Notation</h2>
 <p>Before we proceed, let&rsquo;s introduce some notation. It will be much easier to operate on symbols instead of describing everything in words :)</p>
 <p>$$
@@ -1238,7 +1238,7 @@ $$ N \times K \times f $$</p>
 <p>The data is presented on chart below. Double-click a legend to isolate a single time series. You can also zoom in and slice it.</p>
 
 
-<div id="chart-716235498" class="chart"></div>
+<div id="chart-176239854" class="chart"></div>
 <script>
   (function() {
     let a = setInterval( function() {
@@ -1248,7 +1248,7 @@ $$ N \times K \times f $$</p>
       clearInterval( a );
 
       Plotly.d3.json("./sinusoids.json", function(chart) {
-        Plotly.plot('chart-716235498', chart.data, chart.layout, {responsive: true});
+        Plotly.plot('chart-176239854', chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -1317,7 +1317,7 @@ $$ N \times K \times f $$</p>
 <p>We can take a look on a single sample in X_train. This is just a part of some sinusoid, a slice of the curve.</p>
 
 
-<div id="chart-963287145" class="chart"></div>
+<div id="chart-534729618" class="chart"></div>
 <script>
   (function() {
     let a = setInterval( function() {
@@ -1327,7 +1327,7 @@ $$ N \times K \times f $$</p>
       clearInterval( a );
 
       Plotly.d3.json("./slice.json", function(chart) {
-        Plotly.plot('chart-963287145', chart.data, chart.layout, {responsive: true});
+        Plotly.plot('chart-534729618', chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
