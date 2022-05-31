@@ -109,14 +109,11 @@
       
     
     
-      
-      
-        
-          <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.2.1/build/styles/github.min.css" crossorigin="anonymous" title="hl-light" media="print" onload="this.media='all'">
-          <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.2.1/build/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" media="print" onload="this.media='all'" disabled>
-        
-      
     
+    
+    
+    <link rel="stylesheet" href="/css/libs/chroma/github-light.min.css" title="hl-light" media="print" onload="this.media='all'" >
+    <link rel="stylesheet" href="/css/libs/chroma/dracula.min.css" title="hl-dark" media="print" onload="this.media='all'" disabled>
 
     
     
@@ -125,22 +122,6 @@
     
 
     
-    
-      
-      
-
-      
-      
-
-      
-    
-      
-      
-
-      
-      
-
-      
     
       
       
@@ -255,7 +236,7 @@
   
   
   
-  <link rel="stylesheet" href="/css/wowchemy.779612104bb457b5344a858ee702e7c8.css" />
+  <link rel="stylesheet" href="/css/wowchemy.978ed78d787744677cc3f4f1579d21c3.css" />
 
   
 
@@ -760,6 +741,7 @@
     <div class="d-flex">
       <span class="d-md-none pl-1 flex-grow-1 text-left overflow-hidden">
         
+        
           RNNS
         
       </span>
@@ -880,7 +862,12 @@
 
         <div class="docs-article-container">
           
+        </div>
 
+        
+        
+
+        <div class="docs-article-container">
           <h1>Fifty Shades of Time: Time series &amp; RNNs</h1>
 
           <div class="article-style">
@@ -1042,7 +1029,7 @@ Let&rsquo;s first discuss this problem theoretically and then - use some concret
 <li><strong>The business rationale behind the process</strong> - e.g., preexisting knowledge about the most informative length of the sequence (the typical length of the business process or seasonality of an event).</li>
 <li><strong>Previous studies or research</strong> presenting the optimal window size for a similar problem (e.g., time exposure to some stimulus).</li>
 </ol>
-<p>However, you must be aware that classic recurrent neural networks, LSTMs, and GRUs are prone to vanishing or exploding if the sequences are large. If the time window is too large, LSTM might start to &ldquo;forget&rdquo; what it has seen so far, leading (of course) to worsening the prediction results. This vulnerability is one of the reasons why special training techniques (like Truncated Backpropagation Through Time (TBTT) or Gradient Clipping) and architectures (attention layers and eventually Transformers) were designed.
+<p>However, you must be aware that classic recurrent neural networks, LSTMs, and GRUs are prone to vanishing or exploding gradients if the sequences are large. If the time window is too large, LSTM might start to &ldquo;forget&rdquo; what it has seen so far, leading (of course) to worsening the prediction results. This vulnerability is one of the reasons why special training techniques (like Truncated Backpropagation Through Time (TBTT) or Gradient Clipping) and architectures (attention layers and eventually Transformers) were designed.
 Although theoretically, LSTMs can handle sequences spanning a couple of hundred elements, it is better to shorten them and present in the form of limited-time windows [<a href="#mikolov">Mikolov, et al. 2013</a>; <a href="#karpathy">Karpathy, 2015</a>].</p>
 <h2 id="slicing">Slicing</h2>
 <p>Once we have decided the length of our time window, it is time to slice a time series. The operation is easy and relatively intuitive: we slide a window of size T, one element at a time, and save subsequent windows as samples. This is the way we obtain N samples.</p>
@@ -1072,17 +1059,17 @@ $$ N = (K-T+1) = 86 $$</p>
 </span><span class="lnt"> 5
 </span><span class="lnt"> 6
 </span><span class="lnt"> 7
-</span><span class="hl"><span class="lnt"> 8
-</span></span><span class="lnt"> 9
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
 </span><span class="lnt">10
 </span><span class="lnt">11
 </span><span class="lnt">12
 </span><span class="lnt">13
 </span><span class="lnt">14
-</span><span class="hl"><span class="lnt">15
-</span></span><span class="hl"><span class="lnt">16
-</span></span><span class="hl"><span class="lnt">17
-</span></span><span class="lnt">18
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
 </span><span class="lnt">19
 </span><span class="lnt">20
 </span><span class="lnt">21
@@ -1100,16 +1087,16 @@ $$ N = (K-T+1) = 86 $$</p>
 </span></span></span><span class="line"><span class="cl"><span class="s2">
 </span></span></span><span class="line"><span class="cl"><span class="s2">    Parameters
 </span></span></span><span class="line"><span class="cl"><span class="s2">    ----------
-</span></span></span><span class="line hl"><span class="cl"><span class="s2">    y : pd.Series
+</span></span></span><span class="line"><span class="cl"><span class="s2">    y : pd.Series
 </span></span></span><span class="line"><span class="cl"><span class="s2">        Original time series.
 </span></span></span><span class="line"><span class="cl"><span class="s2">    k_lags: int
 </span></span></span><span class="line"><span class="cl"><span class="s2">        Number of lags to generate.
 </span></span></span><span class="line"><span class="cl"><span class="s2">
 </span></span></span><span class="line"><span class="cl"><span class="s2">    Returns
 </span></span></span><span class="line"><span class="cl"><span class="s2">    ----------
-</span></span></span><span class="line hl"><span class="cl"><span class="s2">    pd.DataFrame
-</span></span></span><span class="line hl"><span class="cl"><span class="s2">        A lagged dataframe in format y, y-1, y-2, ..., y-K.
-</span></span></span><span class="line hl"><span class="cl"><span class="s2">    &#34;&#34;&#34;</span>
+</span></span></span><span class="line"><span class="cl"><span class="s2">    pd.DataFrame
+</span></span></span><span class="line"><span class="cl"><span class="s2">        A lagged dataframe in format y, y-1, y-2, ..., y-K.
+</span></span></span><span class="line"><span class="cl"><span class="s2">    &#34;&#34;&#34;</span>
 </span></span><span class="line"><span class="cl">    <span class="n">data</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span><span class="s1">&#39;y&#39;</span><span class="p">:</span> <span class="n">y</span><span class="p">})</span>
 </span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="n">t</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">k_lags</span><span class="p">):</span>
 </span></span><span class="line"><span class="cl">        <span class="n">fname</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&#34;y-</span><span class="si">{</span><span class="n">t</span><span class="si">}</span><span class="s2">&#34;</span> <span class="k">if</span> <span class="n">t</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="k">else</span> <span class="s2">&#34;y&#34;</span>
@@ -1222,8 +1209,8 @@ $$ N \times K \times f $$</p>
 </span><span class="lnt">5
 </span><span class="lnt">6
 </span><span class="lnt">7
-</span><span class="hl"><span class="lnt">8
-</span></span></code></pre></td>
+</span><span class="lnt">8
+</span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">NLAGS</span> <span class="o">=</span> <span class="mi">9</span>
 </span></span><span class="line"><span class="cl"><span class="n">lagged_y1</span> <span class="o">=</span> <span class="n">generate_lagged_data</span><span class="p">(</span><span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">(</span><span class="n">y1</span><span class="p">),</span> <span class="n">NLAGS</span><span class="p">)</span><span class="o">.</span><span class="n">dropna</span><span class="p">()</span>
@@ -1232,13 +1219,13 @@ $$ N \times K \times f $$</p>
 </span></span><span class="line"><span class="cl"><span class="n">lagged_y2</span><span class="p">[</span><span class="s1">&#39;cls&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span>
 </span></span><span class="line"><span class="cl"><span class="n">lagged_y3</span> <span class="o">=</span> <span class="n">generate_lagged_data</span><span class="p">(</span><span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">(</span><span class="n">y3</span><span class="p">),</span> <span class="n">NLAGS</span><span class="p">)</span><span class="o">.</span><span class="n">dropna</span><span class="p">()</span>
 </span></span><span class="line"><span class="cl"><span class="n">lagged_y3</span><span class="p">[</span><span class="s1">&#39;cls&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">2</span>
-</span></span><span class="line hl"><span class="cl"><span class="n">all_data</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">([</span><span class="n">lagged_y1</span><span class="p">,</span> <span class="n">lagged_y2</span><span class="p">,</span> <span class="n">lagged_y3</span><span class="p">],</span> <span class="n">ignore_index</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span></span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl"><span class="n">all_data</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">([</span><span class="n">lagged_y1</span><span class="p">,</span> <span class="n">lagged_y2</span><span class="p">,</span> <span class="n">lagged_y3</span><span class="p">],</span> <span class="n">ignore_index</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span></span></span></code></pre></td></tr></table>
 </div>
 </div>
 <p>The data is presented on chart below. Double-click a legend to isolate a single time series. You can also zoom in and slice it.</p>
 
 
-<div id="chart-176239854" class="chart"></div>
+<div id="chart-438921675" class="chart"></div>
 <script>
   (function() {
     let a = setInterval( function() {
@@ -1248,7 +1235,7 @@ $$ N \times K \times f $$</p>
       clearInterval( a );
 
       Plotly.d3.json("./sinusoids.json", function(chart) {
-        Plotly.plot('chart-176239854', chart.data, chart.layout, {responsive: true});
+        Plotly.plot('chart-438921675', chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -1265,17 +1252,17 @@ $$ N \times K \times f $$</p>
 </span><span class="lnt"> 5
 </span><span class="lnt"> 6
 </span><span class="lnt"> 7
-</span><span class="hl"><span class="lnt"> 8
-</span></span><span class="lnt"> 9
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
 </span><span class="lnt">10
 </span><span class="lnt">11
 </span><span class="lnt">12
 </span><span class="lnt">13
 </span><span class="lnt">14
-</span><span class="hl"><span class="lnt">15
-</span></span><span class="hl"><span class="lnt">16
-</span></span><span class="hl"><span class="lnt">17
-</span></span><span class="lnt">18
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
 </span><span class="lnt">19
 </span><span class="lnt">20
 </span><span class="lnt">21
@@ -1293,16 +1280,16 @@ $$ N \times K \times f $$</p>
 </span></span></span><span class="line"><span class="cl"><span class="s2">    &#34;&#34;&#34;</span>
 </span></span><span class="line"><span class="cl">    <span class="n">train_data</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">()</span>
 </span></span><span class="line"><span class="cl">    <span class="n">test_data</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">()</span>
-</span></span><span class="line hl"><span class="cl">    <span class="k">for</span> <span class="n">ts</span> <span class="ow">in</span> <span class="n">series</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="n">ts</span> <span class="ow">in</span> <span class="n">series</span><span class="p">:</span>
 </span></span><span class="line"><span class="cl">        <span class="n">test_nobs</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">test_perc</span> <span class="o">*</span> <span class="n">ts</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
 </span></span><span class="line"><span class="cl">        <span class="n">ts_train</span> <span class="o">=</span> <span class="n">ts</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:</span><span class="o">-</span><span class="n">test_nobs</span><span class="p">]</span>
 </span></span><span class="line"><span class="cl">        <span class="n">ts_test</span> <span class="o">=</span> <span class="n">ts</span><span class="o">.</span><span class="n">tail</span><span class="p">(</span><span class="n">test_nobs</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">        
 </span></span><span class="line"><span class="cl">        <span class="n">train_data</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">([</span><span class="n">train_data</span><span class="p">,</span> <span class="n">ts_train</span><span class="p">],</span> <span class="n">ignore_index</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">        <span class="n">test_data</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">([</span><span class="n">test_data</span><span class="p">,</span> <span class="n">ts_test</span><span class="p">],</span> <span class="n">ignore_index</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-</span></span><span class="line hl"><span class="cl">    <span class="k">return</span> <span class="n">train_data</span><span class="p">,</span> <span class="n">test_data</span>
-</span></span><span class="line hl"><span class="cl">
-</span></span><span class="line hl"><span class="cl"><span class="n">train</span><span class="p">,</span> <span class="n">test</span> <span class="o">=</span> <span class="n">build_train_test_data</span><span class="p">([</span><span class="n">lagged_y1</span><span class="p">,</span> <span class="n">lagged_y2</span><span class="p">,</span> <span class="n">lagged_y3</span><span class="p">])</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">train_data</span><span class="p">,</span> <span class="n">test_data</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">train</span><span class="p">,</span> <span class="n">test</span> <span class="o">=</span> <span class="n">build_train_test_data</span><span class="p">([</span><span class="n">lagged_y1</span><span class="p">,</span> <span class="n">lagged_y2</span><span class="p">,</span> <span class="n">lagged_y3</span><span class="p">])</span>
 </span></span><span class="line"><span class="cl"><span class="n">scaler</span> <span class="o">=</span> <span class="n">StandardScaler</span><span class="p">()</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="n">X_train</span><span class="p">,</span> <span class="n">X_test</span> <span class="o">=</span> <span class="n">train</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="s1">&#39;cls&#39;</span><span class="p">),</span> <span class="n">test</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="s1">&#39;cls&#39;</span><span class="p">)</span>
@@ -1317,7 +1304,7 @@ $$ N \times K \times f $$</p>
 <p>We can take a look on a single sample in X_train. This is just a part of some sinusoid, a slice of the curve.</p>
 
 
-<div id="chart-534729618" class="chart"></div>
+<div id="chart-724136589" class="chart"></div>
 <script>
   (function() {
     let a = setInterval( function() {
@@ -1327,7 +1314,7 @@ $$ N \times K \times f $$</p>
       clearInterval( a );
 
       Plotly.d3.json("./slice.json", function(chart) {
-        Plotly.plot('chart-534729618', chart.data, chart.layout, {responsive: true});
+        Plotly.plot('chart-724136589', chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -1342,17 +1329,17 @@ $$ N \times K \times f $$</p>
 </span><span class="lnt"> 5
 </span><span class="lnt"> 6
 </span><span class="lnt"> 7
-</span><span class="hl"><span class="lnt"> 8
-</span></span><span class="lnt"> 9
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
 </span><span class="lnt">10
 </span><span class="lnt">11
 </span><span class="lnt">12
 </span><span class="lnt">13
 </span><span class="lnt">14
-</span><span class="hl"><span class="lnt">15
-</span></span><span class="hl"><span class="lnt">16
-</span></span><span class="hl"><span class="lnt">17
-</span></span><span class="lnt">18
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
 </span><span class="lnt">19
 </span><span class="lnt">20
 </span></code></pre></td>
@@ -1364,16 +1351,16 @@ $$ N \times K \times f $$</p>
 </span></span><span class="line"><span class="cl">    <span class="n">inp</span> <span class="o">=</span> <span class="n">krs</span><span class="o">.</span><span class="n">layers</span><span class="o">.</span><span class="n">Input</span><span class="p">(</span><span class="n">shape</span><span class="o">=</span><span class="p">(</span><span class="n">NLAGS</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>
 </span></span><span class="line"><span class="cl">    <span class="n">lstm_out</span> <span class="o">=</span> <span class="n">krs</span><span class="o">.</span><span class="n">layers</span><span class="o">.</span><span class="n">LSTM</span><span class="p">(</span><span class="mi">32</span><span class="p">)(</span><span class="n">inp</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">    <span class="n">dense1</span> <span class="o">=</span> <span class="n">krs</span><span class="o">.</span><span class="n">layers</span><span class="o">.</span><span class="n">Dense</span><span class="p">(</span><span class="mi">16</span><span class="p">,</span> <span class="n">activation</span><span class="o">=</span><span class="s1">&#39;relu&#39;</span><span class="p">)(</span><span class="n">lstm_out</span><span class="p">)</span>
-</span></span><span class="line hl"><span class="cl">    <span class="n">dense2</span> <span class="o">=</span> <span class="n">krs</span><span class="o">.</span><span class="n">layers</span><span class="o">.</span><span class="n">Dense</span><span class="p">(</span><span class="mi">16</span><span class="p">,</span> <span class="n">activation</span><span class="o">=</span><span class="s1">&#39;relu&#39;</span><span class="p">)(</span><span class="n">dense1</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">dense2</span> <span class="o">=</span> <span class="n">krs</span><span class="o">.</span><span class="n">layers</span><span class="o">.</span><span class="n">Dense</span><span class="p">(</span><span class="mi">16</span><span class="p">,</span> <span class="n">activation</span><span class="o">=</span><span class="s1">&#39;relu&#39;</span><span class="p">)(</span><span class="n">dense1</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">    <span class="n">out</span> <span class="o">=</span> <span class="n">krs</span><span class="o">.</span><span class="n">layers</span><span class="o">.</span><span class="n">Dense</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="n">activation</span><span class="o">=</span><span class="s1">&#39;softmax&#39;</span><span class="p">)(</span><span class="n">dense2</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">    <span class="n">model</span> <span class="o">=</span> <span class="n">krs</span><span class="o">.</span><span class="n">models</span><span class="o">.</span><span class="n">Model</span><span class="p">(</span><span class="n">inputs</span><span class="o">=</span><span class="n">inp</span><span class="p">,</span> <span class="n">outputs</span><span class="o">=</span><span class="n">out</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">    <span class="n">model</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="n">optimizer</span><span class="o">=</span><span class="s1">&#39;adam&#39;</span><span class="p">,</span> <span class="n">loss</span><span class="o">=</span><span class="s1">&#39;categorical_crossentropy&#39;</span><span class="p">,</span> <span class="n">metrics</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;accuracy&#39;</span><span class="p">,</span> <span class="n">krs</span><span class="o">.</span><span class="n">metrics</span><span class="o">.</span><span class="n">Precision</span><span class="p">(),</span> <span class="n">krs</span><span class="o">.</span><span class="n">metrics</span><span class="o">.</span><span class="n">Recall</span><span class="p">()])</span>
 </span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">model</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="n">model_wrapper</span> <span class="o">=</span> <span class="n">KerasClassifier</span><span class="p">(</span><span class="n">build_model</span><span class="p">,</span> <span class="n">epochs</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">batch_size</span><span class="o">=</span><span class="mi">32</span><span class="p">,</span> <span class="n">verbose</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
-</span></span><span class="line hl"><span class="cl"><span class="n">dummy</span> <span class="o">=</span> <span class="n">DummyClassifier</span><span class="p">(</span><span class="n">strategy</span><span class="o">=</span><span class="s1">&#39;stratified&#39;</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">123</span><span class="p">)</span>
-</span></span><span class="line hl"><span class="cl"><span class="n">f1</span> <span class="o">=</span> <span class="n">make_scorer</span><span class="p">(</span><span class="k">lambda</span> <span class="n">y_true</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">:</span> <span class="n">f1_score</span><span class="p">(</span><span class="n">y_true</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">,</span> <span class="n">average</span><span class="o">=</span><span class="s1">&#39;micro&#39;</span><span class="p">))</span>
-</span></span><span class="line hl"><span class="cl"><span class="n">kf</span> <span class="o">=</span> <span class="n">KFold</span><span class="p">(</span><span class="n">n_splits</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">dummy</span> <span class="o">=</span> <span class="n">DummyClassifier</span><span class="p">(</span><span class="n">strategy</span><span class="o">=</span><span class="s1">&#39;stratified&#39;</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">123</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">f1</span> <span class="o">=</span> <span class="n">make_scorer</span><span class="p">(</span><span class="k">lambda</span> <span class="n">y_true</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">:</span> <span class="n">f1_score</span><span class="p">(</span><span class="n">y_true</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">,</span> <span class="n">average</span><span class="o">=</span><span class="s1">&#39;micro&#39;</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl"><span class="n">kf</span> <span class="o">=</span> <span class="n">KFold</span><span class="p">(</span><span class="n">n_splits</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl"><span class="n">model_cv</span> <span class="o">=</span> <span class="n">cross_val_score</span><span class="p">(</span><span class="n">model_wrapper</span><span class="p">,</span> <span class="n">X_train</span><span class="p">,</span> <span class="n">y_train_ohe</span><span class="p">,</span> <span class="n">cv</span><span class="o">=</span><span class="n">kf</span><span class="p">,</span> <span class="n">scoring</span><span class="o">=</span><span class="n">f1</span><span class="p">,</span> <span class="n">n_jobs</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl"><span class="n">dummy_cv</span> <span class="o">=</span> <span class="n">cross_val_score</span><span class="p">(</span><span class="n">dummy</span><span class="p">,</span> <span class="n">X_train</span><span class="p">,</span> <span class="n">y_train_ohe</span><span class="p">,</span> <span class="n">cv</span><span class="o">=</span><span class="n">kf</span><span class="p">,</span> <span class="n">scoring</span><span class="o">=</span><span class="n">f1</span><span class="p">,</span> <span class="n">n_jobs</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl"><span class="n">cv_scores</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span><span class="s1">&#39;LSTM&#39;</span><span class="p">:</span> <span class="n">model_cv</span><span class="p">,</span> <span class="s1">&#39;Dummy&#39;</span><span class="p">:</span> <span class="n">dummy_cv</span><span class="p">})</span></span></span></code></pre></td></tr></table>
@@ -1478,17 +1465,17 @@ weighted avg   0.88      0.88      0.88       594
 </span><span class="lnt"> 5
 </span><span class="lnt"> 6
 </span><span class="lnt"> 7
-</span><span class="hl"><span class="lnt"> 8
-</span></span><span class="lnt"> 9
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
 </span><span class="lnt">10
 </span><span class="lnt">11
 </span><span class="lnt">12
 </span><span class="lnt">13
 </span><span class="lnt">14
-</span><span class="hl"><span class="lnt">15
-</span></span><span class="hl"><span class="lnt">16
-</span></span><span class="hl"><span class="lnt">17
-</span></span><span class="lnt">18
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">generate_iid_data</span><span class="p">(</span><span class="n">ts</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">,</span> <span class="n">label</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">n_features</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">nsamp</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">:</span>
@@ -1498,16 +1485,16 @@ weighted avg   0.88      0.88      0.88       594
 </span></span></span><span class="line"><span class="cl"><span class="s2">    &#34;&#34;&#34;</span>
 </span></span><span class="line"><span class="cl">    <span class="n">rnd_features</span> <span class="o">=</span> <span class="p">{}</span>
 </span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="n">idx</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n_features</span><span class="p">):</span>
-</span></span><span class="line hl"><span class="cl">        <span class="n">rnd_feature</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span><span class="n">ts</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="n">nsamp</span><span class="p">,</span> <span class="n">replace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="n">rnd_feature</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span><span class="n">ts</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="n">nsamp</span><span class="p">,</span> <span class="n">replace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">        <span class="n">rnd_features</span><span class="p">[</span><span class="sa">f</span><span class="s2">&#34;f_</span><span class="si">{</span><span class="n">idx</span><span class="si">}</span><span class="s2">&#34;</span><span class="p">]</span> <span class="o">=</span> <span class="n">rnd_feature</span>
 </span></span><span class="line"><span class="cl">    <span class="n">rnd_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">rnd_features</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">    <span class="n">rnd_df</span><span class="p">[</span><span class="s1">&#39;y&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">label</span>
 </span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">rnd_df</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="n">rnd_data</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">()</span>
-</span></span><span class="line hl"><span class="cl"><span class="k">for</span> <span class="n">idx</span><span class="p">,</span> <span class="n">ts</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">([</span><span class="n">y1</span><span class="p">,</span> <span class="n">y2</span><span class="p">,</span> <span class="n">y3</span><span class="p">]):</span>
-</span></span><span class="line hl"><span class="cl">    <span class="n">df</span> <span class="o">=</span> <span class="n">generate_iid_data</span><span class="p">(</span><span class="n">ts</span><span class="p">,</span> <span class="n">idx</span><span class="p">,</span> <span class="n">NLAGS</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span> <span class="mi">800</span><span class="p">)</span>
-</span></span><span class="line hl"><span class="cl">    <span class="n">rnd_data</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">([</span><span class="n">rnd_data</span><span class="p">,</span> <span class="n">df</span><span class="p">],</span> <span class="n">ignore_index</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="n">idx</span><span class="p">,</span> <span class="n">ts</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">([</span><span class="n">y1</span><span class="p">,</span> <span class="n">y2</span><span class="p">,</span> <span class="n">y3</span><span class="p">]):</span>
+</span></span><span class="line"><span class="cl">    <span class="n">df</span> <span class="o">=</span> <span class="n">generate_iid_data</span><span class="p">(</span><span class="n">ts</span><span class="p">,</span> <span class="n">idx</span><span class="p">,</span> <span class="n">NLAGS</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span> <span class="mi">800</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">rnd_data</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">([</span><span class="n">rnd_data</span><span class="p">,</span> <span class="n">df</span><span class="p">],</span> <span class="n">ignore_index</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl"><span class="n">rnd_data</span><span class="o">.</span><span class="n">shape</span></span></span></code></pre></td></tr></table>
 </div>
 </div>
@@ -1901,19 +1888,6 @@ Such a structure can be generated from data by subsequent shifting the time seri
         <script src="https://cdn.jsdelivr.net/gh/mermaid-js/mermaid@v8.8.4/dist/mermaid.min.js" integrity="sha512-+TNmhaRJf3jyYHTpzEq/5I6b+aGyhzWb21mGdHAjxSGSYwxN9Grug3Y3B9qVxWfKKY8MscE/6mr9walWvFLFvQ==" crossorigin="anonymous" title="mermaid"></script>
       
 
-      
-        
-        <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.2.1/build/highlight.min.js" integrity="sha512-Ypjm0o7jOxAd4hpdoppSEN0TQOC19UtPAqD+4s5AlXmUvbmmS/YMxYqAqarQYyxTnB6/rqip9qcxlNB/3U9Wdg==" crossorigin="anonymous"></script>
-        
-        
-        <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.2.1/build/languages/r.min.js" crossorigin="anonymous"></script>
-        
-        <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.2.1/build/languages/latex.min.js" crossorigin="anonymous"></script>
-        
-        <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.2.1/build/languages/python.min.js" crossorigin="anonymous"></script>
-        
-      
-
     
 
     
@@ -1986,11 +1960,12 @@ Such a structure can be generated from data by subsequent shifting the time seri
     
     
     
+    
       
       
     
     
-    <script src="/en/js/wowchemy.min.d33009edf74c118771abad05861fba4f.js"></script>
+    <script src="/en/js/wowchemy.min.e930dd1bcd2253a870f7127b92051548.js"></script>
 
     
     
