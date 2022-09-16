@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>reinforcement learning | NeuraSYS</title>
+    <link>https://maddataanalyst.github.io/en/tag/reinforcement-learning/</link>
+      <atom:link href="https://maddataanalyst.github.io/en/tag/reinforcement-learning/index.xml" rel="self" type="application/rss+xml" />
+    <description>reinforcement learning</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Tue, 21 Jun 2022 12:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://maddataanalyst.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
+      <title>reinforcement learning</title>
+      <link>https://maddataanalyst.github.io/en/tag/reinforcement-learning/</link>
+    </image>
+    
+    <item>
+      <title>Everything is a game: use cases for Reinforcement Learning</title>
+      <link>https://maddataanalyst.github.io/en/talk/everything-is-a-game-use-cases-for-reinforcement-learning/</link>
+      <pubDate>Tue, 21 Jun 2022 12:00:00 +0000</pubDate>
+      <guid>https://maddataanalyst.github.io/en/talk/everything-is-a-game-use-cases-for-reinforcement-learning/</guid>
+      <description>&lt;p&gt;Reinforcement Learning (RL) is typically presented using examples of playing different games like Atari classics or physics-oriented simulators. Often one can hear opinions that RL usage in other industries and areas is very limited or challenging to implement. Such a statement is far from true - RL can be employed for similar problems as classic optimization tools, utilized by operations research (OR) for many years: production planning, scheduling, and resource optimization. With just a few mental tricks, an analyst can turn most optimization problems into a form that can be solved using these algorithms. During a presentation, a couple of such examples will be shared, as well as tips&amp;amp;tricks for designing your cases.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>ReLeX - Reinforcement Learning Experiments</title>
+      <link>https://maddataanalyst.github.io/en/project/relex/</link>
+      <pubDate>Tue, 21 Jun 2022 00:00:00 +0000</pubDate>
+      <guid>https://maddataanalyst.github.io/en/project/relex/</guid>
+      <description>&lt;p&gt;A series of presentations, publications and implementations on Reinforcement Learning algorithms.&lt;/p&gt;
+&lt;p&gt;Main site of the project and associated experiments: &lt;a href=&#34;https://github.com/maddataanalyst/relex&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://github.com/maddataanalyst/relex&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

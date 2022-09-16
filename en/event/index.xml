@@ -5,12 +5,21 @@
     <link>https://maddataanalyst.github.io/en/event/</link>
       <atom:link href="https://maddataanalyst.github.io/en/event/index.xml" rel="self" type="application/rss+xml" />
     <description>Recent &amp; Upcoming Talks</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Thu, 18 Jun 2020 12:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Tue, 21 Jun 2022 12:00:00 +0000</lastBuildDate>
     <image>
       <url>https://maddataanalyst.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
       <title>Recent &amp; Upcoming Talks</title>
       <link>https://maddataanalyst.github.io/en/event/</link>
     </image>
+    
+    <item>
+      <title>Everything is a game: use cases for Reinforcement Learning</title>
+      <link>https://maddataanalyst.github.io/en/talk/everything-is-a-game-use-cases-for-reinforcement-learning/</link>
+      <pubDate>Tue, 21 Jun 2022 12:00:00 +0000</pubDate>
+      <guid>https://maddataanalyst.github.io/en/talk/everything-is-a-game-use-cases-for-reinforcement-learning/</guid>
+      <description>&lt;p&gt;Reinforcement Learning (RL) is typically presented using examples of playing different games like Atari classics or physics-oriented simulators. Often one can hear opinions that RL usage in other industries and areas is very limited or challenging to implement. Such a statement is far from true - RL can be employed for similar problems as classic optimization tools, utilized by operations research (OR) for many years: production planning, scheduling, and resource optimization. With just a few mental tricks, an analyst can turn most optimization problems into a form that can be solved using these algorithms. During a presentation, a couple of such examples will be shared, as well as tips&amp;amp;tricks for designing your cases.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>One concept to rule them all - uses of neural embeddings beyond natural language processing</title>

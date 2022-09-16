@@ -4,7 +4,7 @@
   
   
   <url>
-    <loc></loc><lastmod>2021-03-01T21:36:41+01:00</lastmod><changefreq>weekly</changefreq><xhtml:link
+    <loc></loc><lastmod>2022-06-21T12:00:00+00:00</lastmod><changefreq>weekly</changefreq><xhtml:link
       rel="alternate"
       hreflang="en"
       href=""
@@ -12,6 +12,106 @@
       rel="alternate"
       hreflang="pl"
       href=""
+    /></url>
+  <url>
+    <loc>https://maddataanalyst.github.io/pl/authors/</loc><lastmod>2022-06-21T12:00:00+00:00</lastmod><changefreq>weekly</changefreq><xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="https://maddataanalyst.github.io/en/authors/"
+    /><xhtml:link
+      rel="alternate"
+      hreflang="pl"
+      href="https://maddataanalyst.github.io/pl/authors/"
+    /></url>
+  <url>
+    <loc>https://maddataanalyst.github.io/pl/tag/deep-learning/</loc><lastmod>2022-06-21T12:00:00+00:00</lastmod><changefreq>weekly</changefreq><xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="https://maddataanalyst.github.io/en/tag/deep-learning/"
+    /><xhtml:link
+      rel="alternate"
+      hreflang="pl"
+      href="https://maddataanalyst.github.io/pl/tag/deep-learning/"
+    /></url>
+  <url>
+    <loc></loc><lastmod>2022-06-21T12:00:00+00:00</lastmod><changefreq>weekly</changefreq><xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href=""
+    /><xhtml:link
+      rel="alternate"
+      hreflang="pl"
+      href=""
+    /></url>
+  <url>
+    <loc>https://maddataanalyst.github.io/pl/</loc><lastmod>2022-06-21T12:00:00+00:00</lastmod><changefreq>weekly</changefreq><xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="https://maddataanalyst.github.io/en/"
+    /><xhtml:link
+      rel="alternate"
+      hreflang="pl"
+      href="https://maddataanalyst.github.io/pl/"
+    /></url>
+  <url>
+    <loc>https://maddataanalyst.github.io/pl/event/</loc><lastmod>2022-06-21T12:00:00+00:00</lastmod><changefreq>weekly</changefreq><xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="https://maddataanalyst.github.io/en/event/"
+    /><xhtml:link
+      rel="alternate"
+      hreflang="pl"
+      href="https://maddataanalyst.github.io/pl/event/"
+    /></url>
+  <url>
+    <loc>https://maddataanalyst.github.io/pl/tag/reinforcement-learning/</loc><lastmod>2022-06-21T12:00:00+00:00</lastmod><changefreq>weekly</changefreq><xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="https://maddataanalyst.github.io/en/tag/reinforcement-learning/"
+    /><xhtml:link
+      rel="alternate"
+      hreflang="pl"
+      href="https://maddataanalyst.github.io/pl/tag/reinforcement-learning/"
+    /></url>
+  <url>
+    <loc>https://maddataanalyst.github.io/pl/tags/</loc><lastmod>2022-06-21T12:00:00+00:00</lastmod><changefreq>weekly</changefreq><xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="https://maddataanalyst.github.io/en/tags/"
+    /><xhtml:link
+      rel="alternate"
+      hreflang="pl"
+      href="https://maddataanalyst.github.io/pl/tags/"
+    /></url>
+  <url>
+    <loc>https://maddataanalyst.github.io/pl/talk/wszystko-jest-gra-przypadki-uzycia-uczenia-ze-wzmocnieniem-poza-grami./</loc><lastmod>2022-06-21T12:00:00+00:00</lastmod><changefreq>weekly</changefreq><xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="https://maddataanalyst.github.io/en/talk/everything-is-a-game-use-cases-for-reinforcement-learning/"
+    /><xhtml:link
+      rel="alternate"
+      hreflang="pl"
+      href="https://maddataanalyst.github.io/pl/talk/wszystko-jest-gra-przypadki-uzycia-uczenia-ze-wzmocnieniem-poza-grami./"
+    /></url>
+  <url>
+    <loc>https://maddataanalyst.github.io/pl/project/</loc><lastmod>2022-06-21T00:00:00+00:00</lastmod><changefreq>weekly</changefreq><xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="https://maddataanalyst.github.io/en/project/"
+    /><xhtml:link
+      rel="alternate"
+      hreflang="pl"
+      href="https://maddataanalyst.github.io/pl/project/"
+    /></url>
+  <url>
+    <loc>https://maddataanalyst.github.io/pl/project/relex/</loc><lastmod>2022-06-21T00:00:00+00:00</lastmod><changefreq>weekly</changefreq><xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="https://maddataanalyst.github.io/en/project/relex/"
+    /><xhtml:link
+      rel="alternate"
+      hreflang="pl"
+      href="https://maddataanalyst.github.io/pl/project/relex/"
     /></url>
   <url>
     <loc>https://maddataanalyst.github.io/pl/publication-type/1/</loc><lastmod>2021-03-01T21:36:41+01:00</lastmod><changefreq>weekly</changefreq><xhtml:link
@@ -24,36 +124,6 @@
       href="https://maddataanalyst.github.io/pl/publication-type/1/"
     /></url>
   <url>
-    <loc>https://maddataanalyst.github.io/pl/authors/</loc><lastmod>2021-03-01T21:36:41+01:00</lastmod><changefreq>weekly</changefreq><xhtml:link
-      rel="alternate"
-      hreflang="en"
-      href="https://maddataanalyst.github.io/en/authors/"
-    /><xhtml:link
-      rel="alternate"
-      hreflang="pl"
-      href="https://maddataanalyst.github.io/pl/authors/"
-    /></url>
-  <url>
-    <loc>https://maddataanalyst.github.io/pl/tag/deep-learning/</loc><lastmod>2021-03-01T21:36:41+01:00</lastmod><changefreq>weekly</changefreq><xhtml:link
-      rel="alternate"
-      hreflang="en"
-      href="https://maddataanalyst.github.io/en/tag/deep-learning/"
-    /><xhtml:link
-      rel="alternate"
-      hreflang="pl"
-      href="https://maddataanalyst.github.io/pl/tag/deep-learning/"
-    /></url>
-  <url>
-    <loc></loc><lastmod>2021-03-01T21:36:41+01:00</lastmod><changefreq>weekly</changefreq><xhtml:link
-      rel="alternate"
-      hreflang="en"
-      href=""
-    /><xhtml:link
-      rel="alternate"
-      hreflang="pl"
-      href=""
-    /></url>
-  <url>
     <loc>https://maddataanalyst.github.io/pl/publication/deep_learning_as_recommenders/</loc><lastmod>2021-03-01T21:36:41+01:00</lastmod><changefreq>weekly</changefreq><xhtml:link
       rel="alternate"
       hreflang="en"
@@ -62,16 +132,6 @@
       rel="alternate"
       hreflang="pl"
       href="https://maddataanalyst.github.io/pl/publication/deep_learning_as_recommenders/"
-    /></url>
-  <url>
-    <loc>https://maddataanalyst.github.io/pl/</loc><lastmod>2021-03-01T21:36:41+01:00</lastmod><changefreq>weekly</changefreq><xhtml:link
-      rel="alternate"
-      hreflang="en"
-      href="https://maddataanalyst.github.io/en/"
-    /><xhtml:link
-      rel="alternate"
-      hreflang="pl"
-      href="https://maddataanalyst.github.io/pl/"
     /></url>
   <url>
     <loc>https://maddataanalyst.github.io/pl/publication/beyond_a_barrier_of_mistrust/</loc><lastmod>2021-03-01T21:36:41+01:00</lastmod><changefreq>weekly</changefreq><xhtml:link
@@ -106,16 +166,6 @@
   <url>
     <loc>https://maddataanalyst.github.io/pl/tag/systemy-rekomendacyjne/</loc><lastmod>2021-03-01T21:36:41+01:00</lastmod><changefreq>weekly</changefreq></url>
   <url>
-    <loc>https://maddataanalyst.github.io/pl/tags/</loc><lastmod>2021-03-01T21:36:41+01:00</lastmod><changefreq>weekly</changefreq><xhtml:link
-      rel="alternate"
-      hreflang="en"
-      href="https://maddataanalyst.github.io/en/tags/"
-    /><xhtml:link
-      rel="alternate"
-      hreflang="pl"
-      href="https://maddataanalyst.github.io/pl/tags/"
-    /></url>
-  <url>
     <loc>https://maddataanalyst.github.io/pl/tag/xai/</loc><lastmod>2021-03-01T21:36:41+01:00</lastmod><changefreq>weekly</changefreq><xhtml:link
       rel="alternate"
       hreflang="en"
@@ -134,16 +184,6 @@
       rel="alternate"
       hreflang="pl"
       href="https://maddataanalyst.github.io/pl/talk/one-concept-to-rule-them-all-uses-of-neural-embeddings-beyond-natural-language-processing/"
-    /></url>
-  <url>
-    <loc>https://maddataanalyst.github.io/pl/event/</loc><lastmod>2020-06-18T12:00:00+00:00</lastmod><changefreq>weekly</changefreq><xhtml:link
-      rel="alternate"
-      hreflang="en"
-      href="https://maddataanalyst.github.io/en/event/"
-    /><xhtml:link
-      rel="alternate"
-      hreflang="pl"
-      href="https://maddataanalyst.github.io/pl/event/"
     /></url>
   <url>
     <loc>https://maddataanalyst.github.io/pl/tag/recommendation-systems/</loc><lastmod>2020-06-18T12:00:00+00:00</lastmod><changefreq>weekly</changefreq><xhtml:link
@@ -194,16 +234,6 @@
       rel="alternate"
       hreflang="pl"
       href="https://maddataanalyst.github.io/pl/talk/recommendation-engines-based-on-autoencoders/"
-    /></url>
-  <url>
-    <loc>https://maddataanalyst.github.io/pl/project/</loc><lastmod>2019-06-14T00:00:00+00:00</lastmod><changefreq>weekly</changefreq><xhtml:link
-      rel="alternate"
-      hreflang="en"
-      href="https://maddataanalyst.github.io/en/project/"
-    /><xhtml:link
-      rel="alternate"
-      hreflang="pl"
-      href="https://maddataanalyst.github.io/pl/project/"
     /></url>
   <url>
     <loc>https://maddataanalyst.github.io/pl/project/deep_learning_recommenders/</loc><lastmod>2019-06-14T00:00:00+00:00</lastmod><changefreq>weekly</changefreq><xhtml:link

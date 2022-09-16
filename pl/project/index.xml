@@ -5,12 +5,22 @@
     <link>https://maddataanalyst.github.io/pl/project/</link>
       <atom:link href="https://maddataanalyst.github.io/pl/project/index.xml" rel="self" type="application/rss+xml" />
     <description>Projects</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>pl</language><lastBuildDate>Fri, 14 Jun 2019 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>pl</language><lastBuildDate>Tue, 21 Jun 2022 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://maddataanalyst.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
       <title>Projects</title>
       <link>https://maddataanalyst.github.io/pl/project/</link>
     </image>
+    
+    <item>
+      <title>ReLeX - Eksperymenty Uczenia ze wzmocnieniem</title>
+      <link>https://maddataanalyst.github.io/pl/project/relex/</link>
+      <pubDate>Tue, 21 Jun 2022 00:00:00 +0000</pubDate>
+      <guid>https://maddataanalyst.github.io/pl/project/relex/</guid>
+      <description>&lt;p&gt;Seria publikacji, projektów i badań związanych z algorytmami uczenia ze wzmocnieniem&lt;/p&gt;
+&lt;p&gt;Strona główna projektu i powiązanych eksperymentów: &lt;a href=&#34;https://github.com/maddataanalyst/relex&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://github.com/maddataanalyst/relex&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Wykorzystanie algorytmów głębokiego uczenia jako narzędzi rekomendacyjnych</title>

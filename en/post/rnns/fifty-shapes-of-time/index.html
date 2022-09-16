@@ -1225,7 +1225,7 @@ $$ N \times K \times f $$</p>
 <p>The data is presented on chart below. Double-click a legend to isolate a single time series. You can also zoom in and slice it.</p>
 
 
-<div id="chart-438921675" class="chart"></div>
+<div id="chart-915248736" class="chart"></div>
 <script>
   (function() {
     let a = setInterval( function() {
@@ -1235,7 +1235,7 @@ $$ N \times K \times f $$</p>
       clearInterval( a );
 
       Plotly.d3.json("./sinusoids.json", function(chart) {
-        Plotly.plot('chart-438921675', chart.data, chart.layout, {responsive: true});
+        Plotly.plot('chart-915248736', chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -1304,7 +1304,7 @@ $$ N \times K \times f $$</p>
 <p>We can take a look on a single sample in X_train. This is just a part of some sinusoid, a slice of the curve.</p>
 
 
-<div id="chart-724136589" class="chart"></div>
+<div id="chart-412956783" class="chart"></div>
 <script>
   (function() {
     let a = setInterval( function() {
@@ -1314,7 +1314,7 @@ $$ N \times K \times f $$</p>
       clearInterval( a );
 
       Plotly.d3.json("./slice.json", function(chart) {
-        Plotly.plot('chart-724136589', chart.data, chart.layout, {responsive: true});
+        Plotly.plot('chart-412956783', chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();

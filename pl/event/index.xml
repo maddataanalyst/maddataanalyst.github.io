@@ -5,12 +5,21 @@
     <link>https://maddataanalyst.github.io/pl/event/</link>
       <atom:link href="https://maddataanalyst.github.io/pl/event/index.xml" rel="self" type="application/rss+xml" />
     <description>Recent &amp; Upcoming Talks</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>pl</language><lastBuildDate>Thu, 18 Jun 2020 12:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>pl</language><lastBuildDate>Tue, 21 Jun 2022 12:00:00 +0000</lastBuildDate>
     <image>
       <url>https://maddataanalyst.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
       <title>Recent &amp; Upcoming Talks</title>
       <link>https://maddataanalyst.github.io/pl/event/</link>
     </image>
+    
+    <item>
+      <title>Wszystko jest grą: przypadki użycia uczenia ze wzmocnieniem poza grami.</title>
+      <link>https://maddataanalyst.github.io/pl/talk/wszystko-jest-gra-przypadki-uzycia-uczenia-ze-wzmocnieniem-poza-grami./</link>
+      <pubDate>Tue, 21 Jun 2022 12:00:00 +0000</pubDate>
+      <guid>https://maddataanalyst.github.io/pl/talk/wszystko-jest-gra-przypadki-uzycia-uczenia-ze-wzmocnieniem-poza-grami./</guid>
+      <description>&lt;p&gt;Uczenie ze wzmocnieniem (RL) zwykle kojarzone jest z grami, takimi jak klasyczne Atari, szachy czy Go. Wiele firm i osób związanych z biznesem zakłada, że RL ograniczony jest wyłącznie do tego rodzaju przypadków. Tymczasem twierdzenie to jest dalekie od prawdy – w przypadku sekwencyjnych problemów decyzyjnych, wystarczy niewiele wysiłku, by przeformułować je, do modelowania z użyciem RL. Prezentacja pokazuje kilka realnych problemów biznesowych rozwiązanych właśnie w taki sposób.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>One concept to rule them all - uses of neural embeddings beyond natural language processing</title>
