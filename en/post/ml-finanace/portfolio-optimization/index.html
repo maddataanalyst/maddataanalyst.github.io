@@ -1,0 +1,2005 @@
+<!DOCTYPE html><html lang="en-us" >
+
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  
+  
+    <meta name="generator" content="Wowchemy 5.5.0 for Hugo" />
+  
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+  
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  
+
+  
+  
+  
+    
+      
+      <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap" media="print" onload="this.media='all'">
+    
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Filip Wójcik" />
+
+  
+  
+  
+    
+  
+  <meta name="description" content="Portfolio optimization is a critical tool for modern investors willing to maximize their capital utilization in the market and expected returns. Many portfolio optimization techniques are based on different variants of constrained quadratic programming formalizations, taking as inputs expected asset returns, forms of risk metrics (like covariance matrices), and transaction costs." />
+
+  
+  <link rel="alternate" hreflang="en-us" href="https://maddataanalyst.github.io/en/post/ml-finanace/portfolio-optimization/" />
+
+  
+  
+  
+    <meta name="theme-color" content="#1565c0" />
+  
+
+  
+  
+    
+    <script src="/js/mathjax-config.js"></script>
+  
+
+  
+
+  <link rel="stylesheet" href="/css/vendor-bundle.min.c7b8d9abd591ba2253ea42747e3ac3f5.css" media="print" onload="this.media='all'">
+
+  
+  
+  
+    
+    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.1/css/academicons.min.css" integrity="sha512-W0xM4mr6dEP9nREo7Z9z+9X70wytKvMGeDsj7ps2+xg5QPrEBXC8tAW1IFnzjR6eoJ90JmCnFzerQJTLzIEHjA==" crossorigin="anonymous" media="print" onload="this.media='all'">
+    
+
+    
+    
+    
+    
+      
+      
+    
+    
+    
+
+    
+    
+    
+      
+    
+    
+    
+    
+    
+    <link rel="stylesheet" href="/css/libs/chroma/github-light.min.css" title="hl-light" media="print" onload="this.media='all'" >
+    <link rel="stylesheet" href="/css/libs/chroma/dracula.min.css" title="hl-dark" media="print" onload="this.media='all'" disabled>
+
+    
+    
+    
+
+    
+
+    
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" integrity="" crossorigin="anonymous" async></script>
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+  
+
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/wowchemy.978ed78d787744677cc3f4f1579d21c3.css" />
+
+  
+
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-R1E2E342QG"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+      dataLayer.push(arguments);
+  }
+
+  function trackOutboundLink(url, target) {
+    gtag('event', 'click', {
+         'event_category': 'outbound',
+         'event_label': url,
+         'transport_type': 'beacon',
+         'event_callback': function () {
+           if (target !== '_blank') {
+             document.location = url;
+           }
+         }
+    });
+    console.debug("Outbound link clicked: " + url);
+  }
+
+  function onClickCallback(event) {
+    if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
+      return;
+    }
+    trackOutboundLink(event.target, event.target.getAttribute('target'));  
+  }
+
+  gtag('js', new Date());
+  gtag('config', 'G-R1E2E342QG', {});
+  gtag('set', {'cookie_flags': 'SameSite=None;Secure'});
+
+  
+  document.addEventListener('click', onClickCallback, false);
+</script>
+
+
+  
+
+
+  
+
+
+  
+
+
+
+
+  
+  
+  
+
+  
+
+  
+    <link rel="manifest" href="/en/manifest.webmanifest" />
+  
+
+  <link rel="icon" type="image/png" href="/media/icon_hu5b489458e36ca6f814edb4aedf2e84e5_21223_32x32_fill_lanczos_center_3.png" />
+  <link rel="apple-touch-icon" type="image/png" href="/media/icon_hu5b489458e36ca6f814edb4aedf2e84e5_21223_180x180_fill_lanczos_center_3.png" />
+
+  <link rel="canonical" href="https://maddataanalyst.github.io/en/post/ml-finanace/portfolio-optimization/" />
+
+  
+  
+  
+  
+  
+  
+  
+  
+    
+  
+  
+
+  
+  
+    
+    
+  
+  <meta property="twitter:card" content="summary_large_image" />
+  
+  <meta property="og:site_name" content="NeuraSYS" />
+  <meta property="og:url" content="https://maddataanalyst.github.io/en/post/ml-finanace/portfolio-optimization/" />
+  <meta property="og:title" content="Portfolio optimization | NeuraSYS" />
+  <meta property="og:description" content="Portfolio optimization is a critical tool for modern investors willing to maximize their capital utilization in the market and expected returns. Many portfolio optimization techniques are based on different variants of constrained quadratic programming formalizations, taking as inputs expected asset returns, forms of risk metrics (like covariance matrices), and transaction costs." /><meta property="og:image" content="https://maddataanalyst.github.io/en/post/ml-finanace/portfolio-optimization/featured.jpg" />
+    <meta property="twitter:image" content="https://maddataanalyst.github.io/en/post/ml-finanace/portfolio-optimization/featured.jpg" /><meta property="og:locale" content="en-us" />
+  
+    
+      <meta
+        property="article:published_time"
+        content="2022-11-10T00:00:00&#43;00:00"
+      />
+    
+    <meta property="article:modified_time" content="2022-11-10T00:00:00&#43;00:00">
+  
+
+  
+
+
+
+  
+
+  
+
+  
+
+
+
+
+
+  <title>Portfolio optimization | NeuraSYS</title>
+</head>
+
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="ebd21ada0396c19e4537d9b580a8d37b" >
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <script src="/js/wowchemy-init.min.e22a2a20712150175b9cd707be2d0584.js"></script>
+
+  
+
+
+<aside class="search-modal" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#" aria-label="Close"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control"
+        aria-label="Search...">
+        
+      </div>
+
+      
+      
+
+      
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+
+  <div class="page-header">
+    
+
+
+
+
+
+
+
+
+
+
+
+
+<header class="header--fixed">
+  <nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+    <div class="container-xl">
+
+      
+      <div class="d-none d-lg-inline-flex">
+        <a class="navbar-brand" href="/en/">NeuraSYS</a>
+      </div>
+      
+
+      
+      <button type="button" class="navbar-toggler" data-toggle="collapse"
+              data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
+      <span><i class="fas fa-bars"></i></span>
+      </button>
+      
+
+      
+      <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+        <a class="navbar-brand" href="/en/">NeuraSYS</a>
+      </div>
+      
+
+      
+      
+      <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+
+        
+        <ul class="navbar-nav d-md-inline-flex">
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/en/#about"><span>Home</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/en/#projects"><span>Projects</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/en/#talks"><span>Talks</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/en/#featured"><span>Publications</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/en/#post"><span>Recent posts</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link  active" href="/en/post"><span>Blog</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/en/#contact"><span>Contact</span></a>
+          </li>
+
+          
+          
+
+        
+
+          
+        </ul>
+      </div>
+
+      <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+
+        
+        
+          
+        
+
+        
+        
+        <li class="nav-item">
+          <a class="nav-link js-search" href="#" aria-label="Search"><i class="fas fa-search" aria-hidden="true"></i></a>
+        </li>
+        
+
+        
+        
+        
+        <li class="nav-item dropdown theme-dropdown">
+          <a href="#" class="nav-link" data-toggle="dropdown" aria-haspopup="true" aria-label="Display preferences">
+            <i class="fas fa-moon" aria-hidden="true"></i>
+          </a>
+          <div class="dropdown-menu">
+            <a href="#" class="dropdown-item js-set-theme-light">
+              <span>Light</span>
+            </a>
+            <a href="#" class="dropdown-item js-set-theme-dark">
+              <span>Dark</span>
+            </a>
+            <a href="#" class="dropdown-item js-set-theme-auto">
+              <span>Automatic</span>
+            </a>
+          </div>
+        </li>
+        
+
+        
+        
+
+      </ul>
+
+    </div>
+  </nav>
+</header>
+
+
+  </div>
+
+  <div class="page-body">
+    
+    
+    
+
+    
+
+
+
+
+<div class="container-fluid docs">
+  <div class="row flex-xl-nowrap">
+    <div class="col-12 col-md-3 col-xl-2 docs-sidebar">
+      <form class="docs-search d-flex align-items-center">
+  <button class="btn docs-toggle d-md-none p-0 mr-md-3 w-100" type="button" data-toggle="collapse" data-target="#docs-nav" aria-controls="docs-nav" aria-expanded="false" aria-label="Toggle section navigation">
+    <div class="d-flex">
+      <span class="d-md-none pl-1 flex-grow-1 text-left overflow-hidden">
+        
+        
+          AI and ML finance
+        
+      </span>
+      <span><i class="fas fa-chevron-down"></i></span>
+    </div>
+  </button>
+
+  
+  <button class="form-control sidebar-search js-search d-none d-md-flex">
+    <i class="fas fa-search pr-2"></i>
+    <span class="sidebar-search-text">Search...</span>
+    <span class="sidebar-search-shortcut">/</span>
+  </button>
+  
+</form>
+
+<nav class="collapse docs-links" id="docs-nav">
+  
+  
+  
+  
+  
+  
+
+  
+  
+    
+
+    
+      
+
+      <ul class="nav docs-sidenav">
+        <li><a href="/en/post/"><i class="fas fa-arrow-left pr-1"></i>📚 Posts</a></li>
+      </ul>
+
+      
+      
+        
+          
+        
+      
+
+
+  
+    
+    
+    
+    
+      
+    
+    
+
+    
+      <div class="docs-toc-item">
+        <a class="docs-toc-link " href="/en/post/ml-finanace/">AI and ML finance</a>
+    
+      
+        <ul class="nav docs-sidenav">
+      
+
+
+  <li class="active"><a href="/en/post/ml-finanace/portfolio-optimization/">Portfolio optimization</a></li>
+
+      
+        </ul>
+      
+    
+
+    
+      </div>
+    
+
+    
+  
+</nav>
+
+    </div>
+
+    
+    
+    <div class="d-none d-xl-block col-xl-2 docs-toc">
+      
+
+      <ul class="nav toc-top">
+        <li><a href="#" id="back_to_top" class="docs-toc-title">Contents</a></li>
+      </ul>
+
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#intro">Intro</a></li>
+    <li><a href="#portfolio">Portfolio</a></li>
+    <li><a href="#financial-time-series">Financial time series</a>
+      <ul>
+        <li><a href="#data-prep">Data prep</a></li>
+        <li><a href="#returns">Returns</a></li>
+      </ul>
+    </li>
+    <li><a href="#portfolio-optimization">Portfolio optimization</a>
+      <ul>
+        <li><a href="#porttfolio-weights">Porttfolio weights</a></li>
+        <li><a href="#theoretical-foundation">Theoretical foundation</a></li>
+        <li><a href="#vanilla-model-extensions">&ldquo;Vanilla&rdquo; model extensions</a></li>
+        <li><a href="#efficient-frontier">Efficient frontier</a></li>
+      </ul>
+    </li>
+    <li><a href="#python-code">Python code</a>
+      <ul>
+        <li><a href="#vanilla-opt-cvxpy">Vanilla opt.-CVXPY</a></li>
+        <li><a href="#risk-aversion-cvxpy">Risk aversion-CVXPY</a></li>
+        <li><a href="#pyportfolioopt">PyPortfolioOpt</a></li>
+        <li><a href="#pypf-the-vanilla-opt">PyPf-the vanilla opt.</a></li>
+        <li><a href="#pypf---risk-aversion-scenario">PyPf - risk aversion scenario</a></li>
+      </ul>
+    </li>
+    <li><a href="#efficient-frontier-code">Efficient frontier code</a></li>
+    <li><a href="#summary">Summary</a></li>
+  </ul>
+</nav>
+
+      
+    </div>
+    
+
+    <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 docs-content" role="main">
+
+      <article class="article">
+
+        <div class="docs-article-container">
+          
+        </div>
+
+        
+        
+
+        <div class="docs-article-container">
+          <h1>Portfolio optimization</h1>
+
+          <div class="article-style">
+            <table>
+<thead>
+<tr>
+<th style="text-align:center">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="featured.jpg" srcset="
+               /en/post/ml-finanace/portfolio-optimization/featured_hudaa6440116b6a8bce68e7f5f68804d86_179663_6466d6916c5053f290aba482c2d8a1ce.webp 400w,
+               /en/post/ml-finanace/portfolio-optimization/featured_hudaa6440116b6a8bce68e7f5f68804d86_179663_b9b2a53ca7edfc12aa2254f42c641114.webp 760w,
+               /en/post/ml-finanace/portfolio-optimization/featured_hudaa6440116b6a8bce68e7f5f68804d86_179663_1200x1200_fit_q75_h2_lanczos.webp 1200w"
+               src="/en/post/ml-finanace/portfolio-optimization/featured_hudaa6440116b6a8bce68e7f5f68804d86_179663_6466d6916c5053f290aba482c2d8a1ce.webp"
+               width="760"
+               height="418"
+               loading="lazy" data-zoomable /></div>
+  </div></figure>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><b><a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3222267">Pixabay</a></b></td>
+</tr>
+</tbody>
+</table>
+<h2 id="intro">Intro</h2>
+<p>Portfolio optimization is a critical tool for modern investors willing to maximize their capital utilization in the market and expected returns.</p>
+<p>Many portfolio optimization techniques are based on different variants of constrained quadratic programming formalizations, taking as inputs expected asset returns, forms of risk metrics (like covariance matrices), and transaction costs. Next, the goal is selected (typically a maximization of return while keeping the risk level constant or minimizing the risk with varying returns ). The problem is solved either via a closed-form equation or a gradient-minimizing approach. Additional elements or steps can be included, like periodical rebalancing, the inclusion of transaction costs, or different cost functions (Sharpe ratio or similar).</p>
+<p>This blog post will show you how to prepare and perform a simple portfolio optimization process on selected stocks. Two approaches will be utilized - purely mathematical formulation of the optimization problem and PyPorfolioOpt library that automates most of the process.</p>
+<p>After reading this article, you will know the following:</p>
+<ol>
+<li>Key terms like portfolio, portfolio weights, and Markovitz model.</li>
+<li>How to prepare stock price data for portfolio optimization task using <strong>yfinance</strong> library.</li>
+<li>How to formulate the problem in terms of the optimization task.</li>
+<li>How to solve the optimization problem using the  library <strong>cvxpy</strong> and dedicated <strong>PyPortfolioOpt</strong>.</li>
+</ol>
+<p>The executable notebook for this article can ba found on <a href="https://github.com/maddataanalyst/blogposts_code/blob/main/portfolio_optimization/basic_portfolio_optimization.ipynb" target="_blank" rel="noopener">my Github</a></p>
+<h2 id="portfolio">Portfolio</h2>
+<p>The first important thing is to define what a portfolio is. In layperson&rsquo;s terms, the portfolio is a set of different assets (stocks, bonds, etc. - in general: different financial instruments) (Luenberger, 1997). Typically investors seek diversification of capital, so they want to have various types of assets.</p>
+<p>Portfolio optimization is finding optimal asset weights so that the portfolio return (final return after some investment period) is maximized in terms of the selected function.</p>
+<h2 id="financial-time-series">Financial time series</h2>
+<h3 id="data-prep">Data prep</h3>
+<p>The portfolio optimization process starts with stock prices. You need to download historical prices for a specific period and instruments you are interested in.
+For this purpose, we will utilize a yahoo finance (yf) library, an unofficial tool for downloading prices from Yahoo! Finance</p>
+<p><a href="https://github.com/ranaroussi/yfinance" target="_blank" rel="noopener">Library link</a></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="c1"># Step 1: let&#39;s pick some well-known stocks</span>
+</span></span><span class="line"><span class="cl"><span class="n">stocks</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;AAPL&#39;</span><span class="p">,</span> <span class="s1">&#39;GOOG&#39;</span><span class="p">,</span> <span class="s1">&#39;MSFT&#39;</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="n">start_date</span> <span class="o">=</span> <span class="s1">&#39;2020-01-01&#39;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Step 2: download prices from Yahoo!</span>
+</span></span><span class="line"><span class="cl"><span class="n">all_prices</span> <span class="o">=</span> <span class="n">yf</span><span class="o">.</span><span class="n">download</span><span class="p">(</span><span class="n">stocks</span><span class="p">,</span> <span class="n">start</span><span class="o">=</span><span class="n">start_date</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">all_prices</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span></span></span></code></pre></td></tr></table>
+</div>
+</div>
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+<pre><code>.dataframe tbody tr th {
+    vertical-align: top;
+}
+
+.dataframe thead tr th {
+    text-align: left;
+}
+
+.dataframe thead tr:last-of-type th {
+    text-align: right;
+}
+</code></pre>
+<p></style></p>
+<table border="1" class="dataframe">
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="3" halign="left">Adj Close</th>
+      <th colspan="3" halign="left">Close</th>
+      <th colspan="3" halign="left">High</th>
+      <th colspan="3" halign="left">Low</th>
+      <th colspan="3" halign="left">Open</th>
+      <th colspan="3" halign="left">Volume</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th>AAPL</th>
+      <th>GOOG</th>
+      <th>MSFT</th>
+      <th>AAPL</th>
+      <th>GOOG</th>
+      <th>MSFT</th>
+      <th>AAPL</th>
+      <th>GOOG</th>
+      <th>MSFT</th>
+      <th>AAPL</th>
+      <th>GOOG</th>
+      <th>MSFT</th>
+      <th>AAPL</th>
+      <th>GOOG</th>
+      <th>MSFT</th>
+      <th>AAPL</th>
+      <th>GOOG</th>
+      <th>MSFT</th>
+    </tr>
+    <tr>
+      <th>Date</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2020-01-02</th>
+      <td>73.562</td>
+      <td>68.368</td>
+      <td>156.592</td>
+      <td>75.088</td>
+      <td>68.368</td>
+      <td>160.62</td>
+      <td>75.150</td>
+      <td>68.407</td>
+      <td>160.73</td>
+      <td>73.798</td>
+      <td>67.077</td>
+      <td>158.33</td>
+      <td>74.060</td>
+      <td>67.077</td>
+      <td>158.78</td>
+      <td>135480400</td>
+      <td>28132000</td>
+      <td>22622100</td>
+    </tr>
+    <tr>
+      <th>2020-01-03</th>
+      <td>72.846</td>
+      <td>68.033</td>
+      <td>154.642</td>
+      <td>74.357</td>
+      <td>68.033</td>
+      <td>158.62</td>
+      <td>75.145</td>
+      <td>68.625</td>
+      <td>159.95</td>
+      <td>74.125</td>
+      <td>67.277</td>
+      <td>158.06</td>
+      <td>74.287</td>
+      <td>67.393</td>
+      <td>158.32</td>
+      <td>146322800</td>
+      <td>23728000</td>
+      <td>21116200</td>
+    </tr>
+    <tr>
+      <th>2020-01-06</th>
+      <td>73.427</td>
+      <td>69.711</td>
+      <td>155.042</td>
+      <td>74.950</td>
+      <td>69.711</td>
+      <td>159.03</td>
+      <td>74.990</td>
+      <td>69.825</td>
+      <td>159.10</td>
+      <td>73.188</td>
+      <td>67.500</td>
+      <td>156.51</td>
+      <td>73.448</td>
+      <td>67.500</td>
+      <td>157.08</td>
+      <td>118387200</td>
+      <td>34646000</td>
+      <td>20813700</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+<p>For the sake of this exercise, we will utilize only &ldquo;Close&rdquo; prices for each asset.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">close_prices</span> <span class="o">=</span> <span class="n">all_prices</span><span class="p">[</span><span class="s1">&#39;Close&#39;</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="n">close_prices</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span></span></span></code></pre></td></tr></table>
+</div>
+</div>
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+<pre><code>.dataframe tbody tr th {
+    vertical-align: top;
+}
+
+.dataframe thead th {
+    text-align: right;
+}
+</code></pre>
+<p></style></p>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>AAPL</th>
+      <th>GOOG</th>
+      <th>MSFT</th>
+    </tr>
+    <tr>
+      <th>Date</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2020-01-02</th>
+      <td>75.088</td>
+      <td>68.368</td>
+      <td>160.62</td>
+    </tr>
+    <tr>
+      <th>2020-01-03</th>
+      <td>74.357</td>
+      <td>68.033</td>
+      <td>158.62</td>
+    </tr>
+    <tr>
+      <th>2020-01-06</th>
+      <td>74.950</td>
+      <td>69.711</td>
+      <td>159.03</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+<p>Now we have a matrix of real numbers of shape <code>T x A</code>,</p>
+<p>where T - is the number of time steps and A is the number of assets in the portfolio.</p>
+<h3 id="returns">Returns</h3>
+<p>Raw prices cannot be used for portfolio optimization. One needs to calculate the returns - price changes. There are two main forms of returns calculation (Dees &amp; Sidier, 2019):</p>
+<ol>
+<li><strong>Gross returns</strong> - the price at time t, divided by the price at time t-1.
+$$
+\begin{align}
+R_t &amp;\doteq \frac{p_t}{p_{t-1}} \in \mathbb{R} \tag{1a} \\\
+\end{align}
+$$</li>
+<li><strong>Simple returns</strong> - percentage change of price between t-1 and t.
+$$
+\begin{align}
+r_t &amp;\doteq \frac{p_t - p_{t-1}}{p_{t-1}} = \frac{p_t}{p_{t-1}} - 1 = R_t - 1 \in \mathbb{R} &amp; \tag{1b} \\\
+\end{align}
+$$</li>
+<li><strong>Log returns</strong>  - a log of simple returns used to avoid computational underflows.
+$$\begin{align}
+p_t &amp;\doteq \ln(R_t) \in \mathbb{R} &amp; \tag{1c} \\\
+\end{align}
+$$
+Here we will utilize simple returns <code>(1a)</code>, as they are easily interpretable</li>
+</ol>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">returns</span> <span class="o">=</span> <span class="n">close_prices</span><span class="o">.</span><span class="n">pct_change</span><span class="p">()</span><span class="o">.</span><span class="n">dropna</span><span class="p">()</span></span></span></code></pre></td></tr></table>
+</div>
+</div>
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+<pre><code>.dataframe tbody tr th {
+    vertical-align: top;
+}
+
+.dataframe thead th {
+    text-align: right;
+}
+</code></pre>
+<p></style></p>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>AAPL</th>
+      <th>GOOG</th>
+      <th>MSFT</th>
+    </tr>
+    <tr>
+      <th>Date</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2020-01-02</th>
+      <td>0.022816</td>
+      <td>0.022700</td>
+      <td>0.018516</td>
+    </tr>
+    <tr>
+      <th>2020-01-03</th>
+      <td>-0.009722</td>
+      <td>-0.004907</td>
+      <td>-0.012452</td>
+    </tr>
+    <tr>
+      <th>2020-01-06</th>
+      <td>0.007968</td>
+      <td>0.024657</td>
+      <td>0.002585</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+<h2 id="portfolio-optimization">Portfolio optimization</h2>
+<h3 id="porttfolio-weights">Porttfolio weights</h3>
+<p>In this context, a portfolio is defined as a set of asset weights vector such that (Kolm et al., 2014):</p>
+<p>$$
+\begin{align}
+\bf{\omega} = \left[\omega_1, \omega_2, \dots, \omega_A \right]^T,\quad \sum_{i=1}^A \omega_i = 1 \tag{2}
+\end{align}
+$$</p>
+<p>where each $\omega_i$  is a weight of the i-th asset in the portfolio.
+One might have, e.g., 20% of Apple stocks, 40% of Google Stocks, and 40% of Microsoft stocks. Therefore <code>[0.2, 0.4, 0.2]</code> is a set of portfolio weights.</p>
+<p><strong>Annualized, average asset returns</strong> (mean returns multiplied by trading days), weighted by $\omega$, constitute the portfolio returns. Formally:</p>
+<p>$$\mu ^T \bf{\omega}$$</p>
+<h3 id="theoretical-foundation">Theoretical foundation</h3>
+<p>The portfolio <strong>Mean-Variance optimization</strong> problem can be defined as a constrained linear model as follows  (Capinski Marek &amp; Zastawniak Tomasz, 2011; Kennedy, 2016; Kolm et al., 2014):</p>
+<ol>
+<li>The formulation as maximization problem: maximize portfolio returns while keeping variance below maximal level $\sigma_{max}^2$</li>
+</ol>
+<p>$$\begin{align}
+&amp;\max_{\omega \in \Omega} \omega^T\mu &amp; \tag{3a} \\\
+&amp;\text{Subject to:} \\\
+&amp;&amp; \omega^T \Sigma \omega \le \sigma^2_{max} \\\
+&amp;&amp; \sum \omega  = 1
+\end{align}
+$$</p>
+<ol start="2">
+<li>The formulation as minimization problem: minimize portfolio variance while achieving at least minimal desired portfolio returns $R_min$:
+$$\begin{align}
+&amp; \min_{\omega \in \Omega} \omega^T \Sigma \omega  &amp; \tag{3b} \\\
+&amp; \text{Subject to:} \\\
+&amp;&amp;  \omega^T\mu \ge R_{min} \\\
+&amp;&amp; \sum \omega  = 1
+\end{align}
+$$</li>
+</ol>
+<p>Where $\mu = \begin{bmatrix}\mu_1 \\\ \mu_2 \\\ \dots \\\ \mu_A\end{bmatrix}, \forall_i \mu_i \in \mathbb{E}[r_i]$ is a vector of <strong>annualized</strong> (multiplied by trading days, usually 252) expected securities return and $\Omega$ is a universe of all possible portfolio weights combinations. $\Sigma$ is the <strong>annualized</strong> (multiplied by trading days, usually 252) asset returns covariance matrix, where $\sigma_i$ is the standard deviation of returns $r_i$ (Capinski Marek &amp; Zastawniak Tomasz, 2011; Kolm et al., 2014):</p>
+<p>$$
+\Sigma = \begin{bmatrix}
+\sigma_{1,1} &amp; \sigma_{2,1} &amp; \dots &amp; \sigma_{A,1}\\\
+\sigma_{1,2} &amp; \sigma_{2,2} &amp; \dots &amp; \sigma_{A,2}\\\
+\vdots &amp; \vdots &amp; \ddots &amp; \vdots\\\
+\sigma_{1,T} &amp; \sigma_{2,T} &amp; \dots &amp; \sigma_{A,T}\\\
+\end{bmatrix}
+$$</p>
+<h3 id="vanilla-model-extensions">&ldquo;Vanilla&rdquo; model extensions</h3>
+<p>One of the typically used modifications to the baseline model is the <strong>&ldquo;risk aversion&rdquo;</strong> parameter, defining the degree to which the investor is willing to balance the risk level with expected returns (Wilmott, 2007). With this aversion parameter, the model is formalized as the following optimization problem (Dees &amp; Sidier, 2019; Kolm et al., 2014):</p>
+<p>$$\begin{align}
+&amp;\max_{\omega \in \Omega} \omega^T\mu - \alpha \omega^T\Sigma\omega &amp; \tag{4a} \\\
+&amp;\text{Subject to:} \\\
+&amp;&amp; \omega \ge 0 \\\
+&amp;&amp; \sum \omega  = 1
+\end{align}
+$$</p>
+<p>Additionally, several objective functions can be selected as the optimization goal. One of the most interpretable ones is the utilization of the <strong>Sharpe Ratio</strong> (Sharpe, 1966, 1994), defined as the <strong>reward-to-variability ratio</strong>. Formally (Dees &amp; Sidier, 2019; Goetzmann et al., 2014):</p>
+<p>$$
+\begin{align}
+SR = \frac{\mu - R_f}{\sigma_p} \tag{4b}
+\end{align}
+$$</p>
+<p>Where $\mu$ is expected assets returns (as defined above), $R_f$ is the <strong>risk-free rate (often set to zero or defined as the returns from the safest financial instrument on the market - e.g. state-issued bonds)</strong>, and $\sigma_p$ is a standard deviation of portfolio returns $\sqrt{\omega^T \Sigma \omega}$.
+When used as the objective function in the Markowitz model, the optimization problem is formalized (Dees &amp; Sidier, 2019; Wilmott, 2007):</p>
+<p>$$\begin{align}
+&amp;\max_{\omega \in \Omega} \frac{\omega^T\mu}{\sqrt{\omega^T \Sigma \omega}} &amp; \tag{4c} \\\
+&amp;\text{Subject to:} \\\
+&amp;&amp; \omega \ge 0 \\\
+&amp;&amp; \sum \omega  = 1
+\end{align}
+$$</p>
+<h3 id="efficient-frontier">Efficient frontier</h3>
+<p>Different weights produce different portfolios varied in terms of returns and variance. An analyst can plot these portfolios on a chart where the x-axis represents variance, and the y-axis represents returns.</p>
+<p>Portfolios are considered &ldquo;efficient&rdquo; if they (Stoilova 2020; Luenberger 1997):</p>
+<ol>
+<li>For a given return (point on the y-axis), offer the lowest possible variance;</li>
+<li>For a given variance (point on the x-axis) offer the highest possible returns.</li>
+</ol>
+<p>Therefore efficient frontier is the line connecting the outermost points on the chart.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="Frontier"
+           src="/en/post/ml-finanace/portfolio-optimization/Minimum_variance_flontier_of_MPT.svg"
+           loading="lazy" data-zoomable /></div>
+  </div></figure>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><b><a href="https://commons.wikimedia.org/wiki/File:Minimum_variance_flontier_of_MPT.svg">Wikipedia</a></b></td>
+</tr>
+</tbody>
+</table>
+<h2 id="python-code">Python code</h2>
+<h3 id="vanilla-opt-cvxpy">Vanilla opt.-CVXPY</h3>
+<p>Let&rsquo;s try to port the <strong>&ldquo;vanilla Markowitz&rdquo;</strong> equations (3b) - risk minimization given expected return, directly to the Python code.</p>
+<p>$$\begin{align}
+&amp; \min_{\omega \in \Omega} \omega^T \Sigma \omega  &amp; \tag{3b} \\\
+&amp; \text{Subject to:} \\\
+&amp;&amp;  \omega^T\mu \ge R_{min} \\\
+&amp;&amp; \sum \omega  = 1
+\end{align}
+$$</p>
+<p>For this purpose, we will utilize the <strong>CVXPY optimization library</strong> - a powerful tool for solving linear programming and constraint optimization problems.</p>
+<p><a href="https://www.cvxpy.org/" target="_blank" rel="noopener">Link to documentation and tutorials</a>.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="c1"># Annualized mean returns and covariance: mean returns * trading days, cov matrix * trading days</span>
+</span></span><span class="line"><span class="cl"><span class="n">mu</span> <span class="o">=</span> <span class="n">returns</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span> <span class="o">*</span> <span class="mi">252</span>
+</span></span><span class="line"><span class="cl"><span class="n">cov_mat</span> <span class="o">=</span> <span class="n">returns</span><span class="o">.</span><span class="n">cov</span><span class="p">()</span> <span class="o">*</span> <span class="mi">252</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># constraint - minmal expected return</span>
+</span></span><span class="line"><span class="cl"><span class="n">min_ret</span> <span class="o">=</span> <span class="mf">0.24</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Direct implementation of equation 3b</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># variable to be optimized - portfolio weights</span>
+</span></span><span class="line"><span class="cl"><span class="n">w</span> <span class="o">=</span> <span class="n">cp</span><span class="o">.</span><span class="n">Variable</span><span class="p">(</span><span class="n">shape</span><span class="o">=</span><span class="n">mu</span><span class="o">.</span><span class="n">shape</span><span class="p">,</span> <span class="n">nonneg</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># An objective function to be minimized</span>
+</span></span><span class="line"><span class="cl"><span class="n">objective_min_risk</span> <span class="o">=</span> <span class="n">cp</span><span class="o">.</span><span class="n">quad_form</span><span class="p">(</span><span class="n">w</span><span class="p">,</span> <span class="n">cov_mat</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># List of constraints</span>
+</span></span><span class="line"><span class="cl"><span class="n">constraints</span> <span class="o">=</span> <span class="p">[</span>
+</span></span><span class="line"><span class="cl">    <span class="n">cp</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">w</span><span class="p">)</span> <span class="o">==</span> <span class="mi">1</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="p">(</span><span class="n">mu</span><span class="o">.</span><span class="n">values</span> <span class="o">@</span> <span class="n">w</span><span class="p">)</span> <span class="o">&gt;=</span> <span class="n">min_ret</span>
+</span></span><span class="line"><span class="cl"><span class="p">]</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Problem definition and solution</span>
+</span></span><span class="line"><span class="cl"><span class="n">min_risk_problem</span> <span class="o">=</span> <span class="n">cp</span><span class="o">.</span><span class="n">Problem</span><span class="p">(</span><span class="n">cp</span><span class="o">.</span><span class="n">Minimize</span><span class="p">(</span><span class="n">objective_min_risk</span><span class="p">),</span> <span class="n">constraints</span><span class="o">=</span><span class="n">constraints</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">min_risk_problem</span><span class="o">.</span><span class="n">solve</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Final weights</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">w</span><span class="o">.</span><span class="n">value</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="mi">3</span><span class="p">))</span></span></span></code></pre></td></tr></table>
+</div>
+</div>
+<p><code>[0.59  0.285 0.125]</code></p>
+<p>Let&rsquo;s check the total portfolio return by calculating a dot-product between weights and annualized mean returns:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="p">(</span><span class="n">mu</span> <span class="o">@</span> <span class="n">w</span><span class="o">.</span><span class="n">value</span><span class="p">)</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span></span></span></code></pre></td></tr></table>
+</div>
+</div>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">0.24
+</span></span></code></pre></div><h3 id="risk-aversion-cvxpy">Risk aversion-CVXPY</h3>
+<p>Let&rsquo;s try to implement directly in CVXPY equation <code>(4b)</code> - maximization of returns with risk aversion.</p>
+<p>$$\begin{align}
+&amp;\max_{\omega \in \Omega} \omega^T\mu - \alpha \omega^T\Sigma\omega &amp; \tag{4a} \\\
+&amp;\text{Subject to:} \\\
+&amp;&amp; \omega \ge 0 \\\
+&amp;&amp; \sum \omega  = 1
+\end{align}
+$$</p>
+<p>Let&rsquo;s try to solve it for $\alpha = 0.2$</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="c1"># Annualized mean returns and covariance: mean returns * trading days, cov matrix * trading days</span>
+</span></span><span class="line"><span class="cl"><span class="n">mu</span> <span class="o">=</span> <span class="n">returns</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span> <span class="o">*</span> <span class="mi">252</span>
+</span></span><span class="line"><span class="cl"><span class="n">cov_mat</span> <span class="o">=</span> <span class="n">returns</span><span class="o">.</span><span class="n">cov</span><span class="p">()</span> <span class="o">*</span> <span class="mi">252</span>
+</span></span><span class="line"><span class="cl"><span class="n">alpha</span> <span class="o">=</span> <span class="mf">0.2</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># Risk aversion parameter, example value</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Direct implementation of equation 3b</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># variable to be optimized - portfolio weights</span>
+</span></span><span class="line"><span class="cl"><span class="n">w_risk_av</span> <span class="o">=</span> <span class="n">cp</span><span class="o">.</span><span class="n">Variable</span><span class="p">(</span><span class="n">shape</span><span class="o">=</span><span class="n">mu</span><span class="o">.</span><span class="n">shape</span><span class="p">,</span> <span class="n">nonneg</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># An objective function to be maximized</span>
+</span></span><span class="line"><span class="cl"><span class="n">objective_risk_av</span> <span class="o">=</span> <span class="p">(</span><span class="n">mu</span><span class="o">.</span><span class="n">values</span> <span class="o">@</span> <span class="n">w_risk_av</span><span class="p">)</span> <span class="o">-</span> <span class="n">cp</span><span class="o">.</span><span class="n">multiply</span><span class="p">(</span><span class="n">alpha</span><span class="p">,</span> <span class="n">cp</span><span class="o">.</span><span class="n">quad_form</span><span class="p">(</span><span class="n">w_risk_av</span><span class="p">,</span> <span class="n">cov_mat</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># List of constraints</span>
+</span></span><span class="line"><span class="cl"><span class="n">constraints</span> <span class="o">=</span> <span class="p">[</span>
+</span></span><span class="line"><span class="cl">    <span class="n">cp</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">w_risk_av</span><span class="p">)</span> <span class="o">==</span> <span class="mi">1</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="n">w_risk_av</span> <span class="o">&gt;=</span> <span class="mi">0</span>
+</span></span><span class="line"><span class="cl"><span class="p">]</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Problem definition and solution</span>
+</span></span><span class="line"><span class="cl"><span class="n">max_return_risk_av_problem</span> <span class="o">=</span> <span class="n">cp</span><span class="o">.</span><span class="n">Problem</span><span class="p">(</span><span class="n">cp</span><span class="o">.</span><span class="n">Maximize</span><span class="p">(</span><span class="n">objective_risk_av</span><span class="p">),</span> <span class="n">constraints</span><span class="o">=</span><span class="n">constraints</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">max_return_risk_av_problem</span><span class="o">.</span><span class="n">solve</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Final weights</span>
+</span></span><span class="line"><span class="cl"><span class="n">w_risk_av</span><span class="o">.</span><span class="n">value</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span></span></span></code></pre></td></tr></table>
+</div>
+</div>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">[1. 0. 0.]
+</span></span></code></pre></div><p>It seems that the portfolio that maximizes returns, given the risk-aversion parameter, consists solely of Apple.</p>
+<h3 id="pyportfolioopt">PyPortfolioOpt</h3>
+<p>Python library <strong>PyPortfolioOpt</strong> automates most of the operations we have done above. It contains additional features like:</p>
+<ol>
+<li><strong>Multiple risk calculations</strong> in the form of a plug-in function - an analyst can choose from a simple covariance matrix or more advanced calculations.</li>
+<li><strong>Multiple target functions</strong> - including maximization of returns given some acceptable risk, minimization of risk given desired return, Sharpe ratio, etc.</li>
+<li><strong>Automatic option to validate portfolio</strong> in-sample (using &ldquo;training data,&rdquo; on which optimization was done).</li>
+</ol>
+<p>Let&rsquo;s try to replicate the calculations from CVXPY.</p>
+<h3 id="pypf-the-vanilla-opt">PyPf-the vanilla opt.</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="c1"># Set min desired return. Same as in the CVXPY case</span>
+</span></span><span class="line"><span class="cl"><span class="n">min_return</span> <span class="o">=</span> <span class="mf">0.24</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Step 1: Calculate expected returns using library. Compunding=False uses simple average</span>
+</span></span><span class="line"><span class="cl"><span class="n">mu_pypf</span> <span class="o">=</span> <span class="n">pypf</span><span class="o">.</span><span class="n">expected_returns</span><span class="o">.</span><span class="n">mean_historical_return</span><span class="p">(</span><span class="n">close_prices</span><span class="p">,</span> <span class="n">compounding</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Step 2: Calculate covariance matrix from prices. </span>
+</span></span><span class="line"><span class="cl"><span class="n">cov_pypf</span> <span class="o">=</span> <span class="n">pypf</span><span class="o">.</span><span class="n">risk_models</span><span class="o">.</span><span class="n">sample_cov</span><span class="p">(</span><span class="n">close_prices</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Step 3: Prepare efficient frontier for calculations.</span>
+</span></span><span class="line"><span class="cl"><span class="n">ef_vanilla</span> <span class="o">=</span> <span class="n">pypf</span><span class="o">.</span><span class="n">efficient_frontier</span><span class="o">.</span><span class="n">EfficientFrontier</span><span class="p">(</span><span class="n">mu_pypf</span><span class="p">,</span> <span class="n">cov_pypf</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Step 4: Choose the objective funciton.</span>
+</span></span><span class="line"><span class="cl"><span class="n">ef_vanilla</span><span class="o">.</span><span class="n">efficient_return</span><span class="p">(</span><span class="n">min_return</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Step 5: Get &#39;clean weights&#39; - rounded and cleaned from near-zero values</span>
+</span></span><span class="line"><span class="cl"><span class="n">ef_vanilla</span><span class="o">.</span><span class="n">clean_weights</span><span class="p">()</span></span></span></code></pre></td></tr></table>
+</div>
+</div>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">OrderedDict([(&#39;AAPL&#39;, 0.58994), (&#39;GOOG&#39;, 0.2849), (&#39;MSFT&#39;, 0.12516)])
+</span></span></code></pre></div><p>The function to measure portfolio performance will give us:</p>
+<ol>
+<li>Total portfolio returns</li>
+<li>Volatility</li>
+<li>Sharpe ratio</li>
+</ol>
+<p>Let&rsquo;s check:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">ef_vanilla</span><span class="o">.</span><span class="n">portfolio_performance</span><span class="p">()</span></span></span></code></pre></td></tr></table>
+</div>
+</div>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">(0.24, 0.33336887072236937, 0.6599296434705707)
+</span></span></code></pre></div><p>Portfolio return is aligned with our manual calculations from pure optimization approach.</p>
+<h3 id="pypf---risk-aversion-scenario">PyPf - risk aversion scenario</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="c1"># Set risk aversion parameter as before.</span>
+</span></span><span class="line"><span class="cl"><span class="n">alpha</span> <span class="o">=</span> <span class="mf">0.2</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Step 1: Calculate expected returns using library. Compunding=False uses simple average</span>
+</span></span><span class="line"><span class="cl"><span class="n">mu_pypf</span> <span class="o">=</span> <span class="n">pypf</span><span class="o">.</span><span class="n">expected_returns</span><span class="o">.</span><span class="n">mean_historical_return</span><span class="p">(</span><span class="n">close_prices</span><span class="p">,</span> <span class="n">compounding</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Step 2: Calculate covariance matrix from prices. </span>
+</span></span><span class="line"><span class="cl"><span class="n">cov_pypf</span> <span class="o">=</span> <span class="n">pypf</span><span class="o">.</span><span class="n">risk_models</span><span class="o">.</span><span class="n">sample_cov</span><span class="p">(</span><span class="n">close_prices</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Step 3: Prepare efficient frontier for calculations.</span>
+</span></span><span class="line"><span class="cl"><span class="n">ef_risk_av</span> <span class="o">=</span> <span class="n">pypf</span><span class="o">.</span><span class="n">efficient_frontier</span><span class="o">.</span><span class="n">EfficientFrontier</span><span class="p">(</span><span class="n">mu_pypf</span><span class="p">,</span> <span class="n">cov_pypf</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Step 4: Choose the objective funciton.</span>
+</span></span><span class="line"><span class="cl"><span class="n">ef_risk_av</span><span class="o">.</span><span class="n">max_quadratic_utility</span><span class="p">(</span><span class="n">risk_aversion</span><span class="o">=</span><span class="n">alpha</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Step 5: Get &#39;clean weights&#39; - rounded and cleaned from near-zero values</span>
+</span></span><span class="line"><span class="cl"><span class="n">ef_risk_av</span><span class="o">.</span><span class="n">clean_weights</span><span class="p">()</span></span></span></code></pre></td></tr></table>
+</div>
+</div>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">OrderedDict([(&#39;AAPL&#39;, 1.0), (&#39;GOOG&#39;, 0.0), (&#39;MSFT&#39;, 0.0)])
+</span></span></code></pre></div><p>Again - results are aligned with manual calculation from CVXPY.</p>
+<h2 id="efficient-frontier-code">Efficient frontier code</h2>
+<p>The library PyPorfolioOpt can produce Efficient Frontier plots as well. Once the target function has been selected, one can see different efficient frontier visualizations with possible asset configurations placed on the risk-reward scale.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span><span class="lnt">9
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="c1"># Step 1: construct a new efficient frontier BEFORE calculating expected weights</span>
+</span></span><span class="line"><span class="cl"><span class="n">ef</span> <span class="o">=</span> <span class="n">pypf</span><span class="o">.</span><span class="n">EfficientFrontier</span><span class="p">(</span><span class="n">mu_pypf</span><span class="p">,</span> <span class="n">cov_pypf</span><span class="p">,</span> <span class="n">weight_bounds</span><span class="o">=</span><span class="p">(</span><span class="kc">None</span><span class="p">,</span> <span class="kc">None</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Step 2: Choose what type of efficient frontier to plot: risk/return/utility?</span>
+</span></span><span class="line"><span class="cl"><span class="n">plotting</span><span class="o">.</span><span class="n">plot_efficient_frontier</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">    <span class="n">ef</span><span class="p">,</span> 
+</span></span><span class="line"><span class="cl">    <span class="n">ef_param</span><span class="o">=</span><span class="s2">&#34;return&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="n">show_assets</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> 
+</span></span><span class="line"><span class="cl">    <span class="n">showfig</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span></span></span></code></pre></td></tr></table>
+</div>
+</div>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="png" srcset="
+               /en/post/ml-finanace/portfolio-optimization/output_35_0_hu75bac955a7f27dc1356890b9f2bb6046_25118_e7773f0c937b38dff0e4c59f18e09fbd.webp 400w,
+               /en/post/ml-finanace/portfolio-optimization/output_35_0_hu75bac955a7f27dc1356890b9f2bb6046_25118_5a13e0cdbf33e2cc51f277fef062d9e1.webp 760w,
+               /en/post/ml-finanace/portfolio-optimization/output_35_0_hu75bac955a7f27dc1356890b9f2bb6046_25118_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
+               src="/en/post/ml-finanace/portfolio-optimization/output_35_0_hu75bac955a7f27dc1356890b9f2bb6046_25118_e7773f0c937b38dff0e4c59f18e09fbd.webp"
+               width="630"
+               height="470"
+               loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<h2 id="summary">Summary</h2>
+<p>Here is a brief summary of what topics were covered in this post:</p>
+<ol>
+<li>A portfolio is a set of assets/financial instruments that hold some value;</li>
+<li>These assets can have different weights, contributing to the total reward by the end of the period;</li>
+<li>The process of finding optimal weights (concerning some constraints and objectives - below) is called portfolio optimization;</li>
+<li>As the name suggests - this process (in its basic form) is a constrained linear programming problem;</li>
+<li>One of the best-known tools for solving such problems is called the &ldquo;Markovitz model&rdquo;, which either:
+<ol>
+<li>minimizes risk for predefined minimal return;</li>
+<li>maximizes return while trying to keep the risk below the maximally accepted level;</li>
+</ol>
+</li>
+<li>Various portfolio compositions can be plotted using efficient frontier - on the risk-reward scale;</li>
+<li>Such problems can be solved in Python either:
+<ol>
+<li>using optimization libraries like CVXPY;</li>
+<li>Using specialized libraries for portfolio optimization, like PyPortfolioOpt.</li>
+</ol>
+</li>
+</ol>
+<h1 id="bibliography">Bibliography</h1>
+<ol>
+<li><strong>Capinski Marek, &amp; Zastawniak Tomasz</strong>. (2011). Mathematics for Finance. Springer London.</li>
+<li><strong>Dees, B. S., &amp; Sidier, G</strong>. (2019). Reinforcement Learning for Portfolio Management. <a href="https://doi.org/10.48550/arxiv.1909.09571" target="_blank" rel="noopener">https://doi.org/10.48550/arxiv.1909.09571</a></li>
+<li><strong>Goetzmann, W. N., Brown, S. J., Gruber, M. J., &amp; Elton, E. J.</strong> (2014). Modern portfolio theory and investment analysis. John Wiley &amp; Sons, 237.</li>
+<li><strong>Kennedy, D.</strong> (2016). Stochastic financial models. CRC Press.</li>
+<li><strong>Kolm, P. N., Tütüncü, R., &amp; Fabozzi, F. J.</strong> (2014). 60 Years of portfolio optimization: Practical challenges and current trends. European Journal of Operational Research, 234(2). <a href="https://doi.org/10.1016/j.ejor.2013.10.060" target="_blank" rel="noopener">https://doi.org/10.1016/j.ejor.2013.10.060</a></li>
+<li><strong>Luenberger, D. G.</strong> (1997). Investment science. Oxford Univ. Press.</li>
+<li><strong>Sharpe, W. F.</strong> (1966). Mutual fund performance. The Journal of Business, 39(1), 119–138.</li>
+<li><strong>Sharpe, W. F.</strong> (1994). The Sharpe Ratio, the journal of Portfolio Management. Stanfold University, Fall.</li>
+<li><strong>Stoilov, T., Stoilova, K., &amp; Vladimirov, M.</strong> (2020). Analytical overview and applications of modified black-litterman model for portfolio optimization. Cybernetics and Information Technologies, 20(2). <a href="https://doi.org/10.2478/cait-2020-0014" target="_blank" rel="noopener">https://doi.org/10.2478/cait-2020-0014</a></li>
+<li><strong>Wilmott, P.</strong> (2007). Paul Wilmott introduces quantitative finance. John Wiley &amp; Sons.</li>
+</ol>
+
+          </div>
+
+          
+
+<div class="article-tags">
+  
+  <a class="badge badge-light" href="/en/tag/finance/">Finance</a>
+  
+  <a class="badge badge-light" href="/en/tag/time-series/">Time-series</a>
+  
+</div>
+
+
+
+          
+          
+          <div class="article-widget">
+            
+<div class="post-nav">
+  
+  
+</div>
+
+          </div>
+          
+        </div>
+
+        <div class="body-footer">
+          <p>Last updated on Nov 10, 2022</p>
+
+          
+
+
+
+          
+
+
+
+
+          
+
+
+        </div>
+
+      </article>
+
+      <footer class="site-footer">
+
+  
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+    
+  
+  
+    
+  
+
+  
+
+  
+  <p class="powered-by copyright-license-text">
+    © 2022 Filip Wójcik. This work is licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0" rel="noopener noreferrer" target="_blank">CC BY NC ND 4.0</a>
+  </p>
+  
+
+  <p class="powered-by footer-license-icons">
+    <a href="https://creativecommons.org/licenses/by-nc-nd/4.0" rel="noopener noreferrer" target="_blank" aria-label="Creative Commons">
+      <i class="fab fa-creative-commons fa-2x" aria-hidden="true"></i>
+      <i class="fab fa-creative-commons-by fa-2x" aria-hidden="true"></i>
+      
+        <i class="fab fa-creative-commons-nc fa-2x" aria-hidden="true"></i>
+      
+      
+        <i class="fab fa-creative-commons-nd fa-2x" aria-hidden="true"></i>
+      
+    </a>
+  </p>
+
+
+
+
+  <p class="powered-by">
+    
+    
+    
+      
+      
+      
+      
+      
+      
+      Published with <a href="https://wowchemy.com/?utm_campaign=poweredby" target="_blank" rel="noopener">Wowchemy</a> — the free, <a href="https://github.com/wowchemy/wowchemy-hugo-themes" target="_blank" rel="noopener">open source</a> website builder that empowers creators.
+    
+  </p>
+</footer>
+
+
+    </main>
+  </div>
+</div>
+
+  </div>
+
+  <div class="page-footer">
+    
+    
+  </div>
+
+      
+
+    
+    <script src="/js/vendor-bundle.min.92d2024afaa4dce0cad42ba360879ce9.js"></script>
+
+    
+    
+    
+      
+
+      
+      
+
+      
+
+    
+
+    
+    
+    
+
+    
+    
+    <script src="https://cdn.jsdelivr.net/gh/bryanbraun/anchorjs@4.2.2/anchor.min.js" integrity="sha512-I7w3ZdSFzw5j3jU3ZkNikBNeIrl3i+hEuEdwNmqUJvwNcaBUNcijnP2gd9DtGlgVYDplfjGoD8vTNsID+lCjqg==" crossorigin="anonymous"></script>
+    <script>
+      anchors.add();
+    </script>
+    
+
+    
+    
+    
+      
+      <script id="search-hit-fuse-template" type="text/x-template">
+        <div class="search-hit" id="summary-{{key}}">
+          <div class="search-hit-content">
+            <div class="search-hit-name">
+              <a href="{{relpermalink}}">{{title}}</a>
+              <div class="article-metadata search-hit-type">{{type}}</div>
+              <p class="search-hit-description">{{snippet}}</p>
+            </div>
+          </div>
+        </div>
+      </script>
+      
+        <script src="https://cdn.jsdelivr.net/gh/krisk/Fuse@v3.2.1/dist/fuse.min.js" integrity="sha512-o38bmzBGX+hD3JHWUFCDA09btWaqrNmoJ3RXLlrysA7PP01Kgs4UlE4MhelE1v5dJR3+cxlR4qQlotsW7jKsnw==" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/gh/julmot/mark.js@8.11.1/dist/jquery.mark.min.js" integrity="sha512-mhbv5DqBMgrWL+32MmsDOt/OAvqr/cHimk6B8y/bx/xS88MVkYGPiVv2ixKVrkywF2qHplNRUvFsAHUdxZ3Krg==" crossorigin="anonymous"></script>
+      
+    
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+      
+      
+    
+
+    
+
+    
+    
+    
+    <script id="page-data" type="application/json">{"use_headroom":false}</script>
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+      
+    
+    
+    <script src="/en/js/wowchemy.min.e930dd1bcd2253a870f7127b92051548.js"></script>
+
+    
+    
+    
+    
+    
+    
+      
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+      <script src="/js/wowchemy-publication.68f8d7090562ca65fc6d3cb3f8f2d2cb.js" type="module"></script>
+
+
+
+
+
+
+</body>
+</html>

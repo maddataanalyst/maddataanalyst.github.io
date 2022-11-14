@@ -4,7 +4,7 @@
   
   
   <url>
-    <loc></loc><lastmod>2022-06-21T12:00:00+00:00</lastmod><changefreq>weekly</changefreq><xhtml:link
+    <loc></loc><lastmod>2022-11-10T00:00:00+00:00</lastmod><changefreq>weekly</changefreq><xhtml:link
       rel="alternate"
       hreflang="pl"
       href=""
@@ -14,7 +14,9 @@
       href=""
     /></url>
   <url>
-    <loc>https://maddataanalyst.github.io/en/authors/</loc><lastmod>2022-06-21T12:00:00+00:00</lastmod><changefreq>weekly</changefreq><xhtml:link
+    <loc>https://maddataanalyst.github.io/en/post/ml-finanace/</loc><lastmod>2022-11-10T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
+  <url>
+    <loc>https://maddataanalyst.github.io/en/authors/</loc><lastmod>2022-11-10T00:00:00+00:00</lastmod><changefreq>weekly</changefreq><xhtml:link
       rel="alternate"
       hreflang="pl"
       href="https://maddataanalyst.github.io/pl/authors/"
@@ -23,6 +25,60 @@
       hreflang="en"
       href="https://maddataanalyst.github.io/en/authors/"
     /></url>
+  <url>
+    <loc>https://maddataanalyst.github.io/en/categories/</loc><lastmod>2022-11-10T00:00:00+00:00</lastmod><changefreq>weekly</changefreq><xhtml:link
+      rel="alternate"
+      hreflang="pl"
+      href="https://maddataanalyst.github.io/pl/categories/"
+    /><xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="https://maddataanalyst.github.io/en/categories/"
+    /></url>
+  <url>
+    <loc></loc><lastmod>2022-11-10T00:00:00+00:00</lastmod><changefreq>weekly</changefreq><xhtml:link
+      rel="alternate"
+      hreflang="pl"
+      href=""
+    /><xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href=""
+    /></url>
+  <url>
+    <loc>https://maddataanalyst.github.io/en/tag/finance/</loc><lastmod>2022-11-10T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
+  <url>
+    <loc>https://maddataanalyst.github.io/en/category/finance/</loc><lastmod>2022-11-10T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
+  <url>
+    <loc>https://maddataanalyst.github.io/en/</loc><lastmod>2022-11-10T00:00:00+00:00</lastmod><changefreq>weekly</changefreq><xhtml:link
+      rel="alternate"
+      hreflang="pl"
+      href="https://maddataanalyst.github.io/pl/"
+    /><xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="https://maddataanalyst.github.io/en/"
+    /></url>
+  <url>
+    <loc>https://maddataanalyst.github.io/en/post/ml-finanace/portfolio-optimization/</loc><lastmod>2022-11-10T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
+  <url>
+    <loc>https://maddataanalyst.github.io/en/tags/</loc><lastmod>2022-11-10T00:00:00+00:00</lastmod><changefreq>weekly</changefreq><xhtml:link
+      rel="alternate"
+      hreflang="pl"
+      href="https://maddataanalyst.github.io/pl/tags/"
+    /><xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="https://maddataanalyst.github.io/en/tags/"
+    /></url>
+  <url>
+    <loc>https://maddataanalyst.github.io/en/category/time-series/</loc><lastmod>2022-11-10T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
+  <url>
+    <loc>https://maddataanalyst.github.io/en/tag/time-series/</loc><lastmod>2022-11-10T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
+  <url>
+    <loc>https://maddataanalyst.github.io/en/category/tutorials/</loc><lastmod>2022-11-10T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
+  <url>
+    <loc>https://maddataanalyst.github.io/en/post/</loc><lastmod>2022-11-10T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
   <url>
     <loc>https://maddataanalyst.github.io/en/tag/deep-learning/</loc><lastmod>2022-06-21T12:00:00+00:00</lastmod><changefreq>weekly</changefreq><xhtml:link
       rel="alternate"
@@ -42,26 +98,6 @@
       rel="alternate"
       hreflang="en"
       href="https://maddataanalyst.github.io/en/talk/everything-is-a-game-use-cases-for-reinforcement-learning/"
-    /></url>
-  <url>
-    <loc></loc><lastmod>2022-06-21T12:00:00+00:00</lastmod><changefreq>weekly</changefreq><xhtml:link
-      rel="alternate"
-      hreflang="pl"
-      href=""
-    /><xhtml:link
-      rel="alternate"
-      hreflang="en"
-      href=""
-    /></url>
-  <url>
-    <loc>https://maddataanalyst.github.io/en/</loc><lastmod>2022-06-21T12:00:00+00:00</lastmod><changefreq>weekly</changefreq><xhtml:link
-      rel="alternate"
-      hreflang="pl"
-      href="https://maddataanalyst.github.io/pl/"
-    /><xhtml:link
-      rel="alternate"
-      hreflang="en"
-      href="https://maddataanalyst.github.io/en/"
     /></url>
   <url>
     <loc>https://maddataanalyst.github.io/en/event/</loc><lastmod>2022-06-21T12:00:00+00:00</lastmod><changefreq>weekly</changefreq><xhtml:link
@@ -84,16 +120,6 @@
       href="https://maddataanalyst.github.io/en/tag/reinforcement-learning/"
     /></url>
   <url>
-    <loc>https://maddataanalyst.github.io/en/tags/</loc><lastmod>2022-06-21T12:00:00+00:00</lastmod><changefreq>weekly</changefreq><xhtml:link
-      rel="alternate"
-      hreflang="pl"
-      href="https://maddataanalyst.github.io/pl/tags/"
-    /><xhtml:link
-      rel="alternate"
-      hreflang="en"
-      href="https://maddataanalyst.github.io/en/tags/"
-    /></url>
-  <url>
     <loc>https://maddataanalyst.github.io/en/project/</loc><lastmod>2022-06-21T00:00:00+00:00</lastmod><changefreq>weekly</changefreq><xhtml:link
       rel="alternate"
       hreflang="pl"
@@ -114,29 +140,11 @@
       href="https://maddataanalyst.github.io/en/project/relex/"
     /></url>
   <url>
-    <loc>https://maddataanalyst.github.io/en/categories/</loc><lastmod>2022-05-16T00:00:00+00:00</lastmod><changefreq>weekly</changefreq><xhtml:link
-      rel="alternate"
-      hreflang="pl"
-      href="https://maddataanalyst.github.io/pl/categories/"
-    /><xhtml:link
-      rel="alternate"
-      hreflang="en"
-      href="https://maddataanalyst.github.io/en/categories/"
-    /></url>
-  <url>
     <loc>https://maddataanalyst.github.io/en/post/rnns/fifty-shapes-of-time/</loc><lastmod>2022-05-16T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
   <url>
     <loc>https://maddataanalyst.github.io/en/tag/rnn/</loc><lastmod>2022-05-16T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
   <url>
     <loc>https://maddataanalyst.github.io/en/category/rnn/</loc><lastmod>2022-05-16T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
-  <url>
-    <loc>https://maddataanalyst.github.io/en/category/time-series/</loc><lastmod>2022-05-16T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
-  <url>
-    <loc>https://maddataanalyst.github.io/en/tag/time-series/</loc><lastmod>2022-05-16T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
-  <url>
-    <loc>https://maddataanalyst.github.io/en/category/tutorials/</loc><lastmod>2022-05-16T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
-  <url>
-    <loc>https://maddataanalyst.github.io/en/post/</loc><lastmod>2022-05-16T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
   <url>
     <loc>https://maddataanalyst.github.io/en/post/rnns/</loc><lastmod>2021-05-16T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
   <url>

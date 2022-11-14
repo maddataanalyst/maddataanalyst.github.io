@@ -242,6 +242,45 @@
 
 
 
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-R1E2E342QG"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+      dataLayer.push(arguments);
+  }
+
+  function trackOutboundLink(url, target) {
+    gtag('event', 'click', {
+         'event_category': 'outbound',
+         'event_label': url,
+         'transport_type': 'beacon',
+         'event_callback': function () {
+           if (target !== '_blank') {
+             document.location = url;
+           }
+         }
+    });
+    console.debug("Outbound link clicked: " + url);
+  }
+
+  function onClickCallback(event) {
+    if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
+      return;
+    }
+    trackOutboundLink(event.target, event.target.getAttribute('target'));  
+  }
+
+  gtag('js', new Date());
+  gtag('config', 'G-R1E2E342QG', {});
+  gtag('set', {'cookie_flags': 'SameSite=None;Secure'});
+
+  
+  document.addEventListener('click', onClickCallback, false);
+</script>
+
+
   
 
 
@@ -265,8 +304,8 @@
     <link rel="manifest" href="/en/manifest.webmanifest" />
   
 
-  <link rel="icon" type="image/png" href="/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_32x32_fill_lanczos_center_3.png" />
-  <link rel="apple-touch-icon" type="image/png" href="/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_180x180_fill_lanczos_center_3.png" />
+  <link rel="icon" type="image/png" href="/media/icon_hu5b489458e36ca6f814edb4aedf2e84e5_21223_32x32_fill_lanczos_center_3.png" />
+  <link rel="apple-touch-icon" type="image/png" href="/media/icon_hu5b489458e36ca6f814edb4aedf2e84e5_21223_180x180_fill_lanczos_center_3.png" />
 
   <link rel="canonical" href="https://maddataanalyst.github.io/en/post/" />
 
@@ -293,11 +332,11 @@
   <meta property="og:site_name" content="NeuraSYS" />
   <meta property="og:url" content="https://maddataanalyst.github.io/en/post/" />
   <meta property="og:title" content="📚 Posts | NeuraSYS" />
-  <meta property="og:description" content="Senior Data Scientist and Ph.D. in Quality and Management Science" /><meta property="og:image" content="https://maddataanalyst.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png" />
-    <meta property="twitter:image" content="https://maddataanalyst.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png" /><meta property="og:locale" content="en-us" />
+  <meta property="og:description" content="Senior Data Scientist and Ph.D. in Quality and Management Science" /><meta property="og:image" content="https://maddataanalyst.github.io/media/icon_hu5b489458e36ca6f814edb4aedf2e84e5_21223_512x512_fill_lanczos_center_3.png" />
+    <meta property="twitter:image" content="https://maddataanalyst.github.io/media/icon_hu5b489458e36ca6f814edb4aedf2e84e5_21223_512x512_fill_lanczos_center_3.png" /><meta property="og:locale" content="en-us" />
   
     
-      <meta property="og:updated_time" content="2022-05-16T00:00:00&#43;00:00" />
+      <meta property="og:updated_time" content="2022-11-10T00:00:00&#43;00:00" />
     
   
 
@@ -787,6 +826,88 @@
   <div class="media-body">
 
     <div class="section-subheading article-title mb-0 mt-0">
+      <a href="/en/post/ml-finanace/" >📈 AI and ML in finance</a>
+    </div>
+
+    
+    <a href="/en/post/ml-finanace/"  class="summary-link">
+      <div class="article-style">
+        Section about various financial applications of AI and ML.
+      </div>
+    </a>
+    
+
+    <div class="stream-meta article-metadata">
+
+      
+
+      
+        
+
+
+<div class="article-metadata">
+
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    Nov 10, 2022
+  </span>
+  
+
+  
+
+  
+
+  
+  
+  
+  
+
+  
+  
+
+</div>
+
+      
+    </div>
+
+    
+
+  </div>
+  <div class="ml-3">
+    
+    
+  </div>
+</div>
+
+  
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<div class="media stream-item view-compact">
+  <div class="media-body">
+
+    <div class="section-subheading article-title mb-0 mt-0">
       <a href="/en/post/rnns/" >📊 RNNs</a>
     </div>
 
@@ -895,7 +1016,7 @@
 
   
   <p class="powered-by copyright-license-text">
-    © 2022 Me. This work is licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0" rel="noopener noreferrer" target="_blank">CC BY NC ND 4.0</a>
+    © 2022 Filip Wójcik. This work is licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0" rel="noopener noreferrer" target="_blank">CC BY NC ND 4.0</a>
   </p>
   
 
