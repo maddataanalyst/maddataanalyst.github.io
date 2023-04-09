@@ -1,0 +1,1312 @@
+<!DOCTYPE html>
+<!-- This site was created with Wowchemy. https://www.wowchemy.com -->
+<!-- Last Published: April 9, 2023 --><html lang="en-us" >
+
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  
+  
+    <meta name="generator" content="Wowchemy 5.7.0 for Hugo" />
+  
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+  
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  
+
+  
+  
+  
+    
+      
+      <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap" media="print" onload="this.media='all'">
+    
+  
+
+  
+  
+
+  
+  
+    
+    <script src="/js/mathjax-config.js"></script>
+  
+
+  
+
+  <link rel="stylesheet" href="/css/vendor-bundle.min.16f785cdb553c8c4431db6775122af35.css" media="print" onload="this.media='all'">
+
+  
+  
+  
+    
+    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.2/css/academicons.min.css" integrity="sha512-KlJCpRsLf+KKu2VQa5vmRuClRFjxc5lXO03ixZt82HZUk41+1I0bD8KBSA0fY290ayMfWYI9udIqeOWSu1/uZg==" crossorigin="anonymous" media="print" onload="this.media='all'">
+    
+
+    
+    
+    
+    
+      
+      
+    
+    
+    
+
+    
+    
+    
+
+    
+
+    
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" integrity="" crossorigin="anonymous" async></script>
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+  
+
+  
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/wowchemy.8e56ebf1df577a07bde07aac0bd01f56.css" />
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+    
+    
+    <link rel="stylesheet" href="/css/libs/chroma/github-light.min.css" title="hl-light" media="print" onload="this.media='all'" >
+    <link rel="stylesheet" href="/css/libs/chroma/dracula.min.css" title="hl-dark" media="print" onload="this.media='all'" disabled>
+  
+
+  
+  
+
+
+
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-R1E2E342QG"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+      dataLayer.push(arguments);
+  }
+
+  function trackOutboundLink(url, target) {
+    gtag('event', 'click', {
+         'event_category': 'outbound',
+         'event_label': url,
+         'transport_type': 'beacon',
+         'event_callback': function () {
+           if (target !== '_blank') {
+             document.location = url;
+           }
+         }
+    });
+    console.debug("Outbound link clicked: " + url);
+  }
+
+  function onClickCallback(event) {
+    if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
+      return;
+    }
+    trackOutboundLink(event.target, event.target.getAttribute('target'));  
+  }
+
+  gtag('js', new Date());
+  gtag('config', 'G-R1E2E342QG', {});
+  gtag('set', {'cookie_flags': 'SameSite=None;Secure'});
+
+  
+  document.addEventListener('click', onClickCallback, false);
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+
+
+
+
+
+  <meta name="author" content="Filip Wójcik" />
+
+
+
+
+
+  
+
+<meta name="description" content="Senior Data Scientist and Ph.D. in Quality and Management Science" />
+
+
+
+<link rel="alternate" hreflang="en-us" href="https://maddataanalyst.github.io/en/consulting/" />
+<link rel="canonical" href="https://maddataanalyst.github.io/en/consulting/" />
+
+
+
+  <link rel="manifest" href="/en/manifest.webmanifest" />
+
+
+
+<link rel="icon" type="image/png" href="/media/icon_hu5b489458e36ca6f814edb4aedf2e84e5_21223_32x32_fill_lanczos_center_3.png" />
+<link rel="apple-touch-icon" type="image/png" href="/media/icon_hu5b489458e36ca6f814edb4aedf2e84e5_21223_180x180_fill_lanczos_center_3.png" />
+
+<meta name="theme-color" content="#1565c0" />
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+<meta property="twitter:card" content="summary" />
+<meta property="twitter:image" content="https://maddataanalyst.github.io/media/icon_hu5b489458e36ca6f814edb4aedf2e84e5_21223_512x512_fill_lanczos_center_3.png" />
+<meta property="og:site_name" content="NeuraSYS" />
+<meta property="og:url" content="https://maddataanalyst.github.io/en/consulting/" />
+<meta property="og:title" content="💼 Consulting | NeuraSYS" />
+<meta property="og:description" content="Senior Data Scientist and Ph.D. in Quality and Management Science" /><meta property="og:image" content="https://maddataanalyst.github.io/media/icon_hu5b489458e36ca6f814edb4aedf2e84e5_21223_512x512_fill_lanczos_center_3.png" /><meta property="og:locale" content="en-us" />
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+    <link rel="alternate" href="/en/consulting/index.xml" type="application/rss+xml" title="NeuraSYS" />
+  
+
+  
+
+
+  
+  <title>💼 Consulting | NeuraSYS</title>
+
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+</head>
+
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="6b8d38af61bbc4bce58e962d778c2d95" >
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <script src="/js/wowchemy-init.min.ec9d49ca50e4b80bdb08f0417a28ed84.js"></script>
+
+  
+
+
+<aside class="search-modal" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#" aria-label="Close"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control"
+        aria-label="Search...">
+        
+      </div>
+
+      
+      
+
+      
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+
+  <div class="page-header header--fixed">
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+<header>
+  <nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+    <div class="container-xl">
+
+      
+      <div class="d-none d-lg-inline-flex">
+        <a class="navbar-brand" href="/en/">NeuraSYS</a>
+      </div>
+      
+
+      
+      <button type="button" class="navbar-toggler" data-toggle="collapse"
+              data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
+      <span><i class="fas fa-bars"></i></span>
+      </button>
+      
+
+      
+      <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+        <a class="navbar-brand" href="/en/">NeuraSYS</a>
+      </div>
+      
+
+      
+      
+      <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+
+        
+        <ul class="navbar-nav d-md-inline-flex">
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/en/#about"><span>Home</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/en/#projects"><span>Projects</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link  active" href="/en/consulting"><span>Consulting</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/en/#talks"><span>Talks</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/en/#featured"><span>Publications</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/en/#post"><span>Recent posts</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/en/post"><span>Blog</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/en/#contact"><span>Contact</span></a>
+          </li>
+
+          
+          
+
+        
+
+          
+        </ul>
+      </div>
+
+      <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+
+        
+        
+          
+        
+
+        
+        
+        
+        <li class="nav-item">
+          <a class="nav-link js-search" href="#" aria-label="Search"><i class="fas fa-search" aria-hidden="true"></i></a>
+        </li>
+        
+
+        
+        
+        
+        <li class="nav-item dropdown theme-dropdown">
+          <a href="#" class="nav-link" data-toggle="dropdown" aria-haspopup="true" aria-label="Display preferences">
+            <i class="fas fa-moon" aria-hidden="true"></i>
+          </a>
+          <div class="dropdown-menu">
+            <a href="#" class="dropdown-item js-set-theme-light">
+              <span>Light</span>
+            </a>
+            <a href="#" class="dropdown-item js-set-theme-dark">
+              <span>Dark</span>
+            </a>
+            <a href="#" class="dropdown-item js-set-theme-auto">
+              <span>Automatic</span>
+            </a>
+          </div>
+        </li>
+        
+
+        
+        
+
+      </ul>
+
+    </div>
+  </nav>
+</header>
+
+
+  </div>
+
+  <div class="page-body">
+    
+    
+    
+      
+      
+      <div class="universal-wrapper py-1" style="background: initial">
+        
+  <nav class="d-none d-md-flex" aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      
+  
+    
+  
+
+    <li class="breadcrumb-item">
+      <a href="/en/">
+        
+          Home
+        
+      </a>
+    </li>
+  
+
+      <li class="breadcrumb-item active" aria-current="page">
+        💼 Consulting
+      </li>
+    </ol>
+  </nav>
+
+
+
+
+      </div>
+    
+
+    
+
+
+
+
+
+
+
+
+
+
+<div class="article-header">
+  
+  
+    <img src="/media/conf_talk.jpg" width="2048" height="1365" class="article-banner" alt="">
+  
+
+  
+</div>
+
+
+
+
+  
+
+  
+  
+  
+    
+  
+<div class="universal-wrapper pt-3">
+  <h1>💼 Consulting</h1>
+
+  
+
+  
+</div>
+
+
+
+<div class="universal-wrapper">
+  
+    <div class="article-style"><h1 id="neurasys----your-partner-in-data-science">NeuraSYS  - Your Partner in Data Science</h1>
+<p>I specialize in (widely understood) <strong>AI, machine learning (ML), and data science (DS)</strong>. I can help you succeed in your research by providing scientific consultations, advisory or creating software.</p>
+<p>Whether you need a predictive model, statistical analysis, software for research, or to automate specific tasks, I can help.</p>
+<p>I offer the following data science-related services:</p>
+<ol>
+<li>🖥️ <strong>Writing programs or projects utilizing data science and machine learning:</strong> I can help you create custom software that meets your specific needs.</li>
+<li>📊 <strong>Building analytical/research reports:</strong> I can help you analyze your data and generate insightful reports that help you understand your research findings.</li>
+<li>🔬 <strong>Help in technology/algorithms selection - scientific consultations:</strong> I can help you select the best technology, algorithms, and approach for your research.</li>
+<li>🎓 <strong>Training and workshops on AI/machine learning and data science -</strong> Whether you need an introduction to the basics of data science or want to dive deeper into specific topics like machine learning or natural language processing, I can prepare the proper training for you. As a university lecturer in data science, I have extensive experience teaching courses on such topics. I have worked with students from diverse academic backgrounds and have helped them develop the skills necessary to succeed in their research. One of my commercial courses was created in collaboration with <a href="https://akademiadatascience.pl/sdl" target="_blank" rel="noopener">Data Science Academy / Akademia Data Science here</a>.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="Akademia"
+           src="/media/akademia_ds.svg"
+           loading="lazy" data-zoomable /></div>
+  </div></figure>
+</li>
+</ol>
+<p>At my work, I use the following technologies:</p>
+<details class="spoiler "  id="spoiler-0">
+  <summary><strong>Python</strong></summary>
+  <p><figure  id="figure-python">
+    <div class="d-flex justify-content-center">
+      <div class="w-100" ><img alt="Python" srcset="
+                 /media/python_hu3f626e1f021c0dd0c5ddaa7c89bf1131_179111_37f321aab9fc21f1f2ef6589342e6f94.webp 400w,
+                 /media/python_hu3f626e1f021c0dd0c5ddaa7c89bf1131_179111_a04d14f78b602e14150104f8a7592e59.webp 760w,
+                 /media/python_hu3f626e1f021c0dd0c5ddaa7c89bf1131_179111_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
+                 src="/media/python_hu3f626e1f021c0dd0c5ddaa7c89bf1131_179111_37f321aab9fc21f1f2ef6589342e6f94.webp"
+                 width="40"
+                 height="40"
+                 loading="lazy" data-zoomable /></div>
+    </div><figcaption>
+        Python
+      </figcaption></figure>
+<p><strong>Python:</strong> A popular data science, machine learning, and AI programming language. It provides many libraries and frameworks for data analysis and modeling.</p>
+</details>
+<details class="spoiler "  id="spoiler-1">
+  <summary><strong>Tensorflow</strong></summary>
+  <p><figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="" srcset="
+               /media/tensorflow_hu770e260042f47b4851627431dcc5e89c_29954_edfff588051d1dcfba927b706d75f450.webp 400w,
+               /media/tensorflow_hu770e260042f47b4851627431dcc5e89c_29954_43d0e6a0705409a605d6ff2be1f72c6d.webp 760w,
+               /media/tensorflow_hu770e260042f47b4851627431dcc5e89c_29954_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
+               src="/media/tensorflow_hu770e260042f47b4851627431dcc5e89c_29954_edfff588051d1dcfba927b706d75f450.webp"
+               width="75"
+               height="75"
+               loading="lazy" data-zoomable /></div>
+  </div></figure>
+<p><strong>TensorFlow:</strong> A popular neural networks library, developed by Google. It provides tools for building and training deep learning models.</p>
+</details>
+<details class="spoiler "  id="spoiler-2">
+  <summary><strong>Pytorch</strong></summary>
+  <p><figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="" srcset="
+               /media/torch_hu3e476cf7de5b6fcd5a8ab48b60a18367_3367_870193f895add02f00eae1e0e1f7a963.webp 400w,
+               /media/torch_hu3e476cf7de5b6fcd5a8ab48b60a18367_3367_f8b458b1872148543d8543254219b11c.webp 760w,
+               /media/torch_hu3e476cf7de5b6fcd5a8ab48b60a18367_3367_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
+               src="/media/torch_hu3e476cf7de5b6fcd5a8ab48b60a18367_3367_870193f895add02f00eae1e0e1f7a963.webp"
+               width="75"
+               height="75"
+               loading="lazy" data-zoomable /></div>
+  </div></figure>
+<ol start="3">
+<li><strong>PyTorch:</strong> a machine learning library that has been gaining in popularity in recent years, designed to work with neural networks. It is widely used in natural language processing, graph analysis, image processing, and other complex tasks.</li>
+</ol>
+</p>
+</details>
+<details class="spoiler "  id="spoiler-3">
+  <summary><strong>SpaCy</strong></summary>
+  <p><figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="" srcset="
+               /media/spacylogo_hu1f3bed7343e2058253a1e7c96dade22e_43356_3ea75bf4890ad0b27d00d46ac68b752a.webp 400w,
+               /media/spacylogo_hu1f3bed7343e2058253a1e7c96dade22e_43356_1c9c2beeeddb134f6b409bdb518b1b13.webp 760w,
+               /media/spacylogo_hu1f3bed7343e2058253a1e7c96dade22e_43356_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
+               src="/media/spacylogo_hu1f3bed7343e2058253a1e7c96dade22e_43356_3ea75bf4890ad0b27d00d46ac68b752a.webp"
+               width="75"
+               height="75"
+               loading="lazy" data-zoomable /></div>
+  </div></figure>
+<p><strong>SpaCy:</strong> An open-source library for advanced natural language processing. It provides tools for tokenization, part-of-speech tagging, named entity recognition, and more.</p>
+</details>
+<details class="spoiler "  id="spoiler-4">
+  <summary><strong>Pandas</strong></summary>
+  <p><figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="" srcset="
+               /media/pandas_hucc2ec5cfe0196991c90da35cf71bf906_55693_521b5b8ceaa63d254cc65a9906532daa.webp 400w,
+               /media/pandas_hucc2ec5cfe0196991c90da35cf71bf906_55693_01471a2ec0274d668270252466896887.webp 760w,
+               /media/pandas_hucc2ec5cfe0196991c90da35cf71bf906_55693_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
+               src="/media/pandas_hucc2ec5cfe0196991c90da35cf71bf906_55693_521b5b8ceaa63d254cc65a9906532daa.webp"
+               width="75"
+               height="75"
+               loading="lazy" data-zoomable /></div>
+  </div></figure>
+<p><strong>Pandas:</strong> A powerful data manipulation and analysis library. It provides tools for cleaning, transforming, and analyzing data in various formats.</p>
+</details>
+<details class="spoiler "  id="spoiler-5">
+  <summary><strong>Scikit-learn</strong></summary>
+  <p><figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="" srcset="
+               /media/sklearn_hu365ed2cc4c93cadf32e56d375adc6b12_57688_9d0cfcb613d2ed4f3e441e4c1077e584.webp 400w,
+               /media/sklearn_hu365ed2cc4c93cadf32e56d375adc6b12_57688_b5b7549ecc752372e65ab0c15259d7ea.webp 760w,
+               /media/sklearn_hu365ed2cc4c93cadf32e56d375adc6b12_57688_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
+               src="/media/sklearn_hu365ed2cc4c93cadf32e56d375adc6b12_57688_9d0cfcb613d2ed4f3e441e4c1077e584.webp"
+               width="75"
+               height="75"
+               loading="lazy" data-zoomable /></div>
+  </div></figure>
+<p><strong>Scikit-learn:</strong> One of the main &ldquo;classic machine learning&rdquo; libraries for Python that provides data mining, analysis, and modeling tools. It includes a wide range of algorithms for classification, regression, clustering, and more.</p>
+</details>
+<p>I understand that every research project is unique. That&rsquo;s why I will take the time to get to know you and your research goals. We will work closely to develop solutions tailored to your needs and budget.</p>
+<p>Contact NeuraSYS today to learn more about my data science/ML software development services and how I can help you achieve your research goals.</p>
+<p>Do not hesitate to contact me:</p>
+<div class="alert alert-note">
+  <div>
+    <i class="fa fa-envelope  pr-1 fa-fw"></i> ds [at] filip-wojcik.com
+  </div>
+</div>
+</div>
+  
+
+
+  
+
+  
+  
+
+  
+
+  
+
+</div>
+  </div>
+
+  <div class="page-footer">
+    
+    
+    <div class="container">
+      <footer class="site-footer">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+    
+  
+  
+    
+  
+
+  
+
+  
+  <p class="powered-by copyright-license-text">
+    © 2023 Filip Wójcik. This work is licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0" rel="noopener noreferrer" target="_blank">CC BY NC ND 4.0</a>
+  </p>
+  
+
+  <p class="powered-by footer-license-icons">
+    <a href="https://creativecommons.org/licenses/by-nc-nd/4.0" rel="noopener noreferrer" target="_blank" aria-label="Creative Commons">
+      <i class="fab fa-creative-commons fa-2x" aria-hidden="true"></i>
+      <i class="fab fa-creative-commons-by fa-2x" aria-hidden="true"></i>
+      
+        <i class="fab fa-creative-commons-nc fa-2x" aria-hidden="true"></i>
+      
+      
+        <i class="fab fa-creative-commons-nd fa-2x" aria-hidden="true"></i>
+      
+    </a>
+  </p>
+
+
+
+
+
+  <p class="powered-by">
+    
+    
+    
+      
+      
+      
+      
+      
+      
+      Published with <a href="https://wowchemy.com/?utm_campaign=poweredby" target="_blank" rel="noopener">Wowchemy</a> — the free, <a href="https://github.com/wowchemy/wowchemy-hugo-themes" target="_blank" rel="noopener">open source</a> website builder that empowers creators.
+    
+  </p>
+</footer>
+
+    </div>
+    
+  </div>
+
+  
+
+
+<script src="/js/vendor-bundle.min.46271ef31da3f018e9cd1b59300aa265.js"></script>
+
+
+
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script id="search-hit-fuse-template" type="text/x-template">
+    <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+    </div>
+  </script>
+  
+    <script src="https://cdn.jsdelivr.net/gh/krisk/Fuse@v3.2.1/dist/fuse.min.js" integrity="sha512-o38bmzBGX+hD3JHWUFCDA09btWaqrNmoJ3RXLlrysA7PP01Kgs4UlE4MhelE1v5dJR3+cxlR4qQlotsW7jKsnw==" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/gh/julmot/mark.js@8.11.1/dist/jquery.mark.min.js" integrity="sha512-mhbv5DqBMgrWL+32MmsDOt/OAvqr/cHimk6B8y/bx/xS88MVkYGPiVv2ixKVrkywF2qHplNRUvFsAHUdxZ3Krg==" crossorigin="anonymous"></script>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+<script id="page-data" type="application/json">{"use_headroom":true}</script>
+
+
+
+  <script src="/js/wowchemy-headroom.db4755770454eb63685f8de785c0a172.js" type="module"></script>
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+<script src="/en/js/wowchemy.min.64db40ac7fec289d43837702bc527581.js"></script>
+
+
+
+
+
+
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        
+        <pre><code></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <script src="/js/wowchemy-publication.68f8d7090562ca65fc6d3cb3f8f2d2cb.js" type="module"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

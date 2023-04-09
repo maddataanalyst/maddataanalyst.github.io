@@ -1,4 +1,6 @@
-<!DOCTYPE html><html lang="en-us" >
+<!DOCTYPE html>
+<!-- This site was created with Wowchemy. https://www.wowchemy.com -->
+<!-- Last Published: April 9, 2023 --><html lang="en-us" >
 
 
 <head>
@@ -8,8 +10,22 @@
   
   
   
-    <meta name="generator" content="Wowchemy 5.5.0 for Hugo" />
+    <meta name="generator" content="Wowchemy 5.7.0 for Hugo" />
   
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
 
   
   
@@ -48,32 +64,6 @@
 
   
   
-  
-  
-  
-    
-    
-    
-  
-  
-
-  <meta name="author" content="Filip Wójcik" />
-
-  
-  
-  
-    
-  
-  <meta name="description" content="Time series processing is a well-known and extensively researched problem. Moreover - many people naturally understand, what a time series is, and how it is structured. Things start to get complicated once you are about to prepare time-dependent data for modeling with neural networks. Three-dimensional structures are not that easy to imagine initially." />
-
-  
-  <link rel="alternate" hreflang="en-us" href="https://maddataanalyst.github.io/en/post/rnns/fifty-shapes-of-time/" />
-
-  
-  
-  
-    <meta name="theme-color" content="#1565c0" />
-  
 
   
   
@@ -83,14 +73,14 @@
 
   
 
-  <link rel="stylesheet" href="/css/vendor-bundle.min.c7b8d9abd591ba2253ea42747e3ac3f5.css" media="print" onload="this.media='all'">
+  <link rel="stylesheet" href="/css/vendor-bundle.min.16f785cdb553c8c4431db6775122af35.css" media="print" onload="this.media='all'">
 
   
   
   
     
     
-      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.1/css/academicons.min.css" integrity="sha512-W0xM4mr6dEP9nREo7Z9z+9X70wytKvMGeDsj7ps2+xg5QPrEBXC8tAW1IFnzjR6eoJ90JmCnFzerQJTLzIEHjA==" crossorigin="anonymous" media="print" onload="this.media='all'">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.2/css/academicons.min.css" integrity="sha512-KlJCpRsLf+KKu2VQa5vmRuClRFjxc5lXO03ixZt82HZUk41+1I0bD8KBSA0fY290ayMfWYI9udIqeOWSu1/uZg==" crossorigin="anonymous" media="print" onload="this.media='all'">
     
 
     
@@ -102,18 +92,6 @@
     
     
     
-
-    
-    
-    
-      
-    
-    
-    
-    
-    
-    <link rel="stylesheet" href="/css/libs/chroma/github-light.min.css" title="hl-light" media="print" onload="this.media='all'" >
-    <link rel="stylesheet" href="/css/libs/chroma/dracula.min.css" title="hl-dark" media="print" onload="this.media='all'" disabled>
 
     
     
@@ -236,9 +214,30 @@
   
   
   
-  <link rel="stylesheet" href="/css/wowchemy.978ed78d787744677cc3f4f1579d21c3.css" />
+  
+  <link rel="stylesheet" href="/css/wowchemy.8e56ebf1df577a07bde07aac0bd01f56.css" />
 
   
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+    
+    
+    <link rel="stylesheet" href="/css/libs/chroma/github-light.min.css" title="hl-light" media="print" onload="this.media='all'" >
+    <link rel="stylesheet" href="/css/libs/chroma/dracula.min.css" title="hl-dark" media="print" onload="this.media='all'" disabled>
+  
+
+  
+  
+
+
 
 
 
@@ -281,81 +280,134 @@
 </script>
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   
+  
+  
+
+
+
+
+
+
+  <meta name="author" content="Filip Wójcik" />
+
+
+
+
+
+  
+
+<meta name="description" content="Time series processing is a well-known and extensively researched problem. Moreover - many people naturally understand, what a time series is, and how it is structured. Things start to get complicated once you are about to prepare time-dependent data for modeling with neural networks. Three-dimensional structures are not that easy to imagine initially." />
+
+
+
+<link rel="alternate" hreflang="en-us" href="https://maddataanalyst.github.io/en/post/rnns/fifty-shapes-of-time/" />
+<link rel="canonical" href="https://maddataanalyst.github.io/en/post/rnns/fifty-shapes-of-time/" />
+
+
+
+  <link rel="manifest" href="/en/manifest.webmanifest" />
+
+
+
+<link rel="icon" type="image/png" href="/media/icon_hu5b489458e36ca6f814edb4aedf2e84e5_21223_32x32_fill_lanczos_center_3.png" />
+<link rel="apple-touch-icon" type="image/png" href="/media/icon_hu5b489458e36ca6f814edb4aedf2e84e5_21223_180x180_fill_lanczos_center_3.png" />
+
+<meta name="theme-color" content="#1565c0" />
+
+
+
+
+
+
+
+
 
 
   
 
 
-  
 
 
 
 
-  
-  
-  
+<meta property="twitter:card" content="summary_large_image" />
+<meta property="twitter:image" content="https://maddataanalyst.github.io/en/post/rnns/fifty-shapes-of-time/featured.jpg" />
+<meta property="og:site_name" content="NeuraSYS" />
+<meta property="og:url" content="https://maddataanalyst.github.io/en/post/rnns/fifty-shapes-of-time/" />
+<meta property="og:title" content="Fifty Shades of Time: Time series &amp; RNNs | NeuraSYS" />
+<meta property="og:description" content="Time series processing is a well-known and extensively researched problem. Moreover - many people naturally understand, what a time series is, and how it is structured. Things start to get complicated once you are about to prepare time-dependent data for modeling with neural networks. Three-dimensional structures are not that easy to imagine initially." /><meta property="og:image" content="https://maddataanalyst.github.io/en/post/rnns/fifty-shapes-of-time/featured.jpg" /><meta property="og:locale" content="en-us" />
 
   
-
-  
-    <link rel="manifest" href="/en/manifest.webmanifest" />
-  
-
-  <link rel="icon" type="image/png" href="/media/icon_hu5b489458e36ca6f814edb4aedf2e84e5_21223_32x32_fill_lanczos_center_3.png" />
-  <link rel="apple-touch-icon" type="image/png" href="/media/icon_hu5b489458e36ca6f814edb4aedf2e84e5_21223_180x180_fill_lanczos_center_3.png" />
-
-  <link rel="canonical" href="https://maddataanalyst.github.io/en/post/rnns/fifty-shapes-of-time/" />
-
+    <meta
+      property="article:published_time"
+      content="2022-05-16T00:00:00&#43;00:00"
+    />
   
   
-  
-  
-  
-  
-  
-  
-    
-  
-  
-
-  
-  
-    
-    
-  
-  <meta property="twitter:card" content="summary_large_image" />
-  
-  <meta property="og:site_name" content="NeuraSYS" />
-  <meta property="og:url" content="https://maddataanalyst.github.io/en/post/rnns/fifty-shapes-of-time/" />
-  <meta property="og:title" content="Fifty Shades of Time: Time series &amp; RNNs | NeuraSYS" />
-  <meta property="og:description" content="Time series processing is a well-known and extensively researched problem. Moreover - many people naturally understand, what a time series is, and how it is structured. Things start to get complicated once you are about to prepare time-dependent data for modeling with neural networks. Three-dimensional structures are not that easy to imagine initially." /><meta property="og:image" content="https://maddataanalyst.github.io/en/post/rnns/fifty-shapes-of-time/featured.jpg" />
-    <meta property="twitter:image" content="https://maddataanalyst.github.io/en/post/rnns/fifty-shapes-of-time/featured.jpg" /><meta property="og:locale" content="en-us" />
-  
-    
-      <meta
-        property="article:published_time"
-        content="2022-05-16T00:00:00&#43;00:00"
-      />
-    
     <meta property="article:modified_time" content="2022-05-16T00:00:00&#43;00:00">
   
 
-  
 
 
 
-  
 
-  
+
 
   
 
 
 
 
+  
+  
+  
 
+  
+  
+
+  
+
+
+  
   <title>Fifty Shades of Time: Time series &amp; RNNs | NeuraSYS</title>
+
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
 </head>
 
 
@@ -370,7 +422,7 @@
   
   
   
-  <script src="/js/wowchemy-init.min.e22a2a20712150175b9cd707be2d0584.js"></script>
+  <script src="/js/wowchemy-init.min.ec9d49ca50e4b80bdb08f0417a28ed84.js"></script>
 
   
 
@@ -414,8 +466,12 @@
 
 
 
-  <div class="page-header">
-    
+  <div class="page-header header--fixed">
+  
+  
+  
+  
+  
 
 
 
@@ -428,7 +484,7 @@
 
 
 
-<header class="header--fixed">
+<header>
   <nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
     <div class="container-xl">
 
@@ -528,6 +584,36 @@
 
           <li class="nav-item">
             <a class="nav-link " href="/en/#projects"><span>Projects</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/en/consulting"><span>Consulting</span></a>
           </li>
 
           
@@ -724,6 +810,7 @@
 
         
         
+        
         <li class="nav-item">
           <a class="nav-link js-search" href="#" aria-label="Search"><i class="fas fa-search" aria-hidden="true"></i></a>
         </li>
@@ -864,6 +951,17 @@
     <div class="d-none d-xl-block col-xl-2 docs-toc">
       
 
+
+
+
+
+
+
+
+
+
+
+
       <ul class="nav toc-top">
         <li><a href="#" id="back_to_top" class="docs-toc-title">Contents</a></li>
       </ul>
@@ -892,25 +990,49 @@
 </nav>
 
       
+
+
+
+
+
+
+
+
+
+
+
     </div>
     
 
     <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 docs-content" role="main">
 
-      <article class="article">
+      <div class="docs-article-container">
+        
+      </div>
 
-        <div class="docs-article-container">
+      
+      
+      
+      <div class="article-header">
+        
+        
+        <img src="/en/post/rnns/fifty-shapes-of-time/featured_hu79560c43f3f88bfda1ea41b6ac12dbd3_751222_1800x310_fit_q75_h2_lanczos.webp" width="465" height="310" class="article-banner" alt="Image credit: [**Image by Gerd Altmann from Pixabay**](https://pixabay.com/users/geralt-9301/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3222267)">
+        
+          <span class="article-header-caption">Image credit: <a href="https://pixabay.com/users/geralt-9301/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3222267" target="_blank" rel="noopener"><strong>Image by Gerd Altmann from Pixabay</strong></a></span>
+        
+      </div>
+      
+
+      <div class="docs-article-container">
+        
+        <h1>Fifty Shades of Time: Time series &amp; RNNs</h1>
+
+        <article class="article-style">
+
           
-        </div>
+          
 
-        
-        
-
-        <div class="docs-article-container">
-          <h1>Fifty Shades of Time: Time series &amp; RNNs</h1>
-
-          <div class="article-style">
-            <h1 id="part-1-univariate-time-series--classification">Part 1: univariate time series + classification</h1>
+          <h1 id="part-1-univariate-time-series--classification">Part 1: univariate time series + classification</h1>
 <table>
 <thead>
 <tr>
@@ -1264,7 +1386,9 @@ $$ N \times K \times f $$</p>
 <p>The data is presented on chart below. Double-click a legend to isolate a single time series. You can also zoom in and slice it.</p>
 
 
-<div id="chart-467831259" class="chart"></div>
+
+
+<div id="chart-348916572" class="chart"></div>
 <script>
   (function() {
     let a = setInterval( function() {
@@ -1274,11 +1398,12 @@ $$ N \times K \times f $$</p>
       clearInterval( a );
 
       Plotly.d3.json("./sinusoids.json", function(chart) {
-        Plotly.plot('chart-467831259', chart.data, chart.layout, {responsive: true});
+        Plotly.plot('chart-348916572', chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
 </script>
+
 <h3 id="the-experiment">The experiment</h3>
 <p>We will keep the last 20% of the data samples as a test set, and the remaining will be mixed up together and used during training.</p>
 <p>We will normalize the training data and use normalizer trained on it to do the same with test data. Similar things can be achieved by building a pipeline (combining an LSTM with Scaler), but let&rsquo;s keep things simple here.</p>
@@ -1343,7 +1468,9 @@ $$ N \times K \times f $$</p>
 <p>We can take a look on a single sample in X_train. This is just a part of some sinusoid, a slice of the curve.</p>
 
 
-<div id="chart-896235741" class="chart"></div>
+
+
+<div id="chart-257641389" class="chart"></div>
 <script>
   (function() {
     let a = setInterval( function() {
@@ -1353,11 +1480,12 @@ $$ N \times K \times f $$</p>
       clearInterval( a );
 
       Plotly.d3.json("./slice.json", function(chart) {
-        Plotly.plot('chart-896235741', chart.data, chart.layout, {responsive: true});
+        Plotly.plot('chart-257641389', chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
 </script>
+
 <p>Now it&rsquo;s time to conduct our experiment. As a baseline to compare with, we will use random guessing with prior probability :) We would expect our model to be better than that. The architecture for this LSTM has been arbitrarily chosen - it&rsquo;s not the main point of this exercise, so repeated cross-validation or using Keras Tuner for finding the best hyperparameters is beyond the scope of this post.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -1778,9 +1906,82 @@ Such a structure can be generated from data by subsequent shifting the time seri
 <p id='trawinski'>Trawinski, B. et al. (2012) “Nonparametric statistical analysis for multiple comparison of machine learning regression algorithms”, International Journal of Applied Mathematics and Computer Science, nr 22(4), ss. 867–881. doi: 10.2478/v10006-012-0064-z</p></li>
 </ol>
 
-          </div>
 
-          
+        </article>
+
+        
+
+
+
+<style>
+  .btn-feedback {
+    display: inline-block;
+  }
+  .btn-feedback-negative {
+    margin-left: 1em;
+  }
+  .feedback--response {
+    display: none;
+    margin-top: 1em;
+  }
+  .feedback--response__visible {
+    display: block;
+  }
+</style>
+<div class="d-print-none widget--feedback">
+  <h2 class="feedback--title">Feedback</h2>
+  <p class="feedback--question">Was this page helpful?</p>
+  <p class="feedback--response feedback--response-positive">
+    🙏
+  </p>
+  <p class="feedback--response feedback--response-negative">
+    🙏
+  </p>
+  <button class="btn btn-primary mb-4 btn-feedback btn-feedback-positive">
+    😍 Yes
+  </button>
+  <button class="btn btn-primary mb-4 btn-feedback btn-feedback-negative">
+    😡 No
+  </button>
+</div>
+<script>
+  const btnYes = document.querySelector('.btn-feedback-positive');
+  const btnNo = document.querySelector('.btn-feedback-negative');
+  const responseYes = document.querySelector('.feedback--response-positive');
+  const responseNo = document.querySelector('.feedback--response-negative');
+  const disableButtons = () => {
+    btnYes.disabled = true;
+    btnNo.disabled = true;
+  };
+  const sendFeedback = (value) => {
+    if (typeof gtag !== 'function') return;
+    gtag('event', 'click', {
+      'event_category': 'page_rating',
+      'event_label': window.location.pathname,
+      'value': value,
+      'transport_type': 'beacon',
+      'event_callback': function () {
+        console.debug(`✅ Feedback sent ${value}`);
+      }
+    });
+  };
+  btnYes.addEventListener('click', () => {
+    console.debug('Feedback response: 😍');
+    responseYes.classList.add('feedback--response__visible');
+    disableButtons();
+    sendFeedback(1);
+  });
+  btnNo.addEventListener('click', () => {
+    console.debug('Feedback response: 😡');
+    responseNo.classList.add('feedback--response__visible');
+    disableButtons();
+    sendFeedback(0);
+  });
+</script>
+
+
+
+        
 
 <div class="article-tags">
   
@@ -1794,37 +1995,36 @@ Such a structure can be generated from data by subsequent shifting the time seri
 
 
 
+        
+        
+        <div class="article-widget">
           
-          
-          <div class="article-widget">
-            
 <div class="post-nav">
   
   
 </div>
 
-          </div>
-          
         </div>
+        
+      </div>
 
-        <div class="body-footer">
-          <p>Last updated on May 16, 2022</p>
+      <div class="body-footer">
+        <p>Last updated on May 16, 2022</p>
 
-          
-
-
-
-          
+        
 
 
 
 
-          
+        
 
 
-        </div>
 
-      </article>
+
+        
+
+
+      </div>
 
       <footer class="site-footer">
 
@@ -1832,14 +2032,27 @@ Such a structure can be generated from data by subsequent shifting the time seri
 
 
 
-  
+
+
+
+
+
+
+
+
 
   
-
+  
+  
+  
   
 
-  
-  
+
+
+
+
+
+
 
 
 
@@ -1862,7 +2075,7 @@ Such a structure can be generated from data by subsequent shifting the time seri
 
   
   <p class="powered-by copyright-license-text">
-    © 2022 Filip Wójcik. This work is licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0" rel="noopener noreferrer" target="_blank">CC BY NC ND 4.0</a>
+    © 2023 Filip Wójcik. This work is licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0" rel="noopener noreferrer" target="_blank">CC BY NC ND 4.0</a>
   </p>
   
 
@@ -1878,6 +2091,7 @@ Such a structure can be generated from data by subsequent shifting the time seri
       
     </a>
   </p>
+
 
 
 
@@ -1909,110 +2123,111 @@ Such a structure can be generated from data by subsequent shifting the time seri
     
   </div>
 
-      
+  
 
-    
-    <script src="/js/vendor-bundle.min.92d2024afaa4dce0cad42ba360879ce9.js"></script>
 
-    
-    
-    
-      
+<script src="/js/vendor-bundle.min.46271ef31da3f018e9cd1b59300aa265.js"></script>
 
-      
-      
 
-      
-        
-        <script src="https://cdn.jsdelivr.net/gh/mermaid-js/mermaid@v8.8.4/dist/mermaid.min.js" integrity="sha512-+TNmhaRJf3jyYHTpzEq/5I6b+aGyhzWb21mGdHAjxSGSYwxN9Grug3Y3B9qVxWfKKY8MscE/6mr9walWvFLFvQ==" crossorigin="anonymous" title="mermaid"></script>
-      
 
-    
 
-    
-    
-    
+  
 
-    
-    
-    <script src="https://cdn.jsdelivr.net/gh/bryanbraun/anchorjs@4.2.2/anchor.min.js" integrity="sha512-I7w3ZdSFzw5j3jU3ZkNikBNeIrl3i+hEuEdwNmqUJvwNcaBUNcijnP2gd9DtGlgVYDplfjGoD8vTNsID+lCjqg==" crossorigin="anonymous"></script>
-    <script>
-      anchors.add();
-    </script>
-    
+  
+  
 
+  
     
-    
-    
-      
-      <script id="search-hit-fuse-template" type="text/x-template">
-        <div class="search-hit" id="summary-{{key}}">
-          <div class="search-hit-content">
-            <div class="search-hit-name">
-              <a href="{{relpermalink}}">{{title}}</a>
-              <div class="article-metadata search-hit-type">{{type}}</div>
-              <p class="search-hit-description">{{snippet}}</p>
-            </div>
-          </div>
+    <script src="https://cdn.jsdelivr.net/npm/mermaid@9.1.3/dist/mermaid.min.js" integrity="sha256-TIYL00Rhw/8WaoUhYTLX9SKIEFdXxg+yMWSLVUbhiLg=" crossorigin="anonymous" title="mermaid"></script>
+  
+
+
+
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/gh/bryanbraun/anchorjs@4.2.2/anchor.min.js" integrity="sha512-I7w3ZdSFzw5j3jU3ZkNikBNeIrl3i+hEuEdwNmqUJvwNcaBUNcijnP2gd9DtGlgVYDplfjGoD8vTNsID+lCjqg==" crossorigin="anonymous"></script>
+<script>
+  anchors.add();
+</script>
+
+
+
+
+
+  
+  <script id="search-hit-fuse-template" type="text/x-template">
+    <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
         </div>
-      </script>
-      
-        <script src="https://cdn.jsdelivr.net/gh/krisk/Fuse@v3.2.1/dist/fuse.min.js" integrity="sha512-o38bmzBGX+hD3JHWUFCDA09btWaqrNmoJ3RXLlrysA7PP01Kgs4UlE4MhelE1v5dJR3+cxlR4qQlotsW7jKsnw==" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/gh/julmot/mark.js@8.11.1/dist/jquery.mark.min.js" integrity="sha512-mhbv5DqBMgrWL+32MmsDOt/OAvqr/cHimk6B8y/bx/xS88MVkYGPiVv2ixKVrkywF2qHplNRUvFsAHUdxZ3Krg==" crossorigin="anonymous"></script>
-      
-    
+      </div>
+    </div>
+  </script>
+  
+    <script src="https://cdn.jsdelivr.net/gh/krisk/Fuse@v3.2.1/dist/fuse.min.js" integrity="sha512-o38bmzBGX+hD3JHWUFCDA09btWaqrNmoJ3RXLlrysA7PP01Kgs4UlE4MhelE1v5dJR3+cxlR4qQlotsW7jKsnw==" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/gh/julmot/mark.js@8.11.1/dist/jquery.mark.min.js" integrity="sha512-mhbv5DqBMgrWL+32MmsDOt/OAvqr/cHimk6B8y/bx/xS88MVkYGPiVv2ixKVrkywF2qHplNRUvFsAHUdxZ3Krg==" crossorigin="anonymous"></script>
+  
 
-    
-    
-      <script src="https://cdn.jsdelivr.net/gh/plotly/plotly.js@v1.55.2/dist/plotly.min.js" integrity="sha512-gttPT9uTUiaLBj6XZdcB0ydKXiDaBwstInkN4Qvp1Nz3iwXNc8TTQplIEPIGxyJBDqERjwkKxf2OyO47/0EHbQ==" crossorigin="anonymous"></script>
-    
 
-    
-    
-    
-    
 
-    
-    
-      
-      
-      
-      
-      
-      
-      
-    
 
-    
+  <script src="https://cdn.jsdelivr.net/gh/plotly/plotly.js@v1.55.2/dist/plotly.min.js" integrity="sha512-gttPT9uTUiaLBj6XZdcB0ydKXiDaBwstInkN4Qvp1Nz3iwXNc8TTQplIEPIGxyJBDqERjwkKxf2OyO47/0EHbQ==" crossorigin="anonymous"></script>
 
-    
-    
-    
-    <script id="page-data" type="application/json">{"use_headroom":false}</script>
 
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-      
-      
-    
-    
-    <script src="/en/js/wowchemy.min.e930dd1bcd2253a870f7127b92051548.js"></script>
 
-    
-    
-    
-    
-    
-    
-      
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+<script id="page-data" type="application/json">{"use_headroom":false}</script>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+<script src="/en/js/wowchemy.min.64db40ac7fec289d43837702bc527581.js"></script>
+
+
+
+
+
+
+
+  
 <div id="modal" class="modal fade" role="dialog">
   <div class="modal-dialog">
     <div class="modal-content">
@@ -2023,7 +2238,8 @@ Such a structure can be generated from data by subsequent shifting the time seri
         </button>
       </div>
       <div class="modal-body">
-        <pre><code class="tex hljs"></code></pre>
+        
+        <pre><code></code></pre>
       </div>
       <div class="modal-footer">
         <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
@@ -2038,7 +2254,20 @@ Such a structure can be generated from data by subsequent shifting the time seri
   </div>
 </div>
 
-      <script src="/js/wowchemy-publication.68f8d7090562ca65fc6d3cb3f8f2d2cb.js" type="module"></script>
+
+  <script src="/js/wowchemy-publication.68f8d7090562ca65fc6d3cb3f8f2d2cb.js" type="module"></script>
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

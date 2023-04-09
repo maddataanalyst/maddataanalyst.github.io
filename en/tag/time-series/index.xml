@@ -1200,7 +1200,9 @@ $$ N \times K \times f $$&lt;/p&gt;
 &lt;p&gt;The data is presented on chart below. Double-click a legend to isolate a single time series. You can also zoom in and slice it.&lt;/p&gt;
 
 
-&lt;div id=&#34;chart-467831259&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+
+
+&lt;div id=&#34;chart-348916572&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   (function() {
     let a = setInterval( function() {
@@ -1210,11 +1212,12 @@ $$ N \times K \times f $$&lt;/p&gt;
       clearInterval( a );
 
       Plotly.d3.json(&#34;./sinusoids.json&#34;, function(chart) {
-        Plotly.plot(&#39;chart-467831259&#39;, chart.data, chart.layout, {responsive: true});
+        Plotly.plot(&#39;chart-348916572&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
 &lt;/script&gt;
+
 &lt;h3 id=&#34;the-experiment&#34;&gt;The experiment&lt;/h3&gt;
 &lt;p&gt;We will keep the last 20% of the data samples as a test set, and the remaining will be mixed up together and used during training.&lt;/p&gt;
 &lt;p&gt;We will normalize the training data and use normalizer trained on it to do the same with test data. Similar things can be achieved by building a pipeline (combining an LSTM with Scaler), but let&amp;rsquo;s keep things simple here.&lt;/p&gt;
@@ -1279,7 +1282,9 @@ $$ N \times K \times f $$&lt;/p&gt;
 &lt;p&gt;We can take a look on a single sample in X_train. This is just a part of some sinusoid, a slice of the curve.&lt;/p&gt;
 
 
-&lt;div id=&#34;chart-896235741&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+
+
+&lt;div id=&#34;chart-257641389&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   (function() {
     let a = setInterval( function() {
@@ -1289,11 +1294,12 @@ $$ N \times K \times f $$&lt;/p&gt;
       clearInterval( a );
 
       Plotly.d3.json(&#34;./slice.json&#34;, function(chart) {
-        Plotly.plot(&#39;chart-896235741&#39;, chart.data, chart.layout, {responsive: true});
+        Plotly.plot(&#39;chart-257641389&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
 &lt;/script&gt;
+
 &lt;p&gt;Now it&amp;rsquo;s time to conduct our experiment. As a baseline to compare with, we will use random guessing with prior probability :) We would expect our model to be better than that. The architecture for this LSTM has been arbitrarily chosen - it&amp;rsquo;s not the main point of this exercise, so repeated cross-validation or using Keras Tuner for finding the best hyperparameters is beyond the scope of this post.&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
