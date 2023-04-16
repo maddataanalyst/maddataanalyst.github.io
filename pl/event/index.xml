@@ -13,10 +13,10 @@
     </image>
     
     <item>
-      <title>Wszystko jest grą: przypadki użycia uczenia ze wzmocnieniem poza grami.</title>
-      <link>https://maddataanalyst.github.io/pl/talk/wszystko-jest-gra-przypadki-uzycia-uczenia-ze-wzmocnieniem-poza-grami./</link>
+      <title>Wszystko jest grą: przypadki użycia uczenia ze wzmocnieniem poza grami</title>
+      <link>https://maddataanalyst.github.io/pl/talk/wszystko-jest-gra-przypadki-uzycia-uczenia-ze-wzmocnieniem-poza-grami/</link>
       <pubDate>Tue, 21 Jun 2022 12:00:00 +0000</pubDate>
-      <guid>https://maddataanalyst.github.io/pl/talk/wszystko-jest-gra-przypadki-uzycia-uczenia-ze-wzmocnieniem-poza-grami./</guid>
+      <guid>https://maddataanalyst.github.io/pl/talk/wszystko-jest-gra-przypadki-uzycia-uczenia-ze-wzmocnieniem-poza-grami/</guid>
       <description>&lt;p&gt;Uczenie ze wzmocnieniem (RL) zwykle kojarzone jest z grami, takimi jak klasyczne Atari, szachy czy Go. Wiele firm i osób związanych z biznesem zakłada, że RL ograniczony jest wyłącznie do tego rodzaju przypadków. Tymczasem twierdzenie to jest dalekie od prawdy – w przypadku sekwencyjnych problemów decyzyjnych, wystarczy niewiele wysiłku, by przeformułować je, do modelowania z użyciem RL. Prezentacja pokazuje kilka realnych problemów biznesowych rozwiązanych właśnie w taki sposób.&lt;/p&gt;
 </description>
     </item>

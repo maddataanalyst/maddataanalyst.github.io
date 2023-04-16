@@ -18,45 +18,6 @@
       <pubDate>Mon, 16 May 2022 00:00:00 +0000</pubDate>
       <guid>https://maddataanalyst.github.io/en/post/rnns/fifty-shapes-of-time/</guid>
       <description>&lt;h1 id=&#34;part-1-univariate-time-series--classification&#34;&gt;Part 1: univariate time series + classification&lt;/h1&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th style=&#34;text-align:center&#34;&gt;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-&lt;figure  &gt;
-  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;featured.jpg&#34; srcset=&#34;
-               /en/post/rnns/fifty-shapes-of-time/featured_hu79560c43f3f88bfda1ea41b6ac12dbd3_751222_2e2bbcbd832ef94c53781ac449656622.webp 400w,
-               /en/post/rnns/fifty-shapes-of-time/featured_hu79560c43f3f88bfda1ea41b6ac12dbd3_751222_c2aed99824a5e68753ff576c0b508db8.webp 760w,
-               /en/post/rnns/fifty-shapes-of-time/featured_hu79560c43f3f88bfda1ea41b6ac12dbd3_751222_1200x1200_fit_q75_h2_lanczos.webp 1200w&#34;
-               src=&#34;https://maddataanalyst.github.io/en/post/rnns/fifty-shapes-of-time/featured_hu79560c43f3f88bfda1ea41b6ac12dbd3_751222_2e2bbcbd832ef94c53781ac449656622.webp&#34;
-               width=&#34;760&#34;
-               height=&#34;507&#34;
-               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
-  &lt;/div&gt;&lt;/figure&gt;
-&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;&lt;b&gt;Image by &lt;a href=&#34;https://pixabay.com/users/geralt-9301/?utm_source=link-attribution&amp;amp;utm_medium=referral&amp;amp;utm_campaign=image&amp;amp;utm_content=3222267&#34;&gt;Gerd Altmann&lt;/a&gt; from &lt;a href=&#34;https://pixabay.com/?utm_source=link-attribution&amp;amp;utm_medium=referral&amp;amp;utm_campaign=image&amp;amp;utm_content=3222267&#34;&gt;Pixabay&lt;/a&gt;&lt;/b&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
 &lt;h2 id=&#34;intro&#34;&gt;Intro&lt;/h2&gt;
 &lt;p&gt;Time series processing is a well-known and extensively researched problem. Moreover - many people naturally understand, what a time series is, and how it is structured. Things start to get complicated once you are about to prepare time-dependent data for modeling with neural networks. Three-dimensional structures are not that easy to imagine initially.
 After reading this blog post, you will:&lt;/p&gt;
@@ -373,7 +334,7 @@ $$ N \times K \times f $$&lt;/p&gt;
 
 
 
-&lt;div id=&#34;chart-348916572&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-941632758&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   (function() {
     let a = setInterval( function() {
@@ -383,7 +344,7 @@ $$ N \times K \times f $$&lt;/p&gt;
       clearInterval( a );
 
       Plotly.d3.json(&#34;./sinusoids.json&#34;, function(chart) {
-        Plotly.plot(&#39;chart-348916572&#39;, chart.data, chart.layout, {responsive: true});
+        Plotly.plot(&#39;chart-941632758&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -455,7 +416,7 @@ $$ N \times K \times f $$&lt;/p&gt;
 
 
 
-&lt;div id=&#34;chart-257641389&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-472138695&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   (function() {
     let a = setInterval( function() {
@@ -465,7 +426,7 @@ $$ N \times K \times f $$&lt;/p&gt;
       clearInterval( a );
 
       Plotly.d3.json(&#34;./slice.json&#34;, function(chart) {
-        Plotly.plot(&#39;chart-257641389&#39;, chart.data, chart.layout, {responsive: true});
+        Plotly.plot(&#39;chart-472138695&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();

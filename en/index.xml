@@ -5,12 +5,206 @@
     <link>https://maddataanalyst.github.io/en/</link>
       <atom:link href="https://maddataanalyst.github.io/en/index.xml" rel="self" type="application/rss+xml" />
     <description>NeuraSYS</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Fri, 07 Apr 2023 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Fri, 14 Apr 2023 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://maddataanalyst.github.io/media/icon_hu5b489458e36ca6f814edb4aedf2e84e5_21223_512x512_fill_lanczos_center_3.png</url>
       <title>NeuraSYS</title>
       <link>https://maddataanalyst.github.io/en/</link>
     </image>
+    
+    <item>
+      <title>ChatGPT lied to me! - a tale on how not to judge Language Models.</title>
+      <link>https://maddataanalyst.github.io/en/post/varia/chat_gpt_lies/</link>
+      <pubDate>Fri, 14 Apr 2023 00:00:00 +0000</pubDate>
+      <guid>https://maddataanalyst.github.io/en/post/varia/chat_gpt_lies/</guid>
+      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;Lately, the imagination of many people has been stirred up by ChatGPT, a wonderful creation by OpenAI that demonstrates incredible abilities in natural language understanding and information processing. News about surprising and brilliant responses, as well as the coding skills of experienced programmers, frequently circulates on the Internet.
+At the same time, there are rumors of mistakes made by ChatGPT, such as false accusations against various individuals &lt;a href=&#34;https://www.bbc.com/news/technology-65202597&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;for example, the case of the Australian mayor&lt;/a&gt;, as well as idiocies and inconsistencies in its statements.
+I am surprised to observe at least three attitudes towards ChatGPT:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Treating it as a &amp;ldquo;smarter Google search engine&amp;rdquo;&lt;/strong&gt; - some people representing this view believe that ChatGPT is simply a &amp;ldquo;linguistic wrapper&amp;rdquo; for a content search engine;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Hype and conviction that we are dealing with &amp;ldquo;AI&amp;rdquo; that will revolutionize every aspect of life&lt;/strong&gt; - this approach prevails among technological enthusiasts, corporate managers, and some AI enthusiasts.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Strong skepticism&lt;/strong&gt; or even fear of losing their job and being replaced by a new invention - such voices come, among others, from the group of programmers observing the capabilities of ChatGPT, CODEX model, or Github Copilot.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Many people have yet to learn what ChatGPT and related solutions are. Consequently, they wonder why they work the way they do and make mistakes. Let&amp;rsquo;s try to answer this question.&lt;/p&gt;
+&lt;h2 id=&#34;machine-learning&#34;&gt;Machine learning&lt;/h2&gt;
+&lt;p&gt;ChatGPT belongs to a vast group of &lt;strong&gt;large language models (LLM), and machine learning (ML)&lt;/strong&gt; algorithms that have been known for a long time and constitute one of the subdomains of research into artificial intelligence. Many definitions of this concept have been proposed, but we can mention two here.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Learning means adaptive changes in a system that enable it to do the same tasks or tasks of the same category better in the future.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Simon, H. A. (1983). Why should machines learn?. In Machine learning (pp. 25-37). Morgan Kaufmann.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;The second definition was formulated by the outstanding Polish scientist and author of the excellent book &amp;ldquo;Systemy Uczące się&amp;rdquo; (&amp;ldquo;Learning Systems&amp;rdquo;), Paweł Cichosz:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Learning of the system is any autonomous change based on experiences, leading to an improvement in the quality of its operation.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Cichosz, P. (2007). Systemy uczące się. Wyd. 2. Warszawa: Wydawnictwa Naukowo-Techniczne.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Both of these definitions share essential points:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Gradual acquisition of experience.&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Application of this experience&lt;/strong&gt; to improve the system&amp;rsquo;s performance gradually.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Changes are autonomous&lt;/strong&gt; - meaning the system regulates how it uses accumulated knowledge and does not require human reprogramming.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;In a nutshell, this is how most machine-learning systems work. Many of them, including language models, are taught in a way very similar to how humans learn.&lt;/p&gt;
+&lt;p&gt;The following list shows a typical process of supervised learning of machine learning models:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;We show the model some data (questions).&lt;/li&gt;
+&lt;li&gt;We allow the algorithm to present its own answers.&lt;/li&gt;
+&lt;li&gt;We verify the result with the “key” (correct answers), giving feedback: “right / wrong”. It can be used to by the system to correct its behavior.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;mermaid&#34;&gt;graph LR
+	questions[question or material] --sent to--&gt; algorithm
+	correct[correct answers] --&gt; verify
+	subgraph learning
+		algorithm
+		answers[proposed answers]
+		verify
+		algorithm --sents --&gt; 	answers --&gt; verify
+		verify --correction--&gt; algorithm
+	end
+&lt;/div&gt;
+&lt;p&gt;The process shown above is called &amp;ldquo;supervised learning&amp;rdquo; and is one of many ways to train ML models.&lt;/p&gt;
+&lt;h2 id=&#34;language-models&#34;&gt;Language models&lt;/h2&gt;
+&lt;p&gt;Language models fit into the described schema, including ChatGPT, Bard, and others. In their case, learning involves showing natural language sentences along with their context and, for example, the thematic category to which they belong. The algorithm learns which sequences of words, sentences, paragraphs, and sections describe specific issues. The division into questions/learning material and proposed answers can look as follows:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Task&lt;/th&gt;
+&lt;th&gt;Question&lt;/th&gt;
+&lt;th&gt;Answer&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;What is the next word?&lt;/td&gt;
+&lt;td&gt;The cat sat on&lt;/td&gt;
+&lt;td&gt;mat&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;The Battle of Grunwald took place in&lt;/td&gt;
+&lt;td&gt;1410&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;What category does the sentence belong to?&lt;/td&gt;
+&lt;td&gt;The stock market was gloomy, share prices are falling.&lt;/td&gt;
+&lt;td&gt;Economy&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;The president gave a wonderful speech, which will strengthen his position in the upcoming elections.&lt;/td&gt;
+&lt;td&gt;Politics&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Answer the question with a full sentence.&lt;/td&gt;
+&lt;td&gt;How many wheels does a typical car have?&lt;/td&gt;
+&lt;td&gt;A typical car has 4 wheels.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;As you can see, many questions/tasks have more than one correct answer. Usually, it can be formulated in several ways in a given language. It also happens that multiple sentences or questions may be mutually contradictory (&amp;ldquo;The cat sat on the mat&amp;rdquo;, &amp;ldquo;The cat sat on the rug&amp;rdquo;, &amp;ldquo;The cat sat on the bed&amp;rdquo;). What is important - ChatGPT and other models of its kind &lt;strong&gt;learn to operate in natural language&lt;/strong&gt; by analyzing many sentences and statements. &lt;strong&gt;Statements that can be false, or contradictory&lt;/strong&gt; - as they express people&amp;rsquo;s opinions or emotions (especially when discussing non-technical topics). Their task is to formulate such statements in writing, as a person does when typing on a keyboard, &lt;strong&gt;they are not encyclopedias or symbolic knowledge bases&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;When you look into an encyclopedia, you usually search by index (e.g., letter &amp;ldquo;u&amp;rdquo; → machine learning) or in a particular category (e.g., science category → letter &amp;ldquo;u&amp;rdquo; → machine learning).&lt;/p&gt;
+&lt;p&gt;Language models are indeed trained on sentence categories (e.g., sentences related to politics or economics as above). Still, their task is to formulate smooth statements on a given topic, not to search encyclopedically (with a few exceptions, see below 🙂).&lt;/p&gt;
+&lt;p&gt;How can these models understand written language? There are many ways to train, but one of them is the so-called attention mechanism, which forms the foundations of architecture with the well-sounding name &amp;ldquo;Transformers.&amp;rdquo;&lt;/p&gt;
+&lt;h2 id=&#34;attention-mechanism-and-transformers&#34;&gt;Attention mechanism and transformers&lt;/h2&gt;
+&lt;p&gt;When familiarizing themselves with a statement, a person using any language builds a &amp;ldquo;dependency tree&amp;rdquo; in their head - what the sentence describes, what the subject is, and what the predicate is. Each language has its rules - English has an advantage in some respects (smaller word variation than Polish, or Slavik in general). Still, the principle of operation is very similar.&lt;/p&gt;
+&lt;p&gt;Look at the following sentence:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The woman sat on the bench and looked around the park.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;Who sat? &lt;em&gt;The woman.&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;What did she sit on? &lt;em&gt;On a bench.&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;Who looked around - the woman or the bench? &lt;em&gt;The woman.&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;For a person who knows English, such dependencies are obvious. Foreigners, as well as language systems like ChatGPT, have to learn them. People learn grammar, tenses, voices, and moods by taking courses, exercising, and talking to tutors.&lt;/p&gt;
+&lt;p&gt;ChatGPT and other language models learn by analyzing many examples of sentences and their context. They learn to work with the feedback loop, checking if the model:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Correctly recognized the context;&lt;/li&gt;
+&lt;li&gt;Generated sentences that are similar to those used in a given language.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;The attention mechanism allows algorithms to take into account the previous context of the sentence and the influence of its individual parts on what should be next (the next word or sentence), or on the analysis of the topic / issue (classification).&lt;/p&gt;
+&lt;p&gt;Attention mechanisms in artificial neural networks play a similar role to receptive fields and &amp;ldquo;competitive attention&amp;rdquo; in biological organisms - they focus the system on a selected piece of the environment, allowing it to analyze the context of the events taking place.&lt;/p&gt;
+&lt;p&gt;The diagram below shows a very simplified attention mechanism for an example sentence. The asterisks indicate the subject of the sentence: it is &lt;em&gt;woman&lt;/em&gt; and undoubtedly, further sentence elements will refer to her as the main &amp;ldquo;heroine&amp;rdquo;.&lt;/p&gt;
+&lt;div class=&#34;mermaid&#34;&gt;graph 
+	subgraph sentence
+	  w1[word 1: *woman*] --&gt; w2[word 2: sat] --&gt; w3[word 3: on] --&gt; w4[word 4: the] --???--&gt; w5[word 5: ?]
+	end
+	subgraph representation
+		w1 --&gt; sym1[symbol1]
+		w2 --&gt; sym2[symbol2]
+		w3 --&gt; sym3[symbol3]
+		w4 --&gt; sym4[symbol4]
+		sym1 --&gt; sym2 --&gt; sym3 --&gt; sym4
+	end
+	subgraph &#34; &#34;
+		sym1 --*weight1*--&gt;ca
+		sym2 --weight2--&gt;ca
+		sym3 --weight3--&gt;ca
+		sym4 --weight4--&gt;ca
+		ca[context analysis] --prediction--&gt; w5
+	end
+&lt;/div&gt;
+&lt;p&gt;Many attention mechanisms are used in the Transformer architecture, which is the basis for ChatGPT and other language models.&lt;/p&gt;
+&lt;p&gt;It is also worth remembering that machine learning algorithms do not process language directly - words are converted to numerical representation in a mechanism called &lt;strong&gt;embedding&lt;/strong&gt; - which allows words to be represented as vectors of numbers. Several probabilistic and mathematical operations are performed in the learning process to reflect the learned content. If everything goes according to plan, synonyms are then close to each other on the numerical plane. In addition, arithmetic operations are possible on them, leading to surprisingly accurate transformations, such as:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;king - man + woman ~ queen&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;An example of embedding words as numerical representations is shown below:&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;./embeddings_result.png&#34; alt=&#34;word_transforms&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;Some time ago, I had the pleasure of talking at the Data Science Summit conference about the exact mechanism of using embeddings in classification tasks or recommendations. The materials from the lecture can be found &lt;a href=&#34;https://filip-wojcik.com/uploads/embeddings_other_than_nlp.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;ChatGPT was learned from vast collections of texts from the web (e.g., &lt;a href=&#34;https://paperswithcode.com/dataset/bookcorpus&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;BooksCorpus&lt;/a&gt;, &lt;a href=&#34;https://www.eleuther.ai/projects/owt2/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;WebText2&lt;/a&gt; ) and the so-called &lt;a href=&#34;https://commoncrawl.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Common Crawl&lt;/a&gt;. It is a collection of data consisting of billions of web pages that are regularly crawled and indexed by Google robots and other similar companies. OpenAI, the organization responsible for creating ChatGPT, used the 2019 version of this collection, which consisted of over 40 terabytes of text data. The collection included many text types: articles, reviews, blog posts, and even internet forums.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;What is important: many texts and statements circulating online contradict each other&lt;/strong&gt;. People give false information, answer off-topic, and create conspiracy theories…. All this, together with the statement&amp;rsquo;s context, became a learning material for LLM.&lt;/p&gt;
+&lt;h2 id=&#34;are-they-walking-encyclopedias&#34;&gt;Are they walking encyclopedias?&lt;/h2&gt;
+&lt;p&gt;The description given above, greatly simplified, should give us an idea of ChatGPT-related algorithms and how they work. In the simplest terms, they are machine learning models based on many examples, trained to generate new statements that answer specific questions in a free-form manner.&lt;/p&gt;
+&lt;p&gt;Each time they construct their texts anew. They are guided by context and attention mechanisms that allow them to recognize the topic of the &amp;ldquo;discussion,&amp;rdquo; issues raised so far, etc. In this process, they try to make their work similar to those presented to them during the learning process.&lt;/p&gt;
+&lt;p&gt;In this context, ChatGPT and LLM models cannot be considered &amp;ldquo;walking encyclopedias&amp;rdquo; or content search engines. &lt;strong&gt;They do not possess structured, comprehensive knowledge and are not conditioned&lt;/strong&gt; to provide &amp;ldquo;correct answers&amp;rdquo;  – they generate responses consistent with the language used in the conversation, the context of the conversation, its topic, etc. Therefore, they may be inaccurate.&lt;/p&gt;
+&lt;p&gt;When writing this text, plugins and extensions are already being created to allow LLM models to connect to knowledge bases, and use content search engines or mathematical tools such as Wolfram Alpha to perform intentionally correct calculations.&lt;/p&gt;
+&lt;p&gt;Hovewer, at their core, LLM models are language models, not walking encyclopedias. Therefore, &amp;ldquo;accusing&amp;rdquo; them of making a mistake or generating incorrect content is a complete misunderstanding of the purpose of these tools.&lt;/p&gt;
+&lt;h2 id=&#34;artificial-languages&#34;&gt;Artificial languages&lt;/h2&gt;
+&lt;p&gt;Given the above description, why is ChatGPT so efficient at programming and writing code?&lt;/p&gt;
+&lt;p&gt;The word &amp;ldquo;language&amp;rdquo; concerning programming dialects is justified. Programming languages are symbolic, artificial languages designed for a practical purpose - creating working applications and algorithms imperatively, unambiguously indicating the operations to be performed.
+Unlike human languages, programming languages:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;are much more &lt;strong&gt;unambiguous&lt;/strong&gt;, devoid of unnecessary &amp;ldquo;ornaments&amp;rdquo;;&lt;/li&gt;
+&lt;li&gt;have a &lt;strong&gt;strictly defined syntax&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;In addition: &lt;strong&gt;publicly available code on the Internet is often written correctly and works&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;If we add up the above three points:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&amp;ldquo;Unambiguity + transparent, formalized language + many correct and accurate examples&amp;rdquo;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;, we get an &lt;strong&gt;excellent set&lt;/strong&gt; of learning statements for LLM. Unlike forums, blogs, and comments, where everyone expresses their opinions - &amp;ldquo;statements&amp;rdquo; written in programming languages are much more concise, correct, and unambiguous.&lt;/p&gt;
+&lt;h2 id=&#34;whats-next&#34;&gt;What&amp;rsquo;s next?&lt;/h2&gt;
+&lt;p&gt;ChatGPT and related LLM models constitute a revolution in practical AI applications. They will allow for the automation of many tasks, generating content previously reserved for human creators, including source code for applications.&lt;/p&gt;
+&lt;p&gt;LLM poses many challenges, among others, for the education system - how to recognize works created independently by students? How to protect people from laziness and relying on LLM to perform many tasks instead of stimulating&amp;hellip;&lt;/p&gt;
+&lt;p&gt;Furthermore, the increasing use of LLMs raises ethical questions, such as the potential for misuse and the need for transparency in their development and application. It is essential to ensure that LLMs are used ethically and for the benefit of people rather than causing harm or exacerbating existing inequalities.&lt;/p&gt;
+&lt;p&gt;Overall, LLMs represent a significant advancement in AI technology. Still, their full potential can only be realized through responsible development and application, as well as proper education and awareness among users.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Deep Learning usage as recommendation engine</title>
@@ -97,46 +291,7 @@
       <link>https://maddataanalyst.github.io/en/post/ml-finanace/portfolio-optimization/</link>
       <pubDate>Thu, 10 Nov 2022 00:00:00 +0000</pubDate>
       <guid>https://maddataanalyst.github.io/en/post/ml-finanace/portfolio-optimization/</guid>
-      <description>&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th style=&#34;text-align:center&#34;&gt;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-&lt;figure  &gt;
-  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;featured.jpg&#34; srcset=&#34;
-               /en/post/ml-finanace/portfolio-optimization/featured_hudaa6440116b6a8bce68e7f5f68804d86_179663_6466d6916c5053f290aba482c2d8a1ce.webp 400w,
-               /en/post/ml-finanace/portfolio-optimization/featured_hudaa6440116b6a8bce68e7f5f68804d86_179663_b9b2a53ca7edfc12aa2254f42c641114.webp 760w,
-               /en/post/ml-finanace/portfolio-optimization/featured_hudaa6440116b6a8bce68e7f5f68804d86_179663_1200x1200_fit_q75_h2_lanczos.webp 1200w&#34;
-               src=&#34;https://maddataanalyst.github.io/en/post/ml-finanace/portfolio-optimization/featured_hudaa6440116b6a8bce68e7f5f68804d86_179663_6466d6916c5053f290aba482c2d8a1ce.webp&#34;
-               width=&#34;760&#34;
-               height=&#34;418&#34;
-               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
-  &lt;/div&gt;&lt;/figure&gt;
-&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;&lt;b&gt;&lt;a href=&#34;https://pixabay.com/?utm_source=link-attribution&amp;amp;utm_medium=referral&amp;amp;utm_campaign=image&amp;amp;utm_content=3222267&#34;&gt;Pixabay&lt;/a&gt;&lt;/b&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;h2 id=&#34;intro&#34;&gt;Intro&lt;/h2&gt;
+      <description>&lt;h2 id=&#34;intro&#34;&gt;Intro&lt;/h2&gt;
 &lt;p&gt;Portfolio optimization is a critical tool for modern investors willing to maximize their capital utilization in the market and expected returns.&lt;/p&gt;
 &lt;p&gt;Many portfolio optimization techniques are based on different variants of constrained quadratic programming formalizations, taking as inputs expected asset returns, forms of risk metrics (like covariance matrices), and transaction costs. Next, the goal is selected (typically a maximization of return while keeping the risk level constant or minimizing the risk with varying returns ). The problem is solved either via a closed-form equation or a gradient-minimizing approach. Additional elements or steps can be included, like periodical rebalancing, the inclusion of transaction costs, or different cost functions (Sharpe ratio or similar).&lt;/p&gt;
 &lt;p&gt;This blog post will show you how to prepare and perform a simple portfolio optimization process on selected stocks. Two approaches will be utilized - purely mathematical formulation of the optimization problem and PyPorfolioOpt library that automates most of the process.&lt;/p&gt;
@@ -946,45 +1101,6 @@ $$&lt;/p&gt;
       <pubDate>Mon, 16 May 2022 00:00:00 +0000</pubDate>
       <guid>https://maddataanalyst.github.io/en/post/rnns/fifty-shapes-of-time/</guid>
       <description>&lt;h1 id=&#34;part-1-univariate-time-series--classification&#34;&gt;Part 1: univariate time series + classification&lt;/h1&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th style=&#34;text-align:center&#34;&gt;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-&lt;figure  &gt;
-  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;featured.jpg&#34; srcset=&#34;
-               /en/post/rnns/fifty-shapes-of-time/featured_hu79560c43f3f88bfda1ea41b6ac12dbd3_751222_2e2bbcbd832ef94c53781ac449656622.webp 400w,
-               /en/post/rnns/fifty-shapes-of-time/featured_hu79560c43f3f88bfda1ea41b6ac12dbd3_751222_c2aed99824a5e68753ff576c0b508db8.webp 760w,
-               /en/post/rnns/fifty-shapes-of-time/featured_hu79560c43f3f88bfda1ea41b6ac12dbd3_751222_1200x1200_fit_q75_h2_lanczos.webp 1200w&#34;
-               src=&#34;https://maddataanalyst.github.io/en/post/rnns/fifty-shapes-of-time/featured_hu79560c43f3f88bfda1ea41b6ac12dbd3_751222_2e2bbcbd832ef94c53781ac449656622.webp&#34;
-               width=&#34;760&#34;
-               height=&#34;507&#34;
-               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
-  &lt;/div&gt;&lt;/figure&gt;
-&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;&lt;b&gt;Image by &lt;a href=&#34;https://pixabay.com/users/geralt-9301/?utm_source=link-attribution&amp;amp;utm_medium=referral&amp;amp;utm_campaign=image&amp;amp;utm_content=3222267&#34;&gt;Gerd Altmann&lt;/a&gt; from &lt;a href=&#34;https://pixabay.com/?utm_source=link-attribution&amp;amp;utm_medium=referral&amp;amp;utm_campaign=image&amp;amp;utm_content=3222267&#34;&gt;Pixabay&lt;/a&gt;&lt;/b&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
 &lt;h2 id=&#34;intro&#34;&gt;Intro&lt;/h2&gt;
 &lt;p&gt;Time series processing is a well-known and extensively researched problem. Moreover - many people naturally understand, what a time series is, and how it is structured. Things start to get complicated once you are about to prepare time-dependent data for modeling with neural networks. Three-dimensional structures are not that easy to imagine initially.
 After reading this blog post, you will:&lt;/p&gt;
@@ -1301,7 +1417,7 @@ $$ N \times K \times f $$&lt;/p&gt;
 
 
 
-&lt;div id=&#34;chart-348916572&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-941632758&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   (function() {
     let a = setInterval( function() {
@@ -1311,7 +1427,7 @@ $$ N \times K \times f $$&lt;/p&gt;
       clearInterval( a );
 
       Plotly.d3.json(&#34;./sinusoids.json&#34;, function(chart) {
-        Plotly.plot(&#39;chart-348916572&#39;, chart.data, chart.layout, {responsive: true});
+        Plotly.plot(&#39;chart-941632758&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -1383,7 +1499,7 @@ $$ N \times K \times f $$&lt;/p&gt;
 
 
 
-&lt;div id=&#34;chart-257641389&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-472138695&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   (function() {
     let a = setInterval( function() {
@@ -1393,7 +1509,7 @@ $$ N \times K \times f $$&lt;/p&gt;
       clearInterval( a );
 
       Plotly.d3.json(&#34;./slice.json&#34;, function(chart) {
-        Plotly.plot(&#39;chart-257641389&#39;, chart.data, chart.layout, {responsive: true});
+        Plotly.plot(&#39;chart-472138695&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();

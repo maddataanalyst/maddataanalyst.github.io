@@ -1,0 +1,1627 @@
+<!DOCTYPE html>
+<!-- This site was created with Wowchemy. https://www.wowchemy.com -->
+<!-- Last Published: April 16, 2023 --><html lang="en-us" >
+
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  
+  
+    <meta name="generator" content="Wowchemy 5.7.0 for Hugo" />
+  
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+  
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  
+
+  
+  
+  
+    
+      
+      <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap" media="print" onload="this.media='all'">
+    
+  
+
+  
+  
+
+  
+  
+    
+    <script src="/js/mathjax-config.js"></script>
+  
+
+  
+
+  <link rel="stylesheet" href="/css/vendor-bundle.min.16f785cdb553c8c4431db6775122af35.css" media="print" onload="this.media='all'">
+
+  
+  
+  
+    
+    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.2/css/academicons.min.css" integrity="sha512-KlJCpRsLf+KKu2VQa5vmRuClRFjxc5lXO03ixZt82HZUk41+1I0bD8KBSA0fY290ayMfWYI9udIqeOWSu1/uZg==" crossorigin="anonymous" media="print" onload="this.media='all'">
+    
+
+    
+    
+    
+    
+      
+      
+    
+    
+    
+
+    
+    
+    
+
+    
+
+    
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" integrity="" crossorigin="anonymous" async></script>
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+  
+
+  
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/wowchemy.8e56ebf1df577a07bde07aac0bd01f56.css" />
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+    
+    
+    <link rel="stylesheet" href="/css/libs/chroma/github-light.min.css" title="hl-light" media="print" onload="this.media='all'" >
+    <link rel="stylesheet" href="/css/libs/chroma/dracula.min.css" title="hl-dark" media="print" onload="this.media='all'" disabled>
+  
+
+  
+  
+
+
+
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-R1E2E342QG"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+      dataLayer.push(arguments);
+  }
+
+  function trackOutboundLink(url, target) {
+    gtag('event', 'click', {
+         'event_category': 'outbound',
+         'event_label': url,
+         'transport_type': 'beacon',
+         'event_callback': function () {
+           if (target !== '_blank') {
+             document.location = url;
+           }
+         }
+    });
+    console.debug("Outbound link clicked: " + url);
+  }
+
+  function onClickCallback(event) {
+    if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
+      return;
+    }
+    trackOutboundLink(event.target, event.target.getAttribute('target'));  
+  }
+
+  gtag('js', new Date());
+  gtag('config', 'G-R1E2E342QG', {});
+  gtag('set', {'cookie_flags': 'SameSite=None;Secure'});
+
+  
+  document.addEventListener('click', onClickCallback, false);
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+
+
+
+
+
+  <meta name="author" content="Filip Wójcik" />
+
+
+
+
+
+  
+
+<meta name="description" content="Many people have yet to learn what ChatGPT and related solutions are. Consequently, they wonder why they work the way they do and make mistakes. Let&#39;s try to answer this question." />
+
+
+
+<link rel="alternate" hreflang="en-us" href="https://maddataanalyst.github.io/en/post/varia/chat_gpt_lies/" />
+<link rel="canonical" href="https://maddataanalyst.github.io/en/post/varia/chat_gpt_lies/" />
+
+
+
+  <link rel="manifest" href="/en/manifest.webmanifest" />
+
+
+
+<link rel="icon" type="image/png" href="/media/icon_hu5b489458e36ca6f814edb4aedf2e84e5_21223_32x32_fill_lanczos_center_3.png" />
+<link rel="apple-touch-icon" type="image/png" href="/media/icon_hu5b489458e36ca6f814edb4aedf2e84e5_21223_180x180_fill_lanczos_center_3.png" />
+
+<meta name="theme-color" content="#1565c0" />
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+<meta property="twitter:card" content="summary_large_image" />
+<meta property="twitter:image" content="https://maddataanalyst.github.io/en/post/varia/chat_gpt_lies/featured.jpg" />
+<meta property="og:site_name" content="NeuraSYS" />
+<meta property="og:url" content="https://maddataanalyst.github.io/en/post/varia/chat_gpt_lies/" />
+<meta property="og:title" content="ChatGPT lied to me! - a tale on how not to judge Language Models. | NeuraSYS" />
+<meta property="og:description" content="Many people have yet to learn what ChatGPT and related solutions are. Consequently, they wonder why they work the way they do and make mistakes. Let&#39;s try to answer this question." /><meta property="og:image" content="https://maddataanalyst.github.io/en/post/varia/chat_gpt_lies/featured.jpg" /><meta property="og:locale" content="en-us" />
+
+  
+    <meta
+      property="article:published_time"
+      content="2023-04-14T00:00:00&#43;00:00"
+    />
+  
+  
+    <meta property="article:modified_time" content="2023-04-14T00:00:00&#43;00:00">
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  
+  
+
+  
+  
+
+  
+
+
+  
+  <title>ChatGPT lied to me! - a tale on how not to judge Language Models. | NeuraSYS</title>
+
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+</head>
+
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="ad36d4f8c8ec9949d46517749a684e2e" >
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <script src="/js/wowchemy-init.min.ec9d49ca50e4b80bdb08f0417a28ed84.js"></script>
+
+  
+
+
+<aside class="search-modal" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#" aria-label="Close"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control"
+        aria-label="Search...">
+        
+      </div>
+
+      
+      
+
+      
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+
+  <div class="page-header header--fixed">
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+<header>
+  <nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+    <div class="container-xl">
+
+      
+      <div class="d-none d-lg-inline-flex">
+        <a class="navbar-brand" href="/en/">NeuraSYS</a>
+      </div>
+      
+
+      
+      <button type="button" class="navbar-toggler" data-toggle="collapse"
+              data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
+      <span><i class="fas fa-bars"></i></span>
+      </button>
+      
+
+      
+      <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+        <a class="navbar-brand" href="/en/">NeuraSYS</a>
+      </div>
+      
+
+      
+      
+      <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+
+        
+        <ul class="navbar-nav d-md-inline-flex">
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/en/#about"><span>Home</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/en/#projects"><span>Projects</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/en/consulting"><span>Consulting</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/en/#talks"><span>Talks</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/en/#featured"><span>Publications</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/en/#post"><span>Recent posts</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link  active" href="/en/post"><span>Blog</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/en/#contact"><span>Contact</span></a>
+          </li>
+
+          
+          
+
+        
+
+          
+        </ul>
+      </div>
+
+      <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+
+        
+        
+          
+        
+
+        
+        
+        
+        <li class="nav-item">
+          <a class="nav-link js-search" href="#" aria-label="Search"><i class="fas fa-search" aria-hidden="true"></i></a>
+        </li>
+        
+
+        
+        
+        
+        <li class="nav-item dropdown theme-dropdown">
+          <a href="#" class="nav-link" data-toggle="dropdown" aria-haspopup="true" aria-label="Display preferences">
+            <i class="fas fa-moon" aria-hidden="true"></i>
+          </a>
+          <div class="dropdown-menu">
+            <a href="#" class="dropdown-item js-set-theme-light">
+              <span>Light</span>
+            </a>
+            <a href="#" class="dropdown-item js-set-theme-dark">
+              <span>Dark</span>
+            </a>
+            <a href="#" class="dropdown-item js-set-theme-auto">
+              <span>Automatic</span>
+            </a>
+          </div>
+        </li>
+        
+
+        
+        
+
+      </ul>
+
+    </div>
+  </nav>
+</header>
+
+
+  </div>
+
+  <div class="page-body">
+    
+    
+    
+
+    
+
+
+
+
+<div class="container-fluid docs">
+  <div class="row flex-xl-nowrap">
+    <div class="col-12 col-md-3 col-xl-2 docs-sidebar">
+      <form class="docs-search d-flex align-items-center">
+  <button class="btn docs-toggle d-md-none p-0 mr-md-3 w-100" type="button" data-toggle="collapse" data-target="#docs-nav" aria-controls="docs-nav" aria-expanded="false" aria-label="Toggle section navigation">
+    <div class="d-flex">
+      <span class="d-md-none pl-1 flex-grow-1 text-left overflow-hidden">
+        
+        
+          ✒️ various
+        
+      </span>
+      <span><i class="fas fa-chevron-down"></i></span>
+    </div>
+  </button>
+
+  
+  <button class="form-control sidebar-search js-search d-none d-md-flex">
+    <i class="fas fa-search pr-2"></i>
+    <span class="sidebar-search-text">Search...</span>
+    <span class="sidebar-search-shortcut">/</span>
+  </button>
+  
+</form>
+
+<nav class="collapse docs-links" id="docs-nav">
+  
+  
+  
+  
+  
+  
+
+  
+  
+    
+
+    
+      
+
+      <ul class="nav docs-sidenav">
+        <li><a href="/en/post/"><i class="fas fa-arrow-left pr-1"></i>📚 Posts</a></li>
+      </ul>
+
+      
+      
+        
+          
+        
+      
+
+
+  
+    
+    
+    
+    
+      
+    
+    
+
+    
+      <div class="docs-toc-item">
+        <a class="docs-toc-link " href="/en/post/varia/">✒️ various</a>
+    
+      
+        <ul class="nav docs-sidenav">
+      
+
+
+  <li class="active"><a href="/en/post/varia/chat_gpt_lies/">ChatGPT lied to me! - a tale on how not to judge Language Models.</a></li>
+
+      
+        </ul>
+      
+    
+
+    
+      </div>
+    
+
+    
+  
+</nav>
+
+    </div>
+
+    
+    
+    <div class="d-none d-xl-block col-xl-2 docs-toc">
+      
+
+
+
+
+
+
+
+
+
+
+
+
+      <ul class="nav toc-top">
+        <li><a href="#" id="back_to_top" class="docs-toc-title">Contents</a></li>
+      </ul>
+
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#introduction">Introduction</a></li>
+    <li><a href="#machine-learning">Machine learning</a></li>
+    <li><a href="#language-models">Language models</a></li>
+    <li><a href="#attention-mechanism-and-transformers">Attention mechanism and transformers</a></li>
+    <li><a href="#are-they-walking-encyclopedias">Are they walking encyclopedias?</a></li>
+    <li><a href="#artificial-languages">Artificial languages</a></li>
+    <li><a href="#whats-next">What&rsquo;s next?</a></li>
+  </ul>
+</nav>
+
+      
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+    
+
+    <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 docs-content" role="main">
+
+      <div class="docs-article-container">
+        
+          
+  <nav class="d-none d-md-flex" aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      
+  
+    
+  
+    
+  
+    
+  
+
+    <li class="breadcrumb-item">
+      <a href="/en/">
+        
+          Home
+        
+      </a>
+    </li>
+  
+
+    <li class="breadcrumb-item">
+      <a href="/en/post/">
+        
+          📚 Posts
+        
+      </a>
+    </li>
+  
+
+    <li class="breadcrumb-item">
+      <a href="/en/post/varia/">
+        
+          ✒️ various
+        
+      </a>
+    </li>
+  
+
+      <li class="breadcrumb-item active" aria-current="page">
+        ChatGPT lied to me! - a tale on how not to judge Language Models.
+      </li>
+    </ol>
+  </nav>
+
+
+
+
+        
+      </div>
+
+      
+      
+      
+      <div class="article-header">
+        
+        
+        <img src="/en/post/varia/chat_gpt_lies/featured_hu7d7039dc2360cb510933ce39c4144e0b_115664_1800x310_fit_q75_h2_lanczos.webp" width="413" height="310" class="article-banner" alt="Image generated by [**Leanoardo.ai**](https://leonardo.ai)">
+        
+          <span class="article-header-caption">Image generated by <a href="https://leonardo.ai" target="_blank" rel="noopener"><strong>Leanoardo.ai</strong></a></span>
+        
+      </div>
+      
+
+      <div class="docs-article-container">
+        
+        <h1>ChatGPT lied to me! - a tale on how not to judge Language Models.</h1>
+
+        <article class="article-style">
+
+          
+          
+
+          <h2 id="introduction">Introduction</h2>
+<p>Lately, the imagination of many people has been stirred up by ChatGPT, a wonderful creation by OpenAI that demonstrates incredible abilities in natural language understanding and information processing. News about surprising and brilliant responses, as well as the coding skills of experienced programmers, frequently circulates on the Internet.
+At the same time, there are rumors of mistakes made by ChatGPT, such as false accusations against various individuals <a href="https://www.bbc.com/news/technology-65202597" target="_blank" rel="noopener">for example, the case of the Australian mayor</a>, as well as idiocies and inconsistencies in its statements.
+I am surprised to observe at least three attitudes towards ChatGPT:</p>
+<ol>
+<li><strong>Treating it as a &ldquo;smarter Google search engine&rdquo;</strong> - some people representing this view believe that ChatGPT is simply a &ldquo;linguistic wrapper&rdquo; for a content search engine;</li>
+<li><strong>Hype and conviction that we are dealing with &ldquo;AI&rdquo; that will revolutionize every aspect of life</strong> - this approach prevails among technological enthusiasts, corporate managers, and some AI enthusiasts.</li>
+<li><strong>Strong skepticism</strong> or even fear of losing their job and being replaced by a new invention - such voices come, among others, from the group of programmers observing the capabilities of ChatGPT, CODEX model, or Github Copilot.</li>
+</ol>
+<p>Many people have yet to learn what ChatGPT and related solutions are. Consequently, they wonder why they work the way they do and make mistakes. Let&rsquo;s try to answer this question.</p>
+<h2 id="machine-learning">Machine learning</h2>
+<p>ChatGPT belongs to a vast group of <strong>large language models (LLM), and machine learning (ML)</strong> algorithms that have been known for a long time and constitute one of the subdomains of research into artificial intelligence. Many definitions of this concept have been proposed, but we can mention two here.</p>
+<blockquote>
+<p>Learning means adaptive changes in a system that enable it to do the same tasks or tasks of the same category better in the future.</p>
+</blockquote>
+<blockquote>
+<p>Simon, H. A. (1983). Why should machines learn?. In Machine learning (pp. 25-37). Morgan Kaufmann.</p>
+</blockquote>
+<p>The second definition was formulated by the outstanding Polish scientist and author of the excellent book &ldquo;Systemy Uczące się&rdquo; (&ldquo;Learning Systems&rdquo;), Paweł Cichosz:</p>
+<blockquote>
+<p>Learning of the system is any autonomous change based on experiences, leading to an improvement in the quality of its operation.</p>
+</blockquote>
+<blockquote>
+<p>Cichosz, P. (2007). Systemy uczące się. Wyd. 2. Warszawa: Wydawnictwa Naukowo-Techniczne.</p>
+</blockquote>
+<p>Both of these definitions share essential points:</p>
+<ol>
+<li><strong>Gradual acquisition of experience.</strong></li>
+<li><strong>Application of this experience</strong> to improve the system&rsquo;s performance gradually.</li>
+<li><strong>Changes are autonomous</strong> - meaning the system regulates how it uses accumulated knowledge and does not require human reprogramming.</li>
+</ol>
+<p>In a nutshell, this is how most machine-learning systems work. Many of them, including language models, are taught in a way very similar to how humans learn.</p>
+<p>The following list shows a typical process of supervised learning of machine learning models:</p>
+<ol>
+<li>We show the model some data (questions).</li>
+<li>We allow the algorithm to present its own answers.</li>
+<li>We verify the result with the “key” (correct answers), giving feedback: “right / wrong”. It can be used to by the system to correct its behavior.</li>
+</ol>
+<div class="mermaid">graph LR
+	questions[question or material] --sent to--> algorithm
+	correct[correct answers] --> verify
+	subgraph learning
+		algorithm
+		answers[proposed answers]
+		verify
+		algorithm --sents --> 	answers --> verify
+		verify --correction--> algorithm
+	end
+</div>
+<p>The process shown above is called &ldquo;supervised learning&rdquo; and is one of many ways to train ML models.</p>
+<h2 id="language-models">Language models</h2>
+<p>Language models fit into the described schema, including ChatGPT, Bard, and others. In their case, learning involves showing natural language sentences along with their context and, for example, the thematic category to which they belong. The algorithm learns which sequences of words, sentences, paragraphs, and sections describe specific issues. The division into questions/learning material and proposed answers can look as follows:</p>
+<table>
+<thead>
+<tr>
+<th>Task</th>
+<th>Question</th>
+<th>Answer</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>What is the next word?</td>
+<td>The cat sat on</td>
+<td>mat</td>
+</tr>
+<tr>
+<td></td>
+<td>The Battle of Grunwald took place in</td>
+<td>1410</td>
+</tr>
+<tr>
+<td>What category does the sentence belong to?</td>
+<td>The stock market was gloomy, share prices are falling.</td>
+<td>Economy</td>
+</tr>
+<tr>
+<td></td>
+<td>The president gave a wonderful speech, which will strengthen his position in the upcoming elections.</td>
+<td>Politics</td>
+</tr>
+<tr>
+<td>Answer the question with a full sentence.</td>
+<td>How many wheels does a typical car have?</td>
+<td>A typical car has 4 wheels.</td>
+</tr>
+</tbody>
+</table>
+<p>As you can see, many questions/tasks have more than one correct answer. Usually, it can be formulated in several ways in a given language. It also happens that multiple sentences or questions may be mutually contradictory (&ldquo;The cat sat on the mat&rdquo;, &ldquo;The cat sat on the rug&rdquo;, &ldquo;The cat sat on the bed&rdquo;). What is important - ChatGPT and other models of its kind <strong>learn to operate in natural language</strong> by analyzing many sentences and statements. <strong>Statements that can be false, or contradictory</strong> - as they express people&rsquo;s opinions or emotions (especially when discussing non-technical topics). Their task is to formulate such statements in writing, as a person does when typing on a keyboard, <strong>they are not encyclopedias or symbolic knowledge bases</strong>.</p>
+<p>When you look into an encyclopedia, you usually search by index (e.g., letter &ldquo;u&rdquo; → machine learning) or in a particular category (e.g., science category → letter &ldquo;u&rdquo; → machine learning).</p>
+<p>Language models are indeed trained on sentence categories (e.g., sentences related to politics or economics as above). Still, their task is to formulate smooth statements on a given topic, not to search encyclopedically (with a few exceptions, see below 🙂).</p>
+<p>How can these models understand written language? There are many ways to train, but one of them is the so-called attention mechanism, which forms the foundations of architecture with the well-sounding name &ldquo;Transformers.&rdquo;</p>
+<h2 id="attention-mechanism-and-transformers">Attention mechanism and transformers</h2>
+<p>When familiarizing themselves with a statement, a person using any language builds a &ldquo;dependency tree&rdquo; in their head - what the sentence describes, what the subject is, and what the predicate is. Each language has its rules - English has an advantage in some respects (smaller word variation than Polish, or Slavik in general). Still, the principle of operation is very similar.</p>
+<p>Look at the following sentence:</p>
+<blockquote>
+<p>The woman sat on the bench and looked around the park.</p>
+</blockquote>
+<ul>
+<li>Who sat? <em>The woman.</em></li>
+<li>What did she sit on? <em>On a bench.</em></li>
+<li>Who looked around - the woman or the bench? <em>The woman.</em></li>
+</ul>
+<p>For a person who knows English, such dependencies are obvious. Foreigners, as well as language systems like ChatGPT, have to learn them. People learn grammar, tenses, voices, and moods by taking courses, exercising, and talking to tutors.</p>
+<p>ChatGPT and other language models learn by analyzing many examples of sentences and their context. They learn to work with the feedback loop, checking if the model:</p>
+<ol>
+<li>Correctly recognized the context;</li>
+<li>Generated sentences that are similar to those used in a given language.</li>
+</ol>
+<p>The attention mechanism allows algorithms to take into account the previous context of the sentence and the influence of its individual parts on what should be next (the next word or sentence), or on the analysis of the topic / issue (classification).</p>
+<p>Attention mechanisms in artificial neural networks play a similar role to receptive fields and &ldquo;competitive attention&rdquo; in biological organisms - they focus the system on a selected piece of the environment, allowing it to analyze the context of the events taking place.</p>
+<p>The diagram below shows a very simplified attention mechanism for an example sentence. The asterisks indicate the subject of the sentence: it is <em>woman</em> and undoubtedly, further sentence elements will refer to her as the main &ldquo;heroine&rdquo;.</p>
+<div class="mermaid">graph 
+	subgraph sentence
+	  w1[word 1: *woman*] --> w2[word 2: sat] --> w3[word 3: on] --> w4[word 4: the] --???--> w5[word 5: ?]
+	end
+	subgraph representation
+		w1 --> sym1[symbol1]
+		w2 --> sym2[symbol2]
+		w3 --> sym3[symbol3]
+		w4 --> sym4[symbol4]
+		sym1 --> sym2 --> sym3 --> sym4
+	end
+	subgraph " "
+		sym1 --*weight1*-->ca
+		sym2 --weight2-->ca
+		sym3 --weight3-->ca
+		sym4 --weight4-->ca
+		ca[context analysis] --prediction--> w5
+	end
+</div>
+<p>Many attention mechanisms are used in the Transformer architecture, which is the basis for ChatGPT and other language models.</p>
+<p>It is also worth remembering that machine learning algorithms do not process language directly - words are converted to numerical representation in a mechanism called <strong>embedding</strong> - which allows words to be represented as vectors of numbers. Several probabilistic and mathematical operations are performed in the learning process to reflect the learned content. If everything goes according to plan, synonyms are then close to each other on the numerical plane. In addition, arithmetic operations are possible on them, leading to surprisingly accurate transformations, such as:</p>
+<blockquote>
+<p>king - man + woman ~ queen</p>
+</blockquote>
+<p>An example of embedding words as numerical representations is shown below:</p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="./embeddings_result.png" alt="word_transforms" loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<p>Some time ago, I had the pleasure of talking at the Data Science Summit conference about the exact mechanism of using embeddings in classification tasks or recommendations. The materials from the lecture can be found <a href="https://filip-wojcik.com/uploads/embeddings_other_than_nlp.pdf" target="_blank" rel="noopener">here</a></p>
+<p>ChatGPT was learned from vast collections of texts from the web (e.g., <a href="https://paperswithcode.com/dataset/bookcorpus" target="_blank" rel="noopener">BooksCorpus</a>, <a href="https://www.eleuther.ai/projects/owt2/" target="_blank" rel="noopener">WebText2</a> ) and the so-called <a href="https://commoncrawl.org/" target="_blank" rel="noopener">Common Crawl</a>. It is a collection of data consisting of billions of web pages that are regularly crawled and indexed by Google robots and other similar companies. OpenAI, the organization responsible for creating ChatGPT, used the 2019 version of this collection, which consisted of over 40 terabytes of text data. The collection included many text types: articles, reviews, blog posts, and even internet forums.</p>
+<p><strong>What is important: many texts and statements circulating online contradict each other</strong>. People give false information, answer off-topic, and create conspiracy theories…. All this, together with the statement&rsquo;s context, became a learning material for LLM.</p>
+<h2 id="are-they-walking-encyclopedias">Are they walking encyclopedias?</h2>
+<p>The description given above, greatly simplified, should give us an idea of ChatGPT-related algorithms and how they work. In the simplest terms, they are machine learning models based on many examples, trained to generate new statements that answer specific questions in a free-form manner.</p>
+<p>Each time they construct their texts anew. They are guided by context and attention mechanisms that allow them to recognize the topic of the &ldquo;discussion,&rdquo; issues raised so far, etc. In this process, they try to make their work similar to those presented to them during the learning process.</p>
+<p>In this context, ChatGPT and LLM models cannot be considered &ldquo;walking encyclopedias&rdquo; or content search engines. <strong>They do not possess structured, comprehensive knowledge and are not conditioned</strong> to provide &ldquo;correct answers&rdquo;  – they generate responses consistent with the language used in the conversation, the context of the conversation, its topic, etc. Therefore, they may be inaccurate.</p>
+<p>When writing this text, plugins and extensions are already being created to allow LLM models to connect to knowledge bases, and use content search engines or mathematical tools such as Wolfram Alpha to perform intentionally correct calculations.</p>
+<p>Hovewer, at their core, LLM models are language models, not walking encyclopedias. Therefore, &ldquo;accusing&rdquo; them of making a mistake or generating incorrect content is a complete misunderstanding of the purpose of these tools.</p>
+<h2 id="artificial-languages">Artificial languages</h2>
+<p>Given the above description, why is ChatGPT so efficient at programming and writing code?</p>
+<p>The word &ldquo;language&rdquo; concerning programming dialects is justified. Programming languages are symbolic, artificial languages designed for a practical purpose - creating working applications and algorithms imperatively, unambiguously indicating the operations to be performed.
+Unlike human languages, programming languages:</p>
+<ol>
+<li>are much more <strong>unambiguous</strong>, devoid of unnecessary &ldquo;ornaments&rdquo;;</li>
+<li>have a <strong>strictly defined syntax</strong>.</li>
+<li>In addition: <strong>publicly available code on the Internet is often written correctly and works</strong>.</li>
+</ol>
+<p>If we add up the above three points:</p>
+<blockquote>
+<p>&ldquo;Unambiguity + transparent, formalized language + many correct and accurate examples&rdquo;</p>
+</blockquote>
+<p>, we get an <strong>excellent set</strong> of learning statements for LLM. Unlike forums, blogs, and comments, where everyone expresses their opinions - &ldquo;statements&rdquo; written in programming languages are much more concise, correct, and unambiguous.</p>
+<h2 id="whats-next">What&rsquo;s next?</h2>
+<p>ChatGPT and related LLM models constitute a revolution in practical AI applications. They will allow for the automation of many tasks, generating content previously reserved for human creators, including source code for applications.</p>
+<p>LLM poses many challenges, among others, for the education system - how to recognize works created independently by students? How to protect people from laziness and relying on LLM to perform many tasks instead of stimulating&hellip;</p>
+<p>Furthermore, the increasing use of LLMs raises ethical questions, such as the potential for misuse and the need for transparency in their development and application. It is essential to ensure that LLMs are used ethically and for the benefit of people rather than causing harm or exacerbating existing inequalities.</p>
+<p>Overall, LLMs represent a significant advancement in AI technology. Still, their full potential can only be realized through responsible development and application, as well as proper education and awareness among users.</p>
+
+
+        </article>
+
+        
+
+
+
+<style>
+  .btn-feedback {
+    display: inline-block;
+  }
+  .btn-feedback-negative {
+    margin-left: 1em;
+  }
+  .feedback--response {
+    display: none;
+    margin-top: 1em;
+  }
+  .feedback--response__visible {
+    display: block;
+  }
+</style>
+<div class="d-print-none widget--feedback">
+  <h2 class="feedback--title">Feedback</h2>
+  <p class="feedback--question">Was this page helpful?</p>
+  <p class="feedback--response feedback--response-positive">
+    🙏
+  </p>
+  <p class="feedback--response feedback--response-negative">
+    🙏
+  </p>
+  <button class="btn btn-primary mb-4 btn-feedback btn-feedback-positive">
+    😍 Yes
+  </button>
+  <button class="btn btn-primary mb-4 btn-feedback btn-feedback-negative">
+    😡 No
+  </button>
+</div>
+<script>
+  const btnYes = document.querySelector('.btn-feedback-positive');
+  const btnNo = document.querySelector('.btn-feedback-negative');
+  const responseYes = document.querySelector('.feedback--response-positive');
+  const responseNo = document.querySelector('.feedback--response-negative');
+  const disableButtons = () => {
+    btnYes.disabled = true;
+    btnNo.disabled = true;
+  };
+  const sendFeedback = (value) => {
+    if (typeof gtag !== 'function') return;
+    gtag('event', 'click', {
+      'event_category': 'page_rating',
+      'event_label': window.location.pathname,
+      'value': value,
+      'transport_type': 'beacon',
+      'event_callback': function () {
+        console.debug(`✅ Feedback sent ${value}`);
+      }
+    });
+  };
+  btnYes.addEventListener('click', () => {
+    console.debug('Feedback response: 😍');
+    responseYes.classList.add('feedback--response__visible');
+    disableButtons();
+    sendFeedback(1);
+  });
+  btnNo.addEventListener('click', () => {
+    console.debug('Feedback response: 😡');
+    responseNo.classList.add('feedback--response__visible');
+    disableButtons();
+    sendFeedback(0);
+  });
+</script>
+
+
+
+        
+
+<div class="article-tags">
+  
+  <a class="badge badge-light" href="/en/tag/rnn/">RNN</a>
+  
+  <a class="badge badge-light" href="/en/tag/deep-learning/">deep learning</a>
+  
+  <a class="badge badge-light" href="/en/tag/nlp/">NLP</a>
+  
+</div>
+
+
+
+        
+        
+        <div class="article-widget">
+          
+<div class="post-nav">
+  
+  
+</div>
+
+        </div>
+        
+      </div>
+
+      <div class="body-footer">
+        <p>Last updated on Apr 14, 2023</p>
+
+        
+
+
+
+
+        
+
+
+
+
+        
+
+
+      </div>
+
+      <footer class="site-footer">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+    
+  
+  
+    
+  
+
+  
+
+  
+  <p class="powered-by copyright-license-text">
+    © 2023 Filip Wójcik. This work is licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0" rel="noopener noreferrer" target="_blank">CC BY NC ND 4.0</a>
+  </p>
+  
+
+  <p class="powered-by footer-license-icons">
+    <a href="https://creativecommons.org/licenses/by-nc-nd/4.0" rel="noopener noreferrer" target="_blank" aria-label="Creative Commons">
+      <i class="fab fa-creative-commons fa-2x" aria-hidden="true"></i>
+      <i class="fab fa-creative-commons-by fa-2x" aria-hidden="true"></i>
+      
+        <i class="fab fa-creative-commons-nc fa-2x" aria-hidden="true"></i>
+      
+      
+        <i class="fab fa-creative-commons-nd fa-2x" aria-hidden="true"></i>
+      
+    </a>
+  </p>
+
+
+
+
+
+  <p class="powered-by">
+    
+    
+    
+      
+      
+      
+      
+      
+      
+      Published with <a href="https://wowchemy.com/?utm_campaign=poweredby" target="_blank" rel="noopener">Wowchemy</a> — the free, <a href="https://github.com/wowchemy/wowchemy-hugo-themes" target="_blank" rel="noopener">open source</a> website builder that empowers creators.
+    
+  </p>
+</footer>
+
+
+    </main>
+  </div>
+</div>
+
+  </div>
+
+  <div class="page-footer">
+    
+    
+  </div>
+
+  
+
+
+<script src="/js/vendor-bundle.min.46271ef31da3f018e9cd1b59300aa265.js"></script>
+
+
+
+
+  
+
+  
+  
+
+  
+    
+    <script src="https://cdn.jsdelivr.net/npm/mermaid@9.1.3/dist/mermaid.min.js" integrity="sha256-TIYL00Rhw/8WaoUhYTLX9SKIEFdXxg+yMWSLVUbhiLg=" crossorigin="anonymous" title="mermaid"></script>
+  
+
+
+
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/gh/bryanbraun/anchorjs@4.2.2/anchor.min.js" integrity="sha512-I7w3ZdSFzw5j3jU3ZkNikBNeIrl3i+hEuEdwNmqUJvwNcaBUNcijnP2gd9DtGlgVYDplfjGoD8vTNsID+lCjqg==" crossorigin="anonymous"></script>
+<script>
+  anchors.add();
+</script>
+
+
+
+
+
+  
+  <script id="search-hit-fuse-template" type="text/x-template">
+    <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+    </div>
+  </script>
+  
+    <script src="https://cdn.jsdelivr.net/gh/krisk/Fuse@v3.2.1/dist/fuse.min.js" integrity="sha512-o38bmzBGX+hD3JHWUFCDA09btWaqrNmoJ3RXLlrysA7PP01Kgs4UlE4MhelE1v5dJR3+cxlR4qQlotsW7jKsnw==" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/gh/julmot/mark.js@8.11.1/dist/jquery.mark.min.js" integrity="sha512-mhbv5DqBMgrWL+32MmsDOt/OAvqr/cHimk6B8y/bx/xS88MVkYGPiVv2ixKVrkywF2qHplNRUvFsAHUdxZ3Krg==" crossorigin="anonymous"></script>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+<script id="page-data" type="application/json">{"use_headroom":false}</script>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+<script src="/en/js/wowchemy.min.64db40ac7fec289d43837702bc527581.js"></script>
+
+
+
+
+
+
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        
+        <pre><code></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <script src="/js/wowchemy-publication.68f8d7090562ca65fc6d3cb3f8f2d2cb.js" type="module"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

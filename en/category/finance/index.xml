@@ -17,46 +17,7 @@
       <link>https://maddataanalyst.github.io/en/post/ml-finanace/portfolio-optimization/</link>
       <pubDate>Thu, 10 Nov 2022 00:00:00 +0000</pubDate>
       <guid>https://maddataanalyst.github.io/en/post/ml-finanace/portfolio-optimization/</guid>
-      <description>&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th style=&#34;text-align:center&#34;&gt;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-&lt;figure  &gt;
-  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;featured.jpg&#34; srcset=&#34;
-               /en/post/ml-finanace/portfolio-optimization/featured_hudaa6440116b6a8bce68e7f5f68804d86_179663_6466d6916c5053f290aba482c2d8a1ce.webp 400w,
-               /en/post/ml-finanace/portfolio-optimization/featured_hudaa6440116b6a8bce68e7f5f68804d86_179663_b9b2a53ca7edfc12aa2254f42c641114.webp 760w,
-               /en/post/ml-finanace/portfolio-optimization/featured_hudaa6440116b6a8bce68e7f5f68804d86_179663_1200x1200_fit_q75_h2_lanczos.webp 1200w&#34;
-               src=&#34;https://maddataanalyst.github.io/en/post/ml-finanace/portfolio-optimization/featured_hudaa6440116b6a8bce68e7f5f68804d86_179663_6466d6916c5053f290aba482c2d8a1ce.webp&#34;
-               width=&#34;760&#34;
-               height=&#34;418&#34;
-               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
-  &lt;/div&gt;&lt;/figure&gt;
-&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;&lt;b&gt;&lt;a href=&#34;https://pixabay.com/?utm_source=link-attribution&amp;amp;utm_medium=referral&amp;amp;utm_campaign=image&amp;amp;utm_content=3222267&#34;&gt;Pixabay&lt;/a&gt;&lt;/b&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;h2 id=&#34;intro&#34;&gt;Intro&lt;/h2&gt;
+      <description>&lt;h2 id=&#34;intro&#34;&gt;Intro&lt;/h2&gt;
 &lt;p&gt;Portfolio optimization is a critical tool for modern investors willing to maximize their capital utilization in the market and expected returns.&lt;/p&gt;
 &lt;p&gt;Many portfolio optimization techniques are based on different variants of constrained quadratic programming formalizations, taking as inputs expected asset returns, forms of risk metrics (like covariance matrices), and transaction costs. Next, the goal is selected (typically a maximization of return while keeping the risk level constant or minimizing the risk with varying returns ). The problem is solved either via a closed-form equation or a gradient-minimizing approach. Additional elements or steps can be included, like periodical rebalancing, the inclusion of transaction costs, or different cost functions (Sharpe ratio or similar).&lt;/p&gt;
 &lt;p&gt;This blog post will show you how to prepare and perform a simple portfolio optimization process on selected stocks. Two approaches will be utilized - purely mathematical formulation of the optimization problem and PyPorfolioOpt library that automates most of the process.&lt;/p&gt;

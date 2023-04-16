@@ -2,8 +2,58 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://maddataanalyst.github.io/en/post/varia/</loc>
+    <lastmod>2023-04-14T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://maddataanalyst.github.io/en/post/</loc>
+    <lastmod>2023-04-14T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <xhtml:link
+                rel="alternate"
+                hreflang="pl"
+                href="https://maddataanalyst.github.io/pl/post/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://maddataanalyst.github.io/en/post/"
+                />
+  </url><url>
+    <loc>https://maddataanalyst.github.io/en/authors/</loc>
+    <lastmod>2023-04-14T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <xhtml:link
+                rel="alternate"
+                hreflang="pl"
+                href="https://maddataanalyst.github.io/pl/authors/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://maddataanalyst.github.io/en/authors/"
+                />
+  </url><url>
+    <loc>https://maddataanalyst.github.io/en/categories/</loc>
+    <lastmod>2023-04-14T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <xhtml:link
+                rel="alternate"
+                hreflang="pl"
+                href="https://maddataanalyst.github.io/pl/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://maddataanalyst.github.io/en/categories/"
+                />
+  </url><url>
+    <loc>https://maddataanalyst.github.io/en/post/varia/chat_gpt_lies/</loc>
+    <lastmod>2023-04-14T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
     <loc>https://maddataanalyst.github.io/en/tag/deep-learning/</loc>
-    <lastmod>2023-04-07T00:00:00+00:00</lastmod>
+    <lastmod>2023-04-14T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <xhtml:link
                 rel="alternate"
@@ -14,6 +64,104 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://maddataanalyst.github.io/en/tag/deep-learning/"
+                />
+  </url><url>
+    <loc>https://maddataanalyst.github.io/en/category/deep-learning/</loc>
+    <lastmod>2023-04-14T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <xhtml:link
+                rel="alternate"
+                hreflang="pl"
+                href="https://maddataanalyst.github.io/pl/category/deep-learning/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://maddataanalyst.github.io/en/category/deep-learning/"
+                />
+  </url><url>
+    <loc>https://maddataanalyst.github.io/en/</loc>
+    <lastmod>2023-04-14T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <xhtml:link
+                rel="alternate"
+                hreflang="pl"
+                href="https://maddataanalyst.github.io/pl/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://maddataanalyst.github.io/en/"
+                />
+  </url><url>
+    <loc>https://maddataanalyst.github.io/en/tag/nlp/</loc>
+    <lastmod>2023-04-14T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <xhtml:link
+                rel="alternate"
+                hreflang="pl"
+                href="https://maddataanalyst.github.io/pl/tag/nlp/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://maddataanalyst.github.io/en/tag/nlp/"
+                />
+  </url><url>
+    <loc>https://maddataanalyst.github.io/en/category/nlp/</loc>
+    <lastmod>2023-04-14T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <xhtml:link
+                rel="alternate"
+                hreflang="pl"
+                href="https://maddataanalyst.github.io/pl/category/nlp/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://maddataanalyst.github.io/en/category/nlp/"
+                />
+  </url><url>
+    <loc>https://maddataanalyst.github.io/en/tag/rnn/</loc>
+    <lastmod>2023-04-14T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <xhtml:link
+                rel="alternate"
+                hreflang="pl"
+                href="https://maddataanalyst.github.io/pl/tag/rnn/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://maddataanalyst.github.io/en/tag/rnn/"
+                />
+  </url><url>
+    <loc>https://maddataanalyst.github.io/en/category/rnn/</loc>
+    <lastmod>2023-04-14T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <xhtml:link
+                rel="alternate"
+                hreflang="pl"
+                href="https://maddataanalyst.github.io/pl/category/rnn/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://maddataanalyst.github.io/en/category/rnn/"
+                />
+  </url><url>
+    <loc>https://maddataanalyst.github.io/en/tags/</loc>
+    <lastmod>2023-04-14T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <xhtml:link
+                rel="alternate"
+                hreflang="pl"
+                href="https://maddataanalyst.github.io/pl/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://maddataanalyst.github.io/en/tags/"
                 />
   </url><url>
     <loc>https://maddataanalyst.github.io/en/project/deep_learning_recommenders/</loc>
@@ -28,20 +176,6 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://maddataanalyst.github.io/en/project/deep_learning_recommenders/"
-                />
-  </url><url>
-    <loc>https://maddataanalyst.github.io/en/</loc>
-    <lastmod>2023-04-07T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <xhtml:link
-                rel="alternate"
-                hreflang="pl"
-                href="https://maddataanalyst.github.io/pl/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://maddataanalyst.github.io/en/"
                 />
   </url><url>
     <loc>https://maddataanalyst.github.io/en/project/</loc>
@@ -72,20 +206,6 @@
                 href="https://maddataanalyst.github.io/en/tag/recommendation-systems/"
                 />
   </url><url>
-    <loc>https://maddataanalyst.github.io/en/tags/</loc>
-    <lastmod>2023-04-07T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <xhtml:link
-                rel="alternate"
-                hreflang="pl"
-                href="https://maddataanalyst.github.io/pl/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://maddataanalyst.github.io/en/tags/"
-                />
-  </url><url>
     <loc>https://maddataanalyst.github.io/en/publication-type/2/</loc>
     <lastmod>2023-04-01T21:36:41+01:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -98,20 +218,6 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://maddataanalyst.github.io/en/publication-type/2/"
-                />
-  </url><url>
-    <loc>https://maddataanalyst.github.io/en/authors/</loc>
-    <lastmod>2023-04-01T21:36:41+01:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <xhtml:link
-                rel="alternate"
-                hreflang="pl"
-                href="https://maddataanalyst.github.io/pl/authors/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://maddataanalyst.github.io/en/authors/"
                 />
   </url><url>
     <loc>https://maddataanalyst.github.io/en/publication_types/</loc>
@@ -170,27 +276,9 @@
                 href="https://maddataanalyst.github.io/en/publication/utilization_of_drl_for_management/"
                 />
   </url><url>
-    <loc>https://maddataanalyst.github.io/en/post/</loc>
-    <lastmod>2022-11-10T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
     <loc>https://maddataanalyst.github.io/en/post/ml-finanace/</loc>
     <lastmod>2022-11-10T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>https://maddataanalyst.github.io/en/categories/</loc>
-    <lastmod>2022-11-10T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <xhtml:link
-                rel="alternate"
-                hreflang="pl"
-                href="https://maddataanalyst.github.io/pl/categories/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://maddataanalyst.github.io/en/categories/"
-                />
   </url><url>
     <loc>https://maddataanalyst.github.io/en/tag/finance/</loc>
     <lastmod>2022-11-10T00:00:00+00:00</lastmod>
@@ -222,7 +310,7 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="pl"
-                href="https://maddataanalyst.github.io/pl/talk/wszystko-jest-gra-przypadki-uzycia-uczenia-ze-wzmocnieniem-poza-grami./"
+                href="https://maddataanalyst.github.io/pl/talk/wszystko-jest-gra-przypadki-uzycia-uczenia-ze-wzmocnieniem-poza-grami/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -259,14 +347,6 @@
                 />
   </url><url>
     <loc>https://maddataanalyst.github.io/en/post/rnns/fifty-shapes-of-time/</loc>
-    <lastmod>2022-05-16T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>https://maddataanalyst.github.io/en/tag/rnn/</loc>
-    <lastmod>2022-05-16T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>https://maddataanalyst.github.io/en/category/rnn/</loc>
     <lastmod>2022-05-16T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
