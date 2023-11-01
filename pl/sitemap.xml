@@ -7,7 +7,7 @@
     <changefreq>weekly</changefreq>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="en-us"
                 href="https://maddataanalyst.github.io/en/post/"
                 />
     <xhtml:link
@@ -21,7 +21,7 @@
     <changefreq>weekly</changefreq>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="en-us"
                 href="https://maddataanalyst.github.io/en/authors/"
                 />
     <xhtml:link
@@ -35,7 +35,7 @@
     <changefreq>weekly</changefreq>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="en-us"
                 href="https://maddataanalyst.github.io/en/categories/"
                 />
     <xhtml:link
@@ -53,7 +53,7 @@
     <changefreq>weekly</changefreq>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="en-us"
                 href="https://maddataanalyst.github.io/en/tag/deep-learning/"
                 />
     <xhtml:link
@@ -67,7 +67,7 @@
     <changefreq>weekly</changefreq>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="en-us"
                 href="https://maddataanalyst.github.io/en/category/deep-learning/"
                 />
     <xhtml:link
@@ -81,7 +81,7 @@
     <changefreq>weekly</changefreq>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="en-us"
                 href="https://maddataanalyst.github.io/en/"
                 />
     <xhtml:link
@@ -95,7 +95,7 @@
     <changefreq>weekly</changefreq>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="en-us"
                 href="https://maddataanalyst.github.io/en/tag/nlp/"
                 />
     <xhtml:link
@@ -109,7 +109,7 @@
     <changefreq>weekly</changefreq>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="en-us"
                 href="https://maddataanalyst.github.io/en/category/nlp/"
                 />
     <xhtml:link
@@ -123,7 +123,7 @@
     <changefreq>weekly</changefreq>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="en-us"
                 href="https://maddataanalyst.github.io/en/tag/rnn/"
                 />
     <xhtml:link
@@ -137,7 +137,7 @@
     <changefreq>weekly</changefreq>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="en-us"
                 href="https://maddataanalyst.github.io/en/category/rnn/"
                 />
     <xhtml:link
@@ -151,7 +151,7 @@
     <changefreq>weekly</changefreq>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="en-us"
                 href="https://maddataanalyst.github.io/en/tags/"
                 />
     <xhtml:link
@@ -165,7 +165,7 @@
     <changefreq>weekly</changefreq>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="en-us"
                 href="https://maddataanalyst.github.io/en/publication-type/2/"
                 />
     <xhtml:link
@@ -179,7 +179,7 @@
     <changefreq>weekly</changefreq>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="en-us"
                 href="https://maddataanalyst.github.io/en/publication_types/"
                 />
     <xhtml:link
@@ -193,7 +193,7 @@
     <changefreq>weekly</changefreq>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="en-us"
                 href="https://maddataanalyst.github.io/en/publication/"
                 />
     <xhtml:link
@@ -207,7 +207,7 @@
     <changefreq>weekly</changefreq>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="en-us"
                 href="https://maddataanalyst.github.io/en/tag/reinforcement-learning/"
                 />
     <xhtml:link
@@ -221,7 +221,7 @@
     <changefreq>weekly</changefreq>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="en-us"
                 href="https://maddataanalyst.github.io/en/publication/utilization_of_drl_for_management/"
                 />
     <xhtml:link
@@ -235,7 +235,7 @@
     <changefreq>weekly</changefreq>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="en-us"
                 href="https://maddataanalyst.github.io/en/event/"
                 />
     <xhtml:link
@@ -249,7 +249,7 @@
     <changefreq>weekly</changefreq>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="en-us"
                 href="https://maddataanalyst.github.io/en/talk/everything-is-a-game-use-cases-for-reinforcement-learning/"
                 />
     <xhtml:link
@@ -263,7 +263,7 @@
     <changefreq>weekly</changefreq>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="en-us"
                 href="https://maddataanalyst.github.io/en/project/"
                 />
     <xhtml:link
@@ -277,7 +277,7 @@
     <changefreq>weekly</changefreq>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="en-us"
                 href="https://maddataanalyst.github.io/en/project/relex/"
                 />
     <xhtml:link
@@ -295,7 +295,7 @@
     <changefreq>weekly</changefreq>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="en-us"
                 href="https://maddataanalyst.github.io/en/publication-type/1/"
                 />
     <xhtml:link
@@ -309,7 +309,7 @@
     <changefreq>weekly</changefreq>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="en-us"
                 href="https://maddataanalyst.github.io/en/publication/deep_learning_as_recommenders/"
                 />
     <xhtml:link
@@ -323,7 +323,7 @@
     <changefreq>weekly</changefreq>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="en-us"
                 href="https://maddataanalyst.github.io/en/publication/beyond_a_barrier_of_mistrust/"
                 />
     <xhtml:link
@@ -341,7 +341,7 @@
     <changefreq>weekly</changefreq>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="en-us"
                 href="https://maddataanalyst.github.io/en/tag/xai/"
                 />
     <xhtml:link
@@ -355,7 +355,7 @@
     <changefreq>weekly</changefreq>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="en-us"
                 href="https://maddataanalyst.github.io/en/talk/one-concept-to-rule-them-all-uses-of-neural-embeddings-beyond-natural-language-processing/"
                 />
     <xhtml:link
@@ -369,7 +369,7 @@
     <changefreq>weekly</changefreq>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="en-us"
                 href="https://maddataanalyst.github.io/en/tag/recommendation-systems/"
                 />
     <xhtml:link
@@ -383,7 +383,7 @@
     <changefreq>weekly</changefreq>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="en-us"
                 href="https://maddataanalyst.github.io/en/publication/deep_hybrid_recommendation_system/"
                 />
     <xhtml:link
@@ -397,7 +397,7 @@
     <changefreq>weekly</changefreq>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="en-us"
                 href="https://maddataanalyst.github.io/en/talk/recommendation-engines-based-on-autoencoders/"
                 />
     <xhtml:link
@@ -411,7 +411,7 @@
     <changefreq>weekly</changefreq>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="en-us"
                 href="https://maddataanalyst.github.io/en/project/deep_learning_recommenders/"
                 />
     <xhtml:link
@@ -425,7 +425,7 @@
     <changefreq>weekly</changefreq>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="en-us"
                 href="https://maddataanalyst.github.io/en/tag/forecasting/"
                 />
     <xhtml:link
@@ -439,7 +439,7 @@
     <changefreq>weekly</changefreq>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="en-us"
                 href="https://maddataanalyst.github.io/en/tag/machine-learning/"
                 />
     <xhtml:link
@@ -453,7 +453,7 @@
     <changefreq>weekly</changefreq>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="en-us"
                 href="https://maddataanalyst.github.io/en/talk/xgboost-as-a-time-series-forecasting-tool/"
                 />
     <xhtml:link
@@ -471,7 +471,7 @@
     <changefreq>weekly</changefreq>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="en-us"
                 href="https://maddataanalyst.github.io/en/project/xgboost_forecast/"
                 />
     <xhtml:link
@@ -485,7 +485,7 @@
     <changefreq>weekly</changefreq>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="en-us"
                 href="https://maddataanalyst.github.io/en/tag/xgboost/"
                 />
     <xhtml:link
@@ -499,7 +499,7 @@
     <changefreq>weekly</changefreq>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="en-us"
                 href="https://maddataanalyst.github.io/en/talk/machine-learning-and-artificial-intelligence-as-a-decision-support-systems-for-human-capital-management/"
                 />
     <xhtml:link
@@ -517,7 +517,7 @@
     <changefreq>weekly</changefreq>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="en-us"
                 href="https://maddataanalyst.github.io/en/publication/xgboost_turnover/"
                 />
     <xhtml:link
@@ -535,7 +535,7 @@
     <changefreq>weekly</changefreq>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="en-us"
                 href="https://maddataanalyst.github.io/en/publication/business_relevant_attributes_2017/"
                 />
     <xhtml:link
@@ -553,7 +553,7 @@
     <changefreq>weekly</changefreq>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="en-us"
                 href="https://maddataanalyst.github.io/en/talk/water-powered-machine-learning-gradient-boosting-machines-in-h2o-ai/"
                 />
     <xhtml:link
@@ -567,7 +567,7 @@
     <changefreq>weekly</changefreq>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="en-us"
                 href="https://maddataanalyst.github.io/en/talk/decision-support-systems-remade-machine-learning-advisers/"
                 />
     <xhtml:link
@@ -581,7 +581,7 @@
     <changefreq>weekly</changefreq>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="en-us"
                 href="https://maddataanalyst.github.io/en/talk/machine-learning-when-big-data-is-not-enough/"
                 />
     <xhtml:link
@@ -597,7 +597,7 @@
     <changefreq>weekly</changefreq>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="en-us"
                 href="https://maddataanalyst.github.io/en/authors/filip/"
                 />
     <xhtml:link

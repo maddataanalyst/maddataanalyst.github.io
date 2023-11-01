@@ -1417,7 +1417,7 @@ $$ N \times K \times f $$&lt;/p&gt;
 
 
 
-&lt;div id=&#34;chart-941632758&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-318952467&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   (function() {
     let a = setInterval( function() {
@@ -1427,7 +1427,7 @@ $$ N \times K \times f $$&lt;/p&gt;
       clearInterval( a );
 
       Plotly.d3.json(&#34;./sinusoids.json&#34;, function(chart) {
-        Plotly.plot(&#39;chart-941632758&#39;, chart.data, chart.layout, {responsive: true});
+        Plotly.plot(&#39;chart-318952467&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -1499,7 +1499,7 @@ $$ N \times K \times f $$&lt;/p&gt;
 
 
 
-&lt;div id=&#34;chart-472138695&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-231745869&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   (function() {
     let a = setInterval( function() {
@@ -1509,7 +1509,7 @@ $$ N \times K \times f $$&lt;/p&gt;
       clearInterval( a );
 
       Plotly.d3.json(&#34;./slice.json&#34;, function(chart) {
-        Plotly.plot(&#39;chart-472138695&#39;, chart.data, chart.layout, {responsive: true});
+        Plotly.plot(&#39;chart-231745869&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -2045,14 +2045,6 @@ Such a structure can be generated from data by subsequent shifting the time seri
       <link>https://maddataanalyst.github.io/en/talk/machine-learning-when-big-data-is-not-enough/</link>
       <pubDate>Thu, 05 Nov 2015 12:00:00 +0000</pubDate>
       <guid>https://maddataanalyst.github.io/en/talk/machine-learning-when-big-data-is-not-enough/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://maddataanalyst.github.io/en/admin/config.yml</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://maddataanalyst.github.io/en/admin/config.yml</guid>
       <description></description>
     </item>
     
