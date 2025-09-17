@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Knowledge-Graphs on Filip Wójcik</title>
+    <link>http://localhost:1313/tags/knowledge-graphs/</link>
+    <description>Recent content in Knowledge-Graphs on Filip Wójcik</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 23 Jun 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/knowledge-graphs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>HeXtractor: Automated Heterogeneous Graph Extraction from Multimodal Data</title>
+      <link>http://localhost:1313/research/hextractor_paper/</link>
+      <pubDate>Mon, 23 Jun 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/research/hextractor_paper/</guid>
+      <description>Introduction Transforming diverse data sources into graph representations suitable for deep learning remains a challenge in modern machine learning. HeXtractor provides a standardized, automated framework for converting structured and unstructured data into heterogeneous graphs compatible with Graph Neural Networks (GNNs).&#xA;HeXtractor in action&#xA;Publication and Citation Publication: Journal of Open Source Software, Volume 10, Issue 110, Article 8057, 2025&#xA;Authors: Filip Wójcik, Marcin Malczewski&#xA;Repository: Available on GitHub&#xA;Documentation: HeXtractor Documentation</description>
+    </item>
+  </channel>
+</rss>

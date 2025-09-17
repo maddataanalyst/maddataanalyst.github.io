@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    
+    <script>
+        
+        if (localStorage.getItem('darkMode') !== 'false') {
+            document.documentElement.classList.add('dark');
+        }
+    </script>
+    
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+<title>
+  
+    HeXtractor: Automated Heterogeneous Graph Extraction from Multimodal Data | Filip Wójcik
+  
+</title>
+
+
+<meta name="description" content="Open-source Python library for transforming structured tabular data and unstructured text into heterogeneous graph representations for Graph Neural Networks." />
+<meta name="author" content="Filip Wójcik" />
+<link rel="canonical" href="http://localhost:1313/research/hextractor_paper/" />
+
+
+<meta property="og:type" content="website" />
+<meta property="og:title" content="HeXtractor: Automated Heterogeneous Graph Extraction from Multimodal Data | Filip Wójcik" />
+<meta property="og:description" content="Open-source Python library for transforming structured tabular data and unstructured text into heterogeneous graph representations for Graph Neural Networks." />
+<meta property="og:url" content="http://localhost:1313/research/hextractor_paper/" />
+<meta property="og:image" content="http://localhost:1313/images/filip_wojcik.jpg">
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:site_name" content="Filip Wójcik" />
+
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="HeXtractor: Automated Heterogeneous Graph Extraction from Multimodal Data | Filip Wójcik" />
+<meta name="twitter:description" content="Open-source Python library for transforming structured tabular data and unstructured text into heterogeneous graph representations for Graph Neural Networks." />
+<meta name="twitter:image" content="http://localhost:1313/images/filip_wojcik.jpg" />
+
+
+<link rel="icon" href="/favicon.ico" />
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+
+
+
+    
+    
+    <style>
+ 
+:root {
+   
+  --color-primary: #5353ec;
+  --color-primary-light: color-mix(in srgb, var(--color-primary) 80%, white);
+  --color-primary-dark: color-mix(in srgb, var(--color-primary) 80%, black);
+  --color-primary-lighter: color-mix(in srgb, var(--color-primary) 20%, white);
+  
+  --color-second: #004182;
+  --color-second-light: color-mix(in srgb, var(--color-second) 80%, white);
+  --color-second-dark: color-mix(in srgb, var(--color-second) 80%, black);
+  --color-second-lighter: color-mix(in srgb, var(--color-second) 20%, white);
+  
+  --color-third: #8C8C8C;
+  --color-third-light: color-mix(in srgb, var(--color-third) 80%, white);
+  --color-third-dark: color-mix(in srgb, var(--color-third) 80%, black);
+  --color-third-lighter: color-mix(in srgb, var(--color-third) 20%, white);
+  
+   
+  --color-gray-50: color-mix(in srgb, var(--color-primary) 5%, white);
+  --color-gray-100: color-mix(in srgb, var(--color-primary) 10%, white);
+  --color-gray-300: color-mix(in srgb, var(--color-primary) 20%, white);
+  --color-gray-400: color-mix(in srgb, var(--color-primary) 30%, white);
+  --color-gray-500: color-mix(in srgb, var(--color-primary) 40%, white);
+  --color-gray-600: color-mix(in srgb, var(--color-primary) 50%, black);
+  --color-gray-700: color-mix(in srgb, var(--color-primary) 60%, black);
+  --color-gray-800: color-mix(in srgb, var(--color-primary) 80%, black);
+  --color-gray-900: color-mix(in srgb, var(--color-primary) 90%, black);
+  
+   
+  --color-white: #ffffff;
+  --color-black: #000000;
+  
+   
+  --color-shadow-light: rgba(0, 0, 0, 0.1);
+  --color-shadow-lighter: rgba(0, 0, 0, 0.05);
+  --color-shadow-dark: rgba(0, 0, 0, 0.3);
+  
+   
+  --color-text-muted: var(--color-gray-500);
+  --color-border-secondary: var(--color-gray-300);
+  --color-success: var(--color-second);
+  
+   
+  --color-bg: var(--color-white);
+  --color-bg-secondary: var(--color-gray-100);
+  --color-text-primary: var(--color-gray-900);
+  --color-text-secondary: var(--color-gray-700);
+  --color-border: var(--color-gray-300);
+}
+
+ 
+.dark {
+  --color-bg: color-mix(in srgb, var(--color-primary) 50%, black);
+  --color-bg-secondary: color-mix(in srgb, var(--color-primary) 30%, black);
+  --color-bg-tertiary: color-mix(in srgb, var(--color-primary) 40%, black);
+  --color-text-primary: var(--color-gray-50);
+  --color-text-secondary: var(--color-gray-300);
+  --color-border: var(--color-gray-700);
+  --color-text-muted: var(--color-gray-400);
+  --color-border-secondary: var(--color-gray-600);
+}
+</style>
+
+    
+    
+    
+    <link rel="stylesheet" href="/css/main.css?v=1758120092" data-version="1758120092">
+    <style>
+         
+        body {
+            visibility: hidden;
+        }
+        .dark body {
+            visibility: hidden;
+        }
+    </style>
+</head>
+<body class="bg-bg dark:bg-bg text-text-primary dark:text-text-primary flex flex-col min-h-screen transition-colors duration-200">
+
+    <nav class="fixed w-full bg-bg dark:bg-bg shadow-md z-50">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex justify-between h-16">
+      <div class="flex items-center">
+        <a href="/" class="text-3xl font-bold text-text-primary dark:text-text-primary font-heading">Filip Wójcik</a>
+      </div>
+      <div class="hidden lg:flex items-center space-x-8">
+        
+          
+                      
+            
+            <a href="/#about" class="nav-link text-text-primary dark:text-text-primary">About</a>
+          
+          
+        
+          
+                      
+            
+            <a href="/#skills" class="nav-link text-text-primary dark:text-text-primary">Skills</a>
+          
+          
+        
+          
+                      
+            
+            <a href="/#experience" class="nav-link text-text-primary dark:text-text-primary">Experience</a>
+          
+          
+        
+          
+                      
+            
+            <a href="/#technical" class="nav-link text-text-primary dark:text-text-primary">Tech Stack</a>
+          
+          
+        
+          
+                      
+            
+            <a href="/consulting" class="nav-link text-text-primary dark:text-text-primary">Consulting</a>
+          
+          
+        
+          
+                      
+            
+            <a href="/#contact" class="nav-link text-text-primary dark:text-text-primary">Contact</a>
+          
+          
+        
+          
+                      
+            
+            <a href="/research" class="nav-link text-text-primary dark:text-text-primary">Research</a>
+          
+          
+        
+        
+        
+        
+
+        
+        <div class="flex items-center space-x-4" data-animation="social">
+          
+          <a href="https://www.linkedin.com/in/machinelearningspecialist/" target="_blank" rel="noopener noreferrer" class="text-text-primary dark:text-text-primary transition-transform duration-300 hover:scale-125">
+            <i class="fab fa-linkedin-in text-xl"></i>
+          </a>
+          
+          
+          <a href="https://github.com/maddataanalyst/" target="_blank" rel="noopener noreferrer" class="text-text-primary dark:text-text-primary transition-transform duration-300 hover:scale-125">
+            <i class="fab fa-github text-xl"></i>
+          </a>
+          
+        </div>
+        
+        <button id="darkModeToggle" class="text-text-primary dark:text-text-primary focus:outline-none">
+          <i class="fas fa-toggle-on dark:hidden"></i>
+          <i class="fas fa-toggle-off hidden dark:block"></i>
+        </button>
+      </div>
+      <div class="lg:hidden flex items-center space-x-4">
+        
+        <button id="darkModeToggleMobile" class="text-text-primary dark:text-text-primary focus:outline-none">
+          <i class="fas fa-toggle-on dark:hidden"></i>
+          <i class="fas fa-toggle-off hidden dark:block"></i>
+        </button>
+        <button id="menu-btn" class="text-text-primary dark:text-text-primary">
+          <i class="fas fa-bars text-2xl"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  
+  <div id="mobile-menu" class="hidden lg:hidden bg-bg dark:bg-bg shadow-lg">
+    <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+      
+        
+          
+          <a href="/#about" class="nav-link block px-3 py-2 rounded-md text-base font-medium text-text-primary dark:text-text-primary">
+            About
+          </a>
+        
+        
+      
+        
+          
+          <a href="/#skills" class="nav-link block px-3 py-2 rounded-md text-base font-medium text-text-primary dark:text-text-primary">
+            Skills
+          </a>
+        
+        
+      
+        
+          
+          <a href="/#experience" class="nav-link block px-3 py-2 rounded-md text-base font-medium text-text-primary dark:text-text-primary">
+            Experience
+          </a>
+        
+        
+      
+        
+          
+          <a href="/#technical" class="nav-link block px-3 py-2 rounded-md text-base font-medium text-text-primary dark:text-text-primary">
+            Tech Stack
+          </a>
+        
+        
+      
+        
+          
+          <a href="/consulting" class="nav-link block px-3 py-2 rounded-md text-base font-medium text-text-primary dark:text-text-primary">
+            Consulting
+          </a>
+        
+        
+      
+        
+          
+          <a href="/#contact" class="nav-link block px-3 py-2 rounded-md text-base font-medium text-text-primary dark:text-text-primary">
+            Contact
+          </a>
+        
+        
+      
+        
+          
+          <a href="/research" class="nav-link block px-3 py-2 rounded-md text-base font-medium text-text-primary dark:text-text-primary">
+            Research
+          </a>
+        
+        
+      
+      
+      
+      
+
+      
+      <div class="flex items-center space-x-6 px-3 py-3 border-t border-border-primary dark:border-border-primary mt-2" data-animation="social">
+        <a href="https://www.linkedin.com/in/machinelearningspecialist/" target="_blank" rel="noopener noreferrer" class="text-text-primary dark:text-text-primary transition-transform duration-300 hover:scale-125">
+          <i class="fab fa-linkedin-in text-2xl"></i>
+        </a>
+        <a href="https://github.com/maddataanalyst/" target="_blank" rel="noopener noreferrer" class="text-text-primary dark:text-text-primary transition-transform duration-300 hover:scale-125">
+          <i class="fab fa-github text-2xl"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  
+  <style>
+    .group.open .submenu {
+      opacity: 1 !important;
+      visibility: visible !important;
+    }
+  </style>
+
+  
+  <script>
+    
+    document.addEventListener('DOMContentLoaded', function() {
+      console.log('Navigation script loaded');
+      
+      const sectionLinks = document.querySelectorAll('.section-link');
+      console.log('Found section links:', sectionLinks.length);
+      const homePath = '\/';
+      
+      sectionLinks.forEach(link => {
+        link.addEventListener('click', function(e) {
+          e.preventDefault();
+          console.log('Section link clicked:', this.getAttribute('data-section'));
+          
+          const section = this.getAttribute('data-section');
+          const isHomePage = window.location.pathname === homePath || window.location.pathname === homePath + 'index.html' || window.location.pathname === homePath.replace(/\/$/, '');
+          console.log('Is home page:', isHomePage);
+          
+          if (isHomePage) {
+            
+            const targetElement = document.querySelector(section);
+            console.log('Target element found:', !!targetElement);
+            if (targetElement) {
+              targetElement.scrollIntoView({
+                behavior: 'instant',
+                block: 'start'
+              });
+            }
+          } else {
+            
+            console.log('Navigating to:', homePath + section);
+            window.location.href = homePath + section;
+          }
+        });
+      });
+      
+      
+      function handleHashScroll() {
+        console.log('Checking for hash:', window.location.hash);
+        if (window.location.hash) {
+          const targetElement = document.querySelector(window.location.hash);
+          console.log('Hash target element found:', !!targetElement);
+          if (targetElement) {
+            
+            setTimeout(() => {
+              console.log('Scrolling to hash target');
+              targetElement.scrollIntoView({
+                behavior: 'instant',
+                block: 'start'
+              });
+            }, 100);
+          }
+        }
+      }
+      
+      
+      handleHashScroll();
+      
+      
+      setTimeout(handleHashScroll, 500);
+      setTimeout(handleHashScroll, 1000);
+      
+      
+      window.addEventListener('hashchange', function() {
+        console.log('Hash changed to:', window.location.hash);
+        handleHashScroll();
+      });
+      
+      
+      window.addEventListener('load', function() {
+        console.log('Window loaded, checking hash');
+        setTimeout(handleHashScroll, 200);
+      });
+    });
+    
+    
+    document.querySelectorAll('.group > a.nav-link, .group > button.nav-link').forEach(link => {
+      link.addEventListener('click', function(e) {
+        e.preventDefault();
+        const group = this.closest('.group');
+        const isOpen = group.classList.contains('open');
+
+        
+        document.querySelectorAll('.group').forEach(g => g.classList.remove('open'));
+
+        
+        if (!isOpen) {
+          group.classList.add('open');
+        }
+      });
+
+      document.addEventListener('click', function(event) {
+        const group = link.closest('.group');
+        if (!group.contains(event.target)) {
+          group.classList.remove('open');
+        }
+      });
+    });
+
+    
+    function toggleDarkMode() {
+      const isDark = document.documentElement.classList.toggle('dark');
+      localStorage.setItem('darkMode', isDark);
+    }
+
+    document.getElementById('darkModeToggle').addEventListener('click', toggleDarkMode);
+    document.getElementById('darkModeToggleMobile').addEventListener('click', toggleDarkMode);
+
+    
+    document.querySelectorAll('#mobile-menu a').forEach(link => {
+      link.addEventListener('click', function(e) {
+        document.getElementById('mobile-menu').classList.add('hidden');
+      });
+    });
+
+
+  </script>
+</nav>
+
+
+
+
+    <div class="w-full h-16"></div>
+
+    <main class="flex-grow">
+        
+<section class="pt-8 pb-12 bg-bg dark:bg-bg">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex flex-col lg:flex-row gap-8">
+      
+      <div class="lg:w-2/3">
+        <h1 class="text-3xl font-bold text-center mb-12 font-heading text-text-primary dark:text-text-primary">HeXtractor: Automated Heterogeneous Graph Extraction from Multimodal Data</h1>
+        
+        <div class="prose max-w-none prose-lg markdown-content dark:prose-invert prose-gray [&_iframe]:min-h-[600px] [&_iframe]:w-full [&_img+em]:block [&_img+em]:text-center [&_img+em]:font-bold">
+          <h2 id="introduction">Introduction</h2>
+<p>Transforming diverse data sources into graph representations suitable for deep learning remains a challenge in modern machine learning. HeXtractor provides a standardized, automated framework for converting structured and unstructured data into heterogeneous graphs compatible with Graph Neural Networks (GNNs).</p>
+<p><img alt="HeXtractor architecture" src="/images/research/hextractor.png">
+<em>HeXtractor in action</em></p>
+<h2 id="publication-and-citation">Publication and Citation</h2>
+<p><strong>Publication</strong>:  <a href="https://joss.theoj.org/papers/10.21105/joss.08057.pdf" target="_blank" rel="noopener">Journal of Open Source Software, Volume 10, Issue 110, Article 8057, 2025</a><br>
+<strong>Authors</strong>: Filip Wójcik, Marcin Malczewski<br>
+<strong>Repository</strong>: Available on GitHub<br>
+<strong>Documentation</strong>: <a href="https://hextractor.readthedocs.io/en/latest/" target="_blank" rel="noopener">HeXtractor Documentation</a></p>
+<p><strong>Citation</strong>: Wójcik, F., &amp; Malczewski, M. (2025). HeXtractor: Extracting Heterogeneous Graphs from Structured and Textual Data for Graph Neural Networks. Journal of Open Source Software, 10(110), 8057. <a href="https://doi.org/10.21105/joss.08057">https://doi.org/10.21105/joss.08057</a></p>
+<h2 id="software-overview">Software Overview</h2>
+<p>HeXtractor is an open-source Python library that streamlines heterogeneous graph construction. Originally developed as part of the HexGIN project for financial transaction analysis, it has evolved into a domain-agnostic framework serving researchers and practitioners across multiple fields.</p>
+<h2 id="technical-architecture">Technical Architecture</h2>
+<h3 id="core-capabilities">Core Capabilities</h3>
+<p>HeXtractor provides comprehensive functionality for graph construction:</p>
+<ol>
+<li><strong>Declarative Schema Definition</strong>: Intuitive interface for specifying node types, edge relationships, and associated metadata</li>
+<li><strong>Multi-Modal Data Processing</strong>: Unified handling of structured tabular data and unstructured text</li>
+<li><strong>LLM Integration</strong>: Seamless connection with Large Language Models via LangChain for semantic graph extraction</li>
+<li><strong>PyTorch Geometric Compatibility</strong>: Direct export to PyG&rsquo;s HeteroData format for immediate use in GNN training</li>
+</ol>
+<h3 id="implementation-features">Implementation Features</h3>
+<p>The library incorporates several advanced technical features:</p>
+<ul>
+<li><strong>Schema Validation</strong>: Automatic consistency checking and error detection</li>
+<li><strong>Interactive Visualization</strong>: PyVis-based graph visualization with customizable layouts</li>
+<li><strong>Flexible Data Ingestion</strong>: Support for single-table and multi-table relational data</li>
+<li><strong>Scalable Architecture</strong>: Designed to handle datasets of varying complexity</li>
+</ul>
+<h2 id="methodological-contributions">Methodological Contributions</h2>
+<h3 id="structured-data-processing">Structured Data Processing</h3>
+<p>HeXtractor supports tabular data transformation through:</p>
+<p><strong>Single-Table Mode</strong>: Each row encodes relationships among entities defined by columns, automatically generating node and edge definitions</p>
+<p><strong>Multi-Table Mode</strong>: GraphSpecs framework for merging entity and relationship tables into unified heterogeneous graphs, maintaining referential integrity</p>
+<h3 id="text-based-graph-extraction">Text-Based Graph Extraction</h3>
+<p>Integration with Large Language Models enables semantic graph construction:</p>
+<ol>
+<li>Natural language input processing through LLM APIs</li>
+<li>GraphDocument generation containing entities and relationships</li>
+<li>Automatic conversion to HeteroData objects</li>
+<li>Preservation of semantic relationships in graph structure</li>
+</ol>
+<h2 id="research-applications">Research Applications</h2>
+<h3 id="domain-agnostic-design">Domain-Agnostic Design</h3>
+<p>HeXtractor&rsquo;s flexibility enables applications across multiple research areas:</p>
+<ul>
+<li><strong>Financial Analysis</strong>: Money laundering detection and fraud identification in transaction networks</li>
+<li><strong>Recommendation Systems</strong>: Building user-item interaction graphs with rich feature representations</li>
+<li><strong>Biomedical Research</strong>: Knowledge graph construction for drug discovery and protein interaction networks</li>
+<li><strong>Social Network Analysis</strong>: Modeling complex social relationships and information diffusion</li>
+</ul>
+<h3 id="case-studies">Case Studies</h3>
+<p>The software has been successfully deployed in several high-impact applications:</p>
+<ul>
+<li>Banking fraud detection systems processing millions of transactions</li>
+<li>E-commerce recommendation engines serving personalized suggestions</li>
+<li>Academic knowledge graph construction from scientific literature</li>
+</ul>
+<h2 id="impact-on-graph-machine-learning">Impact on Graph Machine Learning</h2>
+<h3 id="addressing-challenges">Addressing Challenges</h3>
+<p>HeXtractor addresses common problems in graph-based machine learning:</p>
+<ol>
+<li><strong>Standardization Gap</strong>: Provides consistent methodology for graph construction across different domains</li>
+<li><strong>Reproducibility</strong>: Ensures experimental reproducibility through declarative specifications</li>
+<li><strong>Accessibility</strong>: Lowers barrier to entry for researchers new to graph neural networks</li>
+<li><strong>Integration Complexity</strong>: Simplifies pipeline from raw data to trainable graph models</li>
+</ol>
+<h3 id="community-adoption">Community Adoption</h3>
+<p>The open-source nature of HeXtractor has fostered adoption:</p>
+<ul>
+<li>Active community contributions and feature requests</li>
+<li>Integration into existing ML pipelines</li>
+<li>Use in educational settings for teaching graph neural networks</li>
+</ul>
+<h2 id="technical-examples">Technical Examples</h2>
+<h3 id="structured-data-transformation">Structured Data Transformation</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>HeteroData(
+</span></span><span style="display:flex;"><span>  company<span style="color:#f92672">=</span>{ x<span style="color:#f92672">=</span>[<span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">2</span>] },
+</span></span><span style="display:flex;"><span>  employee<span style="color:#f92672">=</span>{ x<span style="color:#f92672">=</span>[<span style="color:#ae81ff">7</span>, <span style="color:#ae81ff">2</span>], y<span style="color:#f92672">=</span>[<span style="color:#ae81ff">7</span>] },
+</span></span><span style="display:flex;"><span>  (company, has, employee)<span style="color:#f92672">=</span>{ edge_index<span style="color:#f92672">=</span>[<span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">6</span>] }
+</span></span><span style="display:flex;"><span>)
+</span></span></code></pre></div><h2 id="text-to-graph-conversion">Text-to-Graph Conversion</h2>
+<p>Natural language descriptions automatically transformed into structured graph representations with entity recognition and relationship extraction powered by state-of-the-art language models.</p>
+<h2 id="future-development">Future Development</h2>
+<p>Ongoing development focuses on:</p>
+<ul>
+<li>Enhanced support for temporal graph construction</li>
+<li>Integration with additional graph learning frameworks</li>
+<li>Advanced visualization capabilities for large-scale graphs</li>
+<li>Automated hyperparameter optimization for graph construction</li>
+</ul>
+<h2 id="conclusion">Conclusion</h2>
+<p>HeXtractor represents a significant contribution to the graph machine learning ecosystem, democratizing access to heterogeneous graph construction capabilities. By bridging the gap between diverse data sources and graph neural networks, it enables researchers to focus on model development rather than data preprocessing complexities.</p>
+
+        </div>
+      </div>
+
+      
+      
+      <div class="lg:w-1/3">
+        <div class="sticky top-24 max-h-[calc(100vh-8rem)] flex flex-col">
+          <h2 class="text-xl font-bold mb-4 text-text-primary dark:text-text-primary flex-shrink-0">Related Content</h2>
+          <div class="space-y-3 pr-2 overflow-y-auto flex-1 sidebar-scroll">
+            
+            
+            <a href="/research/hexgin_paper/" class="block group">
+              <article class="bg-bg-secondary dark:bg-bg-tertiary rounded-md p-3 shadow-sm border border-border-primary dark:border-border-primary hover:shadow-md transition-shadow duration-200">
+                
+                <div class="flex gap-3 mb-2">
+                  
+                  <div class="w-16 flex-shrink-0">
+                    
+                    <div class="relative overflow-hidden">
+                      <img 
+                        src="/images/research/fincen.png" 
+                        alt="HexGIN: Heterogeneous Graph Isomorphism Networks for Real-World Money Laundering Detection" 
+                        class="w-full h-16 object-contain bg-transparent transition-transform duration-300 group-hover:scale-105"
+                        loading="lazy"
+                      >
+                      <div class="absolute inset-0 bg-gradient-to-t from-text-primary/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    </div>
+                    
+                  </div>
+                  
+                  
+                  <div class="flex-1 min-w-0">
+                    <h3 class="text-sm font-semibold mb-1 text-text-primary dark:text-text-primary group-hover:text-primary dark:group-hover:text-primary-light transition-colors duration-300">
+                      HexGIN: Heterogeneous Graph Isomorphism Networks for Real-World Money Laundering Detection
+                    </h3>
+                    
+                    
+                    <p class="text-xs text-text-secondary dark:text-text-secondary leading-relaxed line-clamp-2">Heterogeneous extension of Graph Isomorphism Networks applied to the FinCEN Files investigation - detection of money laundering patterns.</p>
+                    
+                  </div>
+                </div>
+                
+                
+                
+                <div class="flex flex-wrap gap-1">
+                  
+                  <span class="bg-bg dark:bg-bg-secondary text-text-primary dark:text-text-primary px-1.5 py-0.5 rounded text-xs border border-border-primary dark:border-border-primary">
+                    money-laundering
+                  </span>
+                  
+                  <span class="bg-bg dark:bg-bg-secondary text-text-primary dark:text-text-primary px-1.5 py-0.5 rounded text-xs border border-border-primary dark:border-border-primary">
+                    graph-neural-networks
+                  </span>
+                  
+                  <span class="bg-bg dark:bg-bg-secondary text-text-primary dark:text-text-primary px-1.5 py-0.5 rounded text-xs border border-border-primary dark:border-border-primary">
+                    fincen-files
+                  </span>
+                  
+                </div>
+                
+              </article>
+            </a>
+            
+            <a href="/research/magic_aml/" class="block group">
+              <article class="bg-bg-secondary dark:bg-bg-tertiary rounded-md p-3 shadow-sm border border-border-primary dark:border-border-primary hover:shadow-md transition-shadow duration-200">
+                
+                <div class="flex gap-3 mb-2">
+                  
+                  <div class="w-16 flex-shrink-0">
+                    
+                    <div class="relative overflow-hidden">
+                      <img 
+                        src="/images/research/magic.png" 
+                        alt="MAGIC: Multi-Aggregation Custom Edge GIN for Advanced Money Laundering Detection" 
+                        class="w-full h-16 object-contain bg-transparent transition-transform duration-300 group-hover:scale-105"
+                        loading="lazy"
+                      >
+                      <div class="absolute inset-0 bg-gradient-to-t from-text-primary/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    </div>
+                    
+                  </div>
+                  
+                  
+                  <div class="flex-1 min-w-0">
+                    <h3 class="text-sm font-semibold mb-1 text-text-primary dark:text-text-primary group-hover:text-primary dark:group-hover:text-primary-light transition-colors duration-300">
+                      MAGIC: Multi-Aggregation Custom Edge GIN for Advanced Money Laundering Detection
+                    </h3>
+                    
+                    
+                    <p class="text-xs text-text-secondary dark:text-text-secondary leading-relaxed line-clamp-2">Graph neural network architecture for money laundering detection using multiple aggregation mechanisms and custom edge convolutions.</p>
+                    
+                  </div>
+                </div>
+                
+                
+                
+                <div class="flex flex-wrap gap-1">
+                  
+                  <span class="bg-bg dark:bg-bg-secondary text-text-primary dark:text-text-primary px-1.5 py-0.5 rounded text-xs border border-border-primary dark:border-border-primary">
+                    anti-money-laundering
+                  </span>
+                  
+                  <span class="bg-bg dark:bg-bg-secondary text-text-primary dark:text-text-primary px-1.5 py-0.5 rounded text-xs border border-border-primary dark:border-border-primary">
+                    graph-neural-networks
+                  </span>
+                  
+                  <span class="bg-bg dark:bg-bg-secondary text-text-primary dark:text-text-primary px-1.5 py-0.5 rounded text-xs border border-border-primary dark:border-border-primary">
+                    financial-crime
+                  </span>
+                  
+                </div>
+                
+              </article>
+            </a>
+            
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+    </main>
+
+    <footer class="bg-bg-secondary dark:bg-bg-secondary text-text-primary py-12 border-t border-border-primary">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex flex-col md:flex-row justify-between items-center">
+      <div class="mb-4 md:mb-0">
+        <a href="/#home" class="text-xl font-bold text-text-primary font-heading">Filip Wójcik</a>
+        <p class="text-text-secondary dark:text-text-muted mt-1">AI/ML Researcher. Scientist.</p>
+        <p class="text-text-secondary dark:text-text-muted mt-2">Senior data scientist, AI/ML researcher with 12&#43; years of experience in delivering solutions and leading R&amp;D projects</p>
+        <p class="text-text-secondary dark:text-text-muted mt-1">
+          <i class="fas fa-map-marker-alt mr-2"></i>Wrocław, Poland
+        </p>
+        <a href="mailto:ds@filip-wojcik.com" class="text-text-secondary dark:text-text-muted text-primary dark:text-primary-light mt-1 inline-block">
+          <i class="fas fa-envelope mr-2"></i>ds@filip-wojcik.com
+        </a>
+        <div class="flex space-x-8 mt-6" data-animation="social">
+          
+          <a href="https://www.linkedin.com/in/machinelearningspecialist/" target="_blank" class="text-text-secondary dark:text-text-muted text-third dark:text-third-light transition-transform duration-300 hover:scale-125">
+            <i class="fab fa-linkedin-in text-3xl text-text-primary dark:text-text-primary"></i>
+          </a>
+          
+          <a href="https://github.com/maddataanalyst/" target="_blank" class="text-text-secondary dark:text-text-muted text-third dark:text-third-light transition-transform duration-300 hover:scale-125">
+            <i class="fab fa-github text-3xl text-text-primary dark:text-text-primary"></i>
+          </a>
+          
+          <a href="https://scholar.google.com/citations?user=fUZwDOQAAAAJ&amp;hl=en" target="_blank" class="text-text-secondary dark:text-text-muted text-third dark:text-third-light transition-transform duration-300 hover:scale-125">
+            <i class="fab fa-google text-3xl text-text-primary dark:text-text-primary"></i>
+          </a>
+          
+          <a href="https://www.researchgate.net/profile/Filip-Wojcik" target="_blank" class="text-text-secondary dark:text-text-muted text-third dark:text-third-light transition-transform duration-300 hover:scale-125">
+            <i class="fab fa-researchgate text-3xl text-text-primary dark:text-text-primary"></i>
+          </a>
+          
+        </div>
+      </div>
+      <div class="flex flex-col items-end">
+        <div class="flex flex-wrap gap-2 justify-end">
+          
+          
+          <span class="bg-bg-tertiary dark:bg-bg-tertiary text-text-primary px-3 py-1 rounded-full text-sm font-semibold shadow-md">AI/ML Solutions</span>
+          
+          
+          <span class="bg-bg-tertiary dark:bg-bg-tertiary text-text-primary px-3 py-1 rounded-full text-sm font-semibold shadow-md">Research</span>
+          
+          
+          <span class="bg-bg-tertiary dark:bg-bg-tertiary text-text-primary px-3 py-1 rounded-full text-sm font-semibold shadow-md">Data Science</span>
+          
+        </div>
+      </div>
+    </div>
+
+    <div class="mt-8 pt-8 border-t border-border-primary text-center text-text-secondary dark:text-text-muted text-sm">
+      <p>© 2025 | Filip Wójcik | Theme CareerCanvas by Felipe Cordero, felipecordero.com</p>
+    </div>
+  </div>
+</footer>
+
+
+
+
+    
+    
+    
+    <script src="/js/scripts.js"></script>
+    <script src="/js/gsap-animations.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/fslightbox/index.js"></script>
+
+    
+    <script>
+        
+        if (localStorage.getItem('darkMode') !== 'false') {
+            document.documentElement.classList.add('dark');
+        } else {
+            document.documentElement.classList.remove('dark');
+        }
+
+        
+        window.addEventListener('load', function() {
+            document.body.style.visibility = 'visible';
+        });
+    </script>
+</body>
+</html>

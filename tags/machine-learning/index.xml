@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Machine-Learning on Filip Wójcik</title>
+    <link>http://localhost:1313/tags/machine-learning/</link>
+    <description>Recent content in Machine-Learning on Filip Wójcik</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 12 Jun 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/machine-learning/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>MAGIC: Multi-Aggregation Custom Edge GIN for Advanced Money Laundering Detection</title>
+      <link>http://localhost:1313/research/magic_aml/</link>
+      <pubDate>Thu, 12 Jun 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/research/magic_aml/</guid>
+      <description>Introduction Financial crime detection is a challenging application of machine learning due to severe class imbalances and the complexity of transaction networks. This article introduces MAGIC (Multiple Aggregations for Graph Isomorphism Network with Custom Edges), an enhancement of Graph Isomorphism Networks designed to identify illicit financial transactions.&#xA;MAGIC architecture&#xA;Publication and Citation Publication: Journal of Data Science, 2025&#xA;Author: Filip Wójcik&#xA;DOI: https://doi.org/10.6339/25-JDS1190&#xA;Access: View Publication&#xA;Citation: Wójcik, F. (2025). Money Laundering Detection with Multi-Aggregation Custom Edge GIN.</description>
+    </item>
+    <item>
+      <title>Deep Reinforcement Learning Approach for Portfolio Optimization and Risk Management: Case Studies</title>
+      <link>http://localhost:1313/research/rl_portfolio_opt/</link>
+      <pubDate>Sun, 15 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/research/rl_portfolio_opt/</guid>
+      <description>Introduction Portfolio optimization involves selecting asset allocations to balance expected returns and risk. As the number of decision factors and data sources increases, incorporating non-standard predictors into the optimization process becomes challenging. This article presents a framework for applying deep reinforcement learning to address these challenges.&#xA;RL portfolio optimization results example&#xA;Publication and Citation Publication: Analytics in Finance and Risk Management, Chapter 7&#xA;Publisher: CRC Press, Taylor &amp;amp; Francis Group</description>
+    </item>
+    <item>
+      <title>Deep Hybrid Collaborative Filtering with Content: Advancing E-Commerce Recommendation Systems</title>
+      <link>http://localhost:1313/research/deep_hybrid_rec/</link>
+      <pubDate>Tue, 15 Sep 2020 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/research/deep_hybrid_rec/</guid>
+      <description>Introduction Recommendation systems are a core component of e-commerce platforms. This article presents the Deep Hybrid Collaborative Filtering with Content (DHCF) architecture, which addresses limitations of traditional recommendation methodologies.&#xA;Deep Hybrid Collaborative Filtering with Content architecture&#xA;Publication and Citation Publication: Econometrics. Advances in Applied Data Analysis, Volume 24, Issue 3, Pages 37-50, 2020&#xA;Authors: Filip Wójcik, Michał Górnik&#xA;Access: View Publication&#xA;Citation: Wójcik, F., &amp;amp; Górnik, M. (2020). Improvement of E-Commerce Recommendation Systems with Deep Hybrid Collaborative Filtering with Content: A Case Study.</description>
+    </item>
+  </channel>
+</rss>

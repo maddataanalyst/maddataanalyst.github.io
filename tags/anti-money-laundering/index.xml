@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Anti-Money-Laundering on Filip Wójcik</title>
+    <link>http://localhost:1313/tags/anti-money-laundering/</link>
+    <description>Recent content in Anti-Money-Laundering on Filip Wójcik</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 12 Jun 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/anti-money-laundering/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>MAGIC: Multi-Aggregation Custom Edge GIN for Advanced Money Laundering Detection</title>
+      <link>http://localhost:1313/research/magic_aml/</link>
+      <pubDate>Thu, 12 Jun 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/research/magic_aml/</guid>
+      <description>Introduction Financial crime detection is a challenging application of machine learning due to severe class imbalances and the complexity of transaction networks. This article introduces MAGIC (Multiple Aggregations for Graph Isomorphism Network with Custom Edges), an enhancement of Graph Isomorphism Networks designed to identify illicit financial transactions.&#xA;MAGIC architecture&#xA;Publication and Citation Publication: Journal of Data Science, 2025&#xA;Author: Filip Wójcik&#xA;DOI: https://doi.org/10.6339/25-JDS1190&#xA;Access: View Publication&#xA;Citation: Wójcik, F. (2025). Money Laundering Detection with Multi-Aggregation Custom Edge GIN.</description>
+    </item>
+  </channel>
+</rss>

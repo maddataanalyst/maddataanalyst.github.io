@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Recommendation-Systems on Filip Wójcik</title>
+    <link>http://localhost:1313/tags/recommendation-systems/</link>
+    <description>Recent content in Recommendation-Systems on Filip Wójcik</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 15 Sep 2020 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/recommendation-systems/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Deep Hybrid Collaborative Filtering with Content: Advancing E-Commerce Recommendation Systems</title>
+      <link>http://localhost:1313/research/deep_hybrid_rec/</link>
+      <pubDate>Tue, 15 Sep 2020 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/research/deep_hybrid_rec/</guid>
+      <description>Introduction Recommendation systems are a core component of e-commerce platforms. This article presents the Deep Hybrid Collaborative Filtering with Content (DHCF) architecture, which addresses limitations of traditional recommendation methodologies.&#xA;Deep Hybrid Collaborative Filtering with Content architecture&#xA;Publication and Citation Publication: Econometrics. Advances in Applied Data Analysis, Volume 24, Issue 3, Pages 37-50, 2020&#xA;Authors: Filip Wójcik, Michał Górnik&#xA;Access: View Publication&#xA;Citation: Wójcik, F., &amp;amp; Górnik, M. (2020). Improvement of E-Commerce Recommendation Systems with Deep Hybrid Collaborative Filtering with Content: A Case Study.</description>
+    </item>
+  </channel>
+</rss>

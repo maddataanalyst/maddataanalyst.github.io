@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Filip Wójcik</title>
+    <link>http://localhost:1313/tags/</link>
+    <description>Recent content in Tags on Filip Wójcik</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 23 Jun 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Graph-Neural-Networks</title>
+      <link>http://localhost:1313/tags/graph-neural-networks/</link>
+      <pubDate>Mon, 23 Jun 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/graph-neural-networks/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Heterogeneous-Graphs</title>
+      <link>http://localhost:1313/tags/heterogeneous-graphs/</link>
+      <pubDate>Mon, 23 Jun 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/heterogeneous-graphs/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Knowledge-Graphs</title>
+      <link>http://localhost:1313/tags/knowledge-graphs/</link>
+      <pubDate>Mon, 23 Jun 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/knowledge-graphs/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Llm-Integration</title>
+      <link>http://localhost:1313/tags/llm-integration/</link>
+      <pubDate>Mon, 23 Jun 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/llm-integration/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Open-Source</title>
+      <link>http://localhost:1313/tags/open-source/</link>
+      <pubDate>Mon, 23 Jun 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/open-source/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Python</title>
+      <link>http://localhost:1313/tags/python/</link>
+      <pubDate>Mon, 23 Jun 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/python/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Pytorch-Geometric</title>
+      <link>http://localhost:1313/tags/pytorch-geometric/</link>
+      <pubDate>Mon, 23 Jun 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/pytorch-geometric/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Anti-Money-Laundering</title>
+      <link>http://localhost:1313/tags/anti-money-laundering/</link>
+      <pubDate>Thu, 12 Jun 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/anti-money-laundering/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Financial-Crime</title>
+      <link>http://localhost:1313/tags/financial-crime/</link>
+      <pubDate>Thu, 12 Jun 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/financial-crime/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Fraud-Detection</title>
+      <link>http://localhost:1313/tags/fraud-detection/</link>
+      <pubDate>Thu, 12 Jun 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/fraud-detection/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Gin</title>
+      <link>http://localhost:1313/tags/gin/</link>
+      <pubDate>Thu, 12 Jun 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/gin/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Machine-Learning</title>
+      <link>http://localhost:1313/tags/machine-learning/</link>
+      <pubDate>Thu, 12 Jun 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/machine-learning/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Deep-Learning</title>
+      <link>http://localhost:1313/tags/deep-learning/</link>
+      <pubDate>Fri, 26 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/deep-learning/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Fincen-Files</title>
+      <link>http://localhost:1313/tags/fincen-files/</link>
+      <pubDate>Fri, 26 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/fincen-files/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Money-Laundering</title>
+      <link>http://localhost:1313/tags/money-laundering/</link>
+      <pubDate>Fri, 26 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/money-laundering/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Deep-Reinforcement-Learning</title>
+      <link>http://localhost:1313/tags/deep-reinforcement-learning/</link>
+      <pubDate>Sun, 15 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/deep-reinforcement-learning/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Portfolio-Optimization</title>
+      <link>http://localhost:1313/tags/portfolio-optimization/</link>
+      <pubDate>Sun, 15 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/portfolio-optimization/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Quantitative-Finance</title>
+      <link>http://localhost:1313/tags/quantitative-finance/</link>
+      <pubDate>Sun, 15 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/quantitative-finance/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Risk-Management</title>
+      <link>http://localhost:1313/tags/risk-management/</link>
+      <pubDate>Sun, 15 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/risk-management/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Operations-Research</title>
+      <link>http://localhost:1313/tags/operations-research/</link>
+      <pubDate>Tue, 15 Mar 2022 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/operations-research/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Optimization</title>
+      <link>http://localhost:1313/tags/optimization/</link>
+      <pubDate>Tue, 15 Mar 2022 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/optimization/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Project-Management</title>
+      <link>http://localhost:1313/tags/project-management/</link>
+      <pubDate>Tue, 15 Mar 2022 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/project-management/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Reinforcement-Learning</title>
+      <link>http://localhost:1313/tags/reinforcement-learning/</link>
+      <pubDate>Tue, 15 Mar 2022 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/reinforcement-learning/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Resource-Allocation</title>
+      <link>http://localhost:1313/tags/resource-allocation/</link>
+      <pubDate>Tue, 15 Mar 2022 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/resource-allocation/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Simulation</title>
+      <link>http://localhost:1313/tags/simulation/</link>
+      <pubDate>Tue, 15 Mar 2022 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/simulation/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Collaborative-Filtering</title>
+      <link>http://localhost:1313/tags/collaborative-filtering/</link>
+      <pubDate>Tue, 15 Sep 2020 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/collaborative-filtering/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>E-Commerce</title>
+      <link>http://localhost:1313/tags/e-commerce/</link>
+      <pubDate>Tue, 15 Sep 2020 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/e-commerce/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Neural-Networks</title>
+      <link>http://localhost:1313/tags/neural-networks/</link>
+      <pubDate>Tue, 15 Sep 2020 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/neural-networks/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Recommendation-Systems</title>
+      <link>http://localhost:1313/tags/recommendation-systems/</link>
+      <pubDate>Tue, 15 Sep 2020 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/recommendation-systems/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Consulting</title>
+      <link>http://localhost:1313/tags/consulting/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/consulting/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Services</title>
+      <link>http://localhost:1313/tags/services/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/services/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

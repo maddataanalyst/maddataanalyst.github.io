@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Reinforcement-Learning on Filip Wójcik</title>
+    <link>http://localhost:1313/tags/reinforcement-learning/</link>
+    <description>Recent content in Reinforcement-Learning on Filip Wójcik</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 15 Mar 2022 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/reinforcement-learning/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Deep Reinforcement Learning for Discrete Resource Allocation in Project Management: A Simulation Experiment</title>
+      <link>http://localhost:1313/research/rl_resource_allocation/</link>
+      <pubDate>Tue, 15 Mar 2022 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/research/rl_resource_allocation/</guid>
+      <description>Introduction This article evaluates deep reinforcement learning algorithms on simulated problems of constrained discrete and online resource allocation in project management. The study examines whether appropriately configured reinforcement learning agents can outperform classic constrained optimization approaches in stochastic environments.&#xA;RL resource allocation agent overview&#xA;Publication and Citation Publication: Business Informatics. Informatyka Ekonomiczna, Volume 1, Issue 63, Pages 56-74, 2022&#xA;Author: Filip Wójcik&#xA;Institution: Wrocław University of Economics and Business&#xA;DOI: 10.</description>
+    </item>
+  </channel>
+</rss>

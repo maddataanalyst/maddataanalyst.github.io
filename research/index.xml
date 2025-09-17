@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Research on Filip Wójcik</title>
+    <link>http://localhost:1313/research/</link>
+    <description>Recent content in Research on Filip Wójcik</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 23 Jun 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/research/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>HeXtractor: Automated Heterogeneous Graph Extraction from Multimodal Data</title>
+      <link>http://localhost:1313/research/hextractor_paper/</link>
+      <pubDate>Mon, 23 Jun 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/research/hextractor_paper/</guid>
+      <description>Introduction Transforming diverse data sources into graph representations suitable for deep learning remains a challenge in modern machine learning. HeXtractor provides a standardized, automated framework for converting structured and unstructured data into heterogeneous graphs compatible with Graph Neural Networks (GNNs).&#xA;HeXtractor in action&#xA;Publication and Citation Publication: Journal of Open Source Software, Volume 10, Issue 110, Article 8057, 2025&#xA;Authors: Filip Wójcik, Marcin Malczewski&#xA;Repository: Available on GitHub&#xA;Documentation: HeXtractor Documentation</description>
+    </item>
+    <item>
+      <title>MAGIC: Multi-Aggregation Custom Edge GIN for Advanced Money Laundering Detection</title>
+      <link>http://localhost:1313/research/magic_aml/</link>
+      <pubDate>Thu, 12 Jun 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/research/magic_aml/</guid>
+      <description>Introduction Financial crime detection is a challenging application of machine learning due to severe class imbalances and the complexity of transaction networks. This article introduces MAGIC (Multiple Aggregations for Graph Isomorphism Network with Custom Edges), an enhancement of Graph Isomorphism Networks designed to identify illicit financial transactions.&#xA;MAGIC architecture&#xA;Publication and Citation Publication: Journal of Data Science, 2025&#xA;Author: Filip Wójcik&#xA;DOI: https://doi.org/10.6339/25-JDS1190&#xA;Access: View Publication&#xA;Citation: Wójcik, F. (2025). Money Laundering Detection with Multi-Aggregation Custom Edge GIN.</description>
+    </item>
+    <item>
+      <title>HexGIN: Heterogeneous Graph Isomorphism Networks for Real-World Money Laundering Detection</title>
+      <link>http://localhost:1313/research/hexgin_paper/</link>
+      <pubDate>Fri, 26 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/research/hexgin_paper/</guid>
+      <description>Introduction This article introduces HexGIN (Heterogeneous extension for Graph Isomorphism Network), an architecture designed to detect money laundering patterns in complex, real-world financial networks. Unlike studies relying on synthetic data, this work evaluates the publicly available FinCEN Files dataset to analyze observed laundering patterns.&#xA;HexGIN architecture&#xA;Publication and Citation Publication: Econometrics. Ekonometria. Advances in Applied Data Analysis, Volume 28, Issue 2, 2024&#xA;Author: Filip Wójcik&#xA;DOI: 10.15611/eada.2024.2.03&#xA;Access: View Publication</description>
+    </item>
+    <item>
+      <title>Deep Reinforcement Learning Approach for Portfolio Optimization and Risk Management: Case Studies</title>
+      <link>http://localhost:1313/research/rl_portfolio_opt/</link>
+      <pubDate>Sun, 15 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/research/rl_portfolio_opt/</guid>
+      <description>Introduction Portfolio optimization involves selecting asset allocations to balance expected returns and risk. As the number of decision factors and data sources increases, incorporating non-standard predictors into the optimization process becomes challenging. This article presents a framework for applying deep reinforcement learning to address these challenges.&#xA;RL portfolio optimization results example&#xA;Publication and Citation Publication: Analytics in Finance and Risk Management, Chapter 7&#xA;Publisher: CRC Press, Taylor &amp;amp; Francis Group</description>
+    </item>
+    <item>
+      <title>Deep Reinforcement Learning for Discrete Resource Allocation in Project Management: A Simulation Experiment</title>
+      <link>http://localhost:1313/research/rl_resource_allocation/</link>
+      <pubDate>Tue, 15 Mar 2022 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/research/rl_resource_allocation/</guid>
+      <description>Introduction This article evaluates deep reinforcement learning algorithms on simulated problems of constrained discrete and online resource allocation in project management. The study examines whether appropriately configured reinforcement learning agents can outperform classic constrained optimization approaches in stochastic environments.&#xA;RL resource allocation agent overview&#xA;Publication and Citation Publication: Business Informatics. Informatyka Ekonomiczna, Volume 1, Issue 63, Pages 56-74, 2022&#xA;Author: Filip Wójcik&#xA;Institution: Wrocław University of Economics and Business&#xA;DOI: 10.</description>
+    </item>
+    <item>
+      <title>Deep Hybrid Collaborative Filtering with Content: Advancing E-Commerce Recommendation Systems</title>
+      <link>http://localhost:1313/research/deep_hybrid_rec/</link>
+      <pubDate>Tue, 15 Sep 2020 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/research/deep_hybrid_rec/</guid>
+      <description>Introduction Recommendation systems are a core component of e-commerce platforms. This article presents the Deep Hybrid Collaborative Filtering with Content (DHCF) architecture, which addresses limitations of traditional recommendation methodologies.&#xA;Deep Hybrid Collaborative Filtering with Content architecture&#xA;Publication and Citation Publication: Econometrics. Advances in Applied Data Analysis, Volume 24, Issue 3, Pages 37-50, 2020&#xA;Authors: Filip Wójcik, Michał Górnik&#xA;Access: View Publication&#xA;Citation: Wójcik, F., &amp;amp; Górnik, M. (2020). Improvement of E-Commerce Recommendation Systems with Deep Hybrid Collaborative Filtering with Content: A Case Study.</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Risk-Management on Filip Wójcik</title>
+    <link>http://localhost:1313/tags/risk-management/</link>
+    <description>Recent content in Risk-Management on Filip Wójcik</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 15 Oct 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/risk-management/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Deep Reinforcement Learning Approach for Portfolio Optimization and Risk Management: Case Studies</title>
+      <link>http://localhost:1313/research/rl_portfolio_opt/</link>
+      <pubDate>Sun, 15 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/research/rl_portfolio_opt/</guid>
+      <description>Introduction Portfolio optimization involves selecting asset allocations to balance expected returns and risk. As the number of decision factors and data sources increases, incorporating non-standard predictors into the optimization process becomes challenging. This article presents a framework for applying deep reinforcement learning to address these challenges.&#xA;RL portfolio optimization results example&#xA;Publication and Citation Publication: Analytics in Finance and Risk Management, Chapter 7&#xA;Publisher: CRC Press, Taylor &amp;amp; Francis Group</description>
+    </item>
+  </channel>
+</rss>

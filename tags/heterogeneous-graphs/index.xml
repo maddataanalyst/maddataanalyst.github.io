@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Heterogeneous-Graphs on Filip Wójcik</title>
+    <link>http://localhost:1313/tags/heterogeneous-graphs/</link>
+    <description>Recent content in Heterogeneous-Graphs on Filip Wójcik</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 23 Jun 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/heterogeneous-graphs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>HeXtractor: Automated Heterogeneous Graph Extraction from Multimodal Data</title>
+      <link>http://localhost:1313/research/hextractor_paper/</link>
+      <pubDate>Mon, 23 Jun 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/research/hextractor_paper/</guid>
+      <description>Introduction Transforming diverse data sources into graph representations suitable for deep learning remains a challenge in modern machine learning. HeXtractor provides a standardized, automated framework for converting structured and unstructured data into heterogeneous graphs compatible with Graph Neural Networks (GNNs).&#xA;HeXtractor in action&#xA;Publication and Citation Publication: Journal of Open Source Software, Volume 10, Issue 110, Article 8057, 2025&#xA;Authors: Filip Wójcik, Marcin Malczewski&#xA;Repository: Available on GitHub&#xA;Documentation: HeXtractor Documentation</description>
+    </item>
+    <item>
+      <title>HexGIN: Heterogeneous Graph Isomorphism Networks for Real-World Money Laundering Detection</title>
+      <link>http://localhost:1313/research/hexgin_paper/</link>
+      <pubDate>Fri, 26 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/research/hexgin_paper/</guid>
+      <description>Introduction This article introduces HexGIN (Heterogeneous extension for Graph Isomorphism Network), an architecture designed to detect money laundering patterns in complex, real-world financial networks. Unlike studies relying on synthetic data, this work evaluates the publicly available FinCEN Files dataset to analyze observed laundering patterns.&#xA;HexGIN architecture&#xA;Publication and Citation Publication: Econometrics. Ekonometria. Advances in Applied Data Analysis, Volume 28, Issue 2, 2024&#xA;Author: Filip Wójcik&#xA;DOI: 10.15611/eada.2024.2.03&#xA;Access: View Publication</description>
+    </item>
+  </channel>
+</rss>

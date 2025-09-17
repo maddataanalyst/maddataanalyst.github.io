@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Consulting on Filip Wójcik</title>
+    <link>http://localhost:1313/tags/consulting/</link>
+    <description>Recent content in Consulting on Filip Wójcik</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <atom:link href="http://localhost:1313/tags/consulting/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Consulting</title>
+      <link>http://localhost:1313/consulting/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/consulting/</guid>
+      <description>Introduction I specialize in (widely understood) AI, machine learning (ML), and data science (DS). I can help you succeed in your research by providing scientific consultations, advisory or creating software.&#xA;Whether you need a predictive model, statistical analysis, software for research, or to automate specific tasks, I can help.&#xA;Services I offer the following data science-related services:&#xA;🖥️ Writing programs or projects utilizing data science and machine learning: I can help you create custom software that meets your specific needs.</description>
+    </item>
+  </channel>
+</rss>
